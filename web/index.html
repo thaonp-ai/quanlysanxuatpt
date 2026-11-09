@@ -1,0 +1,288 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tra cứu P&amp;ID Xưởng Phụ Trợ</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: tool shell — top search bar, left Unit rail, result list + drawing viewer side by side; stacks on phones */
+:root{
+  --paper:#f3f5f6; --sheet:#ffffff; --ink:#15222e; --muted:#5b6a76; --rule:#d5dce1;
+  --line:#0f6e8c; --line-soft:#e1eef2; --mark:#e39b12; --mark-soft:rgba(227,155,18,.22);
+  --equip:#6a4fb3; --valve:#b4432f; --pipe:#0f6e8c;
+  --f-disp:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+  --drawing-filter:none;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0f161c; --sheet:#151f27; --ink:#e3eaef; --muted:#93a3ae; --rule:#2a3843;
+  --line:#4fb3d1; --line-soft:#173039; --mark:#f0b13a; --mark-soft:rgba(240,177,58,.28);
+  --equip:#a891ec; --valve:#ec8a74; --pipe:#4fb3d1; --drawing-filter:invert(.9) hue-rotate(180deg); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0f161c; --sheet:#151f27; --ink:#e3eaef; --muted:#93a3ae; --rule:#2a3843;
+  --line:#4fb3d1; --line-soft:#173039; --mark:#f0b13a; --mark-soft:rgba(240,177,58,.28);
+  --equip:#a891ec; --valve:#ec8a74; --pipe:#4fb3d1; --drawing-filter:invert(.9) hue-rotate(180deg); color-scheme:dark}
+[hidden]{display:none!important}
+html,body{height:100%;margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:14px;line-height:1.45;display:flex;flex-direction:column;overflow:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--sheet)}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--line);outline-offset:2px}
+.mono{font-family:var(--f-mono)}
+
+header{background:var(--sheet);border-bottom:1px solid var(--rule);padding-block:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;gap:10px 20px;align-items:center;flex-wrap:wrap}
+.brand{display:flex;flex-direction:column;line-height:1.05;min-width:0}
+.brand b{font-family:var(--f-disp);font-weight:700;font-size:22px;letter-spacing:.02em;text-transform:uppercase}
+.brand span{font-size:12px;color:var(--muted)}
+.search{flex:1 1 340px;display:flex;gap:8px;align-items:center;min-width:0}
+.search input{flex:1;min-width:0;font-family:var(--f-mono);font-size:15px;padding:9px 12px;border:1.5px solid var(--rule);border-radius:6px;background:var(--paper);color:var(--ink)}
+.search input:focus{border-color:var(--line);outline:none}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{border:1px solid var(--rule);background:var(--sheet);padding:5px 10px;border-radius:999px;font-size:12.5px;display:inline-flex;gap:6px;align-items:center}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--sheet);border-color:var(--ink)}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+.d-line{background:var(--pipe)} .d-equipment{background:var(--equip)} .d-valve{background:var(--valve)}
+
+main{flex:1;display:grid;grid-template-columns:230px minmax(280px,380px) 1fr;min-height:0}
+nav.units{border-right:1px solid var(--rule);overflow:auto;background:var(--sheet);padding-block:10px}
+nav.units h2,.panel h2{font-family:var(--f-disp);font-weight:600;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:6px 16px 8px}
+.unit{display:grid;grid-template-columns:38px 1fr auto;gap:8px;align-items:baseline;width:100%;text-align:left;border:0;background:none;padding:7px 16px;border-left:3px solid transparent}
+.unit:hover{background:var(--line-soft)}
+.unit[aria-current="true"]{border-left-color:var(--line);background:var(--line-soft)}
+.unit .c{font-family:var(--f-mono);font-weight:600;color:var(--line)}
+.unit .n{font-size:13px;min-width:0}
+.unit .k{font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+
+.panel{display:flex;flex-direction:column;min-height:0;border-right:1px solid var(--rule);background:var(--paper)}
+.tabs{display:flex;border-bottom:1px solid var(--rule);background:var(--sheet)}
+.tabs button{flex:1;border:0;background:none;padding:10px;font-family:var(--f-disp);font-weight:600;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:2px solid transparent}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--line)}
+.meta{font-size:12px;color:var(--muted);padding:8px 16px;display:flex;justify-content:space-between;gap:8px}
+.list{overflow:auto;flex:1;min-height:0}
+.row{display:block;width:100%;text-align:left;border:0;border-bottom:1px solid var(--rule);background:none;padding:9px 16px}
+.row:hover{background:var(--sheet)}
+.row[aria-current="true"]{background:var(--sheet);box-shadow:inset 3px 0 0 var(--mark)}
+.row .tag{font-family:var(--f-mono);font-weight:600;font-size:14px;word-break:break-all;display:flex;gap:8px;align-items:center}
+.row .sub{font-size:12.5px;color:var(--muted);margin-top:2px}
+.row .refs{font-size:11.5px;color:var(--muted);font-family:var(--f-mono);margin-top:3px}
+.row mark{background:var(--mark-soft);color:inherit;border-radius:2px}
+.empty{padding:24px 16px;color:var(--muted)}
+.sheetrow .tag{font-family:var(--f-body);font-weight:600;font-size:13.5px;word-break:normal}
+
+.viewer{position:relative;display:flex;flex-direction:column;min-height:0;background:var(--sheet)}
+.vbar{display:flex;gap:8px;align-items:center;padding:8px 12px;border-bottom:1px solid var(--rule);flex-wrap:wrap}
+.vbar .title{flex:1;min-width:0}
+.vbar .title b{display:block;font-family:var(--f-disp);font-size:18px;font-weight:600;letter-spacing:.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vbar .title span{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.vbtn{border:1px solid var(--rule);background:var(--paper);border-radius:5px;padding:5px 10px;min-width:34px;font-family:var(--f-mono)}
+.vbtn:disabled{opacity:.4;cursor:default}
+.stage{flex:1;overflow:hidden;position:relative;touch-action:none;cursor:grab;background:var(--paper)}
+.stage.drag{cursor:grabbing}
+.layer{position:absolute;left:0;top:0;transform-origin:0 0}
+.layer img{display:block;max-width:none;filter:var(--drawing-filter);user-select:none;-webkit-user-drag:none}
+.hit{position:absolute;border:2px solid var(--mark);background:var(--mark-soft);border-radius:3px;pointer-events:none}
+.hit.soft{border-width:1.5px;background:transparent;pointer-events:auto}
+.hit.hdr{border-style:dashed}
+.hit.on{animation:pulse 1.6s ease-out 2;border-width:3px}
+@keyframes pulse{0%{box-shadow:0 0 0 0 var(--mark)}100%{box-shadow:0 0 0 18px transparent}}
+@media (prefers-reduced-motion:reduce){.hit.soft{border-width:1.5px;background:transparent;pointer-events:auto}
+.hit.hdr{border-style:dashed}
+.hit.on{animation:none}}
+.placeholder{position:absolute;inset:0;display:grid;place-items:center;color:var(--muted);text-align:center;padding:24px}
+.placeholder b{font-family:var(--f-disp);font-size:22px;color:var(--ink);display:block;margin-bottom:6px;letter-spacing:.03em}
+.note{font-size:11.5px;color:var(--muted);padding:6px 12px;border-top:1px solid var(--rule)}
+.back{display:none}
+
+@media (max-width:900px){
+  main{grid-template-columns:1fr;grid-template-rows:auto 1fr}
+  nav.units{border-right:0;border-bottom:1px solid var(--rule);display:flex;overflow-x:auto;padding:6px 8px;gap:4px}
+  nav.units h2{display:none}
+  .unit{grid-template-columns:auto;padding:6px 10px;border-left:0;border-bottom:3px solid transparent;white-space:nowrap;width:auto}
+  .unit .n,.unit .k{display:none}
+  .unit[aria-current="true"]{border-bottom-color:var(--line)}
+  .panel{border-right:0}
+  .viewer{position:fixed;inset:0;z-index:20;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+  .viewer[data-open="false"]{display:none}
+  .back{display:inline-block}
+  .vbar .title{flex:1 1 calc(100% - 60px);order:-1}
+  .vbar .back{order:-2}
+  #vSub{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+}
+</style>
+
+<header>
+  <div class="brand"><b>P&amp;ID · PFD Xưởng Phụ Trợ</b><span id="brandSub">Nhà máy Đạm Phú Mỹ</span></div>
+  <div class="search">
+    <input id="q" type="search" placeholder="Tìm tag: 30-P-3001, PV-35003, 4-NHG-4502354, B1-01…" autocomplete="off" spellcheck="false" aria-label="Tìm đường ống, thiết bị, van">
+  </div>
+  <div class="chips" role="group" aria-label="Lọc theo loại">
+    <button class="chip" data-k="line" aria-pressed="false"><i class="dot d-line"></i>Đường ống</button>
+    <button class="chip" data-k="equipment" aria-pressed="false"><i class="dot d-equipment"></i>Thiết bị</button>
+    <button class="chip" data-k="valve" aria-pressed="false"><i class="dot d-valve"></i>Van</button>
+  </div>
+</header>
+
+<main>
+  <nav class="units" id="units" aria-label="Unit"></nav>
+  <section class="panel">
+    <div class="tabs" role="tablist">
+      <button role="tab" id="tabTags" aria-selected="true">Tag</button>
+      <button role="tab" id="tabSheets" aria-selected="false">Bản vẽ</button>
+    </div>
+    <div class="meta"><span id="count">Đang tải dữ liệu…</span><span id="updated"></span></div>
+    <div class="list" id="list"></div>
+  </section>
+  <section class="viewer" id="viewer" data-open="false">
+    <div class="vbar">
+      <button class="vbtn back" id="back" aria-label="Quay lại danh sách">←</button>
+      <div class="title"><b id="vTitle">Chưa mở bản vẽ</b><span id="vSub"></span></div>
+      <button class="vbtn" id="prev" aria-label="Vị trí trước" disabled>‹</button>
+      <span id="pos" class="mono" style="font-size:12px;color:var(--muted)"></span>
+      <button class="vbtn" id="next" aria-label="Vị trí tiếp" disabled>›</button>
+      <button class="vbtn" id="zout" aria-label="Thu nhỏ">−</button>
+      <button class="vbtn" id="zin" aria-label="Phóng to">+</button>
+      <button class="vbtn" id="fit" aria-label="Vừa khung">⤢</button>
+    </div>
+    <div class="stage" id="stage">
+      <div class="layer" id="layer"><img id="img" alt=""></div>
+      <div class="placeholder" id="ph"><div><b>Chọn một tag hoặc bản vẽ</b>Vị trí tag sẽ được tô vàng trên bản vẽ. Cuộn chuột hoặc chụm hai ngón để phóng to, kéo để di chuyển.</div></div>
+    </div>
+    <div class="note">Tag được nhận dạng tự động từ bản vẽ (OCR) và chỉ lấy trong vùng dòng công nghệ. Luôn đối chiếu với bản vẽ gốc trước khi thao tác.</div>
+  </section>
+</main>
+
+<script>
+const KIND={line:"Đường ống",equipment:"Thiết bị",valve:"Van"};
+let DB=null, state={unit:null,kinds:new Set(),q:"",tab:"tags",sel:null,occ:[],oi:0,sheet:null};
+const $=id=>document.getElementById(id);
+const normq=s=>s.toUpperCase().replace(/[\s"'”″\-_.]/g,"");
+
+fetch("data/data.json",{cache:"no-cache"}).then(r=>r.json()).then(d=>{
+  DB=d;
+  d.tags.forEach(t=>{t._n=normq(t.t);t._u=new Set(t.o.map(o=>d.sheets[o[0]].unit));});
+  d.sheets.forEach((s,i)=>s._i=i);
+  $("updated").textContent="Cập nhật "+d.updated;
+  renderUnits();render();
+}).catch(()=>{$("count").textContent="Không tải được dữ liệu (data/data.json).";});
+
+function renderUnits(){
+  const box=$("units");box.innerHTML='<h2>Unit</h2>';
+  const all=document.createElement("button");all.className="unit";
+  all.innerHTML=`<span class="c">ALL</span><span class="n">Tất cả Unit</span><span class="k">${DB.tags.length}</span>`;
+  all.onclick=()=>{state.unit=null;renderUnits();render();};
+  all.setAttribute("aria-current",state.unit===null);box.appendChild(all);
+  DB.units.forEach(u=>{
+    const n=DB.tags.filter(t=>t._u.has(u.code)).length;
+    const b=document.createElement("button");b.className="unit";b.title=u.name;
+    b.innerHTML=`<span class="c">${u.code}</span><span class="n">${u.name}</span><span class="k">${n}</span>`;
+    b.setAttribute("aria-current",state.unit===u.code);
+    b.onclick=()=>{state.unit=u.code;renderUnits();render();};
+    box.appendChild(b);
+  });
+}
+function esc(s){return s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+function hl(tag,q){
+  if(!q)return esc(tag);
+  // highlight by mapping normalized positions back to original characters
+  const map=[];let n="";
+  for(let i=0;i<tag.length;i++){const c=normq(tag[i]);if(c){n+=c;map.push(i);}}
+  const p=n.indexOf(q);if(p<0)return esc(tag);
+  const a=map[p],b=map[p+q.length-1]+1;
+  return esc(tag.slice(0,a))+"<mark>"+esc(tag.slice(a,b))+"</mark>"+esc(tag.slice(b));
+}
+function filtered(){
+  const q=normq(state.q);
+  let r=DB.tags.filter(t=>(!state.unit||t._u.has(state.unit))&&(!state.kinds.size||state.kinds.has(t.k))&&(!q||t._n.includes(q)));
+  if(q)r.sort((a,b)=>(a._n.startsWith(q)?0:1)-(b._n.startsWith(q)?0:1)||a.t.localeCompare(b.t));
+  return r;
+}
+function sheetLabel(s){return s.dwg||s.id;}
+function render(){
+  if(!DB)return;
+  const list=$("list");list.innerHTML="";
+  if(state.tab==="tags"){
+    const r=filtered(),q=normq(state.q),max=400;
+    $("count").textContent=`${r.length} tag`+(r.length>max?` · hiển thị ${max} đầu tiên`:"");
+    if(!r.length){list.innerHTML='<div class="empty">Không thấy tag phù hợp. Thử gõ ít ký tự hơn, ví dụ chỉ phần số "3001" hoặc "35003".</div>';return;}
+    const frag=document.createDocumentFragment();
+    r.slice(0,max).forEach(t=>{
+      const b=document.createElement("button");b.className="row";
+      const sh=[...new Set(t.o.map(o=>o[0]))];
+      b.innerHTML=`<div class="tag"><i class="dot d-${t.k}"></i>${hl(t.t,q)}</div><div class="sub">${KIND[t.k]} · ${esc(t.d||"")}${t.l?` · ghi trên bản vẽ: ${esc(t.l.join(", "))}`:""}${t.o.every(o=>o[5])?` · <em>chỉ đọc được ở khung tiêu đề thiết bị</em>`:""}</div><div class="refs">${sh.slice(0,3).map(i=>esc(sheetLabel(DB.sheets[i]))).join(" · ")}${sh.length>3?` +${sh.length-3}`:""}</div>`;
+      b.setAttribute("aria-current",state.sel===t);
+      b.onclick=()=>{state.sel=t;openTag(t);render();};
+      frag.appendChild(b);
+    });
+    list.appendChild(frag);
+  }else{
+    const ss=DB.sheets.filter(s=>!state.unit||s.unit===state.unit);
+    $("count").textContent=`${ss.length} bản vẽ`;
+    ss.forEach(s=>{
+      const n=DB.tags.filter(t=>t.o.some(o=>o[0]===s._i)).length;
+      const b=document.createElement("button");b.className="row sheetrow";
+      b.innerHTML=`<div class="tag">${esc(s.title||"Bản vẽ")}</div><div class="refs">${s.kind} · ${esc(sheetLabel(s))} · Unit ${s.unit} · ${n} tag</div>`;
+      b.setAttribute("aria-current",state.sheet===s._i&&!state.sel);
+      b.onclick=()=>{state.sel=null;const all=[];DB.tags.forEach(t=>t.o.forEach(o=>{if(o[0]===s._i)all.push([...o,t.t]);}));openSheet(s._i,all);render();};
+      list.appendChild(b);
+    });
+  }
+}
+$("q").addEventListener("input",e=>{state.q=e.target.value;if(state.tab!=="tags")setTab("tags");else render();});
+document.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{const k=c.dataset.k;state.kinds.has(k)?state.kinds.delete(k):state.kinds.add(k);c.setAttribute("aria-pressed",state.kinds.has(k));render();});
+function setTab(t){state.tab=t;$("tabTags").setAttribute("aria-selected",t==="tags");$("tabSheets").setAttribute("aria-selected",t==="sheets");render();}
+$("tabTags").onclick=()=>setTab("tags");$("tabSheets").onclick=()=>setTab("sheets");
+
+/* ---- viewer ---- */
+const stage=$("stage"),layer=$("layer"),img=$("img");
+let view={s:1,x:0,y:0},cur=null;
+function apply(){layer.style.transform=`translate(${view.x}px,${view.y}px) scale(${view.s})`;}
+function openTag(t){
+  state.occ=t.o;state.oi=0;
+  $("viewer").dataset.open="true";
+  showOcc();
+}
+function showOcc(){
+  const o=state.occ[state.oi];
+  openSheet(o[0],state.occ.filter(p=>p[0]===o[0]),o);
+  $("pos").textContent=`${state.oi+1}/${state.occ.length}`;
+  $("prev").disabled=$("next").disabled=state.occ.length<2;
+}
+function openSheet(i,hits,focus){
+  const s=DB.sheets[i];state.sheet=i;
+  $("viewer").dataset.open="true";$("ph").hidden=true;
+  $("vTitle").textContent=s.title||sheetLabel(s);
+  $("vSub").textContent=`${s.kind} · ${sheetLabel(s)} · Unit ${s.unit}`;$("vSub").title=s.src||"";
+  if(!focus){$("pos").textContent="";$("prev").disabled=$("next").disabled=true;}
+  layer.querySelectorAll(".hit").forEach(h=>h.remove());
+  const draw=()=>{
+    hits.forEach(o=>{const d=document.createElement("div");d.className="hit"+(o===focus?" on":"")+(focus?"":" soft")+(o[5]===1?" hdr":"");d.title=o[5]||"";
+      const pad=0.004;
+      Object.assign(d.style,{left:((o[1]-pad)*s.w)+"px",top:((o[2]-pad)*s.h)+"px",width:((o[3]+2*pad)*s.w)+"px",height:((o[4]+2*pad)*s.h)+"px"});layer.appendChild(d);});
+    if(focus)zoomTo(focus,s);else fit();
+  };
+  if(cur!==s.img){cur=s.img;img.width=s.w;img.height=s.h;img.onload=null;img.src=s.img;}
+  draw();
+}
+function fit(){const s=DB.sheets[state.sheet];if(!s)return;const r=stage.getBoundingClientRect();view.s=Math.min(r.width/s.w,r.height/s.h);view.x=(r.width-s.w*view.s)/2;view.y=(r.height-s.h*view.s)/2;apply();}
+function zoomTo(o,s){const r=stage.getBoundingClientRect();view.s=Math.max(Math.min(r.width/s.w,r.height/s.h)*4,0.55);
+  const cx=(o[1]+o[3]/2)*s.w,cy=(o[2]+o[4]/2)*s.h;view.x=r.width/2-cx*view.s;view.y=r.height/2-cy*view.s;apply();}
+function zoomAt(f,px,py){const ns=Math.min(Math.max(view.s*f,0.05),4);view.x=px-(px-view.x)*ns/view.s;view.y=py-(py-view.y)*ns/view.s;view.s=ns;apply();}
+stage.addEventListener("wheel",e=>{e.preventDefault();const r=stage.getBoundingClientRect();zoomAt(Math.exp(-e.deltaY*0.0015),e.clientX-r.left,e.clientY-r.top);},{passive:false});
+const ptrs=new Map();let last=null,pinch=null;
+stage.addEventListener("pointerdown",e=>{stage.setPointerCapture(e.pointerId);ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});stage.classList.add("drag");});
+stage.addEventListener("pointermove",e=>{
+  if(!ptrs.has(e.pointerId))return;const p=ptrs.get(e.pointerId);
+  if(ptrs.size===1){view.x+=e.clientX-p.x;view.y+=e.clientY-p.y;apply();}
+  else if(ptrs.size===2){const [a,b]=[...ptrs.values()];const d0=Math.hypot(a.x-b.x,a.y-b.y);p.x=e.clientX;p.y=e.clientY;const [c,dd]=[...ptrs.values()];const d1=Math.hypot(c.x-dd.x,c.y-dd.y);const r=stage.getBoundingClientRect();if(d0>0)zoomAt(d1/d0,(c.x+dd.x)/2-r.left,(c.y+dd.y)/2-r.top);return;}
+  p.x=e.clientX;p.y=e.clientY;});
+const up=e=>{ptrs.delete(e.pointerId);if(!ptrs.size)stage.classList.remove("drag");};
+stage.addEventListener("pointerup",up);stage.addEventListener("pointercancel",up);
+$("zin").onclick=()=>{const r=stage.getBoundingClientRect();zoomAt(1.4,r.width/2,r.height/2);};
+$("zout").onclick=()=>{const r=stage.getBoundingClientRect();zoomAt(1/1.4,r.width/2,r.height/2);};
+$("fit").onclick=fit;
+$("prev").onclick=()=>{state.oi=(state.oi-1+state.occ.length)%state.occ.length;showOcc();};
+$("next").onclick=()=>{state.oi=(state.oi+1)%state.occ.length;showOcc();};
+$("back").onclick=()=>{$("viewer").dataset.open="false";};
+window.addEventListener("resize",()=>{if(state.sheet!=null&&!state.sel)fit();});
+</script>

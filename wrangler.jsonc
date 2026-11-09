@@ -1,0 +1,8 @@
+{
+  // Web tĩnh tra cứu P&ID: Cloudflare phục vụ nguyên thư mục web/
+  "name": "quanlysanxuatpt",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./web"
+  }
+}

@@ -51,6 +51,29 @@ def header_bottom(sid, words):
     return bottom + 0.006
 
 HEADBOX = {}
+INCLUDE_HEADER_ONLY = False   # user: list only equipment drawn in the main process area
+
+REFW = re.compile(r"^\(?(FROM|FRM|FR|TO|FOR|SEE|VIA|EX)[.:]?$")
+
+def is_reference(t, words):
+    tag, typ, sub, x, y, w, h = t[:7]
+    vert = h > w * 1.5
+    th = w if vert else h
+    for wd in words:
+        tx = P.norm(wd[0])
+        # "FROM" glued to the tag in one OCR word
+        if wd[6] == (1 if vert else 0) and re.match(r"^\(?(FROM|TO|FOR)\d", tx) and abs(wd[1] - x) < th * 1.5 and abs(wd[2] - y) < th * 1.5:
+            return True
+        if not REFW.match(tx): continue
+        if vert:
+            if wd[6] != 1: continue
+            gap = wd[2] - (y + h)          # vertical text reads bottom->top: the word before is below
+            if -th * 0.5 < gap < th * 4 and abs((wd[1] + wd[3] / 2) - (x + w / 2)) < th * 0.8: return True
+        else:
+            if wd[6] != 0: continue
+            gap = x - (wd[1] + wd[3])
+            if -th * 0.5 < gap < th * 4 and abs((wd[2] + wd[4] / 2) - (y + h / 2)) < th * 0.8: return True
+    return False
 
 PIPE_SIZES = {"1/2", "3/4", "1", "1-1/4", "1-1/2", "2", "2-1/2", "3", "4", "5", "6", "8", "10", "12", "14", "16", "18", "20",
               "22", "24", "26", "28", "30", "32", "34", "36", "40", "42", "44", "48", "52", "54", "56", "60", "64", "66", "72", "80"}
@@ -285,6 +308,9 @@ def main():
                     if OKH.match(nm) and not nm.startswith("39-"): hdr.append((nm, t))
         cands = [(t, s) for t, s in cands if in_area(sid, t[3] + t[5] / 2, t[4] + t[6] / 2) and not header_title(d["words"], t)]
         found = resolve(cands)
+        # equipment named only in a stream label ("FROM 10-E3005", "TO 10-V8001", "(FOR 10-P8001A") is a reference, not the equipment
+        allw = d["words"] + (d2["words"] if os.path.exists(p2) else [])
+        found = [t for t in found if not (t[1] == "equipment" and is_reference(t, allw))]
         if False and HT:
             have = {t[0] for t in found if t[1] == "equipment"}
             missing = HT - have
@@ -348,7 +374,7 @@ def main():
             names_here |= expand(t[0]) if t[1] == "equipment" else {t[0]}
         seen_h = set()
         import difflib
-        for nm, t in hdr:
+        for nm, t in ([] if not INCLUDE_HEADER_ONLY else hdr):
             if nm in names_here or nm in seen_h: continue
             if any(near_dup(nm, o) for o in names_here | seen_h): continue
             seen_h.add(nm)

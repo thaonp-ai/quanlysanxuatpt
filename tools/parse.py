@@ -61,6 +61,11 @@ def extract(d, area):
                 if a in m.group(1) + m.group(2) + m.group(3):
                     extra.append((a + "-" + m.group(4), w)); break
         if t2 != t: extra.append((t2, w))
+    # area code with its first digit lost: "0-B8001/K1" on an area-10 sheet
+    if area:
+        for t, w in list(cands) + extra:
+            if re.match(r"^\d-[A-Z]{1,3}-?\d{4}", t) and t[0] == area[1]:
+                extra.append((area[0] + t, w))
     cands += extra
     # join neighbours on same line (horizontal OCR) to catch split tags
     hz = [w for w in words if w[6] == 0]

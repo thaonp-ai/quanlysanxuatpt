@@ -53,6 +53,7 @@ Web bắt buộc đăng nhập: chưa đăng nhập thì không mở được tr
   - **Chỉ xem**: tra cứu, xuất Excel.
   - **Được sửa tag**: thêm quyền sửa tên, ẩn, thêm tag.
   - **Quản trị**: thêm quyền quản lý tài khoản.
+- Thêm nhiều người một lúc: **Nhập từ Excel** → **Tải file mẫu**, điền các cột Tên đăng nhập, Họ tên, Quyền, Mật khẩu (để trống thì web tự tạo) → **Chọn file Excel** → kiểm tra bảng xem trước → **Tạo tài khoản** → **Tải danh sách mật khẩu** để gửi cho từng người. Tài khoản đã có sẽ bỏ qua, không ghi đè.
 - Người dùng tự đổi mật khẩu ở trang **Tài khoản**. Quên mật khẩu: quản trị viên vào Sửa → đặt lại mật khẩu.
 - Khóa tài khoản / đổi quyền / đặt lại mật khẩu: người đó bị đăng xuất ngay (chậm nhất ~30 giây).
 - Nhập sai mật khẩu 8 lần liên tiếp: tạm khóa đăng nhập 15 phút.

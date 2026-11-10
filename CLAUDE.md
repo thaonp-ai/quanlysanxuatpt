@@ -13,7 +13,7 @@ Repo chứa web tĩnh tra cứu P&ID/PFD Xưởng Phụ Trợ (Đạm Phú Mỹ)
 ## Chỉnh sửa trên web (người dùng tự sửa)
 - `worker.js` (Cloudflare Worker) phục vụ `web/` và API `/api/edits`, lưu chỉnh sửa vào KV binding `EDITS`, khóa `state` = `{edits, log}`.
   - Khóa tag: `o:<tên OCR gốc trong data.json>` (sửa tên/loại/ghi chú/ẩn) hoặc `n:<id>` (tag thêm thủ công, có `o: [[sheet_id, x, y, w, h]]`).
-- Đăng nhập bắt buộc (worker chạy trước mọi request, `run_worker_first: true`): cookie `pid_session` ký HMAC; tài khoản ở KV `auth:users` (PBKDF2), quyền admin/editor/viewer; admin dựng sẵn = tên `admin` + secret `ADMIN_PASSWORD`. Trang `/login`, `/account` (đổi mật khẩu, quản lý tài khoản) nằm trong worker.js. Chỉ editor/admin được POST `/api/edits`; "by" = họ tên tài khoản.
+- Đăng nhập bắt buộc (worker chạy trước mọi request, `run_worker_first: true`): cookie `pid_session` ký HMAC; tài khoản ở KV `auth:users` (PBKDF2), quyền admin/editor/viewer; admin dựng sẵn = tên `admin` + secret `ADMIN_PASSWORD`. Trang `/login`, `/account` (đổi mật khẩu, quản lý tài khoản) nằm trong worker.js. Nhập tài khoản từ Excel: `web/account-import.js` + `web/xlsx.js` (đọc/ghi xlsx), mật khẩu băm PBKDF2 ở trình duyệt rồi POST `/api/users` `{action:"bulk"}`. Chỉ editor/admin được POST `/api/edits`; "by" = họ tên tài khoản.
 - Web gộp `data.json` + chỉnh sửa khi hiển thị; nút "Xuất Excel" xuất danh sách + sheet lịch sử.
 - Khi dựng lại `data.json`, KHÔNG đổi tên OCR gốc của tag đã có chỉnh sửa trên web, nếu không khóa `o:` sẽ không khớp nữa. Muốn đưa chỉnh sửa web vào dữ liệu gốc: lấy file Excel người dùng xuất (cột "Tên OCR gốc" → "Tag"), thêm vào `tools/overrides.json`, rồi nhắc người dùng rằng các mục đó vẫn còn trong KV (vẫn hiển thị đúng vì tên mới trùng).
 

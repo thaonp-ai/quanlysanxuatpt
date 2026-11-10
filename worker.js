@@ -239,6 +239,14 @@ tr.off td{color:var(--muted)}
 td .btn{padding:5px 10px;font-size:12.5px}
 .scrim{position:fixed;inset:0;background:rgba(10,18,26,.45);display:grid;place-items:center;padding:16px;z-index:20}
 .dlg{background:var(--sheet);border-radius:10px;border:1px solid var(--rule);width:100%;max-width:440px;padding:20px;display:flex;flex-direction:column;gap:12px;max-height:calc(100vh - 32px);overflow:auto}
+.dlg.wide{max-width:860px}
+.filebtn{display:inline-flex;align-items:center;font-size:13.5px;font-weight:500;color:var(--sheet)}
+.imp td,.imp th{padding:6px 8px;font-size:13px}
+.imp table{min-width:600px}
+.imp tr.bad td{color:var(--err)}
+.imp tr.skip td{color:var(--muted)}
+.imp td.st{font-size:12.5px}
+.prog{font-size:13px;color:var(--muted)}
 .dlg h3{margin:0;font-family:var(--f-disp);font-size:20px;text-transform:uppercase;letter-spacing:.03em}
 .chk{flex-direction:row;align-items:center;gap:8px;font-weight:400;color:var(--ink);font-size:13px}
 .acts{display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap}
@@ -257,7 +265,7 @@ td .btn{padding:5px 10px;font-size:12.5px}
     </form>
   </section>
   <section id="usersSec" hidden>
-    <div class="row" style="justify-content:space-between"><h2>Quản lý tài khoản</h2><button class="btn primary" id="btnNew">+ Thêm tài khoản</button></div>
+    <div class="row" style="justify-content:space-between"><h2>Quản lý tài khoản</h2><span class="row"><button class="btn" id="btnImp">Nhập từ Excel</button><button class="btn primary" id="btnNew">+ Thêm tài khoản</button></span></div>
     <p class="hint"><b>Chỉ xem</b>: tra cứu, xuất Excel. <b>Được sửa tag</b>: thêm vào đó sửa tên, ẩn, thêm tag trên bản vẽ. <b>Quản trị</b>: thêm vào đó quản lý tài khoản. Khi khóa tài khoản, đổi quyền hoặc đặt lại mật khẩu, người đó bị đăng xuất trong vòng khoảng 30 giây.</p>
     <div class="tbl"><table><thead><tr><th>Tên đăng nhập</th><th>Họ tên</th><th>Quyền</th><th>Trạng thái</th><th>Cập nhật</th><th></th></tr></thead><tbody id="tbody"><tr><td colspan="6">Đang tải…</td></tr></tbody></table></div>
   </section>
@@ -275,6 +283,17 @@ td .btn{padding:5px 10px;font-size:12.5px}
     <div class="acts"><button type="button" class="btn danger left" id="uDel" hidden>Xóa tài khoản</button><button type="button" class="btn" id="uCancel">Hủy</button><button class="btn primary" type="submit" id="uSave">Lưu</button></div>
   </form>
 </div>
+<div class="scrim" id="impScrim" hidden>
+  <div class="dlg wide" role="dialog" aria-modal="true" aria-labelledby="impTitle">
+    <h3 id="impTitle">Nhập tài khoản từ Excel</h3>
+    <p class="hint">Dòng đầu là tiêu đề, gồm các cột <b>Tên đăng nhập</b>, <b>Họ tên</b>, <b>Quyền</b> (Chỉ xem / Được sửa tag / Quản trị; để trống là Chỉ xem), <b>Mật khẩu</b> (để trống thì web tự tạo). Tài khoản đã có sẽ được bỏ qua, không bị ghi đè.</p>
+    <div class="row"><button type="button" class="btn" id="impTpl">Tải file mẫu</button><label class="btn primary filebtn">Chọn file Excel…<input type="file" id="impFileIn" accept=".xlsx,.csv" hidden></label><span class="prog" id="impFile"></span></div>
+    <div class="tbl imp" id="impPrev"></div>
+    <div class="err" id="impErr" hidden></div>
+    <div class="acts"><span class="prog left" id="impProg"></span><button type="button" class="btn" id="impCancel">Đóng</button><button type="button" class="btn primary" id="impGo" disabled>Tạo tài khoản</button></div>
+  </div>
+</div>
+<script src="/xlsx.js"></script>
 <script>
 const $=id=>document.getElementById(id);
 const ROLES=${JSON.stringify(ROLES)};
@@ -324,6 +343,7 @@ $("pwForm").addEventListener("submit",async e=>{e.preventDefault();const m=$("pw
   try{await call("/api/password",{old:$("pwOld").value,new:$("pwNew").value});m.className="ok";m.textContent="Đã đổi mật khẩu.";e.target.reset();}
   catch(err){m.className="err";m.textContent=err.message;}});
 </script>
+<script src="/account-import.js"></script>
 </body></html>`;
 }
 
@@ -444,6 +464,27 @@ async function handleUsers(req, env, me) {
     delete users[u];
     await saveUsers(env, users);
     return json(list(users));
+  }
+  if (b.action === "bulk") {
+    // nhập nhiều tài khoản từ Excel; mật khẩu đã được băm PBKDF2 ở trình duyệt quản trị viên (tránh vượt giới hạn CPU)
+    if (!Array.isArray(b.items) || !b.items.length || b.items.length > 500) return json({ error: "Danh sách cần từ 1 đến 500 tài khoản" }, 400);
+    const created = [], skipped = [];
+    for (const it of b.items) {
+      const iu = (clean(it && it.u, 40) || "").toLowerCase();
+      const iname = clean(it && it.name, 60);
+      let why = "";
+      if (!/^[a-z0-9._-]{3,32}$/.test(iu)) why = "Tên đăng nhập không hợp lệ";
+      else if (iu === "admin") why = "Tên “admin” không dùng được";
+      else if (users[iu]) why = "Đã có tài khoản này";
+      else if (!ROLES[it.role]) why = "Quyền không hợp lệ";
+      else if (!iname) why = "Thiếu họ tên";
+      else if (!/^[0-9a-f]{32}$/.test(it.salt || "") || !/^[0-9a-f]{64}$/.test(it.hash || "")) why = "Mật khẩu không hợp lệ";
+      if (why) { skipped.push({ u: iu, reason: why }); continue; }
+      users[iu] = { name: iname, role: it.role, salt: it.salt, hash: it.hash, disabled: false, created: now, updated: now, v: hex(crypto.getRandomValues(new Uint8Array(6))) };
+      created.push(iu);
+    }
+    if (created.length) await saveUsers(env, users);
+    return json({ users: list(users), created, skipped });
   }
   if (b.action !== "save") return json({ error: "Thao tác không hợp lệ" }, 400);
   if (!/^[a-z0-9._-]{3,32}$/.test(u)) return json({ error: "Tên đăng nhập 3–32 ký tự, chỉ gồm chữ thường không dấu, số, dấu . _ -" }, 400);

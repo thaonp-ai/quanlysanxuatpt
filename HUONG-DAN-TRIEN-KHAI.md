@@ -37,3 +37,11 @@ Bản vẽ P&ID là tài liệu nội bộ của nhà máy. Nên bật **Cloudfl
 - Tag được nhận dạng tự động (OCR) từ bản vẽ, chỉ trong vùng dòng công nghệ (đã bỏ khung tên, ghi chú, bảng stream, danh sách thiết bị bên phải).
 - OCR có thể đọc sai hoặc bỏ sót một số tag. Khi phát hiện, chỉ cần nói với Claude, ví dụ: “Trên bản vẽ 2539-31-PID-0031-05 thiếu van 30-PV-31005” hoặc “Sửa tag 30-P-3O01A thành 30-P-3001A”.
 - Khi có bản vẽ mới / sửa đổi: đặt file PDF vào thư mục `PIDvaQLSX` và nhờ Claude chạy lại nhận dạng cho trang đó.
+
+## Chỉnh sửa tag trên web
+
+- Bấm **Sửa** cạnh tag để đổi tên, đổi loại, ghi chú hoặc ẩn tag đọc nhầm. Thiếu tag: mở bản vẽ, bấm **+ Thêm tag** rồi bấm vào vị trí trên bản vẽ.
+- Chỉnh sửa lưu chung trên Cloudflare (Workers KV, gói miễn phí), mọi người dùng thấy giống nhau, có lịch sử (ai sửa, lúc nào).
+- **Xuất Excel**: danh sách đang lọc hoặc toàn bộ, kèm sheet lịch sử chỉnh sửa.
+- Giới hạn quyền sửa (nên làm nếu chưa bật Cloudflare Access): Cloudflare → Workers & Pages → quanlysanxuatpt → **Settings → Variables and Secrets → Add** → loại **Secret**, tên `EDIT_PASSWORD`, giá trị là mã sửa. Người sửa nhập mã này một lần trong hộp thoại Sửa.
+- Nếu bật Cloudflare Access, cột "Người sửa" tự lấy email đăng nhập.

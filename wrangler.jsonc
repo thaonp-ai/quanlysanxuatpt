@@ -1,8 +1,15 @@
 {
-  // Web tĩnh tra cứu P&ID: Cloudflare phục vụ nguyên thư mục web/
+  // Web tĩnh tra cứu P&ID (thư mục web/) + API lưu chỉnh sửa tag (worker.js, Cloudflare KV)
   "name": "quanlysanxuatpt",
+  "main": "worker.js",
   "compatibility_date": "2026-10-01",
   "assets": {
-    "directory": "./web"
-  }
+    "directory": "./web",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  // KV lưu chỉnh sửa: Wrangler (>= 4.45) tự tạo namespace ở lần deploy đầu nếu chưa có id
+  "kv_namespaces": [{ "binding": "EDITS" }],
+  // Giữ biến/secret đặt trên dashboard (ví dụ EDIT_PASSWORD) khi deploy lại
+  "keep_vars": true
 }

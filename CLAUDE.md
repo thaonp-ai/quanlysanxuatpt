@@ -10,6 +10,13 @@ Repo chứa web tĩnh tra cứu P&ID/PFD Xưởng Phụ Trợ (Đạm Phú Mỹ)
   - Cập nhật trường `updated` (dd/mm/yyyy).
 - Nhưng lưu ý: nếu sau này dựng lại bằng `tools/build.py`, sửa tay trong data.json sẽ bị ghi đè. Sửa tên tag lâu dài: thêm cặp `"tag OCR": "tag đúng"` vào `tools/overrides.json` (build.py áp dụng ở bước cuối); tên bản vẽ/Unit: `tools/sheetfix.json` / `tools/units.json`.
 
+## Chỉnh sửa trên web (người dùng tự sửa)
+- `worker.js` (Cloudflare Worker) phục vụ `web/` và API `/api/edits`, lưu chỉnh sửa vào KV binding `EDITS`, khóa `state` = `{edits, log}`.
+  - Khóa tag: `o:<tên OCR gốc trong data.json>` (sửa tên/loại/ghi chú/ẩn) hoặc `n:<id>` (tag thêm thủ công, có `o: [[sheet_id, x, y, w, h]]`).
+  - Nếu đặt secret `EDIT_PASSWORD` trên Cloudflare, POST cần header `x-edit-key`.
+- Web gộp `data.json` + chỉnh sửa khi hiển thị; nút "Xuất Excel" xuất danh sách + sheet lịch sử.
+- Khi dựng lại `data.json`, KHÔNG đổi tên OCR gốc của tag đã có chỉnh sửa trên web, nếu không khóa `o:` sẽ không khớp nữa. Muốn đưa chỉnh sửa web vào dữ liệu gốc: lấy file Excel người dùng xuất (cột "Tên OCR gốc" → "Tag"), thêm vào `tools/overrides.json`, rồi nhắc người dùng rằng các mục đó vẫn còn trong KV (vẫn hiển thị đúng vì tên mới trùng).
+
 ## Dựng lại dữ liệu từ OCR
 Các script dùng đường dẫn cứng `/home/claude/work` và PDF ở `/mnt/user-data/uploads/PIDvaQLSX/`.
 1. `mkdir -p /home/claude/work && cp tools/* /home/claude/work/ && cd /home/claude/work && tar xzf ocr-cache.tar.gz` (gồm ocr, ocr2, bub, bub2, verify, fix35, sizecheck, tb)

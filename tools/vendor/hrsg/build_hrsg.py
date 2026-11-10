@@ -42,11 +42,11 @@ def group_of(c):
     if c in ("6212-P-009.1", "6212-P-009.2", "6212-P-028") or c in ("6212-M-406", "6212-M-409"): return G_SV
     if c.startswith("6212-P-009."): return G_BMS
     if k == "STR" or c == "6212-P-018": return G_FAN
-    if c in ("6212-P-027",) or c.startswith("6212-P-043") or c == "6212-P-034": return G_BMS
+    if c in ("6212-P-027",) or c.startswith("6212-P-043") or c.startswith("6212-P-034"): return G_BMS
     if c in ("6212-P-024", "6212-P-035", "6212-P-036", "6212-P-039", "6212-P-053", "6212-P-063.1") or c.startswith("6212-P-037"): return G_INS
     if c == "6212-P-068": return G_OM
-    if c in ("6212-P-088", "6212-P-060"): return G_SP
-    if c == "6212-P-004": return G_DS
+    if c.startswith("6212-P-088") or c == "6212-P-060": return G_SP
+    if c.startswith("6212-P-004"): return G_DS
     if c == "6212-P-063": return G_GEN
     if k == "DG":
         if n in (5, 6, 7, 8, 13, 14, 15): return G_PS
@@ -129,5 +129,9 @@ for b in range(1, 11):
          6: "Book 6 – Bộ tiêu âm, đầu đốt, damper/quạt, data sheet, thiết bị đo, BMS"}.get(b, f"Book {b} – Inspection book (hồ sơ kiểm tra chế tạo) vol. {b}")
     docs.append({"p": f"HRSG/BOOK{b}.pdf", "t": t, "g": G_IB if b >= 7 else "Bộ sách đầy đủ", "tags": [B], "no": "", "kb": 0,
                  "src": "Vendor Data Book SICES · 2098 MR 0161.01"})
+for f, t in (("10B9001LC1 LOGIC.bmp", "Thử nghiệm van 10-HV-9297 – logic 10-B-9001 LC1 (ảnh chụp)"),
+             ("FullScreen1_1_s1.bmp", "Thử nghiệm van 10-HV-9297 – màn hình 1 (ảnh chụp)"),
+             ("FullScreen1_2_s1.bmp", "Thử nghiệm van 10-HV-9297 – màn hình 2 (ảnh chụp)")):
+    docs.append({"p": "HRSG/Test 10-HV-9297/" + f, "t": t, "g": G_BMS, "tags": [B, "10-HV-9297", "HV-9297"], "no": "", "kb": 0, "src": "Thư mục Test 10-HV-9297"})
 json.dump(docs, open(os.path.join(HERE, "docs.json"), "w"), ensure_ascii=False, indent=0)
 print(len(docs), "tài liệu HRSG")

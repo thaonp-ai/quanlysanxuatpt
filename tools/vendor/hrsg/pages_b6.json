@@ -1,0 +1,275 @@
+[
+[
+"6212-P-009.1",
+"By Pass Stack Silencer",
+6,
+17,
+17
+],
+[
+"6212-P-009.2",
+"Start Up Silencer",
+6,
+18,
+18
+],
+[
+"6212-P-009.3",
+"General Arrangement Fired Duct Burner",
+6,
+19,
+19
+],
+[
+"6212-P-009.4",
+"Details Fired Duct Burner",
+6,
+20,
+20
+],
+[
+"6212-P-009.5",
+"Multilouver Damper 4189x3250x600",
+6,
+21,
+21
+],
+[
+"6212-P-009.6",
+"Biplane Damper 3882x3250x600",
+6,
+22,
+22
+],
+[
+"6212-STR-001",
+"Double Butterfly Damper",
+6,
+23,
+23
+],
+[
+"6212-STR-002",
+"Purge Fan",
+6,
+24,
+24
+],
+[
+"6212-STR-003",
+"Sealing Fan",
+6,
+25,
+25
+],
+[
+"6212-STR-004",
+"Guillotine",
+6,
+26,
+26
+],
+[
+"6212-STR-005",
+"Mechanical Devices For Guillotine Actions",
+6,
+27,
+27
+],
+[
+"6212-STR-006",
+"Damper 6\"",
+6,
+28,
+28
+],
+[
+"6212-STR-007",
+"Damper 4\"",
+6,
+29,
+29
+],
+[
+"6212-STR-008",
+"Fan Outlet Damper",
+6,
+30,
+30
+],
+[
+"6212-P-004",
+"Mechanical Data Sheets",
+6,
+31,
+36
+],
+[
+"6212-P-004.P",
+"Process Data Sheets",
+6,
+37,
+45
+],
+[
+"6212-P-024",
+"List Of Instruments",
+6,
+46,
+69
+],
+[
+"6212-P-035",
+"Electrical Power, Instrument Air Consumption & Heat Dissipation Data Sheet",
+6,
+70,
+73
+],
+[
+"6212-P-036",
+"Junction Boxes",
+6,
+74,
+87
+],
+[
+"6212-P-039",
+"Instrument Hook-Up Drawings",
+6,
+88,
+98
+],
+[
+"6212-P-037.1",
+"JB Position And Cable Trays (1)",
+6,
+99,
+99
+],
+[
+"6212-P-037.2",
+"JB Position And Cable Trays (2)",
+6,
+100,
+100
+],
+[
+"6212-P-037.3",
+"JB Position And Cable Trays (3)",
+6,
+101,
+101
+],
+[
+"6212-P-018",
+"Electric Motor Drawings",
+6,
+102,
+104
+],
+[
+"6212-P-053",
+"Terminal Block Drawing",
+6,
+105,
+107
+],
+[
+"6212-P-060",
+"List Of Spare Parts For Erection, Commissioning And Start-Up",
+6,
+108,
+109
+],
+[
+"6212-P-088.6",
+"List Of Spare Parts For 2 Years Operation",
+6,
+110,
+129
+],
+[
+"6212-P-027",
+"Control System Description, Operating Principles, Functional Design Specification",
+6,
+130,
+147
+],
+[
+"6212-P-028",
+"Safety Valves",
+6,
+148,
+151
+],
+[
+"6212-P-043.A",
+"BMS PLC Logic Cabinet - Serial Links",
+6,
+152,
+153
+],
+[
+"6212-P-043.C",
+"BMS Modbus Interface - I/O List",
+6,
+154,
+183
+],
+[
+"6212-P-043.B",
+"BMS Sequences Description",
+6,
+184,
+200
+],
+[
+"6212-P-034",
+"BMS PLC Logic Cabinet - Arrangement Drawing",
+6,
+201,
+205
+],
+[
+"6212-P-034.1",
+"BMS PLC Logic Cabinet - Electrical Connection Diagram",
+6,
+206,
+218
+],
+[
+"6212-P-034.2",
+"10-LCP-06 BMS Local Panel - Schematic Diagram",
+6,
+219,
+220
+],
+[
+"6212-P-034.3",
+"10-LCP-06 BMS Local Panel - Arrangement Drawing",
+6,
+221,
+222
+],
+[
+"6212-P-034.4",
+"10-LCP-06 BMS Local Panel - Electrical Connections Diagram",
+6,
+223,
+224
+],
+[
+"6212-P-043.D",
+"BMS PLC Logic Diagrams (HIMA ELOP II) & Test Certificate",
+6,
+225,
+309
+],
+[
+"6212-P-043.E",
+"BMS PLC Logic Cabinet - Schematic Diagram",
+6,
+310,
+398
+]
+]

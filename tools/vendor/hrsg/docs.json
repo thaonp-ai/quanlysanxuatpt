@@ -1,0 +1,3277 @@
+[
+{
+"p": "HRSG/Tach theo tai lieu/P-063 - Guideline For Mechanical Erection (HRSG field erection procedure).pdf",
+"t": "Guideline For Mechanical Erection (HRSG field erection procedure)",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-063",
+"kb": 1707,
+"src": "Book 1 · trang 17–43 (27 tr.)",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 17
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-063.1 - Guideline For Instrumental Erection.pdf",
+"t": "Guideline For Instrumental Erection",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-063.1",
+"kb": 1631,
+"src": "Book 1 · trang 45–59 (15 tr.)",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 45
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-068 - Commissioning, Operating And Maintenance Manual.pdf",
+"t": "Commissioning, Operating And Maintenance Manual",
+"g": "Vận hành & bảo dưỡng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-068",
+"kb": 2958,
+"src": "Book 1 · trang 61–102 (42 tr.)",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 61
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-088 - List Of Spare Parts For 2 Years Operation.pdf",
+"t": "List Of Spare Parts For 2 Years Operation",
+"g": "Phụ tùng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-088",
+"kb": 5156,
+"src": "Book 1 · trang 104–123 (20 tr.)",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 104
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-01-Sh.1 - Boiler Assembly Longitudinal View (Right Side).pdf",
+"t": "Boiler Assembly Longitudinal View (Right Side)",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-DG-01-Sh.1",
+"kb": 1324,
+"src": "Book 1 · trang 125",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 125
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-01-Sh.2 - Boiler Assembly Sections C-C, D-D, E-E, H-H.pdf",
+"t": "Boiler Assembly Sections C-C, D-D, E-E, H-H",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-DG-01-Sh.2",
+"kb": 1545,
+"src": "Book 1 · trang 126",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 126
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-01-Sh.3 - Boiler Assembly Section A-A.pdf",
+"t": "Boiler Assembly Section A-A",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-DG-01-Sh.3",
+"kb": 1256,
+"src": "Book 1 · trang 127",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 127
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-01-Sh.4 - Boiler Assembly Longitudinal View (Left Side).pdf",
+"t": "Boiler Assembly Longitudinal View (Left Side)",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-DG-01-Sh.4",
+"kb": 1219,
+"src": "Book 1 · trang 128",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 128
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-02-Sh.1 - Foundations.pdf",
+"t": "Foundations",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-DG-02-Sh.1",
+"kb": 1110,
+"src": "Book 1 · trang 129",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 129
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-02-Sh.2 - Foundation Details.pdf",
+"t": "Foundation Details",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-DG-02-Sh.2",
+"kb": 1320,
+"src": "Book 1 · trang 130",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 130
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-03 - Pressure Part Assembly.pdf",
+"t": "Pressure Part Assembly",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-DG-03",
+"kb": 1917,
+"src": "Book 1 · trang 131",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 131
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-04-Sh.1 - Piping Lay Out Longitudinal View (Right Side).pdf",
+"t": "Piping Lay Out Longitudinal View (Right Side)",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-DG-04-Sh.1",
+"kb": 2738,
+"src": "Book 1 · trang 132",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 132
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-04-Sh.2 - Piping Lay Out Plan View.pdf",
+"t": "Piping Lay Out Plan View",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-DG-04-Sh.2",
+"kb": 2806,
+"src": "Book 1 · trang 133",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 133
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-04-Sh.3 - Piping Lay Out Section.pdf",
+"t": "Piping Lay Out Section",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-DG-04-Sh.3",
+"kb": 2038,
+"src": "Book 1 · trang 134",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 134
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-05 - Assembly Module 1.pdf",
+"t": "Assembly Module 1",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001",
+"10-B-9001/E3"
+],
+"no": "6212-DG-05",
+"kb": 2099,
+"src": "Book 1 · trang 135",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 135
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-06 - Assembly Module 2.pdf",
+"t": "Assembly Module 2",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001",
+"10-B-9001/E1",
+"10-B-9001/E2"
+],
+"no": "6212-DG-06",
+"kb": 2708,
+"src": "Book 1 · trang 136",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 136
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-07-Sh.1 - Drum Assembly.pdf",
+"t": "Drum Assembly",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001",
+"10-B-9001/V1"
+],
+"no": "6212-DG-07-Sh.1",
+"kb": 1638,
+"src": "Book 1 · trang 137",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 137
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-07-Sh.2 - Drum Details.pdf",
+"t": "Drum Details",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001",
+"10-B-9001/V1"
+],
+"no": "6212-DG-07-Sh.2",
+"kb": 1175,
+"src": "Book 1 · trang 138",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 138
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-08-Sh.1 - Steam Drum Assembly Internal Detail.pdf",
+"t": "Steam Drum Assembly Internal Detail",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001",
+"10-B-9001/V1"
+],
+"no": "6212-DG-08-Sh.1",
+"kb": 2581,
+"src": "Book 1 · trang 139",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 139
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-08-Sh.2 - Internal Detail.pdf",
+"t": "Internal Detail",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001",
+"10-B-9001/V1"
+],
+"no": "6212-DG-08-Sh.2",
+"kb": 1053,
+"src": "Book 1 · trang 140",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 140
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-08-Sh.3 - Dust Separator Assembly And Details.pdf",
+"t": "Dust Separator Assembly And Details",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001",
+"10-B-9001/V1"
+],
+"no": "6212-DG-08-Sh.3",
+"kb": 884,
+"src": "Book 1 · trang 141",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 141
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-09-Sh.1 - Main Stack Assembly.pdf",
+"t": "Main Stack Assembly",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK1"
+],
+"no": "6212-DG-09-Sh.1",
+"kb": 2580,
+"src": "Book 1 · trang 142",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 142
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-09-Sh.2 - Main Stack Details.pdf",
+"t": "Main Stack Details",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK1"
+],
+"no": "6212-DG-09-Sh.2",
+"kb": 1578,
+"src": "Book 1 · trang 143",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 143
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-10-Sh.1 - By-Pass Stack.pdf",
+"t": "By-Pass Stack",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK2"
+],
+"no": "6212-DG-10-Sh.1",
+"kb": 2488,
+"src": "Book 1 · trang 144",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 144
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-10-Sh.2 - By Pass Stack Support Silencer.pdf",
+"t": "By Pass Stack Support Silencer",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK2"
+],
+"no": "6212-DG-10-Sh.2",
+"kb": 1705,
+"src": "Book 1 · trang 145",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 145
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-13 - Steam Drum.pdf",
+"t": "Steam Drum",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001",
+"10-B-9001/V1"
+],
+"no": "6212-DG-13",
+"kb": 136,
+"src": "Book 1 · trang 146",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 146
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-14 - Module 1.pdf",
+"t": "Module 1",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001",
+"10-B-9001/E3"
+],
+"no": "6212-DG-14",
+"kb": 216,
+"src": "Book 1 · trang 147",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 147
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-15 - Module 2.pdf",
+"t": "Module 2",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001",
+"10-B-9001/E1",
+"10-B-9001/E2"
+],
+"no": "6212-DG-15",
+"kb": 228,
+"src": "Book 1 · trang 148",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 148
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-16-Sh.1 - General Assembly Battery Limits (Longitudinal View).pdf",
+"t": "General Assembly Battery Limits (Longitudinal View)",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-DG-16-Sh.1",
+"kb": 1325,
+"src": "Book 1 · trang 149",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 149
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-16-Sh.2 - Section B.pdf",
+"t": "Section B",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-DG-16-Sh.2",
+"kb": 895,
+"src": "Book 1 · trang 150",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 150
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-16-Sh.3 - General Assembly Battery Limits (Plan).pdf",
+"t": "General Assembly Battery Limits (Plan)",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-DG-16-Sh.3",
+"kb": 758,
+"src": "Book 1 · trang 151",
+"bp": "HRSG/BOOK1.pdf",
+"bpg": 151
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-17-Sh.1 - Boiler Assembly Longitudinal View (Right Side).pdf",
+"t": "Boiler Assembly Longitudinal View (Right Side)",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-DG-17-Sh.1",
+"kb": 1634,
+"src": "Book 2 · trang 17",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 17
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-17-Sh.2 - Boiler Assembly Sections C-C.pdf",
+"t": "Boiler Assembly Sections C-C",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-DG-17-Sh.2",
+"kb": 980,
+"src": "Book 2 · trang 18",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 18
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-17-Sh.3 - Boiler Assembly Section A-A.pdf",
+"t": "Boiler Assembly Section A-A",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-DG-17-Sh.3",
+"kb": 1068,
+"src": "Book 2 · trang 19",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 19
+},
+{
+"p": "HRSG/Tach theo tai lieu/DG-17-Sh.4 - Boiler Duct And Module Assembly Longitudinal View (Left Side).pdf",
+"t": "Boiler Duct And Module Assembly Longitudinal View (Left Side)",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-DG-17-Sh.4",
+"kb": 1538,
+"src": "Book 2 · trang 20",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 20
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-140 - Downcomer.pdf",
+"t": "Downcomer",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001",
+"10-B-9001/E2"
+],
+"no": "6212-M-140",
+"kb": 1052,
+"src": "Book 2 · trang 21",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 21
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-141 - Manifold Evap.pdf",
+"t": "Manifold Evap",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001",
+"10-B-9001/E2"
+],
+"no": "6212-M-141",
+"kb": 1270,
+"src": "Book 2 · trang 22",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 22
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-200 - Econ Connection.pdf",
+"t": "Econ Connection",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001",
+"10-B-9001/E1"
+],
+"no": "6212-M-200",
+"kb": 684,
+"src": "Book 2 · trang 23",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 23
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-201 - Feed Water Piping.pdf",
+"t": "Feed Water Piping",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001",
+"10-B-9001/E1"
+],
+"no": "6212-M-201",
+"kb": 724,
+"src": "Book 2 · trang 24",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 24
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-202 - Steam Piping Drum.pdf",
+"t": "Steam Piping Drum",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001",
+"10-B-9001/V1"
+],
+"no": "6212-M-202",
+"kb": 691,
+"src": "Book 2 · trang 25",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 25
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-203 - Boiler Drains Modules.pdf",
+"t": "Boiler Drains Modules",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-203",
+"kb": 1502,
+"src": "Book 2 · trang 26",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 26
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-204 - External Plates Drum Assembly.pdf",
+"t": "External Plates Drum Assembly",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001",
+"10-B-9001/V1"
+],
+"no": "6212-M-204",
+"kb": 1281,
+"src": "Book 2 · trang 27",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 27
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-205 - Drum Levels Columns.pdf",
+"t": "Drum Levels Columns",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001",
+"10-B-9001/V1"
+],
+"no": "6212-M-205",
+"kb": 1524,
+"src": "Book 2 · trang 28",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 28
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-208 - Boiler Name Plate.pdf",
+"t": "Boiler Name Plate",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-208",
+"kb": 675,
+"src": "Book 2 · trang 29",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 29
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-302 - Foundation Teflon Plates.pdf",
+"t": "Foundation Teflon Plates",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-302",
+"kb": 322,
+"src": "Book 2 · trang 30",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 30
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-303 - Foundation Plates And Stud.pdf",
+"t": "Foundation Plates And Stud",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-303",
+"kb": 1175,
+"src": "Book 2 · trang 31",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 31
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-306 - Hanger Assembly.pdf",
+"t": "Hanger Assembly",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-306",
+"kb": 2676,
+"src": "Book 2 · trang 32",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 32
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-400-Sh.1 - Support Piping Lay Out Longitudinal View (Right Side).pdf",
+"t": "Support Piping Lay Out Longitudinal View (Right Side)",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-400-Sh.1",
+"kb": 2931,
+"src": "Book 2 · trang 33",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 33
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-400-Sh.2 - Support Piping Lay Out Plan View.pdf",
+"t": "Support Piping Lay Out Plan View",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-400-Sh.2",
+"kb": 2506,
+"src": "Book 2 · trang 34",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 34
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-400-Sh.3 - Support Piping Lay Out Sections.pdf",
+"t": "Support Piping Lay Out Sections",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-400-Sh.3",
+"kb": 1104,
+"src": "Book 2 · trang 35",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 35
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-401 - Pipe Support Standard.pdf",
+"t": "Pipe Support Standard",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-401",
+"kb": 2523,
+"src": "Book 2 · trang 36–58 (23 tr.)",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 36
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-402 - Superheated Steam Line.pdf",
+"t": "Superheated Steam Line",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001",
+"10-B-9001/E3"
+],
+"no": "6212-M-402",
+"kb": 1387,
+"src": "Book 2 · trang 59",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 59
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-403 - Start-Up Vent Piping.pdf",
+"t": "Start-Up Vent Piping",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001",
+"10-B-9001/SL1"
+],
+"no": "6212-M-403",
+"kb": 711,
+"src": "Book 2 · trang 60",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 60
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-404 - Desuperheater Piping Assembly.pdf",
+"t": "Desuperheater Piping Assembly",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001",
+"10-B-9001/E3"
+],
+"no": "6212-M-404",
+"kb": 1510,
+"src": "Book 2 · trang 61",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 61
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-405 - Boiler Feed Water Line.pdf",
+"t": "Boiler Feed Water Line",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001",
+"10-B-9001/E1"
+],
+"no": "6212-M-405",
+"kb": 1331,
+"src": "Book 2 · trang 62",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 62
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-406 - Safety Valves Vent PSV 9776-9778.pdf",
+"t": "Safety Valves Vent PSV 9776-9778",
+"g": "Van an toàn & bộ tiêu âm",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-406",
+"kb": 749,
+"src": "Book 2 · trang 63",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 63
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-407 - Fuel Gas Piping Line.pdf",
+"t": "Fuel Gas Piping Line",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-407",
+"kb": 2545,
+"src": "Book 2 · trang 64",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 64
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-408 - Sample Coolers.pdf",
+"t": "Sample Coolers",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-408",
+"kb": 1241,
+"src": "Book 2 · trang 65",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 65
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-409 - Safety Valves Vent PSV 9777.pdf",
+"t": "Safety Valves Vent PSV 9777",
+"g": "Van an toàn & bộ tiêu âm",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-409",
+"kb": 531,
+"src": "Book 2 · trang 66",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 66
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-410 - Seal Air Piping Line.pdf",
+"t": "Seal Air Piping Line",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001",
+"10-B-9001/K2",
+"10-B-9001/K3"
+],
+"no": "6212-M-410",
+"kb": 1702,
+"src": "Book 2 · trang 67",
+"bp": "HRSG/BOOK2.pdf",
+"bpg": 67
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.1 - Piping Support Item S1.pdf",
+"t": "Piping Support Item S1",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.1",
+"kb": 125,
+"src": "Book 3 · trang 17",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 17
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.2 - Piping Support Item S2.pdf",
+"t": "Piping Support Item S2",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.2",
+"kb": 120,
+"src": "Book 3 · trang 18",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 18
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.3 - Piping Support Item S3.pdf",
+"t": "Piping Support Item S3",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.3",
+"kb": 108,
+"src": "Book 3 · trang 19",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 19
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.4 - Piping Support Item S4.pdf",
+"t": "Piping Support Item S4",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.4",
+"kb": 118,
+"src": "Book 3 · trang 20",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 20
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.5 - Piping Support Item S5.pdf",
+"t": "Piping Support Item S5",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.5",
+"kb": 119,
+"src": "Book 3 · trang 21",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 21
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.6 - Piping Support Item S6.pdf",
+"t": "Piping Support Item S6",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.6",
+"kb": 114,
+"src": "Book 3 · trang 22",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 22
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.7 - Piping Support Item S7.pdf",
+"t": "Piping Support Item S7",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.7",
+"kb": 103,
+"src": "Book 3 · trang 23",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 23
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.8 - Piping Support Item S8.pdf",
+"t": "Piping Support Item S8",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.8",
+"kb": 127,
+"src": "Book 3 · trang 24",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 24
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.9 - Piping Support Item S9.pdf",
+"t": "Piping Support Item S9",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.9",
+"kb": 129,
+"src": "Book 3 · trang 25",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 25
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.10 - Piping Support Item S10.pdf",
+"t": "Piping Support Item S10",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.10",
+"kb": 108,
+"src": "Book 3 · trang 26",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 26
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.11 - Piping Support Item S11.pdf",
+"t": "Piping Support Item S11",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.11",
+"kb": 130,
+"src": "Book 3 · trang 27",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 27
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.12 - Piping Support Item S12.pdf",
+"t": "Piping Support Item S12",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.12",
+"kb": 114,
+"src": "Book 3 · trang 28",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 28
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.13 - Piping Support Item S13.pdf",
+"t": "Piping Support Item S13",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.13",
+"kb": 127,
+"src": "Book 3 · trang 29",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 29
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.14 - Piping Support Item S14.pdf",
+"t": "Piping Support Item S14",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.14",
+"kb": 99,
+"src": "Book 3 · trang 30",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 30
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.15 - Piping Support Item S15.pdf",
+"t": "Piping Support Item S15",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.15",
+"kb": 116,
+"src": "Book 3 · trang 31",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 31
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.16 - Piping Support Item S16.pdf",
+"t": "Piping Support Item S16",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.16",
+"kb": 119,
+"src": "Book 3 · trang 32",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 32
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.17 - Piping Support Item S17.pdf",
+"t": "Piping Support Item S17",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.17",
+"kb": 98,
+"src": "Book 3 · trang 33",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 33
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.18 - Piping Support Item S18.pdf",
+"t": "Piping Support Item S18",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.18",
+"kb": 102,
+"src": "Book 3 · trang 34",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 34
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.19 - Piping Support Item S19.pdf",
+"t": "Piping Support Item S19",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.19",
+"kb": 98,
+"src": "Book 3 · trang 35",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 35
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.20 - Piping Support Item S20.pdf",
+"t": "Piping Support Item S20",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.20",
+"kb": 115,
+"src": "Book 3 · trang 36",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 36
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.21 - Piping Support Item S21.pdf",
+"t": "Piping Support Item S21",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.21",
+"kb": 93,
+"src": "Book 3 · trang 37",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 37
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.22 - Piping Support Item S22.pdf",
+"t": "Piping Support Item S22",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.22",
+"kb": 97,
+"src": "Book 3 · trang 38",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 38
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.23 - Piping Support Item S23.pdf",
+"t": "Piping Support Item S23",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.23",
+"kb": 119,
+"src": "Book 3 · trang 39",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 39
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.24 - Piping Support Item S24.pdf",
+"t": "Piping Support Item S24",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.24",
+"kb": 95,
+"src": "Book 3 · trang 40",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 40
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.25 - Piping Support Item S25.pdf",
+"t": "Piping Support Item S25",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.25",
+"kb": 99,
+"src": "Book 3 · trang 41",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 41
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.26 - Piping Support Item S26.pdf",
+"t": "Piping Support Item S26",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.26",
+"kb": 93,
+"src": "Book 3 · trang 42",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 42
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.27 - Piping Support Item S27.pdf",
+"t": "Piping Support Item S27",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.27",
+"kb": 95,
+"src": "Book 3 · trang 43",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 43
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.28 - Piping Support Item S28.pdf",
+"t": "Piping Support Item S28",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.28",
+"kb": 96,
+"src": "Book 3 · trang 44",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 44
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.29 - Piping Support Item S29.pdf",
+"t": "Piping Support Item S29",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.29",
+"kb": 92,
+"src": "Book 3 · trang 45",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 45
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.30 - Piping Support Item S30.pdf",
+"t": "Piping Support Item S30",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.30",
+"kb": 116,
+"src": "Book 3 · trang 46",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 46
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.31 - Piping Support Item S31.pdf",
+"t": "Piping Support Item S31",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.31",
+"kb": 90,
+"src": "Book 3 · trang 47",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 47
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.32 - Piping Support Item S32.pdf",
+"t": "Piping Support Item S32",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.32",
+"kb": 97,
+"src": "Book 3 · trang 48",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 48
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.33 - Piping Support Item S33.pdf",
+"t": "Piping Support Item S33",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.33",
+"kb": 89,
+"src": "Book 3 · trang 49",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 49
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.34 - Piping Support Item S34.pdf",
+"t": "Piping Support Item S34",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.34",
+"kb": 130,
+"src": "Book 3 · trang 50",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 50
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.35 - Piping Support Item S35.pdf",
+"t": "Piping Support Item S35",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.35",
+"kb": 88,
+"src": "Book 3 · trang 51",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 51
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.36 - Piping Support Item S36.pdf",
+"t": "Piping Support Item S36",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.36",
+"kb": 101,
+"src": "Book 3 · trang 52",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 52
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.37 - Piping Support Item S37.pdf",
+"t": "Piping Support Item S37",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.37",
+"kb": 96,
+"src": "Book 3 · trang 53",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 53
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.38 - Piping Support Item S38.pdf",
+"t": "Piping Support Item S38",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.38",
+"kb": 95,
+"src": "Book 3 · trang 54",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 54
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.39 - Piping Support Item S39.pdf",
+"t": "Piping Support Item S39",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.39",
+"kb": 121,
+"src": "Book 3 · trang 55",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 55
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.40 - Piping Support Item S40.pdf",
+"t": "Piping Support Item S40",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.40",
+"kb": 96,
+"src": "Book 3 · trang 56",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 56
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.41 - Piping Support Item S41.pdf",
+"t": "Piping Support Item S41",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.41",
+"kb": 119,
+"src": "Book 3 · trang 57",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 57
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.42 - Piping Support Item S42.pdf",
+"t": "Piping Support Item S42",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.42",
+"kb": 93,
+"src": "Book 3 · trang 58",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 58
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.43 - Piping Support Item S43.pdf",
+"t": "Piping Support Item S43",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.43",
+"kb": 98,
+"src": "Book 3 · trang 59",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 59
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.44 - Piping Support Item S44.pdf",
+"t": "Piping Support Item S44",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.44",
+"kb": 100,
+"src": "Book 3 · trang 60",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 60
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.45 - Piping Support Item S45.pdf",
+"t": "Piping Support Item S45",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.45",
+"kb": 140,
+"src": "Book 3 · trang 61",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 61
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.46 - Piping Support Item S46.pdf",
+"t": "Piping Support Item S46",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.46",
+"kb": 89,
+"src": "Book 3 · trang 62",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 62
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.47 - Piping Support Item S47.pdf",
+"t": "Piping Support Item S47",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.47",
+"kb": 94,
+"src": "Book 3 · trang 63",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 63
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.48 - Piping Support Item S48.pdf",
+"t": "Piping Support Item S48",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.48",
+"kb": 94,
+"src": "Book 3 · trang 64",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 64
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.49 - Piping Support Item S49.pdf",
+"t": "Piping Support Item S49",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.49",
+"kb": 91,
+"src": "Book 3 · trang 65",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 65
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.50 - Piping Support Item S50.pdf",
+"t": "Piping Support Item S50",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.50",
+"kb": 107,
+"src": "Book 3 · trang 66",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 66
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.51 - Piping Support Item S51.pdf",
+"t": "Piping Support Item S51",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.51",
+"kb": 88,
+"src": "Book 3 · trang 67",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 67
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.52 - Piping Support Item S52.pdf",
+"t": "Piping Support Item S52",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.52",
+"kb": 109,
+"src": "Book 3 · trang 68",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 68
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.53 - Piping Support Item S53.pdf",
+"t": "Piping Support Item S53",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.53",
+"kb": 125,
+"src": "Book 3 · trang 69",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 69
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.54 - Piping Support Item S54.pdf",
+"t": "Piping Support Item S54",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.54",
+"kb": 112,
+"src": "Book 3 · trang 70",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 70
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.55 - Piping Support Item S55.pdf",
+"t": "Piping Support Item S55",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.55",
+"kb": 101,
+"src": "Book 3 · trang 71",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 71
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.56 - Piping Support Item S56.pdf",
+"t": "Piping Support Item S56",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.56",
+"kb": 86,
+"src": "Book 3 · trang 72",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 72
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.57 - Piping Support Item S57.pdf",
+"t": "Piping Support Item S57",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.57",
+"kb": 131,
+"src": "Book 3 · trang 73",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 73
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.58 - Piping Support Item S58.pdf",
+"t": "Piping Support Item S58",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.58",
+"kb": 85,
+"src": "Book 3 · trang 74",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 74
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-420-Sh.59 - Piping Support Item S59.pdf",
+"t": "Piping Support Item S59",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-420-Sh.59",
+"kb": 90,
+"src": "Book 3 · trang 75",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 75
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-450 - Material List Piping.pdf",
+"t": "Material List Piping",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-450",
+"kb": 1469,
+"src": "Book 3 · trang 76–81 (6 tr.)",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 76
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-500-Sh.1 - Liner Module 1.pdf",
+"t": "Liner Module 1",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-500-Sh.1",
+"kb": 3867,
+"src": "Book 3 · trang 82",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 82
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-500-Sh.2 - Liner Module 1.pdf",
+"t": "Liner Module 1",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-500-Sh.2",
+"kb": 1732,
+"src": "Book 3 · trang 83",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 83
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-501-Sh.1 - Liner Module 2.pdf",
+"t": "Liner Module 2",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-501-Sh.1",
+"kb": 4466,
+"src": "Book 3 · trang 84",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 84
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-501-Sh.2 - Liner Module 2.pdf",
+"t": "Liner Module 2",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-501-Sh.2",
+"kb": 545,
+"src": "Book 3 · trang 85",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 85
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-502-Sh.1 - Duct -A- Liner.pdf",
+"t": "Duct -A- Liner",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-502-Sh.1",
+"kb": 2658,
+"src": "Book 3 · trang 86",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 86
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-502-Sh.2 - Duct -A- Liner.pdf",
+"t": "Duct -A- Liner",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-502-Sh.2",
+"kb": 654,
+"src": "Book 3 · trang 87",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 87
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-503-Sh.1 - Duct -B- Liner.pdf",
+"t": "Duct -B- Liner",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-503-Sh.1",
+"kb": 3145,
+"src": "Book 3 · trang 88",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 88
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-503-Sh.2 - Duct -B- Liner.pdf",
+"t": "Duct -B- Liner",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-503-Sh.2",
+"kb": 963,
+"src": "Book 3 · trang 89",
+"bp": "HRSG/BOOK3.pdf",
+"bpg": 89
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-505-Sh.1 - Close Plates Boiler.pdf",
+"t": "Close Plates Boiler",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-505-Sh.1",
+"kb": 2505,
+"src": "Book 4 · trang 17",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 17
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-505-Sh.2 - Close Plates Boiler.pdf",
+"t": "Close Plates Boiler",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-505-Sh.2",
+"kb": 1498,
+"src": "Book 4 · trang 18",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 18
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-506 - Duct -D- Liner.pdf",
+"t": "Duct -D- Liner",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-506",
+"kb": 2704,
+"src": "Book 4 · trang 19",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 19
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-507 - Duct -C- Liner.pdf",
+"t": "Duct -C- Liner",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-507",
+"kb": 3063,
+"src": "Book 4 · trang 20",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 20
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-508 - Liner Diverter Assembly1.pdf",
+"t": "Liner Diverter Assembly1",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-508",
+"kb": 3163,
+"src": "Book 4 · trang 21",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 21
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-700-Sh.1 - Module 1 Assembly.pdf",
+"t": "Module 1 Assembly",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001",
+"10-B-9001/E3"
+],
+"no": "6212-M-700-Sh.1",
+"kb": 2554,
+"src": "Book 4 · trang 22",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 22
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-700-Sh.2 - Module 1 Details.pdf",
+"t": "Module 1 Details",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001",
+"10-B-9001/E3"
+],
+"no": "6212-M-700-Sh.2",
+"kb": 920,
+"src": "Book 4 · trang 23",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 23
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-710-Sh.1 - Module 2 Assembly.pdf",
+"t": "Module 2 Assembly",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001",
+"10-B-9001/E1",
+"10-B-9001/E2"
+],
+"no": "6212-M-710-Sh.1",
+"kb": 2798,
+"src": "Book 4 · trang 24",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 24
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-710-Sh.2 - Module 2 Details.pdf",
+"t": "Module 2 Details",
+"g": "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)",
+"tags": [
+"10-B-9001",
+"10-B-9001/E1",
+"10-B-9001/E2"
+],
+"no": "6212-M-710-Sh.2",
+"kb": 908,
+"src": "Book 4 · trang 25",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 25
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-720 - Casing Duct -A- Assembly.pdf",
+"t": "Casing Duct -A- Assembly",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-720",
+"kb": 2283,
+"src": "Book 4 · trang 26",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 26
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-730 - Casing Duct -B- Assembly.pdf",
+"t": "Casing Duct -B- Assembly",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-730",
+"kb": 2833,
+"src": "Book 4 · trang 27",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 27
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-735 - Casing Duct -D- Assembly.pdf",
+"t": "Casing Duct -D- Assembly",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-735",
+"kb": 1106,
+"src": "Book 4 · trang 28",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 28
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-736 - Casing Duct -C- Assembly.pdf",
+"t": "Casing Duct -C- Assembly",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-736",
+"kb": 1472,
+"src": "Book 4 · trang 29",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 29
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-740 - Diverter Structure Assembly.pdf",
+"t": "Diverter Structure Assembly",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001",
+"10-B-9001/MXV1",
+"10-B-9001/MXV2"
+],
+"no": "6212-M-740",
+"kb": 2570,
+"src": "Book 4 · trang 30",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 30
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-741-Sh.1 - Vertical Air Lock Structure Assembly.pdf",
+"t": "Vertical Air Lock Structure Assembly",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001",
+"10-B-9001/MXV1",
+"10-B-9001/MXV2"
+],
+"no": "6212-M-741-Sh.1",
+"kb": 2557,
+"src": "Book 4 · trang 31",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 31
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-741-Sh.2 - Vertical Air Lock Structure Details.pdf",
+"t": "Vertical Air Lock Structure Details",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001",
+"10-B-9001/MXV1",
+"10-B-9001/MXV2"
+],
+"no": "6212-M-741-Sh.2",
+"kb": 1858,
+"src": "Book 4 · trang 32",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 32
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-742 - Connection Diverter-By Pass Stack.pdf",
+"t": "Connection Diverter-By Pass Stack",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK2"
+],
+"no": "6212-M-742",
+"kb": 1076,
+"src": "Book 4 · trang 33",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 33
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-743 - Expansion Joint Duct -C- Fan.pdf",
+"t": "Expansion Joint Duct -C- Fan",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001",
+"10-B-9001/K2",
+"10-B-9001/K3"
+],
+"no": "6212-M-743",
+"kb": 1500,
+"src": "Book 4 · trang 34",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 34
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-750 - Peephole (Portina Di Spia).pdf",
+"t": "Peephole (Portina Di Spia)",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-750",
+"kb": 286,
+"src": "Book 4 · trang 35",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 35
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-751 - Module 2-Stack Joint.pdf",
+"t": "Module 2-Stack Joint",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK1"
+],
+"no": "6212-M-751",
+"kb": 1458,
+"src": "Book 4 · trang 36",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 36
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-752 - Joint Ducts Assembly.pdf",
+"t": "Joint Ducts Assembly",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-752",
+"kb": 792,
+"src": "Book 4 · trang 37",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 37
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-753-Sh.1 - Expansion Joint Assembly.pdf",
+"t": "Expansion Joint Assembly",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-753-Sh.1",
+"kb": 1513,
+"src": "Book 4 · trang 38",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 38
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-753-Sh.2 - Expansion Joint Details.pdf",
+"t": "Expansion Joint Details",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-753-Sh.2",
+"kb": 1149,
+"src": "Book 4 · trang 39",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 39
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-754 - Inspection Door.pdf",
+"t": "Inspection Door",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-754",
+"kb": 1043,
+"src": "Book 4 · trang 40",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 40
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-755 - Inspection Door.pdf",
+"t": "Inspection Door",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-755",
+"kb": 1046,
+"src": "Book 4 · trang 41",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 41
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-756 - Inspection Door.pdf",
+"t": "Inspection Door",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-756",
+"kb": 929,
+"src": "Book 4 · trang 42",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 42
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-757 - Inspection Door.pdf",
+"t": "Inspection Door",
+"g": "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-757",
+"kb": 733,
+"src": "Book 4 · trang 43",
+"bp": "HRSG/BOOK4.pdf",
+"bpg": 43
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-758-Sh.1 - Platforms Assembly Long. View-Right Side.pdf",
+"t": "Platforms Assembly Long. View-Right Side",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-758-Sh.1",
+"kb": 1587,
+"src": "Book 5 · trang 17",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 17
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-758-Sh.2 - Platform Assembly Plan View (Sections).pdf",
+"t": "Platform Assembly Plan View (Sections)",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-758-Sh.2",
+"kb": 1643,
+"src": "Book 5 · trang 18",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 18
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-758-Sh.3 - Platform Assembly Section.pdf",
+"t": "Platform Assembly Section",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-758-Sh.3",
+"kb": 1271,
+"src": "Book 5 · trang 19",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 19
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-758-Sh.4 - Platforms Assembly Longitudinal View (Left Side).pdf",
+"t": "Platforms Assembly Longitudinal View (Left Side)",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-758-Sh.4",
+"kb": 1233,
+"src": "Book 5 · trang 20",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 20
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-759 - Stack Platform.pdf",
+"t": "Stack Platform",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK1"
+],
+"no": "6212-M-759",
+"kb": 798,
+"src": "Book 5 · trang 21",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 21
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-760 - Ladder By-Pass Stack.pdf",
+"t": "Ladder By-Pass Stack",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK2"
+],
+"no": "6212-M-760",
+"kb": 929,
+"src": "Book 5 · trang 22",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 22
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-761 - By-Pass Stack Platform El.+17680.pdf",
+"t": "By-Pass Stack Platform El.+17680",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK2"
+],
+"no": "6212-M-761",
+"kb": 948,
+"src": "Book 5 · trang 23",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 23
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-763 - Stack Platform.pdf",
+"t": "Stack Platform",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK1"
+],
+"no": "6212-M-763",
+"kb": 1211,
+"src": "Book 5 · trang 24",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 24
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-764 - Ladder Stack.pdf",
+"t": "Ladder Stack",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK1"
+],
+"no": "6212-M-764",
+"kb": 999,
+"src": "Book 5 · trang 25",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 25
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-765 - Main Stack Personal Protection.pdf",
+"t": "Main Stack Personal Protection",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK1"
+],
+"no": "6212-M-765",
+"kb": 779,
+"src": "Book 5 · trang 26",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 26
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-766 - Main Stack Personal Protection.pdf",
+"t": "Main Stack Personal Protection",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK1"
+],
+"no": "6212-M-766",
+"kb": 563,
+"src": "Book 5 · trang 27",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 27
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-767 - Diverter Platform El.2090-.pdf",
+"t": "Diverter Platform El.2090-",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-767",
+"kb": 1181,
+"src": "Book 5 · trang 28",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 28
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-768 - Ladder Diverter El.300 - El5090.pdf",
+"t": "Ladder Diverter El.300 - El5090",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-768",
+"kb": 919,
+"src": "Book 5 · trang 29",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 29
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-769 - Platform And Ladder El.17880.pdf",
+"t": "Platform And Ladder El.17880",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-769",
+"kb": 962,
+"src": "Book 5 · trang 30",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 30
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-770 - Stairs Flight Structural Support El.13800.pdf",
+"t": "Stairs Flight Structural Support El.13800",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-770",
+"kb": 596,
+"src": "Book 5 · trang 31",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 31
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-771-Sh.1 - Piping Joint H1-H15.pdf",
+"t": "Piping Joint H1-H15",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-771-Sh.1",
+"kb": 865,
+"src": "Book 5 · trang 32",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 32
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-771-Sh.2 - Piping Joint.pdf",
+"t": "Piping Joint",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-771-Sh.2",
+"kb": 1148,
+"src": "Book 5 · trang 33",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 33
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-771-Sh.3 - Piping Joint.pdf",
+"t": "Piping Joint",
+"g": "Đường ống & giá đỡ",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-771-Sh.3",
+"kb": 1100,
+"src": "Book 5 · trang 34",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 34
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-772 - Main Stack Personal Protection.pdf",
+"t": "Main Stack Personal Protection",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK1"
+],
+"no": "6212-M-772",
+"kb": 680,
+"src": "Book 5 · trang 35",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 35
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-773 - Main Stack Personal Protection.pdf",
+"t": "Main Stack Personal Protection",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK1"
+],
+"no": "6212-M-773",
+"kb": 1195,
+"src": "Book 5 · trang 36",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 36
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-774 - Platform El. 1900.pdf",
+"t": "Platform El. 1900",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-774",
+"kb": 1160,
+"src": "Book 5 · trang 37",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 37
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-775 - Ladder El. 0.000 - El. 1900.pdf",
+"t": "Ladder El. 0.000 - El. 1900",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-775",
+"kb": 501,
+"src": "Book 5 · trang 38",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 38
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-776 - Platform El. 7880.pdf",
+"t": "Platform El. 7880",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-776",
+"kb": 1201,
+"src": "Book 5 · trang 39",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 39
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-777 - Assembly Stairs Flight Plan.pdf",
+"t": "Assembly Stairs Flight Plan",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-777",
+"kb": 1011,
+"src": "Book 5 · trang 40",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 40
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-778 - Assembly Stairs Platform And Details.pdf",
+"t": "Assembly Stairs Platform And Details",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-778",
+"kb": 1513,
+"src": "Book 5 · trang 41",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 41
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-779-Sh.1 - Stairs Flight Details.pdf",
+"t": "Stairs Flight Details",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-779-Sh.1",
+"kb": 773,
+"src": "Book 5 · trang 42",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 42
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-779-Sh.2 - Stairs Flight Details.pdf",
+"t": "Stairs Flight Details",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-779-Sh.2",
+"kb": 770,
+"src": "Book 5 · trang 43",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 43
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-780 - Ladder By-Pass Stack.pdf",
+"t": "Ladder By-Pass Stack",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK2"
+],
+"no": "6212-M-780",
+"kb": 943,
+"src": "Book 5 · trang 44",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 44
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-781 - By-Pass Stack Platform El. 11980.pdf",
+"t": "By-Pass Stack Platform El. 11980",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK2"
+],
+"no": "6212-M-781",
+"kb": 987,
+"src": "Book 5 · trang 45",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 45
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-782 - By-Pass Stack Ladder To 5090 At 11980.pdf",
+"t": "By-Pass Stack Ladder To 5090 At 11980",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK2"
+],
+"no": "6212-M-782",
+"kb": 935,
+"src": "Book 5 · trang 46",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 46
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-783 - By-Pass Stack Personal Protection El. 23680.pdf",
+"t": "By-Pass Stack Personal Protection El. 23680",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK2"
+],
+"no": "6212-M-783",
+"kb": 767,
+"src": "Book 5 · trang 47",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 47
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-784 - By-Pass Stack Personal Protection To 15680 At 23680.pdf",
+"t": "By-Pass Stack Personal Protection To 15680 At 23680",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK2"
+],
+"no": "6212-M-784",
+"kb": 729,
+"src": "Book 5 · trang 48",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 48
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-785 - By-Pass Stack Personal Protection El.pdf",
+"t": "By-Pass Stack Personal Protection El",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK2"
+],
+"no": "6212-M-785",
+"kb": 612,
+"src": "Book 5 · trang 49",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 49
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-787 - By-Pass Stack Personal Protection El.pdf",
+"t": "By-Pass Stack Personal Protection El",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK2"
+],
+"no": "6212-M-787",
+"kb": 639,
+"src": "Book 5 · trang 50",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 50
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-788-Sh.2 - Section And Detail Platform El. 15680.pdf",
+"t": "Section And Detail Platform El. 15680",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK2"
+],
+"no": "6212-M-788-Sh.2",
+"kb": 1044,
+"src": "Book 5 · trang 51",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 51
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-788-Sh.1 - Platform El. 15680.pdf",
+"t": "Platform El. 15680",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK2"
+],
+"no": "6212-M-788-Sh.1",
+"kb": 685,
+"src": "Book 5 · trang 52",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 52
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-790 - Ladder El. 14760 - El. 15680.pdf",
+"t": "Ladder El. 14760 - El. 15680",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK2"
+],
+"no": "6212-M-790",
+"kb": 548,
+"src": "Book 5 · trang 53",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 53
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-791 - By-Pass Stack Personal Protection To 11980 At 17680.pdf",
+"t": "By-Pass Stack Personal Protection To 11980 At 17680",
+"g": "Sàn thao tác & cầu thang",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK2"
+],
+"no": "6212-M-791",
+"kb": 658,
+"src": "Book 5 · trang 54",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 54
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-800 - Module 1 Transport Structure.pdf",
+"t": "Module 1 Transport Structure",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-800",
+"kb": 1738,
+"src": "Book 5 · trang 55",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 55
+},
+{
+"p": "HRSG/Tach theo tai lieu/M-801 - Module 2 Transport Structure.pdf",
+"t": "Module 2 Transport Structure",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-M-801",
+"kb": 1855,
+"src": "Book 5 · trang 56",
+"bp": "HRSG/BOOK5.pdf",
+"bpg": 56
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-009.1 - By Pass Stack Silencer.pdf",
+"t": "By Pass Stack Silencer",
+"g": "Van an toàn & bộ tiêu âm",
+"tags": [
+"10-B-9001",
+"10-B-9001/SK2"
+],
+"no": "6212-P-009.1",
+"kb": 743,
+"src": "Book 6 · trang 17",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 17
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-009.2 - Start Up Silencer.pdf",
+"t": "Start Up Silencer",
+"g": "Van an toàn & bộ tiêu âm",
+"tags": [
+"10-B-9001",
+"10-B-9001/SL1"
+],
+"no": "6212-P-009.2",
+"kb": 205,
+"src": "Book 6 · trang 18",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 18
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-009.3 - General Arrangement Fired Duct Burner.pdf",
+"t": "General Arrangement Fired Duct Burner",
+"g": "Đầu đốt & BMS",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-009.3",
+"kb": 357,
+"src": "Book 6 · trang 19",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 19
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-009.4 - Details Fired Duct Burner.pdf",
+"t": "Details Fired Duct Burner",
+"g": "Đầu đốt & BMS",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-009.4",
+"kb": 249,
+"src": "Book 6 · trang 20",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 20
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-009.5 - Multilouver Damper 4189x3250x600.pdf",
+"t": "Multilouver Damper 4189x3250x600",
+"g": "Đầu đốt & BMS",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-009.5",
+"kb": 1100,
+"src": "Book 6 · trang 21",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 21
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-009.6 - Biplane Damper 3882x3250x600.pdf",
+"t": "Biplane Damper 3882x3250x600",
+"g": "Đầu đốt & BMS",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-009.6",
+"kb": 280,
+"src": "Book 6 · trang 22",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 22
+},
+{
+"p": "HRSG/Tach theo tai lieu/STR-001 - Double Butterfly Damper.pdf",
+"t": "Double Butterfly Damper",
+"g": "Quạt, damper & guillotine",
+"tags": [
+"10-B-9001",
+"10-B-9001/MXV1",
+"10-B-9001/MXV2"
+],
+"no": "6212-STR-001",
+"kb": 244,
+"src": "Book 6 · trang 23",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 23
+},
+{
+"p": "HRSG/Tach theo tai lieu/STR-002 - Purge Fan.pdf",
+"t": "Purge Fan",
+"g": "Quạt, damper & guillotine",
+"tags": [
+"10-B-9001",
+"10-B-9001/K1"
+],
+"no": "6212-STR-002",
+"kb": 248,
+"src": "Book 6 · trang 24",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 24
+},
+{
+"p": "HRSG/Tach theo tai lieu/STR-003 - Sealing Fan.pdf",
+"t": "Sealing Fan",
+"g": "Quạt, damper & guillotine",
+"tags": [
+"10-B-9001",
+"10-B-9001/K2",
+"10-B-9001/K3"
+],
+"no": "6212-STR-003",
+"kb": 289,
+"src": "Book 6 · trang 25",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 25
+},
+{
+"p": "HRSG/Tach theo tai lieu/STR-004 - Guillotine.pdf",
+"t": "Guillotine",
+"g": "Quạt, damper & guillotine",
+"tags": [
+"10-B-9001",
+"10-B-9001/MXV1",
+"10-B-9001/MXV2"
+],
+"no": "6212-STR-004",
+"kb": 222,
+"src": "Book 6 · trang 26",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 26
+},
+{
+"p": "HRSG/Tach theo tai lieu/STR-005 - Mechanical Devices For Guillotine Actions.pdf",
+"t": "Mechanical Devices For Guillotine Actions",
+"g": "Quạt, damper & guillotine",
+"tags": [
+"10-B-9001",
+"10-B-9001/MXV1",
+"10-B-9001/MXV2"
+],
+"no": "6212-STR-005",
+"kb": 200,
+"src": "Book 6 · trang 27",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 27
+},
+{
+"p": "HRSG/Tach theo tai lieu/STR-006 - Damper 6 inch.pdf",
+"t": "Damper 6\"",
+"g": "Quạt, damper & guillotine",
+"tags": [
+"10-B-9001",
+"10-B-9001/MXV1",
+"10-B-9001/MXV2"
+],
+"no": "6212-STR-006",
+"kb": 254,
+"src": "Book 6 · trang 28",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 28
+},
+{
+"p": "HRSG/Tach theo tai lieu/STR-007 - Damper 4 inch.pdf",
+"t": "Damper 4\"",
+"g": "Quạt, damper & guillotine",
+"tags": [
+"10-B-9001",
+"10-B-9001/MXV1",
+"10-B-9001/MXV2"
+],
+"no": "6212-STR-007",
+"kb": 245,
+"src": "Book 6 · trang 29",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 29
+},
+{
+"p": "HRSG/Tach theo tai lieu/STR-008 - Fan Outlet Damper.pdf",
+"t": "Fan Outlet Damper",
+"g": "Quạt, damper & guillotine",
+"tags": [
+"10-B-9001",
+"10-B-9001/K1"
+],
+"no": "6212-STR-008",
+"kb": 202,
+"src": "Book 6 · trang 30",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 30
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-004 - Mechanical Data Sheets.pdf",
+"t": "Mechanical Data Sheets",
+"g": "Data sheet & tài liệu chính",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-004",
+"kb": 753,
+"src": "Book 6 · trang 31–36 (6 tr.)",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 31
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-004.P - Process Data Sheets.pdf",
+"t": "Process Data Sheets",
+"g": "Data sheet & tài liệu chính",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-004.P",
+"kb": 1146,
+"src": "Book 6 · trang 37–45 (9 tr.)",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 37
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-024 - List Of Instruments.pdf",
+"t": "List Of Instruments",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-024",
+"kb": 3782,
+"src": "Book 6 · trang 46–69 (24 tr.)",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 46
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-035 - Electrical Power, Instrument Air Consumption and Heat Dissipation Data Sheet.pdf",
+"t": "Electrical Power, Instrument Air Consumption & Heat Dissipation Data Sheet",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-035",
+"kb": 311,
+"src": "Book 6 · trang 70–73 (4 tr.)",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 70
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-036 - Junction Boxes.pdf",
+"t": "Junction Boxes",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-036",
+"kb": 1435,
+"src": "Book 6 · trang 74–87 (14 tr.)",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 74
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-039 - Instrument Hook-Up Drawings.pdf",
+"t": "Instrument Hook-Up Drawings",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-039",
+"kb": 1309,
+"src": "Book 6 · trang 88–98 (11 tr.)",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 88
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-037.1 - JB Position And Cable Trays (1).pdf",
+"t": "JB Position And Cable Trays (1)",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-037.1",
+"kb": 1485,
+"src": "Book 6 · trang 99",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 99
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-037.2 - JB Position And Cable Trays (2).pdf",
+"t": "JB Position And Cable Trays (2)",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-037.2",
+"kb": 1322,
+"src": "Book 6 · trang 100",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 100
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-037.3 - JB Position And Cable Trays (3).pdf",
+"t": "JB Position And Cable Trays (3)",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-037.3",
+"kb": 1479,
+"src": "Book 6 · trang 101",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 101
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-018 - Electric Motor Drawings.pdf",
+"t": "Electric Motor Drawings",
+"g": "Quạt, damper & guillotine",
+"tags": [
+"10-B-9001",
+"10-B-9001/MK1",
+"10-B-9001/MK2",
+"10-B-9001/MK3"
+],
+"no": "6212-P-018",
+"kb": 325,
+"src": "Book 6 · trang 102–104 (3 tr.)",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 102
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-053 - Terminal Block Drawing.pdf",
+"t": "Terminal Block Drawing",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-053",
+"kb": 369,
+"src": "Book 6 · trang 105–107 (3 tr.)",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 105
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-060 - List Of Spare Parts For Erection, Commissioning And Start-Up.pdf",
+"t": "List Of Spare Parts For Erection, Commissioning And Start-Up",
+"g": "Phụ tùng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-060",
+"kb": 195,
+"src": "Book 6 · trang 108–109 (2 tr.)",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 108
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-088.6 - List Of Spare Parts For 2 Years Operation.pdf",
+"t": "List Of Spare Parts For 2 Years Operation",
+"g": "Phụ tùng",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-088.6",
+"kb": 5185,
+"src": "Book 6 · trang 110–129 (20 tr.)",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 110
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-027 - Control System Description, Operating Principles, Functional Design Specification.pdf",
+"t": "Control System Description, Operating Principles, Functional Design Specification",
+"g": "Đầu đốt & BMS",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-027",
+"kb": 1655,
+"src": "Book 6 · trang 130–147 (18 tr.)",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 130
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-028 - Safety Valves.pdf",
+"t": "Safety Valves",
+"g": "Van an toàn & bộ tiêu âm",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-028",
+"kb": 500,
+"src": "Book 6 · trang 148–151 (4 tr.)",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 148
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-043.A - BMS PLC Logic Cabinet - Serial Links.pdf",
+"t": "BMS PLC Logic Cabinet - Serial Links",
+"g": "Đầu đốt & BMS",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-043.A",
+"kb": 301,
+"src": "Book 6 · trang 152–153 (2 tr.)",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 152
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-043.C - BMS Modbus Interface - I O List.pdf",
+"t": "BMS Modbus Interface - I/O List",
+"g": "Đầu đốt & BMS",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-043.C",
+"kb": 5775,
+"src": "Book 6 · trang 154–183 (30 tr.)",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 154
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-043.B - BMS Sequences Description.pdf",
+"t": "BMS Sequences Description",
+"g": "Đầu đốt & BMS",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-043.B",
+"kb": 1539,
+"src": "Book 6 · trang 184–200 (17 tr.)",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 184
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-034 - BMS PLC Logic Cabinet - Arrangement Drawing.pdf",
+"t": "BMS PLC Logic Cabinet - Arrangement Drawing",
+"g": "Đầu đốt & BMS",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-034",
+"kb": 797,
+"src": "Book 6 · trang 201–205 (5 tr.)",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 201
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-034.1 - BMS PLC Logic Cabinet - Electrical Connection Diagram.pdf",
+"t": "BMS PLC Logic Cabinet - Electrical Connection Diagram",
+"g": "Đầu đốt & BMS",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-034.1",
+"kb": 1847,
+"src": "Book 6 · trang 206–218 (13 tr.)",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 206
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-034.2 - 10-LCP-06 BMS Local Panel - Schematic Diagram.pdf",
+"t": "10-LCP-06 BMS Local Panel - Schematic Diagram",
+"g": "Đầu đốt & BMS",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-034.2",
+"kb": 301,
+"src": "Book 6 · trang 219–220 (2 tr.)",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 219
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-034.3 - 10-LCP-06 BMS Local Panel - Arrangement Drawing.pdf",
+"t": "10-LCP-06 BMS Local Panel - Arrangement Drawing",
+"g": "Đầu đốt & BMS",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-034.3",
+"kb": 353,
+"src": "Book 6 · trang 221–222 (2 tr.)",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 221
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-034.4 - 10-LCP-06 BMS Local Panel - Electrical Connections Diagram.pdf",
+"t": "10-LCP-06 BMS Local Panel - Electrical Connections Diagram",
+"g": "Đầu đốt & BMS",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-034.4",
+"kb": 357,
+"src": "Book 6 · trang 223–224 (2 tr.)",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 223
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-043.D - BMS PLC Logic Diagrams (HIMA ELOP II) and Test Certificate.pdf",
+"t": "BMS PLC Logic Diagrams (HIMA ELOP II) & Test Certificate",
+"g": "Đầu đốt & BMS",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-043.D",
+"kb": 10882,
+"src": "Book 6 · trang 225–309 (85 tr.)",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 225
+},
+{
+"p": "HRSG/Tach theo tai lieu/P-043.E - BMS PLC Logic Cabinet - Schematic Diagram.pdf",
+"t": "BMS PLC Logic Cabinet - Schematic Diagram",
+"g": "Đầu đốt & BMS",
+"tags": [
+"10-B-9001"
+],
+"no": "6212-P-043.E",
+"kb": 7909,
+"src": "Book 6 · trang 310–398 (89 tr.)",
+"bp": "HRSG/BOOK6.pdf",
+"bpg": 310
+},
+{
+"p": "HRSG/BOOK1.pdf",
+"t": "Book 1 – Hướng dẫn lắp đặt, sổ tay vận hành & bảo dưỡng, phụ tùng, bản vẽ tổng thể",
+"g": "Bộ sách đầy đủ",
+"tags": [
+"10-B-9001"
+],
+"no": "",
+"kb": 0,
+"src": "Vendor Data Book SICES · 2098 MR 0161.01"
+},
+{
+"p": "HRSG/BOOK2.pdf",
+"t": "Book 2 – Bản vẽ tổng thể, phần áp lực, đường ống",
+"g": "Bộ sách đầy đủ",
+"tags": [
+"10-B-9001"
+],
+"no": "",
+"kb": 0,
+"src": "Vendor Data Book SICES · 2098 MR 0161.01"
+},
+{
+"p": "HRSG/BOOK3.pdf",
+"t": "Book 3 – Giá đỡ ống, liner",
+"g": "Bộ sách đầy đủ",
+"tags": [
+"10-B-9001"
+],
+"no": "",
+"kb": 0,
+"src": "Vendor Data Book SICES · 2098 MR 0161.01"
+},
+{
+"p": "HRSG/BOOK4.pdf",
+"t": "Book 4 – Vỏ lò, module, ống gió, cửa kiểm tra",
+"g": "Bộ sách đầy đủ",
+"tags": [
+"10-B-9001"
+],
+"no": "",
+"kb": 0,
+"src": "Vendor Data Book SICES · 2098 MR 0161.01"
+},
+{
+"p": "HRSG/BOOK5.pdf",
+"t": "Book 5 – Sàn thao tác, cầu thang, kết cấu vận chuyển",
+"g": "Bộ sách đầy đủ",
+"tags": [
+"10-B-9001"
+],
+"no": "",
+"kb": 0,
+"src": "Vendor Data Book SICES · 2098 MR 0161.01"
+},
+{
+"p": "HRSG/BOOK6.pdf",
+"t": "Book 6 – Bộ tiêu âm, đầu đốt, damper/quạt, data sheet, thiết bị đo, BMS",
+"g": "Bộ sách đầy đủ",
+"tags": [
+"10-B-9001"
+],
+"no": "",
+"kb": 0,
+"src": "Vendor Data Book SICES · 2098 MR 0161.01"
+},
+{
+"p": "HRSG/BOOK7.pdf",
+"t": "Book 7 – Inspection book (hồ sơ kiểm tra chế tạo) vol. 7",
+"g": "Hồ sơ kiểm tra (Inspection book)",
+"tags": [
+"10-B-9001"
+],
+"no": "",
+"kb": 0,
+"src": "Vendor Data Book SICES · 2098 MR 0161.01"
+},
+{
+"p": "HRSG/BOOK8.pdf",
+"t": "Book 8 – Inspection book (hồ sơ kiểm tra chế tạo) vol. 8",
+"g": "Hồ sơ kiểm tra (Inspection book)",
+"tags": [
+"10-B-9001"
+],
+"no": "",
+"kb": 0,
+"src": "Vendor Data Book SICES · 2098 MR 0161.01"
+},
+{
+"p": "HRSG/BOOK9.pdf",
+"t": "Book 9 – Inspection book (hồ sơ kiểm tra chế tạo) vol. 9",
+"g": "Hồ sơ kiểm tra (Inspection book)",
+"tags": [
+"10-B-9001"
+],
+"no": "",
+"kb": 0,
+"src": "Vendor Data Book SICES · 2098 MR 0161.01"
+},
+{
+"p": "HRSG/BOOK10.pdf",
+"t": "Book 10 – Inspection book (hồ sơ kiểm tra chế tạo) vol. 10",
+"g": "Hồ sơ kiểm tra (Inspection book)",
+"tags": [
+"10-B-9001"
+],
+"no": "",
+"kb": 0,
+"src": "Vendor Data Book SICES · 2098 MR 0161.01"
+},
+{
+"p": "HRSG/Test 10-HV-9297/10B9001LC1 LOGIC.bmp",
+"t": "Thử nghiệm van 10-HV-9297 – logic 10-B-9001 LC1 (ảnh chụp)",
+"g": "Đầu đốt & BMS",
+"tags": [
+"10-B-9001",
+"10-HV-9297",
+"HV-9297"
+],
+"no": "",
+"kb": 0,
+"src": "Thư mục Test 10-HV-9297"
+},
+{
+"p": "HRSG/Test 10-HV-9297/FullScreen1_1_s1.bmp",
+"t": "Thử nghiệm van 10-HV-9297 – màn hình 1 (ảnh chụp)",
+"g": "Đầu đốt & BMS",
+"tags": [
+"10-B-9001",
+"10-HV-9297",
+"HV-9297"
+],
+"no": "",
+"kb": 0,
+"src": "Thư mục Test 10-HV-9297"
+},
+{
+"p": "HRSG/Test 10-HV-9297/FullScreen1_2_s1.bmp",
+"t": "Thử nghiệm van 10-HV-9297 – màn hình 2 (ảnh chụp)",
+"g": "Đầu đốt & BMS",
+"tags": [
+"10-B-9001",
+"10-HV-9297",
+"HV-9297"
+],
+"no": "",
+"kb": 0,
+"src": "Thư mục Test 10-HV-9297"
+}
+]

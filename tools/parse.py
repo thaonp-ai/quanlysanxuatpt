@@ -93,6 +93,7 @@ def extract(d, area):
             mid = fixdigits(m2.group(2)); last = m2.group(3).replace("8", "B").replace("0", "O") if not m2.group(3).isalpha() else m2.group(3)
             if not mid.isdigit() or not last.isalpha(): continue
             spec = m2.group(1) + mid + last + m2.group(4)
+            size = re.sub(r'^(\d)-?(\d/\d)$', r'\1-\2', size)
             tag = f'{size}"-{svc}-{num}-{spec}' + (f"-{ins}" if ins else "")
             add(tag, "line", svc, w, conf); continue
         m = re.match(r"^(XV|PSV|SV|HV|PV|FV|LV|TV|BFV|PCV|FCV|LCV|TCV|SDV|MOV|HCV)-(\d{4,5})([A-H]?)$", t)

@@ -283,6 +283,33 @@ def main():
         si = len(sheets)
         sheets.append({"id": sid, "kind": kind, "unit": unit or "?", "dwg": dwg, "title": title,
                        "img": f"img/{sid}.png", "w": imsize(sid)[0], "h": imsize(sid)[1], "src": f"{f} – trang {pg}"})
+        # second-opinion re-read (verify.py): majority vote over several text sizes
+        vf = f"/home/claude/work/verify/{sid}.json"
+        if os.path.exists(vf):
+            V = json.load(open(vf))
+            fixed = []
+            for t in found:
+                for r in V:
+                    if re.match(r"^[BC]\d-", t[0]): break
+                    if r["t"] == t[0] and abs(r["x"] - t[3]) < 1e-3 and abs(r["y"] - t[4]) < 1e-3 and r["votes"]:
+                        win, n = max(r["votes"].items(), key=lambda kv: kv[1])
+                        if win != t[0] and n >= 4 and n >= 2 * r["votes"].get(t[0], 0):
+                            FIXLOG.append((sid, t[0], win)); t = (win,) + tuple(t[1:])
+                        break
+                fixed.append(t)
+            found = fixed
+        found = [(re.sub(r'^(\d)-?(\d/\d)"', r'\1-\2"', t[0]),) + tuple(t[1:]) if t[1] == "line" else t for t in found]
+        ff = f"/home/claude/work/fix35/{sid}.json"
+        if os.path.exists(ff):
+            F35 = json.load(open(ff))
+            fixed = []
+            for t in found:
+                for r in F35:
+                    if r["t"] == t[0] and abs(r["x"] - t[3]) < 1e-3 and abs(r["y"] - t[4]) < 1e-3:
+                        if r["new"] != t[0]: FIXLOG.append((sid, t[0], r["new"])); t = (r["new"],) + tuple(t[1:])
+                        break
+                fixed.append(t)
+            found = fixed
         names_here = set()
         for t in found:
             names_here |= expand(t[0]) if t[1] == "equipment" else {t[0]}
@@ -311,6 +338,34 @@ def main():
         if k3 in tags: tags[k3]["o"] += e["o"]
         else: e["t"] = k3; tags[k3] = e
         FIXLOG.append(("*", k, k3))
+    # equipment read two ways (3/5, P/R) on different sheets: fold the weakly attested reading into the strong one
+    V = collections.Counter()
+    for f in glob.glob("/home/claude/work/verify/*.json"):
+        for r in json.load(open(f)):
+            for k, v in r["votes"].items():
+                for e in (expand(k) if "/" in k else {k}): V[e] += v
+    def base(k): return k.split("/")[0]
+    CAN = str.maketrans({"5": "3"})
+    groups = collections.defaultdict(list)
+    for k, e in tags.items():
+        if e["k"] != "equipment": continue
+        m = re.match(r"^(\d{2})-([A-Z]{1,3})-(\d{4})(.*)$", k)
+        if not m: continue
+        ty = "P" if m.group(2) == "R" else m.group(2)
+        groups[(m.group(1), ty, m.group(3).translate(CAN), m.group(4))].append(k)
+    for ks in groups.values():
+        if len(ks) < 2: continue
+        ks.sort(key=lambda k: (not re.match(r"^\d{2}-R-", k), V[k], len(tags[k]["o"])), reverse=True)
+        win = ks[0]
+        for lo in ks[1:]:
+            if lo not in tags: continue
+            strong_bases = V[base(win)] >= 5 and V[base(lo)] >= 5 and base(win) != base(lo)
+            r_misread = re.match(r"^\d{2}-R-", lo) and not re.match(r"^\d{2}-R-", win)
+            if r_misread or (not strong_bases and len(tags[win]["o"]) >= len(tags[lo]["o"]) and
+                             ((V[lo] <= 2 and V[win] >= 8) or (V[lo] == 0 and V[win] >= 3))):
+                e = tags.pop(lo); tags[win]["o"] += e["o"]
+                if "l" in e: tags[win].setdefault("l", set()).update(e["l"] if isinstance(e["l"], set) else set(e["l"]))
+                FIXLOG.append(("*", lo, win))
     for e in tags.values():
         if "l" in e: e["l"] = sorted(e["l"])
         s = e["s"]

@@ -12,9 +12,10 @@ Repo chứa web tĩnh tra cứu P&ID/PFD Xưởng Phụ Trợ (Đạm Phú Mỹ)
 
 ## Dựng lại dữ liệu từ OCR
 Các script dùng đường dẫn cứng `/home/claude/work` và PDF ở `/mnt/user-data/uploads/PIDvaQLSX/`.
-1. `mkdir -p /home/claude/work && cp tools/* /home/claude/work/ && cd /home/claude/work && tar xzf ocr-cache.tar.gz`
+1. `mkdir -p /home/claude/work && cp tools/* /home/claude/work/ && cd /home/claude/work && tar xzf ocr-cache.tar.gz` (gồm ocr, ocr2, bub, bub2, verify, fix35, tb)
 2. `mkdir -p site && cp -r <repo>/web/. site/`
 3. `python3 build.py dd/mm/yyyy` → ghi `site/data/data.json`; chép lại vào `web/data/`.
-4. Bản vẽ mới: lấy PDF từ máy người dùng (thư mục `E:\4.DPM\APP Xuong PT\PIDvaQLSX`), chạy `ocr.py`, `bubbles.py`, `titles.py`, `tiles.py` (P&ID), `img.py`, `frame.py` + `area.py` cho trang đó, rồi `build.py`.
+4. Kiểm tra lại (đã có kết quả trong cache): `verify.py` đọc lại tag ở nhiều cỡ chữ và bỏ phiếu; `fix35.py` phân biệt 3/5 trong số đường ống theo hình dạng chữ (chỉ tin cậy với font đậm của bản vẽ 2098). Chạy lại hai bước này sau khi OCR trang mới, rồi `build.py`.
+5. Bản vẽ mới: lấy PDF từ máy người dùng (thư mục `E:\4.DPM\APP Xuong PT\PIDvaQLSX`), chạy `ocr.py`, `bubbles.py`, `titles.py`, `tiles.py` (P&ID), `img.py`, `frame.py` + `area.py` cho trang đó, rồi `build.py`.
 
 Commit thẳng vào `main` (người dùng muốn web cập nhật ngay).

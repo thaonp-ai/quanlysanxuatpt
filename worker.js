@@ -2,7 +2,8 @@
 //
 // Đăng nhập
 //   - Mọi trang và file (kể cả ảnh bản vẽ, data.json) chỉ mở được sau khi đăng nhập.
-//   - Tài khoản quản trị dựng sẵn: tên "admin", mật khẩu = secret ADMIN_PASSWORD đặt trên Cloudflare.
+//   - Tài khoản quản trị dựng sẵn: tên "admin". Mật khẩu = secret ADMIN_PASSWORD trên Cloudflare (nếu đặt),
+//     hoặc mật khẩu khởi tạo có mã băm ADMIN_HASH ("salt:hash" PBKDF2) trong wrangler.jsonc.
 //     Đổi secret này là đăng xuất phiên admin cũ.
 //   - Admin tạo/sửa/khóa/xóa tài khoản ở trang /account. Quyền: admin (quản lý tài khoản + sửa tag),
 //     editor (sửa tag), viewer (chỉ xem).
@@ -121,7 +122,9 @@ async function saveUsers(env, users) {
   _usersAt = Date.now();
 }
 async function builtinAdminVersion(env) {
-  return env.ADMIN_PASSWORD ? (await sha("v1:" + env.ADMIN_PASSWORD)).slice(0, 12) : null;
+  const src = (env.ADMIN_PASSWORD || "") + "|" + (env.ADMIN_HASH || "");
+  if (src === "|") return null;
+  return (await sha("v1:" + src)).slice(0, 12);
 }
 async function currentUser(req, env) {
   const tok = cookies(req)[COOKIE];
@@ -284,7 +287,7 @@ let ME=null,USERS=[],cur=null;
 (async()=>{
   ME=await call("/api/me");
   $("me").textContent=ME.name+" · "+ROLES[ME.role];$("pwUser").value=ME.u;
-  if(ME.builtin){$("pwSec").innerHTML='<h2>Đổi mật khẩu</h2><p class="hint">Đây là tài khoản quản trị dựng sẵn. Mật khẩu của nó là secret <b>ADMIN_PASSWORD</b> trên Cloudflare; đổi secret đó để đổi mật khẩu. Nên tạo cho mình một tài khoản quản trị riêng ở bên dưới để dùng hằng ngày.</p>';}
+  if(ME.builtin){$("pwSec").innerHTML='<h2>Đổi mật khẩu</h2><p class="hint">Đây là tài khoản quản trị dựng sẵn. Mật khẩu của nó không đổi được tại đây. Hãy tạo cho mình một tài khoản <b>Quản trị</b> riêng ở bên dưới, đăng xuất rồi đăng nhập bằng tài khoản đó để dùng hằng ngày.</p>';}
   if(ME.role==="admin"){$("usersSec").hidden=false;load();}
 })();
 async function load(){USERS=await call("/api/users");render();}
@@ -327,7 +330,7 @@ $("pwForm").addEventListener("submit",async e=>{e.preventDefault();const m=$("pw
 /* ---------------- handlers ---------------- */
 async function handleLogin(req, env, url) {
   const users = await loadUsers(env, true);
-  const setup = !env.ADMIN_PASSWORD && !Object.keys(users).length;
+  const setup = !env.ADMIN_PASSWORD && !env.ADMIN_HASH && !Object.keys(users).length;
   if (req.method === "GET") {
     if (await currentUser(req, env)) return Response.redirect(url.origin + safeNext(url.searchParams.get("next")), 302);
     return html(loginPage({ next: safeNext(url.searchParams.get("next")), setup }));
@@ -347,7 +350,13 @@ async function handleLogin(req, env, url) {
 
   let payload = null;
   if (u === "admin") {
-    if (env.ADMIN_PASSWORD && safeEq(await sha(p), await sha(env.ADMIN_PASSWORD))) payload = { u, v: await builtinAdminVersion(env) };
+    let ok = false;
+    if (env.ADMIN_PASSWORD) ok = safeEq(await sha(p), await sha(env.ADMIN_PASSWORD));
+    if (!ok && env.ADMIN_HASH && env.ADMIN_HASH.includes(":")) {
+      const [salt, h] = env.ADMIN_HASH.split(":");
+      ok = safeEq((await hashPassword(p, salt)).hash, h);
+    }
+    if (ok) payload = { u, v: await builtinAdminVersion(env) };
   } else {
     const rec = users[u];
     if (rec && !rec.disabled && safeEq((await hashPassword(p, rec.salt)).hash, rec.hash)) payload = { u, v: rec.v };
@@ -457,7 +466,7 @@ async function handleUsers(req, env, me) {
 
 async function handlePassword(req, env, me) {
   if (req.method !== "POST") return json({ error: "Phương thức không hỗ trợ" }, 405);
-  if (me.builtin) return json({ error: "Mật khẩu tài khoản admin dựng sẵn là secret ADMIN_PASSWORD trên Cloudflare" }, 400);
+  if (me.builtin) return json({ error: "Không đổi được mật khẩu tài khoản admin dựng sẵn. Hãy tạo tài khoản quản trị riêng" }, 400);
   let b;
   try { b = await req.json(); } catch { return json({ error: "Dữ liệu gửi lên không đọc được" }, 400); }
   const users = { ...(await loadUsers(env, true)) };

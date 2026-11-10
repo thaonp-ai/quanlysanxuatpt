@@ -180,6 +180,11 @@ body{display:grid;place-items:center;padding:24px max(16px,env(safe-area-inset-l
 form{padding:20px 24px 24px;display:flex;flex-direction:column;gap:14px}
 .chk{flex-direction:row;align-items:center;gap:8px;font-weight:400;color:var(--ink);font-size:13px}
 .btn.primary{padding:11px 14px;font-size:15px}
+label[for=pw]{margin-bottom:-9px}
+.pwbox{position:relative;display:flex}
+.pwbox input{padding-right:64px}
+.eye{position:absolute;right:5px;top:50%;transform:translateY(-50%);border:0;background:none;color:var(--line);font-size:13px;font-weight:600;padding:6px 9px;border-radius:5px;cursor:pointer}
+.eye:hover{background:var(--line-soft)}
 .foot{padding:12px 24px;border-top:1px solid var(--rule);font-size:12px;color:var(--muted);background:var(--paper)}
 .titleblock{display:grid;grid-template-columns:auto 1fr;font-family:var(--f-mono);font-size:10.5px;color:var(--muted);border-top:1px solid var(--rule)}
 .titleblock div{padding:5px 10px;border-right:1px solid var(--rule)}
@@ -191,11 +196,17 @@ form{padding:20px 24px 24px;display:flex;flex-direction:column;gap:14px}
   <form method="post" action="/login" autocomplete="on">
     <input type="hidden" name="next" value="${esc(next)}">
     <label>Tên đăng nhập<input type="text" name="u" value="${esc(user)}" autocomplete="username" autocapitalize="none" spellcheck="false" required ${user ? "" : "autofocus"}></label>
-    <label>Mật khẩu<input type="password" name="p" autocomplete="current-password" required ${user ? "autofocus" : ""}></label>
+    <label for="pw">Mật khẩu</label>
+    <div class="pwbox"><input type="password" id="pw" name="p" autocomplete="current-password" required ${user ? "autofocus" : ""}><button type="button" class="eye" id="eye" aria-pressed="false" aria-controls="pw">Hiện</button></div>
     <label class="chk"><input type="checkbox" name="remember" value="1" checked> Giữ đăng nhập trên máy này (${SESSION_DAYS} ngày)</label>
     ${error ? `<div class="err" role="alert">${esc(error)}</div>` : ""}
     <button class="btn primary" type="submit">Đăng nhập</button>
   </form>
+  <script>
+  (function(){var b=document.getElementById("eye"),i=document.getElementById("pw");
+    b.onclick=function(){var show=i.type==="password";i.type=show?"text":"password";b.textContent=show?"Ẩn":"Hiện";b.setAttribute("aria-pressed",show);i.focus();};
+    i.form.addEventListener("submit",function(){i.type="password";});})();
+  </script>
   <div class="foot">Chưa có tài khoản hoặc quên mật khẩu? Liên hệ người quản lý web để được cấp lại.</div>
 </main>
 </body></html>`;
@@ -239,7 +250,7 @@ td .btn{padding:5px 10px;font-size:12.5px}
       <label>Mật khẩu hiện tại<input type="password" id="pwOld" autocomplete="current-password" required></label>
       <label>Mật khẩu mới (ít nhất 8 ký tự)<input type="password" id="pwNew" autocomplete="new-password" minlength="8" required></label>
       <label>Nhập lại mật khẩu mới<input type="password" id="pwNew2" autocomplete="new-password" minlength="8" required></label>
-      <div class="row"><button class="btn primary" type="submit">Lưu mật khẩu</button><span id="pwMsg"></span></div>
+      <div class="row"><label class="chk"><input type="checkbox" id="pwShow"> Hiện mật khẩu</label><button class="btn primary" type="submit">Lưu mật khẩu</button><span id="pwMsg"></span></div>
     </form>
   </section>
   <section id="usersSec" hidden>
@@ -304,6 +315,7 @@ $("uDel").onclick=async()=>{if(Date.now()-delArm>4000){delArm=Date.now();$("uDel
 function alertBox(msg){const s=document.createElement("section");s.innerHTML='<div class="row" style="justify-content:space-between"><b class="ok">'+esc(msg)+'</b><span class="row"><button class="btn">Chép</button><button class="btn">Đóng</button></span></div>';
   const [cp,cl]=s.querySelectorAll("button");cp.onclick=()=>navigator.clipboard.writeText(msg.replace(/^Đã lưu\\. /,"")).then(()=>cp.textContent="Đã chép",()=>{});cl.onclick=()=>s.remove();
   $("usersSec").before(s);}
+$("pwShow")&&($("pwShow").onchange=e=>["pwOld","pwNew","pwNew2"].forEach(id=>$(id).type=e.target.checked?"text":"password"));
 $("pwForm").addEventListener("submit",async e=>{e.preventDefault();const m=$("pwMsg");m.className="";
   if($("pwNew").value!==$("pwNew2").value){m.className="err";m.textContent="Hai lần nhập mật khẩu mới không khớp.";return;}
   try{await call("/api/password",{old:$("pwOld").value,new:$("pwNew").value});m.className="ok";m.textContent="Đã đổi mật khẩu.";e.target.reset();}

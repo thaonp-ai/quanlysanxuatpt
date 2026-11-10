@@ -253,7 +253,7 @@ for p, t in BOOKS:
     add(p, t, "Bộ sách đầy đủ", [B], src="Vendor Data Book Macchi · Ref. 778")
 
 # Các mục trong sách gộp (trang bắt đầu lấy từ OCR): {đường dẫn sách: [[mã mục, tên, trang, [tag con...], nhóm], ...]}
-SPLIT = {}  # không dùng file tách mục: người dùng muốn mở sách gốc đúng trang
+SPLIT = json.load(open(os.path.join(HERE, "sections_split.json"))) if os.path.exists(os.path.join(HERE, "sections_split.json")) else {}
 for p_, v in SPLIT.items():
     SIZE[v["p"]] = v["kb"] * 1024
 for book, secs in SECTIONS.items():
@@ -267,7 +267,8 @@ for book, secs in SECTIONS.items():
         tags = [B] + [B + "/" + s if not s.startswith("10-") else s for s in subs]
         sp = SPLIT.get(book + "|" + no)
         if sp:  # file đã tách theo mục: mở là đúng trang đầu của mục
-            add(sp["p"], title, g, tags, no=no, src=f"{lab} · trang {sp['from']}–{sp['to']} ({sp['pages']} tr.)")
+            i = add(sp["p"], title, g, tags, no=no, src=f"{lab} · trang {sp['from']}–{sp['to']} ({sp['pages']} tr.)")
+            docs[i]["bp"], docs[i]["bpg"] = book, pg  # sách gốc + trang bắt đầu
         elif SPLIT and "Part 1D" in book and any(x[0].startswith(no + ".") for x in secs):
             continue  # mục lớn đã có các mục con
         else:

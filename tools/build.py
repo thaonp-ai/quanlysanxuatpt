@@ -52,6 +52,23 @@ def header_bottom(sid, words):
 
 HEADBOX = {}
 
+PIPE_SIZES = {"1/2", "3/4", "1", "1-1/4", "1-1/2", "2", "2-1/2", "3", "4", "5", "6", "8", "10", "12", "14", "16", "18", "20",
+              "22", "24", "26", "28", "30", "32", "34", "36", "40", "42", "44", "48", "52", "54", "56", "60", "64", "66", "72", "80"}
+
+def pick_size(cur, votes):
+    """New pipe size from the wide-crop re-read, or None to keep the current one.
+    A truncated reading only ever loses leading characters, so a longer reading that ends with the
+    shorter one wins as soon as it is seen at all."""
+    v = {s: n for s, n in votes.items() if s in PIPE_SIZES}
+    if not v: return None
+    longest = max(v, key=len)
+    if all(longest.endswith(s) for s in v) and (cur != longest) and (longest.endswith(cur) or cur not in PIPE_SIZES):
+        return longest
+    top, n = max(v.items(), key=lambda kv: kv[1])
+    if top != cur and n >= 2 and cur not in PIPE_SIZES: return top
+    if top != cur and n >= 3 and not cur.endswith(top): return top
+    return None
+
 def _overlap(a, b):
     ax0, ay0, ax1, ay1 = a[3], a[4], a[3] + a[5], a[4] + a[6]
     bx0, by0, bx1, by1 = b[3], b[4], b[3] + b[5], b[4] + b[6]
@@ -299,14 +316,30 @@ def main():
                 fixed.append(t)
             found = fixed
         found = [(re.sub(r'^(\d)-?(\d/\d)"', r'\1-\2"', t[0]),) + tuple(t[1:]) if t[1] == "line" else t for t in found]
+        sf = f"/home/claude/work/sizecheck/{sid}.json"
+        if os.path.exists(sf):
+            SC = json.load(open(sf))
+            fixed = []
+            for t in found:
+                if t[1] == "line":
+                    for r in SC:
+                        if abs(r["x"] - t[3]) < 1e-3 and abs(r["y"] - t[4]) < 1e-3:
+                            ns = pick_size(t[0].split('"')[0], r["votes"])
+                            if ns: FIXLOG.append((sid, t[0], ns + t[0][t[0].index('"'):])); t = (ns + t[0][t[0].index('"'):],) + tuple(t[1:])
+                            break
+                fixed.append(t)
+            found = fixed
         ff = f"/home/claude/work/fix35/{sid}.json"
         if os.path.exists(ff):
             F35 = json.load(open(ff))
             fixed = []
             for t in found:
                 for r in F35:
-                    if r["t"] == t[0] and abs(r["x"] - t[3]) < 1e-3 and abs(r["y"] - t[4]) < 1e-3:
-                        if r["new"] != t[0]: FIXLOG.append((sid, t[0], r["new"])); t = (r["new"],) + tuple(t[1:])
+                    if t[1] == "line" and abs(r["x"] - t[3]) < 1e-3 and abs(r["y"] - t[4]) < 1e-3:
+                        mn = re.search(r'"-[A-Z]{1,4}-(\d{7})-', r["new"]); mt = re.search(r'("-[A-Z]{1,4}-)(\d{7})(-)', t[0])
+                        if mn and mt and mn.group(1) != mt.group(2):
+                            nt = t[0][:mt.start(2)] + mn.group(1) + t[0][mt.end(2):]
+                            FIXLOG.append((sid, t[0], nt)); t = (nt,) + tuple(t[1:])
                         break
                 fixed.append(t)
             found = fixed
@@ -366,6 +399,24 @@ def main():
                 e = tags.pop(lo); tags[win]["o"] += e["o"]
                 if "l" in e: tags[win].setdefault("l", set()).update(e["l"] if isinstance(e["l"], set) else set(e["l"]))
                 FIXLOG.append(("*", lo, win))
+    # service codes OCR confuses: I->L, a trailing I dropped or added
+    SVC_FIX = {"LA": "IA", "W": "WI", "VTI": "VT"}
+    for k in [k for k, e in tags.items() if e["k"] == "line"]:
+        m = re.match(r'^(.*?"-)([A-Z]{1,4})(-.*)$', k)
+        if m and m.group(2) in SVC_FIX:
+            nk = m.group(1) + SVC_FIX[m.group(2)] + m.group(3)
+            e = tags.pop(k); e["t"] = nk; e["s"] = SVC_FIX[m.group(2)]
+            if nk in tags: tags[nk]["o"] += e["o"]
+            else: tags[nk] = e
+            FIXLOG.append(("svc", k, nk))
+    # manual corrections checked on the drawings (tools/overrides.json)
+    if os.path.exists("/home/claude/work/overrides.json"):
+        for old, new in json.load(open("/home/claude/work/overrides.json")).items():
+            if old.startswith("_") or old not in tags: continue
+            e = tags.pop(old); e["t"] = new
+            if new in tags: tags[new]["o"] += e["o"]
+            else: tags[new] = e
+            FIXLOG.append(("manual", old, new))
     for e in tags.values():
         if "l" in e: e["l"] = sorted(e["l"])
         s = e["s"]

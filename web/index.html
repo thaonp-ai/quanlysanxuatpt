@@ -140,6 +140,13 @@ a.doc:hover{background:var(--line-soft)}
 .doc .dt code{font-family:var(--f-mono);font-size:12.5px;color:var(--line);margin-right:6px;white-space:nowrap}
 .doc .dm{grid-column:1;font-size:11.5px;color:var(--muted)}
 .doc .go{grid-row:1/3;grid-column:2;align-self:center;font-size:12px;color:var(--line);font-weight:600;white-space:nowrap}
+.doc .dlink{display:contents;color:inherit;text-decoration:none}
+.doc:has(.dlink:hover){background:var(--line-soft)}
+.doc .go{display:flex;gap:6px;align-items:center}
+.doc .go a{text-decoration:none;border-radius:5px;padding:4px 8px}
+.doc .go .vw{color:var(--sheet);background:var(--line)}
+.doc .go .dw{color:var(--muted);border:1px solid var(--rule);font-weight:500}
+.doc .go .dw:hover{color:var(--ink);border-color:var(--ink)}
 .doc .cp{border:1px solid var(--rule);background:var(--sheet);border-radius:5px;font-size:11.5px;padding:3px 8px;color:var(--ink)}
 .docs .empty{padding:24px 16px;color:var(--muted)}
 .pop{position:absolute;right:0;top:calc(100% + 6px);background:var(--sheet);border:1px solid var(--rule);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.14);padding:6px;display:flex;flex-direction:column;min-width:240px;z-index:30}
@@ -361,10 +368,15 @@ function docsFor(t){
   return{direct:[...direct],pkg:[...pkg],pk};
 }
 function docCount(t){if(!VD)return 0;const r=docsFor(t);return r.direct.length+r.pkg.length;}
-function vbase(){const b=VD&&VD.base;if(!b)return null;
-  try{const u=new URL(b);const id=u.searchParams.get("id");const path=id||decodeURIComponent(u.pathname);
-    if(!/\/Documents\//i.test(path))return null;return u.origin+path.replace(/\/$/,"").split("/").map(encodeURIComponent).join("/");}catch(e){return null;}}
-function docUrl(d){const b=vbase();if(!b)return null;return b+"/"+d.p.split("/").map(encodeURIComponent).join("/")+(/\.(docx?|xlsx?|pptx?)$/i.test(d.p)?"?web=1":"");}
+function vinfo(){const b=VD&&VD.base;if(!b)return null;
+  try{const u=new URL(b);const id=u.searchParams.get("id");const path=(id||decodeURIComponent(u.pathname)).replace(/\/$/,"");
+    if(!/\/Documents\//i.test(path))return null;return{origin:u.origin,path};}catch(e){return null;}}
+const encPath=p=>p.split("/").map(encodeURIComponent).join("/");
+/* xem trước: trình xem OneDrive (PDF) hoặc Office Online (Word/Excel); tải về: ?download=1 */
+function docLinks(d){const v=vinfo();if(!v)return null;
+  const sp=v.path+"/"+d.p,direct=v.origin+encPath(sp);
+  const view=/\.(docx?|xlsx?|pptx?)$/i.test(d.p)?direct+"?web=1":v.origin+"/my?id="+encodeURIComponent(sp)+"&parent="+encodeURIComponent(sp.slice(0,sp.lastIndexOf("/")));
+  return{view,dl:direct+"?download=1"};}
 function fmtKB(kb){return kb>=1024?(kb/1024).toFixed(kb>=10240?0:1)+" MB":Math.max(1,Math.round(kb))+" KB";}
 let docsCur=null;
 function openDocs(t){docsCur=t;$("docs").hidden=false;$("docsQ").value="";renderDocs();setTimeout(()=>$("docsQ").focus(),30);}
@@ -373,7 +385,7 @@ function renderDocs(){
   const {direct,pkg,pk}=docsFor(t),q=normq($("docsQ").value);
   $("docsTag").textContent=t.t;
   $("docsSub").textContent=[t.d,(VD.pkgs&&(VD.pkgs[t.t]||VD.pkgs[pk]))||""].filter(Boolean).join(" · ");
-  const b=vbase();$("docsNote").hidden=!!b;
+  const b=vinfo();$("docsNote").hidden=!!b;
   $("docsNote").textContent=b?"":"Chưa cấu hình đường dẫn OneDrive nên chưa mở trực tiếp được; bấm “Chép đường dẫn” rồi tìm file trong thư mục Vendor Data.";
   const match=d=>!q||normq([d.no,d.t,d.src,d.g,d.p].join(" ")).includes(q);
   const groups=(list,lvl)=>{const by=new Map();list.map(i=>VD.docs[i]).filter(match).forEach(d=>{if(!by.has(d.g))by.set(d.g,[]);by.get(d.g).push(d);});
@@ -381,10 +393,10 @@ function renderDocs(){
   const secs=[...groups(direct,""),...groups(pkg,"pkg")];
   const pkName=pk?(Object.keys(VD.tags).find(k=>nk(k)===pk)||pk):"";
   const many=direct.length+pkg.length>25&&!q;
-  $("docsList").innerHTML=secs.length?secs.map(({g,ds,lvl},si)=>`<details ${!many||si===0?"open":""}><summary>${esc(g)} <small>${ds.length}</small>${lvl?`<span class="lvl">CHUNG CỦA ${esc(pkName)}</span>`:""}</summary>${ds.map(d=>{const u=docUrl(d);
+  $("docsList").innerHTML=secs.length?secs.map(({g,ds,lvl},si)=>`<details ${!many||si===0||(!lvl&&direct.length<=25)?"open":""}><summary>${esc(g)} <small>${ds.length}</small>${lvl?`<span class="lvl">CHUNG CỦA ${esc(pkName)}</span>`:""}</summary>${ds.map(d=>{const u=docLinks(d);
       const meta=[d.src,d.pg?`trang ${d.pg}`:"",d.kb?fmtKB(d.kb):""].filter(Boolean).map(esc).join(" · ");
       const inner=`<div class="dt">${d.no?`<code>${esc(d.no)}</code>`:""}${esc(d.t)}</div><div class="dm">${meta}</div>`;
-      return u?`<a class="doc" href="${esc(u)}${d.pg?"#page="+d.pg:""}" target="_blank" rel="noopener">${inner}<span class="go">Mở ↗</span></a>`:`<div class="doc">${inner}<span class="go"><button class="cp" data-p="${esc(d.p)}">Chép đường dẫn</button></span></div>`;}).join("")}</details>`).join(""):'<div class="empty">Không có tài liệu phù hợp.</div>';
+      return u?`<div class="doc"><a class="dlink" href="${esc(u.view)}" target="_blank" rel="noopener" title="Xem trước trên OneDrive${d.pg?` – đến trang ${d.pg}`:""}">${inner}</a><span class="go"><a class="vw" href="${esc(u.view)}" target="_blank" rel="noopener">Xem ↗</a><a class="dw" href="${esc(u.dl)}" target="_blank" rel="noopener" title="Tải file về máy">Tải về</a></span></div>`:`<div class="doc">${inner}<span class="go"><button class="cp" data-p="${esc(d.p)}">Chép đường dẫn</button></span></div>`;}).join("")}</details>`).join(""):'<div class="empty">Không có tài liệu phù hợp.</div>';
   $("docsList").querySelectorAll(".cp").forEach(bt=>bt.onclick=()=>{const p="Vendor Data\\"+bt.dataset.p.replace(/\//g,"\\");
     (navigator.clipboard?navigator.clipboard.writeText(p):Promise.reject()).then(()=>toast("Đã chép: "+p),()=>toast(p));});
 }

@@ -1,0 +1,831 @@
+{
+"pages": 984,
+"items": [
+[
+1,
+2,
+"Vendor Data Book",
+[],
+""
+],
+[
+3,
+4,
+"Index",
+[],
+""
+],
+[
+5,
+8,
+"1.0. General",
+[],
+""
+],
+[
+9,
+65,
+"2.0. Erection",
+[],
+""
+],
+[
+66,
+87,
+"3.0. Operating manual",
+[],
+"intro"
+],
+[
+88,
+88,
+"List of attachments",
+[
+"3.0. Operating manual"
+],
+""
+],
+[
+89,
+90,
+"Attch. A",
+[
+"3.0. Operating manual"
+],
+""
+],
+[
+91,
+108,
+"Attch. B",
+[
+"3.0. Operating manual"
+],
+""
+],
+[
+109,
+122,
+"Attch. C",
+[
+"3.0. Operating manual"
+],
+""
+],
+[
+123,
+125,
+"Attch. D",
+[
+"3.0. Operating manual"
+],
+""
+],
+[
+126,
+141,
+"Attch. E",
+[
+"3.0. Operating manual"
+],
+""
+],
+[
+142,
+154,
+"Attch. F",
+[
+"3.0. Operating manual"
+],
+""
+],
+[
+155,
+155,
+"4.0. Spare Parts",
+[],
+"intro"
+],
+[
+156,
+157,
+"Commissioning SP",
+[
+"4.0. Spare Parts"
+],
+""
+],
+[
+158,
+162,
+"Two years SP",
+[
+"4.0. Spare Parts"
+],
+""
+],
+[
+163,
+183,
+"Sectional dwgs.",
+[
+"4.0. Spare Parts"
+],
+""
+],
+[
+184,
+187,
+"5.0. Documents & drawings",
+[],
+"intro"
+],
+[
+188,
+196,
+"5.1. Drawing list",
+[
+"5.0. Documents & drawings"
+],
+""
+],
+[
+197,
+198,
+"5.2. General arrangement",
+[
+"5.0. Documents & drawings"
+],
+""
+],
+[
+199,
+200,
+"5.3. Foundation layout & loading plan",
+[
+"5.0. Documents & drawings"
+],
+""
+],
+[
+201,
+202,
+"5.4. Outline dwg. c/w interface conn. with location of nozzle",
+[
+"5.0. Documents & drawings"
+],
+""
+],
+[
+203,
+203,
+"5.5. Main equipments",
+[
+"5.0. Documents & drawings"
+],
+"intro"
+],
+[
+204,
+238,
+"5.5.1 Electrolyzers",
+[
+"5.0. Documents & drawings",
+"5.5. Main equipments"
+],
+""
+],
+[
+239,
+287,
+"5.5.2. Seawater, Hypoclorite & Acid Pumps",
+[
+"5.0. Documents & drawings",
+"5.5. Main equipments"
+],
+""
+],
+[
+288,
+368,
+"5.5.3. Blowers",
+[
+"5.0. Documents & drawings",
+"5.5. Main equipments"
+],
+""
+],
+[
+369,
+377,
+"5.5.4. Clianing Filter",
+[
+"5.0. Documents & drawings",
+"5.5. Main equipments"
+],
+""
+],
+[
+378,
+378,
+"5.6. Piping & Valves",
+[
+"5.0. Documents & drawings"
+],
+"intro"
+],
+[
+379,
+384,
+"5.6.1. Piping Class",
+[
+"5.0. Documents & drawings",
+"5.6. Piping & Valves"
+],
+""
+],
+[
+385,
+386,
+"5.6.2. Piping  piping support lay-out",
+[
+"5.0. Documents & drawings",
+"5.6. Piping & Valves"
+],
+""
+],
+[
+387,
+390,
+"5.6.3. Valve list",
+[
+"5.0. Documents & drawings",
+"5.6. Piping & Valves"
+],
+""
+],
+[
+391,
+395,
+"5.6.4.1. Check valve",
+[
+"5.0. Documents & drawings",
+"5.6. Piping & Valves",
+"5.6.4. Instruction Manual - Valve dwg."
+],
+""
+],
+[
+396,
+405,
+"5.6.4.2. C-PVC Ball valve",
+[
+"5.0. Documents & drawings",
+"5.6. Piping & Valves",
+"5.6.4. Instruction Manual - Valve dwg."
+],
+""
+],
+[
+406,
+410,
+"5.6.4.3. C-PVC Ball check valve",
+[
+"5.0. Documents & drawings",
+"5.6. Piping & Valves",
+"5.6.4. Instruction Manual - Valve dwg."
+],
+""
+],
+[
+411,
+412,
+"5.7. Instruments",
+[
+"5.0. Documents & drawings"
+],
+"intro"
+],
+[
+413,
+415,
+"5.7.1. Instrument list",
+[
+"5.0. Documents & drawings",
+"5.7. Instruments"
+],
+""
+],
+[
+416,
+423,
+"5.7.2. Diff. Press. Switch/Diff. Press. Gauge/Press. Gauge & Temp. Gauge",
+[
+"5.0. Documents & drawings",
+"5.7. Instruments"
+],
+""
+],
+[
+424,
+426,
+"5.7.3. On-Off valves",
+[
+"5.0. Documents & drawings",
+"5.7. Instruments"
+],
+""
+],
+[
+427,
+510,
+"5.7.4. Control valve",
+[
+"5.0. Documents & drawings",
+"5.7. Instruments"
+],
+""
+],
+[
+511,
+574,
+"5.7.5. Flow transmitter",
+[
+"5.0. Documents & drawings",
+"5.7. Instruments"
+],
+""
+],
+[
+575,
+583,
+"5.7.6. Temperature switch",
+[
+"5.0. Documents & drawings",
+"5.7. Instruments"
+],
+""
+],
+[
+584,
+639,
+"5.7.7. Level Transmitter",
+[
+"5.0. Documents & drawings",
+"5.7. Instruments"
+],
+""
+],
+[
+640,
+661,
+"5.7.8. Flow switch",
+[
+"5.0. Documents & drawings",
+"5.7. Instruments"
+],
+""
+],
+[
+662,
+670,
+"5.7.9. Pressure control valve",
+[
+"5.0. Documents & drawings",
+"5.7. Instruments"
+],
+""
+],
+[
+671,
+671,
+"5.8. Local control panel",
+[
+"5.0. Documents & drawings"
+],
+"intro"
+],
+[
+672,
+702,
+"5.8.1. Control panel dwg.",
+[
+"5.0. Documents & drawings",
+"5.8. Local control panel"
+],
+""
+],
+[
+703,
+719,
+"5.8.2. Interconnecting & Terminal strip. dwg.",
+[
+"5.0. Documents & drawings",
+"5.8. Local control panel"
+],
+""
+],
+[
+720,
+720,
+"5.8.3. Accessories",
+[
+"5.0. Documents & drawings",
+"5.8. Local control panel"
+],
+"intro"
+],
+[
+721,
+728,
+"SCL500 Power Supplies",
+[
+"5.0. Documents & drawings",
+"5.8. Local control panel",
+"5.8.3. Accessories"
+],
+""
+],
+[
+729,
+738,
+"SCL500 Analog input modules",
+[
+"5.0. Documents & drawings",
+"5.8. Local control panel",
+"5.8.3. Accessories"
+],
+""
+],
+[
+739,
+748,
+"SCL500 32-Point Discrete I/O Modules",
+[
+"5.0. Documents & drawings",
+"5.8. Local control panel",
+"5.8.3. Accessories"
+],
+""
+],
+[
+749,
+756,
+"SCL500 Modular Chassis",
+[
+"5.0. Documents & drawings",
+"5.8. Local control panel",
+"5.8.3. Accessories"
+],
+""
+],
+[
+757,
+759,
+"SCL4500 Memory Modules",
+[
+"5.0. Documents & drawings",
+"5.8. Local control panel",
+"5.8.3. Accessories"
+],
+""
+],
+[
+760,
+769,
+"Remote I/O adapter module",
+[
+"5.0. Documents & drawings",
+"5.8. Local control panel",
+"5.8.3. Accessories"
+],
+""
+],
+[
+770,
+777,
+"Backup scanner module",
+[
+"5.0. Documents & drawings",
+"5.8. Local control panel",
+"5.8.3. Accessories"
+],
+""
+],
+[
+778,
+779,
+"I/O module ready cables",
+[
+"5.0. Documents & drawings",
+"5.8. Local control panel",
+"5.8.3. Accessories"
+],
+""
+],
+[
+780,
+784,
+"Din-Rail power supply",
+[
+"5.0. Documents & drawings",
+"5.8. Local control panel",
+"5.8.3. Accessories"
+],
+""
+],
+[
+785,
+785,
+"SLR10.100",
+[
+"5.0. Documents & drawings",
+"5.8. Local control panel",
+"5.8.3. Accessories"
+],
+""
+],
+[
+786,
+786,
+"relay/lamp holder",
+[
+"5.0. Documents & drawings",
+"5.8. Local control panel",
+"5.8.3. Accessories"
+],
+""
+],
+[
+787,
+788,
+"Luminaire",
+[
+"5.0. Documents & drawings",
+"5.8. Local control panel",
+"5.8.3. Accessories"
+],
+""
+],
+[
+789,
+792,
+"Smart repeaters",
+[
+"5.0. Documents & drawings",
+"5.8. Local control panel",
+"5.8.3. Accessories"
+],
+""
+],
+[
+793,
+795,
+"Solenoid drivers",
+[
+"5.0. Documents & drawings",
+"5.8. Local control panel",
+"5.8.3. Accessories"
+],
+""
+],
+[
+796,
+799,
+"Drivers",
+[
+"5.0. Documents & drawings",
+"5.8. Local control panel",
+"5.8.3. Accessories"
+],
+""
+],
+[
+800,
+800,
+"5.9. Electrical equipment",
+[
+"5.0. Documents & drawings"
+],
+"intro"
+],
+[
+801,
+816,
+"5.9.1. Electrical motors",
+[
+"5.0. Documents & drawings",
+"5.9. Electrical equipment"
+],
+""
+],
+[
+817,
+840,
+"5.9.2. Transformer/rectifier",
+[
+"5.0. Documents & drawings",
+"5.9. Electrical equipment"
+],
+""
+],
+[
+841,
+846,
+"5.9.3. Electrical cable list",
+[
+"5.0. Documents & drawings",
+"5.9. Electrical equipment"
+],
+""
+],
+[
+847,
+849,
+"5.10. Noise Source data sheet",
+[
+"5.0. Documents & drawings"
+],
+""
+],
+[
+850,
+851,
+"5.11. Other drawings",
+[
+"5.0. Documents & drawings"
+],
+"intro"
+],
+[
+852,
+852,
+"Single line diagram",
+[
+"5.0. Documents & drawings",
+"5.11. Other drawings"
+],
+""
+],
+[
+853,
+862,
+"Procedure Qualification report (MGS-01)",
+[
+"5.0. Documents & drawings",
+"5.11. Other drawings"
+],
+""
+],
+[
+863,
+867,
+"Procedure Qualification report (MSG-02)",
+[
+"5.0. Documents & drawings",
+"5.11. Other drawings"
+],
+""
+],
+[
+868,
+883,
+"Construction dwg for all equipment",
+[
+"5.0. Documents & drawings",
+"5.11. Other drawings"
+],
+""
+],
+[
+884,
+894,
+"Instrument hook-up dwg",
+[
+"5.0. Documents & drawings",
+"5.11. Other drawings"
+],
+""
+],
+[
+895,
+898,
+"Pumps performance curve",
+[
+"5.0. Documents & drawings",
+"5.11. Other drawings"
+],
+""
+],
+[
+899,
+926,
+"Painting specification",
+[
+"5.0. Documents & drawings",
+"5.11. Other drawings"
+],
+""
+],
+[
+927,
+932,
+"Calculation note",
+[
+"5.0. Documents & drawings",
+"5.11. Other drawings"
+],
+""
+],
+[
+933,
+934,
+"Completed lubricant chart",
+[
+"5.0. Documents & drawings",
+"5.11. Other drawings"
+],
+""
+],
+[
+935,
+935,
+"Cable tray route dwg.",
+[
+"5.0. Documents & drawings",
+"5.11. Other drawings"
+],
+""
+],
+[
+936,
+937,
+"Line list",
+[
+"5.0. Documents & drawings",
+"5.11. Other drawings"
+],
+""
+],
+[
+938,
+958,
+"Piping isometric c/w MTO",
+[
+"5.0. Documents & drawings",
+"5.11. Other drawings"
+],
+""
+],
+[
+959,
+980,
+"MCC wiring diagram",
+[
+"5.0. Documents & drawings",
+"5.11. Other drawings"
+],
+""
+],
+[
+981,
+981,
+"River water filtration & booster skid",
+[
+"5.0. Documents & drawings",
+"5.11. Other drawings"
+],
+""
+],
+[
+982,
+982,
+"Acid washing skid",
+[
+"5.0. Documents & drawings",
+"5.11. Other drawings"
+],
+""
+],
+[
+983,
+983,
+"Sodium hypochlorite transfer pumps",
+[
+"5.0. Documents & drawings",
+"5.11. Other drawings"
+],
+""
+],
+[
+984,
+984,
+"Degassing tank & blowers skid",
+[
+"5.0. Documents & drawings",
+"5.11. Other drawings"
+],
+""
+]
+]
+}

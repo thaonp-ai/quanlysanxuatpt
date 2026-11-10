@@ -42,6 +42,11 @@ GROUPS = [
     "Tài liệu nhà sản xuất phụ kiện",
     "Quạt, damper & guillotine",
     "Hồ sơ kiểm tra (Inspection book)",
+    "Hệ thống nước làm mát (P&ID, PFD, mô tả công nghệ)",
+    "Điện & tủ điều khiển",
+    "Đơn hàng & yêu cầu kỹ thuật (MR/SR)",
+    "Dự án cải tạo 2016–2017 (Revamp)",
+    "Sự cố & trao đổi",
     "Bộ sách đầy đủ",
 ]
 
@@ -288,11 +293,25 @@ if os.path.exists(HDOCS):
         if d.get("bp"):
             docs[i]["bp"], docs[i]["bpg"] = d["bp"], d["bpg"]
 
+# ---------------- 4. Nước làm mát (Unit 33), danh mục do nlm/build_nlm.py tạo ----------------
+NDOCS = os.path.join(HERE, "nlm", "docs.json")
+if os.path.exists(NDOCS):
+    for p_, sz in json.load(open(os.path.join(HERE, "nlm", "sizes.json"))):
+        SIZE[p_] = sz
+    for d in json.load(open(NDOCS)):
+        if d["kb"]:
+            SIZE[d["p"]] = d["kb"] * 1024
+        i = add(d["p"], d["t"], d["g"], d["tags"], no=d.get("no", ""), src=d.get("src", ""))
+        if d.get("bp"):
+            docs[i]["bp"], docs[i]["bpg"] = d["bp"], d["bpg"]
+
 out = {
     "base": BASE,
     "root": "Vendor Data",
     "groups": GROUPS,
-    "pkgs": {B: "Lò hơi phụ trợ – Macchi (Ref. 778)", "10-B-9001": "Lò hơi thu hồi nhiệt HRSG – SICES (2098 MR 0161.01)"},
+    "pkgs": {B: "Lò hơi phụ trợ – Macchi (Ref. 778)", "10-B-9001": "Lò hơi thu hồi nhiệt HRSG – SICES (2098 MR 0161.01)",
+             "30-CT-3001": "Tháp giải nhiệt – Hamon/KHC (MR 0311-50)", "30-P-3001": "Bơm nước làm mát – Worthington (MR 0910-54)",
+             "30-P-3002": "Bơm nước làm mát dẫn động turbine (MR 0910-54)", "30-E-3001": "Thiết bị trao đổi nhiệt tấm – Alfa Laval (MR 0660-60)"},
     "docs": docs,
     "tags": tagmap,
 }

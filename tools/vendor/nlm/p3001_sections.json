@@ -1,0 +1,793 @@
+[
+[
+"A1",
+8,
+16,
+"Data sheet & đường đặc tính bơm",
+"Data sheet & tài liệu chính"
+],
+[
+"A1",
+18,
+33,
+"Quy trình phân tích dao động xoắn",
+"Data sheet & tài liệu chính"
+],
+[
+"A1",
+35,
+37,
+"Danh mục tiêu thụ phụ trợ",
+"Data sheet & tài liệu chính"
+],
+[
+"A1",
+39,
+42,
+"Chứng chỉ thử nghiệm bơm",
+"Chạy thử"
+],
+[
+"A1",
+44,
+84,
+"Hướng dẫn lắp đặt, vận hành, bảo dưỡng bơm đứng QL (Worthington)",
+"Vận hành & bảo dưỡng"
+],
+[
+"A1",
+86,
+89,
+"Khớp nối Metastream (John Crane) – hướng dẫn",
+"Vận hành & bảo dưỡng"
+],
+[
+"A1",
+91,
+94,
+"Tủ điều khiển tại chỗ – danh sách I/O",
+"Điện & tủ điều khiển"
+],
+[
+"A1",
+96,
+176,
+"Tủ điều khiển tại chỗ – sơ đồ đấu dây, bố trí, kết nối khí",
+"Điện & tủ điều khiển"
+],
+[
+"A1",
+178,
+194,
+"Sơ đồ logic chức năng (bơm dầu phụ, dừng turbine)",
+"Thiết bị đo & điều khiển"
+],
+[
+"A1",
+196,
+212,
+"Data sheet hệ thống dầu bôi trơn",
+"Data sheet & tài liệu chính"
+],
+[
+"A1",
+214,
+224,
+"Lọc dầu Indufil – tài liệu",
+"Tài liệu nhà sản xuất phụ kiện"
+],
+[
+"A1",
+226,
+245,
+"Bơm bánh răng Kracht – tài liệu",
+"Tài liệu nhà sản xuất phụ kiện"
+],
+[
+"A1",
+247,
+258,
+"Motor ABB M3000 – tài liệu",
+"Tài liệu nhà sản xuất phụ kiện"
+],
+[
+"A1",
+260,
+279,
+"Van điều khiển Spirax Sarco Fluxotrol",
+"Tài liệu nhà sản xuất phụ kiện"
+],
+[
+"A1",
+281,
+304,
+"Van an toàn – hướng dẫn",
+"Tài liệu nhà sản xuất phụ kiện"
+],
+[
+"A1",
+306,
+309,
+"Công tắc áp suất United Electric UE400",
+"Tài liệu nhà sản xuất phụ kiện"
+],
+[
+"A1",
+311,
+323,
+"Data sheet hệ dầu bôi trơn hộp số góc",
+"Data sheet & tài liệu chính"
+],
+[
+"A1",
+325,
+329,
+"Data sheet hộp số góc (right angle gear)",
+"Data sheet & tài liệu chính"
+],
+[
+"A1",
+331,
+343,
+"Hướng dẫn lắp đặt, bảo dưỡng hộp số góc Ro (Delta E Mechanica)",
+"Vận hành & bảo dưỡng"
+],
+[
+"A1",
+345,
+356,
+"Lọc dầu Indufil (hộp số góc)",
+"Tài liệu nhà sản xuất phụ kiện"
+],
+[
+"A1",
+358,
+400,
+"Bơm dầu – hướng dẫn sử dụng & bảo dưỡng",
+"Tài liệu nhà sản xuất phụ kiện"
+],
+[
+"A1",
+402,
+413,
+"Motor ABB M3000 (hộp số góc)",
+"Tài liệu nhà sản xuất phụ kiện"
+],
+[
+"A1",
+415,
+418,
+"Bộ làm mát dầu – vận hành & bảo dưỡng",
+"Tài liệu nhà sản xuất phụ kiện"
+],
+[
+"A1",
+420,
+420,
+"Đồng hồ áp suất – hướng dẫn",
+"Tài liệu nhà sản xuất phụ kiện"
+],
+[
+"A1",
+422,
+423,
+"Công tắc áp suất UE400 (hộp số góc)",
+"Tài liệu nhà sản xuất phụ kiện"
+],
+[
+"A2",
+5,
+19,
+"Data sheet hộp số song song (parallel gear)",
+"Data sheet & tài liệu chính"
+],
+[
+"A2",
+21,
+33,
+"Hướng dẫn lắp đặt, bảo dưỡng hộp số song song (Delta E Mechanica)",
+"Vận hành & bảo dưỡng"
+],
+[
+"A2",
+35,
+44,
+"Data sheet thiết bị đo",
+"Thiết bị đo & điều khiển"
+],
+[
+"A2",
+46,
+53,
+"Đồng hồ áp suất WIKA",
+"Thiết bị đo & điều khiển"
+],
+[
+"A2",
+55,
+60,
+"Nhiệt kế lưỡng kim",
+"Thiết bị đo & điều khiển"
+],
+[
+"A2",
+62,
+75,
+"Bộ chuyển đổi nhiệt độ Rosemount 644",
+"Thiết bị đo & điều khiển"
+],
+[
+"A2",
+77,
+110,
+"Cảm biến rung Velomitor (Bently Nevada)",
+"Thiết bị đo & điều khiển"
+],
+[
+"A2",
+112,
+133,
+"Van điện từ – hướng dẫn",
+"Thiết bị đo & điều khiển"
+],
+[
+"A2",
+135,
+137,
+"Biên bản hiệu chuẩn",
+"Thiết bị đo & điều khiển"
+],
+[
+"A2",
+139,
+143,
+"Danh mục phụ tùng & khả năng lắp lẫn",
+"Phụ tùng"
+],
+[
+"A2",
+145,
+149,
+"Hướng dẫn vận chuyển, nâng hạ, lưu kho",
+"Vận hành & bảo dưỡng"
+],
+[
+"A2",
+151,
+172,
+"Quy cách sơn",
+"Tổng quát, móng & lắp dựng"
+],
+[
+"A2",
+174,
+175,
+"Danh sách nhà thầu phụ & nhà cung cấp chính",
+"Đơn hàng & yêu cầu kỹ thuật (MR/SR)"
+],
+[
+"A2",
+177,
+202,
+"Bản vẽ: GA bơm, mặt cắt bơm, outline turbine, sơ đồ điện, hộp số, hệ dầu bôi trơn",
+"Bản vẽ chế tạo"
+],
+[
+"A2",
+204,
+205,
+"Bản vẽ khớp nối turbine – hộp số",
+"Bản vẽ chế tạo"
+],
+[
+"A2",
+207,
+208,
+"Bản vẽ khớp nối hộp số góc – hộp số",
+"Bản vẽ chế tạo"
+],
+[
+"A2",
+210,
+211,
+"P&ID bơm – turbine – hệ dầu (DCM402973)",
+"Bản vẽ chế tạo"
+],
+[
+"A2",
+213,
+214,
+"Bản vẽ nhãn thiết bị",
+"Bản vẽ chế tạo"
+],
+[
+"A2",
+216,
+216,
+"Bản vẽ độ lệch căn chỉnh (alignment offset)",
+"Bản vẽ chế tạo"
+],
+[
+"A2",
+218,
+219,
+"Danh mục dầu bôi trơn hệ dầu, hộp số",
+"Vận hành & bảo dưỡng"
+],
+[
+"A2",
+221,
+224,
+"Danh sách điểm cài đặt (set point)",
+"Thiết bị đo & điều khiển"
+],
+[
+"A2",
+226,
+227,
+"Data sheet độ ồn",
+"Data sheet & tài liệu chính"
+],
+[
+"A2",
+229,
+237,
+"Data sheet turbine hơi",
+"Data sheet & tài liệu chính"
+],
+[
+"A2",
+239,
+240,
+"Mô hình rotor (turbine)",
+"Data sheet & tài liệu chính"
+],
+[
+"A2",
+242,
+246,
+"Biểu đồ Campbell & Goodman (turbine)",
+"Data sheet & tài liệu chính"
+],
+[
+"A2",
+248,
+264,
+"Sơ đồ logic khởi động/dừng",
+"Thiết bị đo & điều khiển"
+],
+[
+"A3",
+6,
+77,
+"Turbine hơi Dresser-Rand – cảnh báo, data sheet, vận hành",
+"Vận hành & bảo dưỡng"
+],
+[
+"A3",
+79,
+79,
+"Đường đặc tính turbine",
+"Data sheet & tài liệu chính"
+],
+[
+"A3",
+81,
+81,
+"Phụ lục A – danh mục bản vẽ & phụ tùng turbine",
+"Phụ tùng"
+],
+[
+"A3",
+83,
+85,
+"Danh mục phụ tùng turbine",
+"Phụ tùng"
+],
+[
+"A3",
+87,
+87,
+"Vòng làm kín carbon",
+"Phụ tùng"
+],
+[
+"A3",
+89,
+91,
+"Bản vẽ outline turbine",
+"Bản vẽ chế tạo"
+],
+[
+"A3",
+93,
+93,
+"Bản vẽ & danh mục chi tiết turbine (1)",
+"Bản vẽ chế tạo"
+],
+[
+"A3",
+95,
+95,
+"Bản vẽ & danh mục chi tiết turbine (2)",
+"Bản vẽ chế tạo"
+],
+[
+"A3",
+97,
+97,
+"Bản vẽ & danh mục chi tiết turbine (3)",
+"Bản vẽ chế tạo"
+],
+[
+"A3",
+99,
+99,
+"Bản vẽ & danh mục chi tiết turbine (4)",
+"Bản vẽ chế tạo"
+],
+[
+"A3",
+101,
+101,
+"Bản vẽ & danh mục chi tiết turbine (5)",
+"Bản vẽ chế tạo"
+],
+[
+"A3",
+103,
+103,
+"Bộ điều tốc – chi tiết",
+"Bản vẽ chế tạo"
+],
+[
+"A3",
+105,
+105,
+"Van tay (hand valve) – chi tiết",
+"Bản vẽ chế tạo"
+],
+[
+"A3",
+107,
+107,
+"Bộ chấp hành (actuator)",
+"Bản vẽ chế tạo"
+],
+[
+"A3",
+109,
+109,
+"Gối đỡ đầu hơi – chi tiết",
+"Bản vẽ chế tạo"
+],
+[
+"A3",
+111,
+113,
+"Sơ đồ đấu dây cảm biến tốc độ",
+"Điện & tủ điều khiển"
+],
+[
+"A3",
+115,
+118,
+"Chương trình bộ điều tốc Peak 150",
+"Thiết bị đo & điều khiển"
+],
+[
+"A3",
+120,
+127,
+"Danh mục thiết bị phụ turbine",
+"Bản vẽ chế tạo"
+],
+[
+"A3",
+129,
+142,
+"P&ID turbine",
+"Bản vẽ chế tạo"
+],
+[
+"A3",
+144,
+144,
+"Phụ lục B – thiết bị đặc biệt & tài liệu nhà cung cấp",
+"Tài liệu nhà sản xuất phụ kiện"
+],
+[
+"A3",
+146,
+176,
+"Vữa rót Embeco 885",
+"Tài liệu nhà sản xuất phụ kiện"
+],
+[
+"A3",
+178,
+317,
+"Bộ điều tốc số Woodward Peak 150",
+"Thiết bị đo & điều khiển"
+],
+[
+"A3",
+319,
+350,
+"Bộ chấp hành Valtek",
+"Tài liệu nhà sản xuất phụ kiện"
+],
+[
+"A3",
+352,
+353,
+"Van điện từ ASCO 8210",
+"Tài liệu nhà sản xuất phụ kiện"
+],
+[
+"A3",
+355,
+361,
+"Cảm biến tốc độ từ VAS",
+"Thiết bị đo & điều khiển"
+],
+[
+"A4",
+4,
+82,
+"Bently Nevada 3500 – lắp đặt & bảo dưỡng rack",
+"Thiết bị đo & điều khiển"
+],
+[
+"A4",
+84,
+494,
+"Bently Nevada 3500 – sơ đồ đấu dây hiện trường",
+"Thiết bị đo & điều khiển"
+],
+[
+"A4",
+496,
+507,
+"3500/15 – nguồn AC/DC",
+"Thiết bị đo & điều khiển"
+],
+[
+"A4",
+509,
+545,
+"3500/20 – module giao tiếp rack",
+"Thiết bị đo & điều khiển"
+],
+[
+"A4",
+547,
+614,
+"3500/25 – module Keyphasor",
+"Thiết bị đo & điều khiển"
+],
+[
+"A4",
+616,
+648,
+"3500/32 & 3500/34 – module relay",
+"Thiết bị đo & điều khiển"
+],
+[
+"A5",
+3,
+114,
+"3500/92 – module truyền thông",
+"Thiết bị đo & điều khiển"
+],
+[
+"A5",
+116,
+344,
+"3500/40M – module giám sát Proximitor",
+"Thiết bị đo & điều khiển"
+],
+[
+"A5",
+346,
+829,
+"3500/42M – module giám sát Proximitor/Seismic",
+"Thiết bị đo & điều khiển"
+],
+[
+"BCD",
+5,
+13,
+"Data sheet & đường đặc tính bơm",
+"Data sheet & tài liệu chính"
+],
+[
+"BCD",
+15,
+26,
+"Quy trình phân tích dao động xoắn",
+"Data sheet & tài liệu chính"
+],
+[
+"BCD",
+28,
+30,
+"Danh mục tiêu thụ phụ trợ",
+"Data sheet & tài liệu chính"
+],
+[
+"BCD",
+32,
+41,
+"Chứng chỉ thử nghiệm bơm",
+"Chạy thử"
+],
+[
+"BCD",
+43,
+83,
+"Hướng dẫn lắp đặt, vận hành, bảo dưỡng bơm đứng QL (Worthington)",
+"Vận hành & bảo dưỡng"
+],
+[
+"BCD",
+85,
+93,
+"Data sheet & đặc tính motor trung thế",
+"Điện & tủ điều khiển"
+],
+[
+"BCD",
+95,
+96,
+"Bản vẽ motor điện",
+"Điện & tủ điều khiển"
+],
+[
+"BCD",
+98,
+99,
+"Bản vẽ hộp đấu dây motor",
+"Điện & tủ điều khiển"
+],
+[
+"BCD",
+101,
+199,
+"Hướng dẫn lắp đặt, bảo dưỡng motor không đồng bộ",
+"Vận hành & bảo dưỡng"
+],
+[
+"BCD",
+201,
+202,
+"Chứng chỉ thử nghiệm motor (1)",
+"Chạy thử"
+],
+[
+"BCD",
+204,
+211,
+"Chứng chỉ thử nghiệm motor (2)",
+"Chạy thử"
+],
+[
+"BCD",
+213,
+214,
+"Chứng chỉ thử nghiệm motor (3)",
+"Chạy thử"
+],
+[
+"BCD",
+216,
+219,
+"Tủ điều khiển tại chỗ – danh sách I/O",
+"Điện & tủ điều khiển"
+],
+[
+"BCD",
+221,
+301,
+"Tủ điều khiển tại chỗ – sơ đồ đấu dây, bố trí",
+"Điện & tủ điều khiển"
+],
+[
+"BCD",
+303,
+320,
+"Sơ đồ logic chức năng",
+"Thiết bị đo & điều khiển"
+],
+[
+"BCD",
+322,
+331,
+"Data sheet thiết bị đo",
+"Thiết bị đo & điều khiển"
+],
+[
+"BCD",
+333,
+340,
+"Đồng hồ áp suất WIKA",
+"Thiết bị đo & điều khiển"
+],
+[
+"BCD",
+342,
+347,
+"Nhiệt kế lưỡng kim",
+"Thiết bị đo & điều khiển"
+],
+[
+"BCD",
+349,
+382,
+"Cảm biến rung Velomitor",
+"Thiết bị đo & điều khiển"
+],
+[
+"BCD",
+384,
+386,
+"Biên bản hiệu chuẩn",
+"Thiết bị đo & điều khiển"
+],
+[
+"BCD",
+388,
+392,
+"Danh mục phụ tùng & khả năng lắp lẫn",
+"Phụ tùng"
+],
+[
+"BCD",
+394,
+398,
+"Hướng dẫn vận chuyển, nâng hạ, lưu kho",
+"Vận hành & bảo dưỡng"
+],
+[
+"BCD",
+400,
+421,
+"Quy cách sơn",
+"Tổng quát, móng & lắp dựng"
+],
+[
+"BCD",
+423,
+424,
+"Danh sách nhà thầu phụ & nhà cung cấp chính",
+"Đơn hàng & yêu cầu kỹ thuật (MR/SR)"
+],
+[
+"BCD",
+426,
+431,
+"Bản vẽ GA & mặt cắt bơm",
+"Bản vẽ chế tạo"
+],
+[
+"BCD",
+433,
+434,
+"Data sheet độ ồn",
+"Data sheet & tài liệu chính"
+],
+[
+"BCD",
+436,
+437,
+"Danh mục dầu bôi trơn motor",
+"Vận hành & bảo dưỡng"
+],
+[
+"BCD",
+439,
+442,
+"Danh sách điểm cài đặt (set point)",
+"Thiết bị đo & điều khiển"
+]
+]

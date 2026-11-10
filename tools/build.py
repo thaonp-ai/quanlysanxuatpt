@@ -64,6 +64,13 @@ def is_reference(t, words):
         # "FROM" glued to the tag in one OCR word
         if wd[6] == (1 if vert else 0) and re.match(r"^\(?(FROM|TO|FOR)\d", tx) and abs(wd[1] - x) < th * 1.5 and abs(wd[2] - y) < th * 1.5:
             return True
+        if not vert and wd[6] == 0 and abs((wd[2] + wd[4] / 2) - (y + h / 2)) < th * 0.8:
+            gap = x - (wd[1] + wd[3])
+            # "...TO" glued to the word before ("PRESSURIZATIONTO 10-T3002")
+            if -th * 0.5 < gap < th * 2 and len(tx) > 6 and re.search(r"(TO|FROM)$", tx) and not re.search(r"AUTO$", tx): return True
+            # signal / logic text after the tag ("30-P1003B STOP", "40-PK2001/P1A/B START", "... SPEED CONTROL")
+            g2 = wd[1] - (x + w)
+            if -th * 0.5 < g2 < th * 2.5 and re.match(r"^:?(START|STOP|SPEED|RUN|TRIP|RESET)", tx): return True
         if not REFW.match(tx): continue
         if vert:
             if wd[6] != 1: continue
@@ -155,30 +162,53 @@ def resolve(cands):
         kept.append(t)
     return kept
 
-def header_boxes(sid, words):
-    """Rectangles covering the equipment title/data blocks at the top of the sheet."""
-    fy0 = FRAMES[sid]["y0"]
-    els = []
+HEADFIX = {"PID-045": 0.2}
+EXCL = json.load(open("/home/claude/work/exclude.json")) if os.path.exists("/home/claude/work/exclude.json") else []
+LINE_TOP = json.load(open("/home/claude/work/areas_final.json"))
+STOPW = {"FROM", "TO", "FOR", "NOTE", "SEE", "DWG", "AND", "THE", "WITH", "VIA", "SH", "TYP", "LO", "LC", "NC", "NO"}
+
+def described(words, t):
+    """an equipment tag with a line of plain description words right below it (e.g. 'OIL DEGASSING POT')"""
+    tag, typ, sub, x, y, w, h = t[:7]
+    cx = x + w / 2
     for wd in words:
-        if wd[6] != 0 or wd[2] > 0.32 or wd[2] < fy0: continue
-        if TABLEW.match(P.norm(wd[0])): els.append([wd[1], wd[2], wd[1] + wd[3], wd[2] + wd[4]])
-    for t in P.extract({"words": words, "unit": ""}, None):
-        if t[1] == "equipment" and t[4] < 0.32 and header_title(words, t):
-            els.append([t[3], t[4], t[3] + t[5], t[4] + t[6] * 4])
-    boxes = [[e[0] - 0.035, e[1] - 0.012, e[2] + 0.035, e[3] + 0.03] for e in els]
-    changed = True
-    while changed:
-        changed = False
-        for i in range(len(boxes)):
-            for j in range(i + 1, len(boxes)):
-                a, c = boxes[i], boxes[j]
-                vov = min(a[3], c[3]) - max(a[1], c[1])
-                if (a[0] <= c[2] and c[0] <= a[2] and a[1] <= c[3] and c[1] <= a[3]) or vov > 0.5 * min(a[3] - a[1], c[3] - c[1]):
-                    boxes[i] = [min(a[0], c[0]), min(a[1], c[1]), max(a[2], c[2]), max(a[3], c[3])]
-                    boxes.pop(j); changed = True; break
-            if changed: break
-    # a single stray keyword is not a header block
-    return [bx for bx, n in ((bx, sum(1 for e in els if bx[0] <= e[0] and e[2] <= bx[2] and bx[1] <= e[1] and e[3] <= bx[3])) for bx in boxes) if n >= 2]
+        if wd[6] != 0: continue
+        tx = P.norm(wd[0])
+        if len(tx) < 3 or not tx.isalpha() or tx in STOPW: continue
+        if 0 < wd[2] - (y + h) < h * 2.2 and abs(wd[1] + wd[3] / 2 - cx) < max(w * 0.9, 0.03): return True
+    return False
+
+def header_boxes(sid, words):
+    """Rectangles covering the equipment title/data blocks along the top edge of the sheet.
+    Title rows (tag + description) must sit at the top edge; data-table keywords only count
+    directly beneath those titles, so nothing inside the process diagram is swallowed."""
+    fy0 = FRAMES[sid]["y0"]
+    eqs = [t for t in P.extract({"words": words, "unit": ""}, None) if t[1] == "equipment" and fy0 <= t[4] < 0.32]
+    top_titles = [t for t in eqs if t[4] < fy0 + 0.06 and (header_title(words, t) or described(words, t))]
+    more_titles = [t for t in eqs if t[4] >= fy0 + 0.06 and header_title(words, t)]
+    kws = [wd for wd in words if wd[6] == 0 and fy0 <= wd[2] < 0.32 and TABLEW.match(P.norm(wd[0]))]
+    items = [(t[4], [t[3], t[4], t[3] + t[5], t[4] + t[6] * 4]) for t in top_titles + more_titles] + \
+            [(k[2], [k[1], k[2], k[1] + k[3], k[2] + k[4]]) for k in kws]
+    items.sort(key=lambda it: it[0])
+    if not items or items[0][0] > fy0 + 0.06: return []      # the block must start at the top edge
+    # never below the first long pipe line of the drawing (areas_final.json: top of the line work)
+    line_top = LINE_TOP.get(sid, {}).get("y0", 1)
+    if line_top < fy0 + 0.03:
+        # no usable line-work boundary: data tables make a deep header, plain title rows a shallow one
+        cap = fy0 + 0.2 if kws and min(k[2] for k in kws) < fy0 + 0.1 else items[0][0] + 0.05
+    else:
+        cap = min(fy0 + 0.2, max(line_top + 0.012, items[0][0] + 0.03))
+    els = []; bottom = items[0][0]
+    for y, e in items:                                          # grow downwards while elements stay contiguous
+        if y - bottom > 0.035 or y > cap: break
+        els.append(e); bottom = max(bottom, e[3])
+    if len(els) < 2: return []
+    # one small box per header element (title + its description lines, or a table keyword), so an
+    # L-shaped header next to the process diagram does not swallow labels beside it
+    x0 = min(e[0] for e in els) - 0.035; x1 = max(e[2] for e in els) + 0.035
+    y0 = min(e[1] for e in els) - 0.012; y1 = max(e[3] for e in els) + 0.01
+    y1 = min(y1, HEADFIX.get(sid, 1))       # checked by eye where the header sits beside the diagram
+    return [[x0, y0, x1, y1]]
 
 def in_area(sid, x, y):
     a = AREAS[sid]
@@ -290,7 +320,8 @@ def main():
         a = dict(FRAMES[sid]); a.update({k: AREAS[sid][k] for k in ("y1",)})
         if sid.startswith("PFD-2539") and sid.endswith("p1"): a = dict(AREAS[sid])
         AREAS[sid] = a
-        HEADBOX[sid] = header_boxes(sid, d["words"])
+        _p2 = f"/home/claude/work/ocr2/{sid}.json"
+        HEADBOX[sid] = header_boxes(sid, d["words"] + (json.load(open(_p2))["words"] if os.path.exists(_p2) else []))
         cands = [(t, 1) for t in P.extract(d, area)]
         p2 = f"/home/claude/work/ocr2/{sid}.json"
         if os.path.exists(p2):
@@ -311,6 +342,8 @@ def main():
         # equipment named only in a stream label ("FROM 10-E3005", "TO 10-V8001", "(FOR 10-P8001A") is a reference, not the equipment
         allw = d["words"] + (d2["words"] if os.path.exists(p2) else [])
         found = [t for t in found if not (t[1] == "equipment" and is_reference(t, allw))]
+        # stream/signal labels checked by eye on the drawings (tools/exclude.json: [sheet, x, y] = centre of the label)
+        found = [t for t in found if not (t[1] == "equipment" and any(e[0] == sid and abs(e[1] - (t[3] + t[5] / 2)) < 0.01 and abs(e[2] - (t[4] + t[6] / 2)) < 0.01 for e in EXCL))]
         if False and HT:
             have = {t[0] for t in found if t[1] == "equipment"}
             missing = HT - have

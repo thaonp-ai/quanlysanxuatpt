@@ -8,7 +8,7 @@ Repo chứa web tĩnh tra cứu P&ID/PFD Xưởng Phụ Trợ (Đạm Phú Mỹ)
   - `sheets[]`: bản vẽ (`id`, `unit`, `dwg`, `title`, `img`, `w`, `h`).
   - `units[]`: mã Unit và tên.
   - Cập nhật trường `updated` (dd/mm/yyyy).
-- Nhưng lưu ý: nếu sau này dựng lại bằng `tools/build.py`, sửa tay trong data.json sẽ bị ghi đè. Sửa tên tag lâu dài: thêm cặp `"tag OCR": "tag đúng"` vào `tools/overrides.json` (build.py áp dụng ở bước cuối); tên bản vẽ/Unit: `tools/sheetfix.json` / `tools/units.json`.
+- Nhưng lưu ý: nếu sau này dựng lại bằng `tools/build.py`, sửa tay trong data.json sẽ bị ghi đè. Sửa tên tag lâu dài: thêm cặp `"tag OCR": "tag đúng"` vào `tools/overrides.json` (build.py áp dụng ở bước cuối); tên bản vẽ/Unit: `tools/sheetfix.json` / `tools/units.json`. Bỏ một nhãn thiết bị chỉ là chú thích dòng/tín hiệu: thêm `[sheet, x tâm, y tâm, tag]` vào `tools/exclude.json`.
 
 ## Chỉnh sửa trên web (người dùng tự sửa)
 - `worker.js` (Cloudflare Worker) phục vụ `web/` và API `/api/edits`, lưu chỉnh sửa vào KV binding `EDITS`, khóa `state` = `{edits, log}`.

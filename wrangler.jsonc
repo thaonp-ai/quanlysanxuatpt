@@ -10,8 +10,9 @@
   },
   // KV lưu chỉnh sửa: Wrangler (>= 4.45) tự tạo namespace ở lần deploy đầu nếu chưa có id
   "kv_namespaces": [{ "binding": "EDITS" }],
-  // Mật khẩu khởi tạo của tài khoản "admin" (chỉ lưu mã băm PBKDF2 "salt:hash"); secret ADMIN_PASSWORD nếu có sẽ thay thế
-  "vars": { "ADMIN_HASH": "b91c1147590df4782c0d09a96d15d411:f9231b3b9ceae3f40cca0ca86caf3586bebc9df2b4e236851d973535479d9be4" },
+  // Tài khoản "admin" dựng sẵn: đang TẮT (chuỗi rỗng). Bật lại khi quên mật khẩu quản trị: đặt mã băm PBKDF2 "salt:hash"
+  // (16 byte salt, 100000 vòng, SHA-256, 32 byte) của mật khẩu mới. Để rỗng chứ không xóa dòng, vì keep_vars giữ biến cũ.
+  "vars": { "ADMIN_HASH": "" },
   // Giữ biến/secret đặt trên dashboard (ADMIN_PASSWORD, SESSION_SECRET) khi deploy lại
   "keep_vars": true
 }

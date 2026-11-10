@@ -49,15 +49,11 @@ Bản vẽ P&ID là tài liệu nội bộ của nhà máy. Nên bật **Cloudfl
 
 Web bắt buộc đăng nhập: chưa đăng nhập thì không mở được trang, ảnh bản vẽ hay dữ liệu.
 
-1. **Đặt mật khẩu quản trị (làm một lần):** Cloudflare → Workers & Pages → quanlysanxuatpt → **Settings → Variables and Secrets → Add** → loại **Secret**, tên `ADMIN_PASSWORD`, giá trị là mật khẩu mạnh (≥ 12 ký tự) → **Deploy**.
-2. Mở web, đăng nhập tên `admin` với mật khẩu vừa đặt.
-3. Bấm **Quản lý tài khoản** (góc trên) → **+ Thêm tài khoản** cho từng người. Quyền:
-   - **Chỉ xem**: tra cứu, xuất Excel.
-   - **Được sửa tag**: thêm quyền sửa tên, ẩn, thêm tag.
-   - **Quản trị**: thêm quyền quản lý tài khoản.
-4. Nên tạo cho mình một tài khoản Quản trị riêng để dùng hằng ngày; `admin` để dự phòng khi quên mật khẩu (đổi secret `ADMIN_PASSWORD` là đổi mật khẩu của nó).
-5. Người dùng tự đổi mật khẩu ở trang **Tài khoản**. Quên mật khẩu: quản trị viên vào Sửa → đặt lại mật khẩu.
-6. Khóa tài khoản / đổi quyền / đặt lại mật khẩu: người đó bị đăng xuất ngay (chậm nhất ~30 giây).
-7. Nhập sai mật khẩu 8 lần liên tiếp: tạm khóa đăng nhập 15 phút.
-
-Secret `EDIT_PASSWORD` cũ không còn dùng, có thể xóa.
+- Quản trị viên vào **Quản lý tài khoản** (góc trên) → **+ Thêm tài khoản**. Quyền:
+  - **Chỉ xem**: tra cứu, xuất Excel.
+  - **Được sửa tag**: thêm quyền sửa tên, ẩn, thêm tag.
+  - **Quản trị**: thêm quyền quản lý tài khoản.
+- Người dùng tự đổi mật khẩu ở trang **Tài khoản**. Quên mật khẩu: quản trị viên vào Sửa → đặt lại mật khẩu.
+- Khóa tài khoản / đổi quyền / đặt lại mật khẩu: người đó bị đăng xuất ngay (chậm nhất ~30 giây).
+- Nhập sai mật khẩu 8 lần liên tiếp: tạm khóa đăng nhập 15 phút.
+- Tài khoản `admin` dựng sẵn hiện đang tắt. Nếu quên mật khẩu của mọi tài khoản quản trị, nhờ Claude bật lại `admin` với mật khẩu tạm (giá trị `ADMIN_HASH` trong `wrangler.jsonc`).

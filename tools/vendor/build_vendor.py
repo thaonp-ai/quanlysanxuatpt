@@ -253,6 +253,9 @@ for p, t in BOOKS:
     add(p, t, "Bộ sách đầy đủ", [B], src="Vendor Data Book Macchi · Ref. 778")
 
 # Các mục trong sách gộp (trang bắt đầu lấy từ OCR): {đường dẫn sách: [[mã mục, tên, trang, [tag con...], nhóm], ...]}
+SPLIT = {}  # không dùng file tách mục: người dùng muốn mở sách gốc đúng trang
+for p_, v in SPLIT.items():
+    SIZE[v["p"]] = v["kb"] * 1024
 for book, secs in SECTIONS.items():
     short = {"1B": "Part 1B", "1C": "Part 1C", "1D": "Part 1D", "1E": "Part 1E"}
     lab = next((v for k, v in short.items() if "Part " + k in book or "part " + k.lower() in book), "")
@@ -261,7 +264,14 @@ for book, secs in SECTIONS.items():
     if "1D_Part1" in book: lab = "Part 1D (phần 1)"
     if "1D_Part2" in book: lab = "Part 1D (phần 2)"
     for no, title, pg, subs, g in secs:
-        add(book, title, g, [B] + [B + "/" + s if not s.startswith("10-") else s for s in subs], no=no, src=lab, pg=pg)
+        tags = [B] + [B + "/" + s if not s.startswith("10-") else s for s in subs]
+        sp = SPLIT.get(book + "|" + no)
+        if sp:  # file đã tách theo mục: mở là đúng trang đầu của mục
+            add(sp["p"], title, g, tags, no=no, src=f"{lab} · trang {sp['from']}–{sp['to']} ({sp['pages']} tr.)")
+        elif SPLIT and "Part 1D" in book and any(x[0].startswith(no + ".") for x in secs):
+            continue  # mục lớn đã có các mục con
+        else:
+            add(book, title, g, tags, no=no, src=lab, pg=pg)
 
 out = {
     "base": BASE,

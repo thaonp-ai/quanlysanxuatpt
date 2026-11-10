@@ -68,7 +68,7 @@ def find_sections(ocr_dir):
     seen, res, last = set(), [], (0,)
     for no, t, p in out:
         toks = t.split()
-        good = sum(1 for w in toks if w in ("&", "&/") or re.fullmatch(r"[A-Za-z/()'.,-]{2,}", w) and (re.search(r"[aeiouyAEIOUY]", w) or len(w) <= 3))
+        good = sum(1 for w in toks if w in ("&", "&/") or re.fullmatch(r"[A-Za-z/()'.,&-]{2,}", w) and (re.search(r"[aeiouyAEIOUY]", w) or len(w) <= 3))
         if no in seen or key(no) <= last or good < max(1, 0.7 * len(toks)):
             continue
         seen.add(no); last = key(no)

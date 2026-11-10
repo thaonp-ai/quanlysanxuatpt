@@ -113,6 +113,35 @@ nav.units h2,.panel h2{font-family:var(--f-disp);font-weight:600;font-size:13px;
 .who a.tbtn{text-decoration:none;color:inherit}
 .who form{margin:0}
 .ro .rowedit,.ro #btnAdd{display:none}
+.rowdoc{border:0;background:none;color:var(--line);padding:0 10px;font-size:12px;font-weight:600;align-self:center;border-radius:5px;min-height:32px;white-space:nowrap}
+.rowdoc:hover{background:var(--line-soft)}
+.rowdoc b{font-family:var(--f-mono);font-weight:600;margin-left:4px}
+.docs{position:fixed;top:0;right:0;bottom:0;width:min(620px,100%);background:var(--sheet);border-left:1px solid var(--rule);box-shadow:-16px 0 40px rgba(0,0,0,.16);z-index:35;display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-right:env(safe-area-inset-right,0px)}
+.docs .dh{display:flex;gap:10px;align-items:flex-start;padding:14px 16px 10px;border-bottom:1px solid var(--rule)}
+.docs .dh div{flex:1;min-width:0}
+.docs .dh .eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.docs .dh h3{margin:2px 0 0;font-family:var(--f-mono);font-size:18px;font-weight:600;word-break:break-all}
+.docs .dh p{margin:3px 0 0;font-size:12.5px;color:var(--muted)}
+.docs .dq{padding:10px 16px;border-bottom:1px solid var(--rule);display:flex;flex-direction:column;gap:6px}
+.docs .dq input{font:inherit;font-size:14px;color:var(--ink);background:var(--paper);border:1.5px solid var(--rule);border-radius:6px;padding:8px 10px;width:100%}
+.docs .dq input:focus{border-color:var(--line);outline:none}
+.docs .note{font-size:12px;color:var(--valve)}
+.docs .dl{flex:1;overflow:auto;padding:4px 0 24px}
+.docs details{border-bottom:1px solid var(--rule)}
+.docs summary{list-style:none;cursor:pointer;padding:10px 16px;display:flex;gap:8px;align-items:baseline;font-family:var(--f-disp);font-size:15px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;position:sticky;top:0;background:var(--sheet);z-index:1}
+.docs summary::-webkit-details-marker{display:none}
+.docs summary::before{content:"▸";color:var(--muted);font-size:12px;transition:transform .15s}
+.docs details[open] summary::before{transform:rotate(90deg)}
+.docs summary small{font-family:var(--f-mono);font-size:12px;color:var(--muted);font-weight:500;letter-spacing:0}
+.docs summary .lvl{margin-left:auto;font-family:var(--f-body);font-size:10.5px;letter-spacing:.06em;color:var(--muted);font-weight:600}
+.doc{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;padding:8px 16px 8px 34px;text-decoration:none;color:inherit;border-top:1px solid var(--rule)}
+a.doc:hover{background:var(--line-soft)}
+.doc .dt{font-size:13.5px;line-height:1.35}
+.doc .dt code{font-family:var(--f-mono);font-size:12.5px;color:var(--line);margin-right:6px;white-space:nowrap}
+.doc .dm{grid-column:1;font-size:11.5px;color:var(--muted)}
+.doc .go{grid-row:1/3;grid-column:2;align-self:center;font-size:12px;color:var(--line);font-weight:600;white-space:nowrap}
+.doc .cp{border:1px solid var(--rule);background:var(--sheet);border-radius:5px;font-size:11.5px;padding:3px 8px;color:var(--ink)}
+.docs .empty{padding:24px 16px;color:var(--muted)}
 .pop{position:absolute;right:0;top:calc(100% + 6px);background:var(--sheet);border:1px solid var(--rule);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.14);padding:6px;display:flex;flex-direction:column;min-width:240px;z-index:30}
 .pop button{border:0;background:none;text-align:left;padding:8px 10px;border-radius:5px}
 .pop button:hover{background:var(--line-soft)}
@@ -199,6 +228,7 @@ nav.units h2,.panel h2{font-family:var(--f-disp);font-weight:600;font-size:13px;
     <div class="vbar">
       <button class="vbtn back" id="back" aria-label="Quay lại danh sách">←</button>
       <div class="title"><b id="vTitle">Chưa mở bản vẽ</b><span id="vSub"></span></div>
+      <button class="vbtn" id="btnDocs" hidden title="Tài liệu vendor của thiết bị đang chọn">Tài liệu</button>
       <button class="vbtn" id="prev" aria-label="Vị trí trước" disabled>‹</button>
       <span id="pos" class="mono" style="font-size:12px;color:var(--muted)"></span>
       <button class="vbtn" id="next" aria-label="Vị trí tiếp" disabled>›</button>
@@ -239,6 +269,11 @@ nav.units h2,.panel h2{font-family:var(--f-disp);font-weight:600;font-size:13px;
     </form>
   </div>
 </div>
+<aside class="docs" id="docs" hidden aria-labelledby="docsTag">
+  <div class="dh"><div><div class="eyebrow">Tài liệu vendor</div><h3 id="docsTag"></h3><p id="docsSub"></p></div><button class="vbtn" id="docsClose" aria-label="Đóng">✕</button></div>
+  <div class="dq"><input type="search" id="docsQ" placeholder="Lọc tài liệu: số bản vẽ, tên, ví dụ “fan”, “778-M-150”…" autocomplete="off"><div class="note" id="docsNote" hidden></div></div>
+  <div class="dl" id="docsList"></div>
+</aside>
 <div class="toast" id="toast" role="status" hidden></div>
 
 <script>
@@ -303,6 +338,7 @@ function rebuild(){
   showMode();
 }
 
+fetch("data/vendor.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null).then(v=>{if(v){setVendor(v);if(DB)render();}}).catch(()=>{});
 fetch("data/data.json",{cache:"no-cache"}).then(r=>r.json()).then(async d=>{
   DB=d;
   d.sheets.forEach((s,i)=>{s._i=i;SIDX[s.id]=i;});
@@ -310,6 +346,52 @@ fetch("data/data.json",{cache:"no-cache"}).then(r=>r.json()).then(async d=>{
   setEdits(await api.load());
   renderUnits();render();
 }).catch(()=>{$("count").textContent="Không tải được dữ liệu (data/data.json).";});
+
+/* ---- Vendor documents (data/vendor.json) ---- */
+let VD=null;const VIDX=new Map();
+const nk=s=>String(s||"").toUpperCase().replace(/[^A-Z0-9/]/g,"");
+function setVendor(v){VD=v;VIDX.clear();Object.entries(v.tags||{}).forEach(([k,l])=>VIDX.set(nk(k),l));}
+function parentKeys(k){const out=[];if(k.includes("/"))out.push(k.split("/")[0]);else if(/\d[A-Z]$/.test(k))out.push(k.slice(0,-1));return out;}
+function docsFor(t){
+  if(!VD)return{direct:[],pkg:[],pk:""};
+  const keys=[...new Set([nk(t.t),nk(t.orig)].filter(Boolean))];
+  const direct=new Set();keys.forEach(k=>(VIDX.get(k)||[]).forEach(i=>direct.add(i)));
+  const pkg=new Set();let pk="";
+  keys.forEach(k=>parentKeys(k).forEach(p=>{const l=VIDX.get(p);if(l&&l.length){pk=pk||p;l.forEach(i=>{if(!direct.has(i))pkg.add(i);});}}));
+  return{direct:[...direct],pkg:[...pkg],pk};
+}
+function docCount(t){if(!VD)return 0;const r=docsFor(t);return r.direct.length+r.pkg.length;}
+function vbase(){const b=VD&&VD.base;if(!b)return null;
+  try{const u=new URL(b);const id=u.searchParams.get("id");const path=id||decodeURIComponent(u.pathname);
+    if(!/\/Documents\//i.test(path))return null;return u.origin+path.replace(/\/$/,"").split("/").map(encodeURIComponent).join("/");}catch(e){return null;}}
+function docUrl(d){const b=vbase();if(!b)return null;return b+"/"+d.p.split("/").map(encodeURIComponent).join("/")+(/\.(docx?|xlsx?|pptx?)$/i.test(d.p)?"?web=1":"");}
+function fmtKB(kb){return kb>=1024?(kb/1024).toFixed(kb>=10240?0:1)+" MB":Math.max(1,Math.round(kb))+" KB";}
+let docsCur=null;
+function openDocs(t){docsCur=t;$("docs").hidden=false;$("docsQ").value="";renderDocs();setTimeout(()=>$("docsQ").focus(),30);}
+function renderDocs(){
+  const t=docsCur;if(!t||!VD)return;
+  const {direct,pkg,pk}=docsFor(t),q=normq($("docsQ").value);
+  $("docsTag").textContent=t.t;
+  $("docsSub").textContent=[t.d,(VD.pkgs&&(VD.pkgs[t.t]||VD.pkgs[pk]))||""].filter(Boolean).join(" · ");
+  const b=vbase();$("docsNote").hidden=!!b;
+  $("docsNote").textContent=b?"":"Chưa cấu hình đường dẫn OneDrive nên chưa mở trực tiếp được; bấm “Chép đường dẫn” rồi tìm file trong thư mục Vendor Data.";
+  const match=d=>!q||normq([d.no,d.t,d.src,d.g,d.p].join(" ")).includes(q);
+  const groups=(list,lvl)=>{const by=new Map();list.map(i=>VD.docs[i]).filter(match).forEach(d=>{if(!by.has(d.g))by.set(d.g,[]);by.get(d.g).push(d);});
+    const order=VD.groups||[];return [...by.entries()].sort((a,b)=>(order.indexOf(a[0])+1||99)-(order.indexOf(b[0])+1||99)).map(([g,ds])=>({g,ds,lvl}));};
+  const secs=[...groups(direct,""),...groups(pkg,"pkg")];
+  const pkName=pk?(Object.keys(VD.tags).find(k=>nk(k)===pk)||pk):"";
+  const many=direct.length+pkg.length>25&&!q;
+  $("docsList").innerHTML=secs.length?secs.map(({g,ds,lvl},si)=>`<details ${!many||si===0?"open":""}><summary>${esc(g)} <small>${ds.length}</small>${lvl?`<span class="lvl">CHUNG CỦA ${esc(pkName)}</span>`:""}</summary>${ds.map(d=>{const u=docUrl(d);
+      const meta=[d.src,d.pg?`trang ${d.pg}`:"",d.kb?fmtKB(d.kb):""].filter(Boolean).map(esc).join(" · ");
+      const inner=`<div class="dt">${d.no?`<code>${esc(d.no)}</code>`:""}${esc(d.t)}</div><div class="dm">${meta}</div>`;
+      return u?`<a class="doc" href="${esc(u)}${d.pg?"#page="+d.pg:""}" target="_blank" rel="noopener">${inner}<span class="go">Mở ↗</span></a>`:`<div class="doc">${inner}<span class="go"><button class="cp" data-p="${esc(d.p)}">Chép đường dẫn</button></span></div>`;}).join("")}</details>`).join(""):'<div class="empty">Không có tài liệu phù hợp.</div>';
+  $("docsList").querySelectorAll(".cp").forEach(bt=>bt.onclick=()=>{const p="Vendor Data\\"+bt.dataset.p.replace(/\//g,"\\");
+    (navigator.clipboard?navigator.clipboard.writeText(p):Promise.reject()).then(()=>toast("Đã chép: "+p),()=>toast(p));});
+}
+$("docsQ").addEventListener("input",renderDocs);
+$("docsClose").onclick=()=>{$("docs").hidden=true;};
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("docs").hidden)$("docs").hidden=true;});
+$("btnDocs").onclick=()=>{if(state.sel)openDocs(state.sel);};
 
 function visible(){return VIEW.filter(v=>state.edited?v.edited:!v.del);}
 function renderUnits(){
@@ -356,10 +438,11 @@ function render(){
       const sh=[...new Set(t.o.map(o=>o[0]))];
       const badge=t.isNew?'<span class="badge new">Thêm mới</span>':t.del?'<span class="badge">Đã ẩn</span>':t.edited?'<span class="badge">Đã sửa</span>':"";
       const sub=[KIND[t.k],t.d,t.edited&&!t.isNew&&t.orig!==t.t?`tên OCR: ${t.orig}`:"",t.l&&!t.edited?`ghi trên bản vẽ: ${t.l.join(", ")}`:"",t.note?`ghi chú: ${t.note}`:"",t.edited&&t.by?`${t.by}, ${fmtTime(t.at)}`:""].filter(Boolean).map(esc).join(" · ");
-      row.innerHTML=`<button class="rowmain"><div class="tag"><i class="dot d-${t.k}"></i><span class="nm">${hl(t.t,q)}</span>${badge}</div><div class="sub">${sub}</div><div class="refs">${sh.slice(0,3).map(i=>esc(sheetLabel(DB.sheets[i]))).join(" · ")}${sh.length>3?` +${sh.length-3}`:""}</div></button><button class="rowedit" aria-label="Sửa ${esc(t.t)}">Sửa</button>`;
+      row.innerHTML=`<button class="rowmain"><div class="tag"><i class="dot d-${t.k}"></i><span class="nm">${hl(t.t,q)}</span>${badge}</div><div class="sub">${sub}</div><div class="refs">${sh.slice(0,3).map(i=>esc(sheetLabel(DB.sheets[i]))).join(" · ")}${sh.length>3?` +${sh.length-3}`:""}</div></button>${(()=>{const r=docsFor(t),n=r.direct.length||r.pkg.length;return n?`<button class="rowdoc" title="${r.direct.length} tài liệu riêng · ${r.pkg.length} tài liệu chung của cụm" aria-label="Tài liệu vendor của ${esc(t.t)}">${r.direct.length?"Tài liệu":"Tài liệu cụm"}<b>${n}</b></button>`:"";})()}<button class="rowedit" aria-label="Sửa ${esc(t.t)}">Sửa</button>`;
       if(state.sel&&state.sel.key===t.key)row.setAttribute("aria-current","true");
       row.querySelector(".rowmain").onclick=()=>{state.sel=t;openTag(t);render();};
       row.querySelector(".rowedit").onclick=()=>openEditor(t);
+      const rd=row.querySelector(".rowdoc");if(rd)rd.onclick=()=>{state.sel=t;openDocs(t);};
       frag.appendChild(row);
     });
     list.appendChild(frag);
@@ -538,6 +621,7 @@ let view={s:1,x:0,y:0},cur=null;
 function apply(){layer.style.transform=`translate(${view.x}px,${view.y}px) scale(${view.s})`;}
 function openTag(t){
   state.occ=t.o;state.oi=0;
+  const dr=docsFor(t);$("btnDocs").hidden=!(dr.direct.length+dr.pkg.length);$("btnDocs").textContent=`Tài liệu (${dr.direct.length||dr.pkg.length})`;
   $("viewer").dataset.open="true";
   showOcc();
 }

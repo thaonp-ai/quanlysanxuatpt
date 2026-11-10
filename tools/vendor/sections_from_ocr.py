@@ -88,14 +88,14 @@ for book, d in ((D1, sys.argv[1]), (D2, sys.argv[2])):
     S[book] = lst
 
 S[C] = [
-    ["778-A-001", "Checks & operations before commissioning; danh sách hệ thống / thiết bị (778-A-001…004)", 19, [], "Chạy thử (Part 1C)"],
-    ["778-A-100", "Biểu mẫu thử cơ khí van an toàn", 25, [], "Chạy thử (Part 1C)"],
-    ["778-A-120", "Biểu mẫu thử thiết bị đo & van (778-A-120…202)", 26, [], "Chạy thử (Part 1C)"],
-    ["778-A-230", "Biểu mẫu thử cơ khí quạt gió FD (778-A-230/231)", 40, ["K1"], "Chạy thử (Part 1C)"],
-    ["778-A-240", "Biểu mẫu thử cơ khí bơm nước cấp (778-A-240/241)", 43, ["10-P-8001A", "10-P-8001B"], "Chạy thử (Part 1C)"],
-    ["778-A-260", "Biểu mẫu thử cơ khí turbine quạt FD", 46, ["STK1"], "Chạy thử (Part 1C)"],
+    ["778-A-001", "Checks & operations before commissioning; danh sách hệ thống / thiết bị (778-A-001…004)", 19, [], "Chạy thử"],
+    ["778-A-100", "Biểu mẫu thử cơ khí van an toàn", 25, [], "Chạy thử"],
+    ["778-A-120", "Biểu mẫu thử thiết bị đo & van (778-A-120…202)", 26, [], "Chạy thử"],
+    ["778-A-230", "Biểu mẫu thử cơ khí quạt gió FD (778-A-230/231)", 40, ["K1"], "Chạy thử"],
+    ["778-A-240", "Biểu mẫu thử cơ khí bơm nước cấp (778-A-240/241)", 43, ["10-P-8001A", "10-P-8001B"], "Chạy thử"],
+    ["778-A-260", "Biểu mẫu thử cơ khí turbine quạt FD", 46, ["STK1"], "Chạy thử"],
 ]
-P = "Phụ tùng (Part 1E)"
+P = "Phụ tùng"
 S[E] = [
     ["1E", "Danh mục phụ tùng 2 năm vận hành – mục lục", 19, [], P],
     ["1E §1–3", "Phụ tùng lò hơi, đầu đốt, hệ thống đốt", 20, [], P],

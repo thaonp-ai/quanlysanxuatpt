@@ -37,9 +37,11 @@ GROUPS = [
     "Sàn thao tác & cầu thang",
     "Thiết bị đo & điều khiển",
     "Tính toán & data sheet",
-    "Chạy thử (Part 1C)",
-    "Phụ tùng (Part 1E)",
+    "Chạy thử",
+    "Phụ tùng",
     "Tài liệu nhà sản xuất phụ kiện",
+    "Quạt, damper & guillotine",
+    "Hồ sơ kiểm tra (Inspection book)",
     "Bộ sách đầy đủ",
 ]
 
@@ -170,7 +172,7 @@ def group_of(code):
         if n in (19, 534, 880, 106): return "Quạt gió FD, turbine & motor"
         if n in (30, 31, 83, 84, 456, 460, 520, 533): return "Đầu đốt & BMS"
         return "Thiết bị đo & điều khiển"
-    if k == "A": return "Chạy thử (Part 1C)"
+    if k == "A": return "Chạy thử"
     if k == "C":
         if n in (305,): return "Đầu đốt & BMS"
         if n in (321, 327): return "Quạt gió FD, turbine & motor"
@@ -274,11 +276,23 @@ for book, secs in SECTIONS.items():
         else:
             add(book, title, g, tags, no=no, src=lab, pg=pg)
 
+# ---------------- 3. HRSG 10-B-9001 (SICES), danh mục do hrsg/build_hrsg.py tạo ----------------
+HDOCS = os.path.join(HERE, "hrsg", "docs.json")
+if os.path.exists(HDOCS):
+    for p_, sz in json.load(open(os.path.join(HERE, "hrsg", "listing.json"))):
+        SIZE[p_] = sz
+    for d in json.load(open(HDOCS)):
+        if d["kb"]:
+            SIZE[d["p"]] = d["kb"] * 1024
+        i = add(d["p"], d["t"], d["g"], d["tags"], no=d.get("no", ""), src=d.get("src", ""))
+        if d.get("bp"):
+            docs[i]["bp"], docs[i]["bpg"] = d["bp"], d["bpg"]
+
 out = {
     "base": BASE,
     "root": "Vendor Data",
     "groups": GROUPS,
-    "pkgs": {B: "Lò hơi phụ trợ – Macchi (Ref. 778)"},
+    "pkgs": {B: "Lò hơi phụ trợ – Macchi (Ref. 778)", "10-B-9001": "Lò hơi thu hồi nhiệt HRSG – SICES (2098 MR 0161.01)"},
     "docs": docs,
     "tags": tagmap,
 }

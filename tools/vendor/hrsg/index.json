@@ -1,0 +1,1132 @@
+[
+[
+"6212-P-063",
+"Guideline For Mechanical Erection (HRSG field erection procedure)",
+1
+],
+[
+"6212-P-063.1",
+"Guideline For Instrumental Erection",
+1
+],
+[
+"6212-P-068",
+"Commissioning, Operating And Maintenance Manual",
+1
+],
+[
+"6212-P-088",
+"List Of Spare Parts For 2 Years Operation",
+1
+],
+[
+"6212-DG-01-Sh.1",
+"Boiler Assembly Longitudinal View (Right Side)",
+1
+],
+[
+"6212-DG-01-Sh.2",
+"Boiler Assembly Sections C-C, D-D, E-E, H-H",
+1
+],
+[
+"6212-DG-01-Sh.3",
+"Boiler Assembly Section A-A",
+1
+],
+[
+"6212-DG-01-Sh.4",
+"Boiler Assembly Longitudinal View (Left Side)",
+1
+],
+[
+"6212-DG-02-Sh.1",
+"Foundations",
+1
+],
+[
+"6212-DG-02-Sh.2",
+"Foundation Details",
+1
+],
+[
+"6212-DG-03",
+"Pressure Part Assembly",
+1
+],
+[
+"6212-DG-04-Sh.1",
+"Piping Lay Out Longitudinal View (Right Side)",
+1
+],
+[
+"6212-DG-04-Sh.2",
+"Piping Lay Out Plan View",
+1
+],
+[
+"6212-DG-04-Sh.3",
+"Piping Lay Out Section",
+1
+],
+[
+"6212-DG-05",
+"Assembly Module 1",
+1
+],
+[
+"6212-DG-06",
+"Assembly Module 2",
+1
+],
+[
+"6212-DG-07-Sh.1",
+"Drum Assembly",
+1
+],
+[
+"6212-DG-07-Sh.2",
+"Drum Details",
+1
+],
+[
+"6212-DG-08-Sh.1",
+"Steam Drum Assembly Internal Detail",
+1
+],
+[
+"6212-DG-08-Sh.2",
+"Internal Detail",
+1
+],
+[
+"6212-DG-08-Sh.3",
+"Dust Separator Assembly And Details",
+1
+],
+[
+"6212-DG-09-Sh.1",
+"Main Stack Assembly",
+1
+],
+[
+"6212-DG-09-Sh.2",
+"Main Stack Details",
+1
+],
+[
+"6212-DG-10-Sh.1",
+"By-Pass Stack",
+1
+],
+[
+"6212-DG-10-Sh.2",
+"By Pass Stack Support Silencer",
+1
+],
+[
+"6212-DG-13",
+"Steam Drum",
+1
+],
+[
+"6212-DG-14",
+"Module 1",
+1
+],
+[
+"6212-DG-15",
+"Module 2",
+1
+],
+[
+"6212-DG-16-Sh.1",
+"General Assembly Battery Limits (Longitudinal View)",
+1
+],
+[
+"6212-DG-16-Sh.2",
+"Section B",
+1
+],
+[
+"6212-DG-16-Sh.3",
+"General Assembly Battery Limits (Plan)",
+1
+],
+[
+"6212-DG-17-Sh.1",
+"Boiler Assembly Longitudinal View (Right Side)",
+2
+],
+[
+"6212-DG-17-Sh.2",
+"Boiler Assembly Sections C-C",
+2
+],
+[
+"6212-DG-17-Sh.3",
+"Boiler Assembly Section A-A",
+2
+],
+[
+"6212-DG-17-Sh.4",
+"Boiler Duct And Module Assembly Longitudinal View (Left Side)",
+2
+],
+[
+"6212-M-140",
+"Downcomer",
+2
+],
+[
+"6212-M-141",
+"Manifold Evap",
+2
+],
+[
+"6212-M-200",
+"Econ Connection",
+2
+],
+[
+"6212-M-201",
+"Feed Water Piping",
+2
+],
+[
+"6212-M-202",
+"Steam Piping Drum",
+2
+],
+[
+"6212-M-203",
+"Boiler Drains Modules",
+2
+],
+[
+"6212-M-204",
+"External Plates Drum Assembly",
+2
+],
+[
+"6212-M-205",
+"Drum Levels Columns",
+2
+],
+[
+"6212-M-208",
+"Boiler Name Plate",
+2
+],
+[
+"6212-M-302",
+"Foundation Teflon Plates",
+2
+],
+[
+"6212-M-303",
+"Foundation Plates And Stud",
+2
+],
+[
+"6212-M-306",
+"Hanger Assembly",
+2
+],
+[
+"6212-M-400-Sh.1",
+"Support Piping Lay Out Longitudinal View (Right Side)",
+2
+],
+[
+"6212-M-400-Sh.2",
+"Support Piping Lay Out Plan View",
+2
+],
+[
+"6212-M-400-Sh.3",
+"Support Piping Lay Out Sections",
+2
+],
+[
+"6212-M-401",
+"Pipe Support Standard",
+2
+],
+[
+"6212-M-402",
+"Superheated Steam Line",
+2
+],
+[
+"6212-M-403",
+"Start-Up Vent Piping",
+2
+],
+[
+"6212-M-404",
+"Desuperheater Piping Assembly",
+2
+],
+[
+"6212-M-405",
+"Boiler Feed Water Line",
+2
+],
+[
+"6212-M-406",
+"Safety Valves Vent PSV 9776-9778",
+2
+],
+[
+"6212-M-407",
+"Fuel Gas Piping Line",
+2
+],
+[
+"6212-M-408",
+"Sample Coolers",
+2
+],
+[
+"6212-M-409",
+"Safety Valves Vent PSV 9777",
+2
+],
+[
+"6212-M-410",
+"Seal Air Piping Line",
+2
+],
+[
+"6212-M-420-Sh.1",
+"Piping Support Item S1",
+3
+],
+[
+"6212-M-420-Sh.2",
+"Piping Support Item S2",
+3
+],
+[
+"6212-M-420-Sh.3",
+"Piping Support Item S3",
+3
+],
+[
+"6212-M-420-Sh.4",
+"Piping Support Item S4",
+3
+],
+[
+"6212-M-420-Sh.5",
+"Piping Support Item S5",
+3
+],
+[
+"6212-M-420-Sh.6",
+"Piping Support Item S6",
+3
+],
+[
+"6212-M-420-Sh.7",
+"Piping Support Item S7",
+3
+],
+[
+"6212-M-420-Sh.8",
+"Piping Support Item S8",
+3
+],
+[
+"6212-M-420-Sh.9",
+"Piping Support Item S9",
+3
+],
+[
+"6212-M-420-Sh.10",
+"Piping Support Item S10",
+3
+],
+[
+"6212-M-420-Sh.11",
+"Piping Support Item S11",
+3
+],
+[
+"6212-M-420-Sh.12",
+"Piping Support Item S12",
+3
+],
+[
+"6212-M-420-Sh.13",
+"Piping Support Item S13",
+3
+],
+[
+"6212-M-420-Sh.14",
+"Piping Support Item S14",
+3
+],
+[
+"6212-M-420-Sh.15",
+"Piping Support Item S15",
+3
+],
+[
+"6212-M-420-Sh.16",
+"Piping Support Item S16",
+3
+],
+[
+"6212-M-420-Sh.17",
+"Piping Support Item S17",
+3
+],
+[
+"6212-M-420-Sh.18",
+"Piping Support Item S18",
+3
+],
+[
+"6212-M-420-Sh.19",
+"Piping Support Item S19",
+3
+],
+[
+"6212-M-420-Sh.20",
+"Piping Support Item S20",
+3
+],
+[
+"6212-M-420-Sh.21",
+"Piping Support Item S21",
+3
+],
+[
+"6212-M-420-Sh.22",
+"Piping Support Item S22",
+3
+],
+[
+"6212-M-420-Sh.23",
+"Piping Support Item S23",
+3
+],
+[
+"6212-M-420-Sh.24",
+"Piping Support Item S24",
+3
+],
+[
+"6212-M-420-Sh.25",
+"Piping Support Item S25",
+3
+],
+[
+"6212-M-420-Sh.26",
+"Piping Support Item S26",
+3
+],
+[
+"6212-M-420-Sh.27",
+"Piping Support Item S27",
+3
+],
+[
+"6212-M-420-Sh.28",
+"Piping Support Item S28",
+3
+],
+[
+"6212-M-420-Sh.29",
+"Piping Support Item S29",
+3
+],
+[
+"6212-M-420-Sh.30",
+"Piping Support Item S30",
+3
+],
+[
+"6212-M-420-Sh.31",
+"Piping Support Item S31",
+3
+],
+[
+"6212-M-420-Sh.32",
+"Piping Support Item S32",
+3
+],
+[
+"6212-M-420-Sh.33",
+"Piping Support Item S33",
+3
+],
+[
+"6212-M-420-Sh.34",
+"Piping Support Item S34",
+3
+],
+[
+"6212-M-420-Sh.35",
+"Piping Support Item S35",
+3
+],
+[
+"6212-M-420-Sh.36",
+"Piping Support Item S36",
+3
+],
+[
+"6212-M-420-Sh.37",
+"Piping Support Item S37",
+3
+],
+[
+"6212-M-420-Sh.38",
+"Piping Support Item S38",
+3
+],
+[
+"6212-M-420-Sh.39",
+"Piping Support Item S39",
+3
+],
+[
+"6212-M-420-Sh.40",
+"Piping Support Item S40",
+3
+],
+[
+"6212-M-420-Sh.41",
+"Piping Support Item S41",
+3
+],
+[
+"6212-M-420-Sh.42",
+"Piping Support Item S42",
+3
+],
+[
+"6212-M-420-Sh.43",
+"Piping Support Item S43",
+3
+],
+[
+"6212-M-420-Sh.44",
+"Piping Support Item S44",
+3
+],
+[
+"6212-M-420-Sh.45",
+"Piping Support Item S45",
+3
+],
+[
+"6212-M-420-Sh.46",
+"Piping Support Item S46",
+3
+],
+[
+"6212-M-420-Sh.47",
+"Piping Support Item S47",
+3
+],
+[
+"6212-M-420-Sh.48",
+"Piping Support Item S48",
+3
+],
+[
+"6212-M-420-Sh.49",
+"Piping Support Item S49",
+3
+],
+[
+"6212-M-420-Sh.50",
+"Piping Support Item S50",
+3
+],
+[
+"6212-M-420-Sh.51",
+"Piping Support Item S51",
+3
+],
+[
+"6212-M-420-Sh.52",
+"Piping Support Item S52",
+3
+],
+[
+"6212-M-420-Sh.53",
+"Piping Support Item S53",
+3
+],
+[
+"6212-M-420-Sh.54",
+"Piping Support Item S54",
+3
+],
+[
+"6212-M-420-Sh.55",
+"Piping Support Item S55",
+3
+],
+[
+"6212-M-420-Sh.56",
+"Piping Support Item S56",
+3
+],
+[
+"6212-M-420-Sh.57",
+"Piping Support Item S57",
+3
+],
+[
+"6212-M-420-Sh.58",
+"Piping Support Item S58",
+3
+],
+[
+"6212-M-420-Sh.59",
+"Piping Support Item S59",
+3
+],
+[
+"6212-M-450",
+"Material List Piping",
+3
+],
+[
+"6212-M-500-Sh.1",
+"Liner Module 1",
+3
+],
+[
+"6212-M-500-Sh.2",
+"Liner Module 1",
+3
+],
+[
+"6212-M-501-Sh.1",
+"Liner Module 2",
+3
+],
+[
+"6212-M-501-Sh.2",
+"Liner Module 2",
+3
+],
+[
+"6212-M-502-Sh.1",
+"Duct -A- Liner",
+3
+],
+[
+"6212-M-502-Sh.2",
+"Duct -A- Liner",
+3
+],
+[
+"6212-M-503-Sh.1",
+"Duct -B- Liner",
+3
+],
+[
+"6212-M-503-Sh.2",
+"Duct -B- Liner",
+3
+],
+[
+"6212-M-505-Sh.1",
+"Close Plates Boiler",
+4
+],
+[
+"6212-M-505-Sh.2",
+"Close Plates Boiler",
+4
+],
+[
+"6212-M-506",
+"Duct -D- Liner",
+4
+],
+[
+"6212-M-507",
+"Duct -C- Liner",
+4
+],
+[
+"6212-M-508",
+"Liner Diverter Assembly1",
+4
+],
+[
+"6212-M-700-Sh.1",
+"Module 1 Assembly",
+4
+],
+[
+"6212-M-700-Sh.2",
+"Module 1 Details",
+4
+],
+[
+"6212-M-710-Sh.1",
+"Module 2 Assembly",
+4
+],
+[
+"6212-M-710-Sh.2",
+"Module 2 Details",
+4
+],
+[
+"6212-M-720",
+"Casing Duct -A- Assembly",
+4
+],
+[
+"6212-M-730",
+"Casing Duct -B- Assembly",
+4
+],
+[
+"6212-M-735",
+"Casing Duct -D- Assembly",
+4
+],
+[
+"6212-M-736",
+"Casing Duct -C- Assembly",
+4
+],
+[
+"6212-M-740",
+"Diverter Structure Assembly",
+4
+],
+[
+"6212-M-741-Sh.1",
+"Vertical Air Lock Structure Assembly",
+4
+],
+[
+"6212-M-741-Sh.2",
+"Vertical Air Lock Structure Details",
+4
+],
+[
+"6212-M-742",
+"Connection Diverter-By Pass Stack",
+4
+],
+[
+"6212-M-743",
+"Expansion Joint Duct -C- Fan",
+4
+],
+[
+"6212-M-750",
+"Peephole (Portina Di Spia)",
+4
+],
+[
+"6212-M-751",
+"Module 2-Stack Joint",
+4
+],
+[
+"6212-M-752",
+"Joint Ducts Assembly",
+4
+],
+[
+"6212-M-753-Sh.1",
+"Expansion Joint Assembly",
+4
+],
+[
+"6212-M-753-Sh.2",
+"Expansion Joint Details",
+4
+],
+[
+"6212-M-754",
+"Inspection Door",
+4
+],
+[
+"6212-M-755",
+"Inspection Door",
+4
+],
+[
+"6212-M-756",
+"Inspection Door",
+4
+],
+[
+"6212-M-757",
+"Inspection Door",
+4
+],
+[
+"6212-M-758-Sh.1",
+"Platforms Assembly Long. View-Right Side",
+5
+],
+[
+"6212-M-758-Sh.2",
+"Platform Assembly Plan View (Sections)",
+5
+],
+[
+"6212-M-758-Sh.3",
+"Platform Assembly Section",
+5
+],
+[
+"6212-M-758-Sh.4",
+"Platforms Assembly Longitudinal View (Left Side)",
+5
+],
+[
+"6212-M-759",
+"Stack Platform",
+5
+],
+[
+"6212-M-760",
+"Ladder By-Pass Stack",
+5
+],
+[
+"6212-M-761",
+"By-Pass Stack Platform El.+17680",
+5
+],
+[
+"6212-M-763",
+"Stack Platform",
+5
+],
+[
+"6212-M-764",
+"Ladder Stack",
+5
+],
+[
+"6212-M-765",
+"Main Stack Personal Protection",
+5
+],
+[
+"6212-M-766",
+"Main Stack Personal Protection",
+5
+],
+[
+"6212-M-767",
+"Diverter Platform El.2090-",
+5
+],
+[
+"6212-M-768",
+"Ladder Diverter El.300 - El5090",
+5
+],
+[
+"6212-M-769",
+"Platform And Ladder El.17880",
+5
+],
+[
+"6212-M-770",
+"Stairs Flight Structural Support El.13800",
+5
+],
+[
+"6212-M-771-Sh.1",
+"Piping Joint H1-H15",
+5
+],
+[
+"6212-M-771-Sh.2",
+"Piping Joint",
+5
+],
+[
+"6212-M-771-Sh.3",
+"Piping Joint",
+5
+],
+[
+"6212-M-772",
+"Main Stack Personal Protection",
+5
+],
+[
+"6212-M-773",
+"Main Stack Personal Protection",
+5
+],
+[
+"6212-M-774",
+"Platform El. 1900",
+5
+],
+[
+"6212-M-775",
+"Ladder El. 0.000 - El. 1900",
+5
+],
+[
+"6212-M-776",
+"Platform El. 7880",
+5
+],
+[
+"6212-M-777",
+"Assembly Stairs Flight Plan",
+5
+],
+[
+"6212-M-778",
+"Assembly Stairs Platform And Details",
+5
+],
+[
+"6212-M-779-Sh.1",
+"Stairs Flight Details",
+5
+],
+[
+"6212-M-779-Sh.2",
+"Stairs Flight Details",
+5
+],
+[
+"6212-M-780",
+"Ladder By-Pass Stack",
+5
+],
+[
+"6212-M-781",
+"By-Pass Stack Platform El. 11980",
+5
+],
+[
+"6212-M-782",
+"By-Pass Stack Ladder To 5090 At 11980",
+5
+],
+[
+"6212-M-783",
+"By-Pass Stack Personal Protection El. 23680",
+5
+],
+[
+"6212-M-784",
+"By-Pass Stack Personal Protection To 15680 At 23680",
+5
+],
+[
+"6212-M-785",
+"By-Pass Stack Personal Protection El",
+5
+],
+[
+"6212-M-787",
+"By-Pass Stack Personal Protection El",
+5
+],
+[
+"6212-M-788-Sh.2",
+"Section And Detail Platform El. 15680",
+5
+],
+[
+"6212-M-788-Sh.1",
+"Platform El. 15680",
+5
+],
+[
+"6212-M-790",
+"Ladder El. 14760 - El. 15680",
+5
+],
+[
+"6212-M-791",
+"By-Pass Stack Personal Protection To 11980 At 17680",
+5
+],
+[
+"6212-M-800",
+"Module 1 Transport Structure",
+5
+],
+[
+"6212-M-801",
+"Module 2 Transport Structure",
+5
+],
+[
+"6212-P-009.1",
+"By Pass Stack Silencer",
+6
+],
+[
+"6212-P-009.2",
+"Start Up Silencer",
+6
+],
+[
+"6212-P-009.3",
+"General Arrangement Fired Duct Burner",
+6
+],
+[
+"6212-P-009.4",
+"Details Fired Duct Burner",
+6
+],
+[
+"6212-P-009.5",
+"MULTILOVER 4189x3250x600",
+6
+],
+[
+"6212-P-009.6",
+"BIPLANE 3882x3250x600",
+6
+],
+[
+"6212-STR-001",
+"Double Butterfly Damper",
+6
+],
+[
+"6212-STR-002",
+"Purge Fan",
+6
+],
+[
+"6212-STR-003",
+"Sealing Fan",
+6
+],
+[
+"6212-STR-004",
+"Guillotine",
+6
+],
+[
+"6212-STR-005",
+"Mechanical Devices For Guillotine Actions",
+6
+],
+[
+"6212-STR-006",
+"Damper 6\"",
+6
+],
+[
+"6212-STR-007",
+"Damper 4\"",
+6
+],
+[
+"6212-STR-008",
+"Fan Outlet Damper",
+6
+],
+[
+"6212-P-004",
+"Process Data Sheet",
+6
+],
+[
+"6212-P-024",
+"List Of Instruments",
+6
+],
+[
+"6212-P-035",
+"Electrical Power Consumption, Instrument Air Consumption, Heat Dissipation Data Sheet",
+6
+],
+[
+"6212-P-036",
+"Junction Boxes",
+6
+],
+[
+"6212-P-039",
+"Instrument Hook Up Drawings",
+6
+],
+[
+"6212-P-037.1",
+"JB Position And Cables Trays",
+6
+],
+[
+"6212-P-037.2",
+"JB Position And Cables Trays",
+6
+],
+[
+"6212-P-037.3",
+"JB Position And Cables Trays",
+6
+],
+[
+"6212-P-018",
+"Electric Motor Drawings",
+6
+],
+[
+"6212-P-053",
+"Terminal Block Drawing",
+6
+],
+[
+"6212-P-060",
+"List Of Spare Parts For Erection, Commissioning And Start Up",
+6
+],
+[
+"6212-P-027",
+"Control System Description, Operating Principles, Functional Design Specification",
+6
+],
+[
+"6212-P-028",
+"Safety Valves",
+6
+],
+[
+"6212-P-043.A",
+"Burner Management System PLC Logic Cabinet",
+6
+],
+[
+"6212-P-043.C",
+"Modbus Interface V/O List",
+6
+],
+[
+"6212-P-034",
+"Arrangement Drawings",
+6
+],
+[
+"6212-P-043.B",
+"BMS Sequence Description / Diagrams",
+6
+]
+]

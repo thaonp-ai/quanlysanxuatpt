@@ -222,7 +222,7 @@ def header_title(words, t):
     cx = x + w / 2
     for wd in words:
         if wd[6] != 0: continue
-        if 0 < wd[2] - (y + h) < h * 3.2 and abs(wd[1] + wd[3] / 2 - cx) < max(w * 1.6, 0.05) and DESC.match(P.norm(wd[0])):
+        if 0 < wd[2] - (y + h) < h * 3.2 and wd[1] < x + w and wd[1] + wd[3] > x and wd[4] > h * 0.6 and DESC.match(P.norm(wd[0])):
             return True
     return False
 

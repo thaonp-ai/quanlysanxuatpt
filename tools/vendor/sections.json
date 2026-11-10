@@ -221,6 +221,280 @@
     "STK1"
    ],
    "Quạt gió FD, turbine & motor"
+  ],
+  [
+   "§23.5",
+   "Mục 23.5 – Steam Turbine Local Panel Layout And Schematic Diagram",
+   934,
+   [
+    "STK1"
+   ],
+   "Quạt gió FD, turbine & motor"
+  ],
+  [
+   "§23.6",
+   "Mục 23.6 – Speed Monitor",
+   946,
+   [
+    "STK1"
+   ],
+   "Quạt gió FD, turbine & motor"
+  ],
+  [
+   "§23.7",
+   "Mục 23.7 – Airfoil",
+   951,
+   [
+    "K1"
+   ],
+   "Quạt gió FD, turbine & motor"
+  ],
+  [
+   "§24",
+   "Mục 24 – Safety Valves",
+   955,
+   [],
+   "Van an toàn & bộ tiêu âm"
+  ],
+  [
+   "§25",
+   "Mục 25 – Manually Operated Valves",
+   1038,
+   [],
+   "Đường ống & giá đỡ"
+  ],
+  [
+   "§25.1",
+   "Mục 25.1 – Valves List",
+   1039,
+   [],
+   "Đường ống & giá đỡ"
+  ],
+  [
+   "§25.2",
+   "Mục 25.2 – Gate, Globe And Check Valves (Sizes Up To 2\")",
+   1060,
+   [],
+   "Đường ống & giá đỡ"
+  ],
+  [
+   "§25.3",
+   "Mục 25.3 – Gate, Globe And Check Valves (Sizes Over 2\")",
+   1118,
+   [],
+   "Đường ống & giá đỡ"
+  ],
+  [
+   "§25.4",
+   "Mục 25.4 – Ball Valves",
+   1142,
+   [],
+   "Đường ống & giá đỡ"
+  ],
+  [
+   "§25.5",
+   "Mục 25.5 – Continuous Blowdown Valves",
+   1167,
+   [],
+   "Đường ống & giá đỡ"
+  ],
+  [
+   "§26.1",
+   "Mục 26.1 – Control Valves",
+   1179,
+   [],
+   "Thiết bị đo & điều khiển"
+  ],
+  [
+   "§26.2",
+   "Mục 26.2 – Shut-Off Valves",
+   1341,
+   [],
+   "Thiết bị đo & điều khiển"
+  ],
+  [
+   "§26.3",
+   "Mục 26.3 – Self-Actuated Valves",
+   1367,
+   [],
+   "Thiết bị đo & điều khiển"
+  ],
+  [
+   "§26.4",
+   "Mục 26.4 – Desuperheater",
+   1425,
+   [
+    "SH1",
+    "SH2"
+   ],
+   "Thiết bị đo & điều khiển"
+  ],
+  [
+   "§27",
+   "Mục 27 – Motor Operated Valves",
+   1532,
+   [],
+   "Đường ống & giá đỡ"
+  ],
+  [
+   "§28",
+   "Mục 28 – Solenoid Valves",
+   1580,
+   [],
+   "Thiết bị đo & điều khiển"
+  ],
+  [
+   "§29",
+   "Mục 29 – Pressure & Temperature Gauges",
+   1590,
+   [],
+   "Thiết bị đo & điều khiển"
+  ],
+  [
+   "§29.1",
+   "Mục 29.1 – Pressure Gauges",
+   1591,
+   [],
+   "Thiết bị đo & điều khiển"
+  ],
+  [
+   "§29.2",
+   "Mục 29.2 – Temperature Gauges And Thermowells",
+   1596,
+   [],
+   "Thiết bị đo & điều khiển"
+  ],
+  [
+   "§30",
+   "Mục 30 – Level Gauges",
+   1602,
+   [
+    "V1"
+   ],
+   "Thiết bị đo & điều khiển"
+  ],
+  [
+   "§31",
+   "Mục 31 – Flow Elements, Flow Indicator, Multistage Restriction Orifice",
+   1637,
+   [],
+   "Thiết bị đo & điều khiển"
+  ],
+  [
+   "§31.1",
+   "Mục 31.1 – Orifice Plates And Flanges",
+   1638,
+   [],
+   "Thiết bị đo & điều khiển"
+  ],
+  [
+   "§31.2",
+   "Mục 31.2 – Boiler Feed Water Flow Local Indicator",
+   1651,
+   [],
+   "Thiết bị đo & điều khiển"
+  ],
+  [
+   "§31.3",
+   "Mục 31.3 – Multistage Restriction Orifice For Boiler Filling",
+   1679,
+   [],
+   "Thiết bị đo & điều khiển"
+  ],
+  [
+   "§31.4",
+   "Mục 31.4 – Multistage Restriction Orifice For Start-Up Vent",
+   1682,
+   [
+    "SL2"
+   ],
+   "Thiết bị đo & điều khiển"
+  ],
+  [
+   "§32",
+   "Mục 32 – Flow, Level And Pressure Transmitters",
+   1685,
+   [],
+   "Thiết bị đo & điều khiển"
+  ],
+  [
+   "§32.1",
+   "Mục 32.1 – Flow Transmitters",
+   1686,
+   [],
+   "Thiết bị đo & điều khiển"
+  ],
+  [
+   "§33",
+   "Mục 33 – Temperature Transmitters",
+   1862,
+   [],
+   "Thiết bị đo & điều khiển"
+  ],
+  [
+   "§34",
+   "Mục 34 – Oxygen, CO, Conductivity And pH Analyzers",
+   1869,
+   [],
+   "Thiết bị đo & điều khiển"
+  ],
+  [
+   "§34.1",
+   "Mục 34.1 – Oxygen Analyzer",
+   1870,
+   [],
+   "Thiết bị đo & điều khiển"
+  ],
+  [
+   "§34.2",
+   "Mục 34.2 – Conductivity And pH Analyzer",
+   1873,
+   [],
+   "Thiết bị đo & điều khiển"
+  ],
+  [
+   "§35",
+   "Mục 35 – Start-Up Vent Silencer",
+   1925,
+   [
+    "SL2"
+   ],
+   "Van an toàn & bộ tiêu âm"
+  ],
+  [
+   "§36",
+   "Mục 36 – Expansion Joints",
+   1930,
+   [],
+   "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn"
+  ],
+  [
+   "§37",
+   "Mục 37 – Steam Traps",
+   1957,
+   [],
+   "Đường ống & giá đỡ"
+  ],
+  [
+   "§38",
+   "Mục 38 – Manholes & Peepholes",
+   1971,
+   [],
+   "Phần áp lực (bao hơi, ống, quá nhiệt, hâm nước)"
+  ],
+  [
+   "§39",
+   "Mục 39 – Refractories",
+   1974,
+   [],
+   "Ống gió, ống khói, vỏ lò, chịu lửa & bảo ôn"
+  ],
+  [
+   "§40",
+   "Mục 40 – Sampling System",
+   1979,
+   [],
+   "Thiết bị đo & điều khiển"
   ]
  ],
  "Lo hoi phu tro/PART 1C/Vendor Data Book Part 1C.pdf": [

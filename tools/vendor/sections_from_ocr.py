@@ -76,12 +76,15 @@ def find_sections(ocr_dir):
     return res
 
 
+FIX = {"25.2": "Gate, Globe And Check Valves (Sizes Up To 2\")", "25.3": "Gate, Globe And Check Valves (Sizes Over 2\")",
+       "25.5": "Continuous Blowdown Valves", "32.1": "Flow Transmitters", "34": "Oxygen, CO, Conductivity And pH Analyzers",
+       "34.2": "Conductivity And pH Analyzer"}
 S = {}
 for book, d in ((D1, sys.argv[1]), (D2, sys.argv[2])):
     lst = []
     for no, t, p in find_sections(d):
         g, sub = rule(no)
-        lst.append([("§" + no), f"Mục {no} – {t}", p, sub, g])
+        lst.append([("§" + no), f"Mục {no} – {FIX.get(no, t)}", p, sub, g])
     S[book] = lst
 
 S[C] = [

@@ -26,3 +26,8 @@ Các script dùng đường dẫn cứng `/home/claude/work` và PDF ở `/mnt/u
 5. Bản vẽ mới: lấy PDF từ máy người dùng (thư mục `E:\4.DPM\APP Xuong PT\PIDvaQLSX`), chạy `ocr.py`, `bubbles.py`, `titles.py`, `tiles.py` (P&ID), `img.py`, `frame.py` + `area.py` cho trang đó, rồi `build.py`.
 
 Commit thẳng vào `main` (người dùng muốn web cập nhật ngay).
+
+## Tài liệu vendor
+- `web/data/vendor.json` (dựng bằng `python3 tools/vendor/build_vendor.py`): `docs[]` `{p: đường dẫn tương đối trong thư mục OneDrive "Vendor Data", t, g: nhóm, no, src, kb, pg: trang trong sách gộp}`, `tags{tag: [chỉ số docs]}`, `base` = link OneDrive "View online" của thư mục Vendor Data (lưu ở `tools/vendor/base_url.txt`). Web chỉ lưu link, không lưu file.
+- Web gộp tài liệu theo tag (khớp tên hiện tại hoặc tên OCR gốc) và tài liệu chung của cụm (phần trước "/", hoặc bỏ chữ A/B cuối).
+- Nguồn: `listing_lohoi.json` (danh sách file), `titles_778.json` (tên bản vẽ Macchi từ mục lục), `sections.json` (trang bắt đầu các mục Part 1C/1D/1E; `sections_from_ocr.py` tạo từ OCR trang tách mục), `10-V-8001_doclist.csv`. Gắn mã bản vẽ → tag con trong `SUB` của build_vendor.py.

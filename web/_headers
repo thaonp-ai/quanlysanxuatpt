@@ -1,4 +1,4 @@
 /data/*
   Cache-Control: no-cache
 /img/*
-  Cache-Control: public, max-age=86400
+  Cache-Control: private, max-age=86400

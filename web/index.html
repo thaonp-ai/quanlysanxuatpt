@@ -106,6 +106,10 @@ nav.units h2,.panel h2{font-family:var(--f-disp);font-weight:600;font-size:13px;
 .tbtn[aria-pressed="true"]{background:var(--mark-soft);border-color:var(--mark)}
 .mode{font-size:11.5px;color:var(--muted)}
 .mode b{font-weight:600;color:var(--ink)}
+.who{display:flex;gap:6px;align-items:center}
+.who a.tbtn{text-decoration:none;color:inherit}
+.who form{margin:0}
+.ro .rowedit,.ro #btnAdd{display:none}
 .pop{position:absolute;right:0;top:calc(100% + 6px);background:var(--sheet);border:1px solid var(--rule);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.14);padding:6px;display:flex;flex-direction:column;min-width:240px;z-index:30}
 .pop button{border:0;background:none;text-align:left;padding:8px 10px;border-radius:5px}
 .pop button:hover{background:var(--line-soft)}
@@ -164,6 +168,10 @@ nav.units h2,.panel h2{font-family:var(--f-disp);font-weight:600;font-size:13px;
   </div>
   <div class="tools">
     <span class="mode" id="mode"></span>
+    <div class="who" id="who" hidden>
+      <a class="tbtn" href="account" id="btnAcct" title="Đổi mật khẩu, quản lý tài khoản">Tài khoản</a>
+      <form method="post" action="logout"><button class="tbtn" type="submit">Đăng xuất</button></form>
+    </div>
     <div class="wrap">
       <button class="tbtn primary" id="btnExport" aria-haspopup="true" aria-expanded="false">Xuất Excel</button>
       <div class="pop" id="exportPop" hidden>
@@ -232,7 +240,8 @@ nav.units h2,.panel h2{font-family:var(--f-disp);font-weight:600;font-size:13px;
 
 <script>
 const KIND={line:"Đường ống",equipment:"Thiết bị",valve:"Van"};
-let DB=null, EDITS={}, LOG=[], VIEW=[], MODE="local", SIDX={};
+let DB=null, EDITS={}, LOG=[], VIEW=[], MODE="local", SIDX={}, ME=null;
+const ROLE={admin:"quản trị",editor:"được sửa tag",viewer:"chỉ xem"};
 let state={unit:null,kinds:new Set(),edited:false,q:"",tab:"tags",sel:null,occ:[],oi:0,sheet:null,pick:false};
 const $=id=>document.getElementById(id);
 const normq=s=>(s||"").toUpperCase().replace(/[\s"'”″\-_.]/g,"");
@@ -246,7 +255,10 @@ const api={
   async load(){
     try{
       const r=await fetch("api/edits",{cache:"no-store"});
-      if(r.ok&&(r.headers.get("content-type")||"").includes("json")){const j=await r.json();MODE="server";return j;}
+      if(r.status===401){location.href="login?next="+encodeURIComponent(location.pathname);return{edits:{},log:[]};}
+      if(r.ok&&(r.headers.get("content-type")||"").includes("json")){const j=await r.json();MODE="server";
+        try{const m=await fetch("api/me",{cache:"no-store"});if(m.ok)ME=await m.json();}catch(e){}
+        return j;}
     }catch(e){}
     MODE="local";
     try{return JSON.parse(store.get("pid-edits")||"")||{edits:{},log:[]}}catch(e){return{edits:{},log:[]}}
@@ -267,7 +279,8 @@ const api={
 };
 function setEdits(st){EDITS=st.edits||{};LOG=st.log||[];rebuild();}
 function showMode(){
-  $("mode").innerHTML=MODE==="server"?`Chỉnh sửa lưu chung cho mọi người · <b>${Object.keys(EDITS).length}</b> tag đã sửa`:`Xem trước: chỉnh sửa chỉ lưu trên trình duyệt này · <b>${Object.keys(EDITS).length}</b> tag đã sửa`;
+  if(ME){document.body.classList.toggle("ro",ME.role==="viewer");$("who").hidden=false;$("btnAcct").textContent=ME.role==="admin"?"Quản lý tài khoản":"Tài khoản";}
+  $("mode").innerHTML=MODE==="server"?(ME?`<b>${esc(ME.name)}</b> (${ROLE[ME.role]||ME.role}) · `:"")+`<b>${Object.keys(EDITS).length}</b> tag đã sửa`:`Xem trước: chỉnh sửa chỉ lưu trên trình duyệt này · <b>${Object.keys(EDITS).length}</b> tag đã sửa`;
 }
 
 /* ---- merged view of OCR data + edits ---- */
@@ -379,12 +392,13 @@ function openEditor(t,newPos){
   $("fName").value=isNew?"":t.t;
   $("fKind").value=isNew?(state.lastKind||"equipment"):t.k;
   $("fNote").value=isNew?"":t.note;
-  $("fBy").value=store.get("pid-editor")||"";
+  $("fBy").value=ME?ME.name:(store.get("pid-editor")||"");
+  $("fBy").parentElement.hidden=!!ME;
   $("fDel").checked=isNew?false:t.del;
   $("fDelLabel").textContent=t&&t.isNew?"Xóa tag thêm thủ công này":"Ẩn tag này (OCR đọc nhầm, không phải tag)";
   $("fDel").parentElement.hidden=isNew;
   $("fReset").hidden=isNew||!t.edited||t.isNew;
-  $("fKeyWrap").hidden=!store.get("pid-edit-key")&&!editing.needKey;
+  $("fKeyWrap").hidden=true;
   $("fKey").value=store.get("pid-edit-key")||"";
   $("fErr").hidden=true;
   const h=isNew?[]:LOG.filter(l=>l.key===t.key).slice(0,8);
@@ -415,7 +429,7 @@ async function submit(body){
     if(state.sheet!=null&&!state.sel)openSheetAll(state.sheet);
     toast(body.reset?"Đã khôi phục tên gốc":"Đã lưu");
   }catch(e){
-    if(e.status===401){editing.needKey=true;$("fKeyWrap").hidden=false;$("fKey").focus();}
+    if(e.status===401){location.href="login?next="+encodeURIComponent(location.pathname);return;}
     $("fErr").textContent=e.message||"Không lưu được. Kiểm tra kết nối mạng rồi thử lại.";$("fErr").hidden=false;
   }finally{$("fSave").disabled=false;}
 }

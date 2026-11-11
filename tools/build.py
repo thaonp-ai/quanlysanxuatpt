@@ -476,6 +476,11 @@ def main():
             if new in tags: tags[new]["o"] += e["o"]
             else: tags[new] = e
             FIXLOG.append(("manual", old, new))
+    # same tag on both P&ID and PFD: keep only the P&ID positions (PFD-only tags stay as they are)
+    for e in tags.values():
+        if {sheets[o[0]]["kind"] for o in e["o"]} >= {"PID", "PFD"}:
+            e["o"] = [o for o in e["o"] if sheets[o[0]]["kind"] == "PID"]
+            FIXLOG.append(("pfd-drop", e["t"], ""))
     for e in tags.values():
         if "l" in e: e["l"] = sorted(e["l"])
         s = e["s"]

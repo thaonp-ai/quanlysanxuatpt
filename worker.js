@@ -415,7 +415,7 @@ async function handleEdits(req, env, me) {
       patch = sanitizePatch(body.patch || {}, key.startsWith("n:"));
       if (key.startsWith("n:") && !prev && (!patch.t || !patch.o)) throw new Error("Tag mới cần tên và vị trí");
       state.edits[key] = { ...(prev || {}), ...patch, by, at };
-      action = !prev && key.startsWith("n:") ? "Thêm tag" : patch.del === true ? "Ẩn tag" : patch.del === false && prev && prev.del ? "Hiện lại tag" : "Sửa";
+      action = !prev && key.startsWith("n:") ? "Thêm tag" : patch.del === true ? "Xóa" : patch.del === false && prev && prev.del ? "Khôi phục tag đã xóa" : "Sửa";
     }
   } catch (e) {
     return json({ error: e.message }, 400);

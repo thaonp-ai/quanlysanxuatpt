@@ -101,6 +101,7 @@ nav.units h2,.panel h2{font-family:var(--f-disp);font-weight:600;font-size:13px;
 .rowedit{border:0;background:none;color:var(--muted);padding:0 14px;font-size:12px;align-self:center;border-radius:5px;margin-right:6px;min-height:32px}
 .rowedit:hover{background:var(--line-soft);color:var(--ink)}
 .badge{font-family:var(--f-body);font-size:10.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:1px 6px;border-radius:3px;background:var(--mark-soft);color:var(--ink)}
+.badge.del{background:#fbe3e0;color:#b42318}
 .badge.new{background:var(--line-soft)}
 .row.hidden .tag span.nm{text-decoration:line-through;color:var(--muted)}
 .tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap;min-width:0}
@@ -112,7 +113,12 @@ nav.units h2,.panel h2{font-family:var(--f-disp);font-weight:600;font-size:13px;
 .who{display:flex;gap:6px;align-items:center}
 .who a.tbtn{text-decoration:none;color:inherit}
 .who form{margin:0}
-.ro .rowedit,.ro #btnAdd{display:none}
+.ro .rowedit,.ro .rowdel,.ro #btnAdd{display:none}
+.rowdel{border:0;background:none;color:var(--muted);padding:0 12px;font-size:12px;align-self:center;border-radius:5px;min-height:32px}
+.rowdel:hover{background:var(--line-soft);color:#b42318}
+.rowdel.arm{background:#b42318;color:#fff}
+.tbtn.danger{color:#b42318;border-color:#e4b4ae}
+.tbtn.danger.arm{background:#b42318;color:#fff;border-color:#b42318}
 .rowdoc{border:0;background:none;color:var(--line);padding:0 10px;font-size:12px;font-weight:600;align-self:center;border-radius:5px;min-height:32px;white-space:nowrap}
 .rowdoc:hover{background:var(--line-soft)}
 .rowdoc b{font-family:var(--f-mono);font-weight:600;margin-left:4px}
@@ -264,10 +270,10 @@ a.doc:hover{background:var(--line-soft)}
         <label>Người sửa<input type="text" id="fBy" autocomplete="name" placeholder="Họ tên của bạn"></label>
       </div>
       <label>Ghi chú<textarea id="fNote" placeholder="Ví dụ: đã kiểm tra hiện trường 10/11"></textarea></label>
-      <label class="chk"><input type="checkbox" id="fDel"> <span id="fDelLabel">Ẩn tag này (OCR đọc nhầm, không phải tag)</span></label>
       <label id="fKeyWrap" hidden>Mã sửa<input type="password" id="fKey" autocomplete="off" placeholder="Mã do quản trị viên cung cấp"></label>
       <div class="warn" id="fErr" hidden></div>
       <div class="acts">
+        <button type="button" class="tbtn danger" id="fDelBtn" hidden>Xóa</button>
         <button type="button" class="tbtn left" id="fReset" hidden>Khôi phục bản gốc</button>
         <button type="button" class="tbtn" id="fCancel">Hủy</button>
         <button type="submit" class="tbtn primary" id="fSave">Lưu</button>
@@ -318,7 +324,7 @@ const api={
     // local mode mirrors the server logic
     const st={edits:{...EDITS},log:[...LOG]},at=new Date().toISOString(),by=body.by||"Không rõ",prev=st.edits[body.key];
     if(body.reset)delete st.edits[body.key];else st.edits[body.key]={...(prev||{}),...body.patch,by,at};
-    st.log.unshift({at,by,key:body.key,action:body.reset?"Khôi phục bản gốc":(!prev&&body.key.startsWith("n:")?"Thêm tag":body.patch.del===true?"Ẩn tag":"Sửa"),from:prev?{t:prev.t,k:prev.k,note:prev.note,del:prev.del}:null,to:body.reset?null:body.patch});
+    st.log.unshift({at,by,key:body.key,action:body.reset?"Khôi phục bản gốc":(!prev&&body.key.startsWith("n:")?"Thêm tag":body.patch.del===true?"Xóa":body.patch.del===false?"Khôi phục tag đã xóa":"Sửa"),from:prev?{t:prev.t,k:prev.k,note:prev.note,del:prev.del}:null,to:body.reset?null:body.patch});
     store.set("pid-edits",JSON.stringify(st));return st;
   }
 };
@@ -448,12 +454,15 @@ function render(){
     r.slice(0,max).forEach(t=>{
       const row=document.createElement("div");row.className="row"+(t.del?" hidden":"");
       const sh=[...new Set(t.o.map(o=>o[0]))];
-      const badge=t.isNew?'<span class="badge new">Thêm mới</span>':t.del?'<span class="badge">Đã ẩn</span>':t.edited?'<span class="badge">Đã sửa</span>':"";
+      const badge=t.isNew?'<span class="badge new">Thêm mới</span>':t.del?'<span class="badge del">Đã xóa</span>':t.edited?'<span class="badge">Đã sửa</span>':"";
       const sub=[KIND[t.k],t.d,t.edited&&!t.isNew&&t.orig!==t.t?`tên OCR: ${t.orig}`:"",t.l&&!t.edited?`ghi trên bản vẽ: ${t.l.join(", ")}`:"",t.note?`ghi chú: ${t.note}`:"",t.edited&&t.by?`${t.by}, ${fmtTime(t.at)}`:""].filter(Boolean).map(esc).join(" · ");
-      row.innerHTML=`<button class="rowmain"><div class="tag"><i class="dot d-${t.k}"></i><span class="nm">${hl(t.t,q)}</span>${badge}</div><div class="sub">${sub}</div><div class="refs">${sh.slice(0,3).map(i=>esc(sheetLabel(DB.sheets[i]))).join(" · ")}${sh.length>3?` +${sh.length-3}`:""}</div></button>${(()=>{const r=docsFor(t),n=r.direct.length||r.pkg.length;return n?`<button class="rowdoc" title="${r.direct.length} tài liệu riêng · ${r.pkg.length} tài liệu chung của cụm" aria-label="Tài liệu vendor của ${esc(t.t)}">${r.direct.length?"Tài liệu":"Tài liệu cụm"}<b>${n}</b></button>`:"";})()}<button class="rowedit" aria-label="Sửa ${esc(t.t)}">Sửa</button>`;
+      row.innerHTML=`<button class="rowmain"><div class="tag"><i class="dot d-${t.k}"></i><span class="nm">${hl(t.t,q)}</span>${badge}</div><div class="sub">${sub}</div><div class="refs">${sh.slice(0,3).map(i=>esc(sheetLabel(DB.sheets[i]))).join(" · ")}${sh.length>3?` +${sh.length-3}`:""}</div></button>${(()=>{const r=docsFor(t),n=r.direct.length||r.pkg.length;return n?`<button class="rowdoc" title="${r.direct.length} tài liệu riêng · ${r.pkg.length} tài liệu chung của cụm" aria-label="Tài liệu vendor của ${esc(t.t)}">${r.direct.length?"Tài liệu":"Tài liệu cụm"}<b>${n}</b></button>`:"";})()}<button class="rowedit" aria-label="Sửa ${esc(t.t)}">Sửa</button><button class="rowdel" aria-label="${t.del?"Khôi phục":"Xóa"} ${esc(t.t)}">${t.del?"Khôi phục":"Xóa"}</button>`;
       if(state.sel&&state.sel.key===t.key)row.setAttribute("aria-current","true");
       row.querySelector(".rowmain").onclick=()=>{state.sel=t;openTag(t);render();};
       row.querySelector(".rowedit").onclick=()=>openEditor(t);
+      const rx=row.querySelector(".rowdel");rx.onclick=()=>{
+        if(!t.del&&!rx.classList.contains("arm")){rx.classList.add("arm");rx.textContent="Chắc chắn xóa?";setTimeout(()=>{if(rx.isConnected){rx.classList.remove("arm");rx.textContent="Xóa";}},3500);return;}
+        quickDel(t,!t.del);};
       const rd=row.querySelector(".rowdoc");if(rd)rd.onclick=()=>{state.sel=t;openDocs(t);};
       frag.appendChild(row);
     });
@@ -492,9 +501,8 @@ function openEditor(t,newPos){
   $("fNote").value=isNew?"":t.note;
   $("fBy").value=ME?ME.name:(store.get("pid-editor")||"");
   $("fBy").parentElement.hidden=!!ME;
-  $("fDel").checked=isNew?false:t.del;
-  $("fDelLabel").textContent=t&&t.isNew?"Xóa tag thêm thủ công này":"Ẩn tag này (OCR đọc nhầm, không phải tag)";
-  $("fDel").parentElement.hidden=isNew;
+  const db=$("fDelBtn");db.hidden=isNew;db.classList.remove("arm");
+  db.textContent=t&&t.del?"Khôi phục tag đã xóa":"Xóa "+KIND[t?t.k:"equipment"].toLowerCase()+" này";
   $("fReset").hidden=isNew||!t.edited||t.isNew;
   $("fKeyWrap").hidden=true;
   $("fKey").value=store.get("pid-edit-key")||"";
@@ -516,7 +524,7 @@ $("fName").addEventListener("input",dupWarn);
 $("fCancel").onclick=()=>closeEditor();
 $("scrim").addEventListener("click",e=>{if(e.target===$("scrim"))closeEditor();});
 document.addEventListener("keydown",e=>{if(e.key==="Escape"){if(!$("scrim").hidden)closeEditor();else if(state.pick)setPick(false);}});
-async function submit(body){
+async function submit(body,okMsg){
   const by=$("fBy").value.trim();store.set("pid-editor",by);body.by=by;
   if(!$("fKeyWrap").hidden)store.set("pid-edit-key",$("fKey").value);
   $("fSave").disabled=true;$("fErr").hidden=true;
@@ -525,7 +533,7 @@ async function submit(body){
     setEdits(st);closeEditor();renderUnits();render();
     if(state.sel){const again=VIEW.find(v=>v.key===state.sel.key);state.sel=again||null;}
     if(state.sheet!=null&&!state.sel)openSheetAll(state.sheet);
-    toast(body.reset?"Đã khôi phục tên gốc":"Đã lưu");
+    toast(okMsg||(body.reset?"Đã khôi phục tên gốc":"Đã lưu"));
   }catch(e){
     if(e.status===401){location.href="login?next="+encodeURIComponent(location.pathname);return;}
     $("fErr").textContent=e.message||"Không lưu được. Kiểm tra kết nối mạng rồi thử lại.";$("fErr").hidden=false;
@@ -545,12 +553,26 @@ $("dlgForm").addEventListener("submit",e=>{
     if(name!==t.t)patch.t=name;
     if(k!==t.k)patch.k=k;
     if($("fNote").value.trim()!==t.note)patch.note=$("fNote").value.trim();
-    if($("fDel").checked!==t.del)patch.del=$("fDel").checked;
     if(!Object.keys(patch).length){closeEditor();return;}
     submit({key:t.key,patch});
   }
 });
 $("fReset").onclick=()=>submit({key:editing.t.key,reset:true});
+$("fDelBtn").onclick=()=>{
+  const t=editing.t,db=$("fDelBtn");
+  if(!t.del&&!db.classList.contains("arm")){db.classList.add("arm");db.textContent="Bấm lần nữa để xóa";return;}
+  if(!$("fBy").value.trim()){$("fErr").textContent="Nhập họ tên người sửa để tiện theo dõi.";$("fErr").hidden=false;$("fBy").focus();return;}
+  submit({key:t.key,patch:{del:!t.del}},t.del?"Đã khôi phục":"Đã xóa "+t.t);
+};
+async function quickDel(t,del){
+  const by=ME?ME.name:(store.get("pid-editor")||"");
+  if(!by){openEditor(t);return;}
+  try{const st=await api.save({key:t.key,patch:{del},by});setEdits(st);
+    if(state.sel&&state.sel.key===t.key)state.sel=del?null:VIEW.find(v=>v.key===t.key)||null;
+    renderUnits();render();if(state.sheet!=null&&!state.sel)openSheetAll(state.sheet);
+    toast(del?`Đã xóa ${t.t} · bấm “Đã chỉnh sửa” để khôi phục`:"Đã khôi phục "+t.t);
+  }catch(e){if(e.status===401){location.href="login?next="+encodeURIComponent(location.pathname);return;}toast(e.message||"Không lưu được");}
+}
 
 /* ---- Excel export (self-contained .xlsx writer: zip "store" + SpreadsheetML) ---- */
 const XL=(()=>{
@@ -605,7 +627,7 @@ function buildWorkbook(tags){
   const H=["STT","Unit","Tên Unit","Loại","Tag","Mô tả","Tên OCR gốc","Trạng thái","Ghi chú","Số bản vẽ","Tên bản vẽ","Loại bản vẽ","Người sửa","Thời gian sửa"];
   const rows=[];
   tags.forEach(t=>{[...new Set(t.o.map(o=>o[0]))].forEach(si=>{const s=DB.sheets[si];
-    rows.push([0,s.unit,unitName[s.unit]||"",KIND[t.k],t.t,t.d||"",t.isNew?"":t.orig,t.isNew?"Thêm mới":t.del?"Đã ẩn":t.edited?"Đã sửa":"Gốc (OCR)",
+    rows.push([0,s.unit,unitName[s.unit]||"",KIND[t.k],t.t,t.d||"",t.isNew?"":t.orig,t.isNew?"Thêm mới":t.del?"Đã xóa":t.edited?"Đã sửa":"Gốc (OCR)",
       t.note||"",sheetLabel(s),s.title||"",s.kind,t.edited?(t.by||""):"",t.edited?fmtTime(t.at):""]);});});
   rows.sort((a,b)=>a[1].localeCompare(b[1])||a[9].localeCompare(b[9])||a[3].localeCompare(b[3])||a[4].localeCompare(b[4]));
   rows.forEach((r,i)=>r[0]=i+1);

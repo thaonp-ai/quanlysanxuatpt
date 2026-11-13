@@ -122,6 +122,16 @@ nav.units h2,.panel h2{font-family:var(--f-disp);font-weight:600;font-size:13px;
 .rowdoc{border:0;background:none;color:var(--line);padding:0 10px;font-size:12px;font-weight:600;align-self:center;border-radius:5px;min-height:32px;white-space:nowrap}
 .rowdoc:hover{background:var(--line-soft)}
 .rowdoc b{font-family:var(--f-mono);font-weight:600;margin-left:4px}
+/* tag row: name and details use the full width; Sửa/Xóa top-right, document/technology chips on one line underneath */
+.row:not(.sheetrow){display:grid;grid-template-columns:minmax(0,1fr);position:relative}
+.row:not(.sheetrow) .rowmain{grid-row:1;padding:9px 16px 8px}
+.row:not(.sheetrow) .rowmain .tag{padding-right:92px}
+.ro .row .rowmain .tag{padding-right:0}
+.rowside{position:absolute;top:6px;right:8px;display:flex;gap:2px}
+.rowside .rowedit,.rowside .rowdel{min-height:28px;padding:0 9px;margin:0}
+.rowacts{grid-column:1/-1;grid-row:2;display:flex;flex-wrap:wrap;gap:6px;padding:0 12px 9px 16px;margin-top:-3px}
+.rowacts .rowdoc,.rowacts .rowtech{min-height:26px;padding:0 10px;border:1px solid var(--rule);border-radius:999px;font-size:12px}
+.ro .rowside{display:none}
 .docs{position:fixed;top:0;right:0;bottom:0;width:min(620px,100%);background:var(--sheet);border-left:1px solid var(--rule);box-shadow:-16px 0 40px rgba(0,0,0,.16);z-index:35;display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-right:env(safe-area-inset-right,0px)}
 .docs .dh{display:flex;gap:10px;align-items:flex-start;padding:14px 16px 10px;border-bottom:1px solid var(--rule)}
 .docs .dh div{flex:1;min-width:0}
@@ -531,7 +541,7 @@ function render(){
       const sh=[...new Set(t.o.map(o=>o[0]))];
       const badge=t.isNew?'<span class="badge new">Thêm mới</span>':t.del?'<span class="badge del">Đã xóa</span>':t.edited?'<span class="badge">Đã sửa</span>':"";
       const sub=[KIND[t.k],t.d,t.edited&&!t.isNew&&t.orig!==t.t?`tên OCR: ${t.orig}`:"",t.l&&!t.edited?`ghi trên bản vẽ: ${t.l.join(", ")}`:"",t.note?`ghi chú: ${t.note}`:"",t.edited&&t.by?`${t.by}, ${fmtTime(t.at)}`:""].filter(Boolean).map(esc).join(" · ");
-      row.innerHTML=`<button class="rowmain"><div class="tag"><i class="dot d-${t.k}"></i><span class="nm">${hl(t.t,q)}</span>${badge}</div><div class="sub">${sub}</div><div class="refs">${sh.slice(0,3).map(i=>esc(sheetLabel(DB.sheets[i]))).join(" · ")}${sh.length>3?` +${sh.length-3}`:""}</div></button>${(()=>{const r=docsFor(t),n=r.direct.length||r.pkg.length;return n?`<button class="rowdoc" title="${r.direct.length} tài liệu riêng · ${r.pkg.length} tài liệu chung của cụm" aria-label="Tài liệu vendor của ${esc(t.t)}">${r.direct.length?"Tài liệu":"Tài liệu cụm"}<b>${n}</b></button>`:"";})()}${techFor(t)?`<button class="rowtech" aria-label="Công nghệ của ${esc(t.t)}">Công nghệ</button>`:""}<button class="rowedit" aria-label="Sửa ${esc(t.t)}">Sửa</button><button class="rowdel" aria-label="${t.del?"Khôi phục":"Xóa"} ${esc(t.t)}">${t.del?"Khôi phục":"Xóa"}</button>`;
+      row.innerHTML=`<button class="rowmain"><div class="tag"><i class="dot d-${t.k}"></i><span class="nm">${hl(t.t,q)}</span>${badge}</div><div class="sub">${sub}</div><div class="refs">${sh.slice(0,3).map(i=>esc(sheetLabel(DB.sheets[i]))).join(" · ")}${sh.length>3?` +${sh.length-3}`:""}</div></button><div class="rowside"><button class="rowedit" aria-label="Sửa ${esc(t.t)}">Sửa</button><button class="rowdel" aria-label="${t.del?"Khôi phục":"Xóa"} ${esc(t.t)}">${t.del?"Khôi phục":"Xóa"}</button></div>${(c=>c?`<div class="rowacts">${c}</div>`:"")(`${(()=>{const r=docsFor(t),n=r.direct.length||r.pkg.length;return n?`<button class="rowdoc" title="${r.direct.length} tài liệu riêng · ${r.pkg.length} tài liệu chung của cụm" aria-label="Tài liệu vendor của ${esc(t.t)}">${r.direct.length?"Tài liệu":"Tài liệu cụm"}<b>${n}</b></button>`:"";})()}${techFor(t)?`<button class="rowtech" aria-label="Công nghệ của ${esc(t.t)}">Công nghệ</button>`:""}`)}`;
       if(state.sel&&state.sel.key===t.key)row.setAttribute("aria-current","true");
       row.querySelector(".rowmain").onclick=()=>{state.sel=t;openTag(t);render();};
       row.querySelector(".rowedit").onclick=()=>openEditor(t);

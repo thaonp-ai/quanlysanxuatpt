@@ -108,7 +108,7 @@ pk2001 = {
          "ul": ["Nước thô từ trạm bơm vào header 4\"; van giảm áp giữ áp sau van ở 5 barg. Header tách làm hai: nhánh 3\" qua phần châm hóa chất "
                 "về bồn nước sinh hoạt, nhánh 4\" cấp nước rửa ngược cho lọc than.",
                 "Lưu lượng vào phần châm được chỉnh cố định khoảng 22 m³/h (lưu lượng kế FIT-32201 và van cầu điều chỉnh đầu ra) để liều châm ổn định.",
-                "NaOCl 10 % được châm vào đường ống với liều 2 mg/L, sau đó qua bộ trộn tĩnh 2Z1. Máy phân tích clo dư AIT-32201 theo dõi clo dư của nước vào bồn.",
+                "NaOCl 10 % được châm vào đường ống với liều 2 mg/L, sau đó qua bộ trộn tĩnh Z1. Máy phân tích clo dư AIT-32201 theo dõi clo dư của nước vào bồn.",
                 "Châm sốc: định kỳ (khoảng mỗi tháng một lần) bơm P2 châm 5 mg/L vào bồn nước sinh hoạt để khử trùng bồn."],
          "src": [S_PROC, S_DOSE]},
         {"h": "Phần xử lý nước sinh hoạt",
@@ -208,7 +208,7 @@ TAGS = {
                        "intro": "Bồn 350 L (hữu dụng), Ø600 × 1.440 mm, thép carbon lót cao su, áp khí quyển. Đủ cho một lần châm sốc. "
                                 "Có công tắc mức thấp LSL-32201 (Magnetrol) báo động và chặn bơm châm sốc.",
                        "s": [], "src": [S_MECH, S_PROC]},
-    "30-PK-2001/2Z1": {"t": "Bộ trộn tĩnh 30-PK-2001/2Z1",
+    "30-PK-2001/Z1": {"t": "Bộ trộn tĩnh 30-PK-2001/Z1",
                        "intro": "Đặt trên đường ống ngay sau điểm châm NaOCl, giúp phân tán dung dịch hypochlorite đậm đặc đều vào nước thô trước khi đo clo dư và vào bồn.",
                        "s": [], "src": [S_PROC]},
 }

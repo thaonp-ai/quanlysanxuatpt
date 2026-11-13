@@ -369,8 +369,9 @@ function showMode(){
 function rebuild(){
   VIEW=[];
   DB.tags.forEach(t=>{
-    const key="o:"+t.t,e=EDITS[key];
-    VIEW.push({key,orig:t.t,t:(e&&e.t)||t.t,k:(e&&e.k)||t.k,d:e&&e.k&&e.k!==t.k?"":t.d,l:t.l,o:t.o,note:(e&&e.note)||"",del:!!(e&&e.del),edited:!!e,isNew:false,by:e&&e.by,at:e&&e.at});
+    // tags renamed when the data is rebuilt keep their former OCR names in t.a, so earlier web edits still match
+    const nm=[t.t,...(t.a||[])].find(n=>EDITS["o:"+n])||t.t,key="o:"+nm,e=EDITS[key];
+    VIEW.push({key,orig:nm,t:(e&&e.t)||t.t,k:(e&&e.k)||t.k,d:e&&e.k&&e.k!==t.k?"":t.d,l:t.l,o:t.o,note:(e&&e.note)||"",del:!!(e&&e.del),edited:!!e,isNew:false,by:e&&e.by,at:e&&e.at});
   });
   Object.entries(EDITS).forEach(([key,e])=>{
     if(!key.startsWith("n:"))return;

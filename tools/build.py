@@ -151,6 +151,8 @@ def header_tags(sid, cands_all):
     return H
 
 FIXLOG = []
+HDRS = {}
+HDRPOS = {}   # equipment name -> [(P&ID sheet, header label)]
 
 def resolve(cands):
     """Readings of the same label from both OCR passes overlap: keep one per label.
@@ -337,6 +339,9 @@ def main():
                 for nm in expand(t[0]):
                     nm = re.sub("^50-", "30-", nm)
                     if OKH.match(nm) and not nm.startswith("39-"): hdr.append((nm, t))
+        HDRS[sid] = sorted({nm for nm, _ in hdr})
+        if kind == "PID":
+            for nm, t in hdr: HDRPOS.setdefault(nm, []).append((sid, t))
         cands = [(t, s) for t, s in cands if in_area(sid, t[3] + t[5] / 2, t[4] + t[6] / 2) and not header_title(d["words"], t)]
         found = resolve(cands)
         # equipment named only in a stream label ("FROM 10-E3005", "TO 10-V8001", "(FOR 10-P8001A") is a reference, not the equipment
@@ -472,17 +477,65 @@ def main():
     if os.path.exists("/home/claude/work/overrides.json"):
         for old, new in json.load(open("/home/claude/work/overrides.json")).items():
             if old.startswith("_") or old not in tags: continue
-            e = tags.pop(old); e["t"] = new
-            if new in tags: tags[new]["o"] += e["o"]
-            else: tags[new] = e
+            e = tags.pop(old)
             FIXLOG.append(("manual", old, new))
-    # same tag on both P&ID and PFD: keep only the P&ID positions (PFD-only tags stay as they are)
-    for e in tags.values():
-        if {sheets[o[0]]["kind"] for o in e["o"]} >= {"PID", "PFD"}:
+            if not new: continue                      # "" = not a real tag (reference text, misread duplicate)
+            e["t"] = new
+            al = set(e.get("a", ())) | {old}
+            if new in tags:
+                tags[new]["o"] += e["o"]; tags[new]["a"] = set(tags[new].get("a", ())) | al
+            else:
+                e["a"] = al; tags[new] = e
+    # per-position fixes (tools/posfix.json): {"sid", "x", "y", "to"} renames the occurrence whose box starts at (x, y);
+    # with "w", "h" and no existing occurrence the position is added (label OCR could not read)
+    if os.path.exists("/home/claude/work/posfix.json"):
+        sidx = {s_["id"]: i for i, s_ in enumerate(sheets)}
+        for fx in json.load(open("/home/claude/work/posfix.json")):
+            if isinstance(fx, str): continue
+            si = sidx[fx["sid"]]; occ = None
+            for k, e in list(tags.items()):
+                for o in e["o"]:
+                    if o[0] == si and abs(o[1] - fx["x"]) < 0.004 and abs(o[2] - fx["y"]) < 0.004:
+                        occ = (k, o); break
+                if occ: break
+            if occ:
+                k, o = occ
+                if k == fx["to"]: continue
+                tags[k]["o"].remove(o)
+                if not tags[k]["o"]: e = tags.pop(k)
+                kind = tags[k]["k"] if k in tags else e["k"]; sub = tags[k]["s"] if k in tags else e["s"]
+                t2 = tags.setdefault(fx["to"], {"t": fx["to"], "k": kind, "s": sub, "o": []})
+                t2["o"].append(o); t2["a"] = set(t2.get("a", ())) | {k}
+                FIXLOG.append(("pos", k, fx["to"]))
+            elif "w" in fx:
+                t2 = tags.setdefault(fx["to"], {"t": fx["to"], "k": fx.get("k", "equipment"), "s": fx.get("s", ""), "o": []})
+                t2["o"].append([si, fx["x"], fx["y"], fx["w"], fx["h"]])
+                FIXLOG.append(("pos+", "", fx["to"]))
+    # equipment is indexed from the P&IDs only: PFD positions are dropped (a PFD repeats the P&ID equipment,
+    # often with a different OCR reading). Lines/valves on both P&ID and PFD keep only the P&ID positions.
+    for k in list(tags):
+        e = tags[k]
+        kinds = {sheets[o[0]]["kind"] for o in e["o"]}
+        if e["k"] == "equipment" and "PFD" in kinds:
+            e["o"] = [o for o in e["o"] if sheets[o[0]]["kind"] == "PID"]
+            FIXLOG.append(("pfd-drop", e["t"], ""))
+            if not e["o"]:
+                # not labelled in the P&ID process area: fall back to the P&ID title-block entry, else drop it
+                sidx = {s_["id"]: i for i, s_ in enumerate(sheets)}
+                for sid_, t in HDRPOS.get(k, []) + [p_ for a in e.get("a", ()) for p_ in HDRPOS.get(a, [])]:
+                    o = [sidx[sid_], round(t[3], 4), round(t[4], 4), round(t[5], 4), round(t[6], 4), 1]
+                    if not any(q[0] == o[0] for q in e["o"]): e["o"].append(o)
+                if e["o"]: FIXLOG.append(("pid-header", k, ""))
+                else: tags.pop(k); FIXLOG.append(("pfd-only-drop", k, ""))
+        elif kinds >= {"PID", "PFD"}:
             e["o"] = [o for o in e["o"] if sheets[o[0]]["kind"] == "PID"]
             FIXLOG.append(("pfd-drop", e["t"], ""))
     for e in tags.values():
         if "l" in e: e["l"] = sorted(e["l"])
+        if "a" in e:
+            al = sorted(set(e["a"]) - {e["t"]})
+            if al: e["a"] = al
+            else: del e["a"]
         s = e["s"]
         if e["k"] == "valve": e["d"] = P.VALVE_NAME.get(s, "Van") if s != "CHECK" else "Van một chiều (check)"
         elif e["k"] == "equipment": e["d"] = P.EQUIP_NAME.get(s, "Thiết bị")
@@ -493,6 +546,7 @@ def main():
            "tags": sorted(tags.values(), key=lambda e: e["t"])}
     os.makedirs("/home/claude/work/site/data", exist_ok=True)
     json.dump(FIXLOG, open("/home/claude/work/fixlog.json", "w"))
+    json.dump(HDRS, open("/home/claude/work/headers.json", "w"))
     json.dump({"areas": AREAS, "head": HEADBOX}, open("/home/claude/work/areas_used.json", "w"))
     json.dump(out, open("/home/claude/work/site/data/data.json", "w"), ensure_ascii=False, separators=(",", ":"))
     print(len(sheets), "sheets", len(tags), "tags", collections.Counter(e["k"] for e in tags.values()))

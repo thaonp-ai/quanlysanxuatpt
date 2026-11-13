@@ -34,7 +34,7 @@ MICRO = [PK + "/FL1A", PK + "/FL1B"]
 DOSE = [PK + "/P1A", PK + "/P1B", PK + "/MP1A", PK + "/MP1B", PK + "/P2", PK + "/MP2"]
 DRUM = [PK + "/P3", PK + "/MP3"]
 TANK = [PK + "/TK1"]
-MIXER = [PK + "/2Z1"]
+MIXER = [PK + "/Z1"]
 
 docs, sizes = [], []
 

@@ -8,7 +8,10 @@ Repo chứa web tĩnh tra cứu P&ID/PFD Xưởng Phụ Trợ (Đạm Phú Mỹ)
   - `sheets[]`: bản vẽ (`id`, `unit`, `dwg`, `title`, `img`, `w`, `h`).
   - `units[]`: mã Unit và tên.
   - Cập nhật trường `updated` (dd/mm/yyyy).
-- Tag có mặt cả trên P&ID và PFD: build.py chỉ giữ vị trí trên P&ID (bỏ vị trí PFD); tag chỉ có trên PFD giữ nguyên.
+- Thiết bị chỉ lấy trên P&ID (yêu cầu người dùng 11/2026): build.py bỏ mọi vị trí PFD của thiết bị; thiết bị không có nhãn trong vùng vẽ P&ID thì lấy vị trí ở khung tiêu đề P&ID (cờ 1), không có nữa thì bỏ. Đường ống/van có mặt cả P&ID và PFD: chỉ giữ vị trí P&ID; chỉ có trên PFD thì giữ nguyên.
+- `tools/overrides.json`: giá trị `""` = bỏ tag. Tag bị đổi tên giữ tên cũ trong trường `"a"` (alias) của data.json; web tìm chỉnh sửa theo `o:<tên>` rồi tới `o:<alias>`, nên chỉnh sửa web cũ vẫn khớp.
+- `tools/posfix.json`: sửa theo vị trí `{sid, x, y, to}` (đổi tên nhãn có góc trên-trái tại x,y — dùng khi một tên OCR ứng với nhiều thiết bị/đường ống khác nhau) hoặc thêm `w, h` (+ `s`, `k`) để thêm vị trí khi OCR không đọc được nhãn.
+- Kiểm tra bằng mắt: ảnh ghép nhãn (crop vị trí P&ID đầu tiên của mỗi tag, 40 ô/trang) đã duyệt toàn bộ thiết bị và đường ống 13/11/2026.
 - Nhưng lưu ý: nếu sau này dựng lại bằng `tools/build.py`, sửa tay trong data.json sẽ bị ghi đè. Sửa tên tag lâu dài: thêm cặp `"tag OCR": "tag đúng"` vào `tools/overrides.json` (build.py áp dụng ở bước cuối); tên bản vẽ/Unit: `tools/sheetfix.json` / `tools/units.json`. Bỏ một nhãn thiết bị chỉ là chú thích dòng/tín hiệu: thêm `[sheet, x tâm, y tâm, tag]` vào `tools/exclude.json`.
 
 ## Chỉnh sửa trên web (người dùng tự sửa)

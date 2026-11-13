@@ -316,9 +316,9 @@ OUT = sys.argv[2] if len(sys.argv) > 2 else None
 parts = []  # (book file, from, to, title, group, tags, label)
 PKB = "30-PK-3001 (MR-4046.50-51)/Vendor Data Book.PDF"
 pk = json.load(open(os.path.join(HERE, "pk3001_outline.json")))
-PKSUB = {"5.5.1": ["30-PK-3001/Z1B", "30-PK-3001/Z2B", "30-PK-3001/2Z3"],
+PKSUB = {"5.5.1": ["30-PK-3001/Z1B", "30-PK-3001/Z2B", "30-PK-3001/Z3"],
          "5.5.2": ["30-PK-3001/P1A", "30-PK-3001/P1B", "30-PK-3001/P1C", "30-PK-3001/P2", "30-PK-3001/P5A"],
-         "5.5.3": ["30-PK-3001/F1AA", "30-PK-3001/F1B"],
+         "5.5.3": ["30-PK-3001/F1A", "30-PK-3001/F1B"],
          "5.9.1": ["30-PK-3001/MP1A", "30-PK-3001/MP1B", "30-PK-3001/MP1C", "30-PK-3001/MP2", "30-PK-3001/MP5B", "30-PK-3001/MF1A", "30-PK-3001/MF1B"]}
 for a, z, t, path, kind in pk["items"]:
     if t in ("Vendor Data Book", "Index") or (kind and z - a < 2):

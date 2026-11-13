@@ -1,0 +1,75 @@
+30-K-5001A_D, DR-5001 (Air compressors).pdf|927595
+Theo dõi máy nén không khí 30K5001A-E 2023-2024.xlsx|13817
+1. PROCESS DESCRIPTION/2539-1031-01-A5015-001_0-C.PDF|465104
+1. PROCESS DESCRIPTION/2539-1031-01-A5016-001_0-C.PDF|8415803
+1. PROCESS DESCRIPTION/2539-35-CN-0009-01_B.docx|75862
+1. PROCESS DESCRIPTION/2539-35-CN-0009-01_B.pdf|107269
+1. PROCESS DESCRIPTION/2539-4171-01-A5015-001_0-C.PDF|462048
+1. PROCESS DESCRIPTION/2539-4171-01-A5016-001_0-C.PDF|2406497
+1. PROCESS DESCRIPTION/Unit 30-Air Compression.docx|18191
+2. PI&D/PDF/2539-35-PID-0031-03-01_0 - Ties-in.pdf|694847
+2. PI&D/PDF/2539-35-PID-0031-05-01_0.pdf|543969
+2. PI&D/PDF/2539-35-PID-0031-06-01_0.pdf|477680
+30-DR-5002/2539-35-SP-4171-01_0.pdf|616508
+30-DR-5002/2539-35-SP-4171-01_PB.pdf|151089
+30-DR-5002/2539-35-SP-4171-01_PB.xls|160768
+30-DR-5002/PVFCC0_T-T-P-00309.xlsx|10616
+30-DR-5002/T-T-P-00309.pdf|58412
+30-K-5001E/2539-35-SP-1031-01_PB.pdf|465819
+30-K-5001E/2539-35-SP-1031-01_PB.xls|389632
+30-K-5001E/PVFCC0_T-T-P-00314.xlsx|10639
+30-K-5001E/T-T-P-00314.pdf|58444
+5. Tài Liệu Tham Khảo/2539-35-MSD-0011-01-01_A_SCAN.pdf|163724
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/2539-30-DW-0051-01-01_C.pdf|1433712
+5. Tài Liệu Tham Khảo/PFD/2539-35-PFD-0010-01-01_0_Scan.pdf|2369195
+5. Tài Liệu Tham Khảo/PFD/2539-35-PFD-0010-01-01_0.pdf|216475
+5. Tài Liệu Tham Khảo/PI&D Scan/2539-35-PID-0031-03-01_0_Scan.pdf|35614871
+5. Tài Liệu Tham Khảo/PI&D Scan/2539-35-PID-0031-05-01_0_Scan.pdf|25060537
+5. Tài Liệu Tham Khảo/PI&D Scan/2539-35-PID-0031-06-01_0_Scan.pdf|32482326
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A0001-001_0_Code 3.pdf|417649
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A0103-001_1.pdf|299203
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A0103-001_E_Code 3.pdf|382330
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A1001-001_B.pdf|373357
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A1003-001_0.pdf|323800
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A1014-001_A_Code 2.pdf|275323
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A1103-001_0_Code 3.pdf|771644
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A1112-001_0_Code 3.pdf|224576
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A2001-001_1_Code 3.pdf|541227
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A2003-001_0_Code 3.pdf|284973
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A2006-001_0_Code 2.pdf|522259
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A2006-001_1_Code 2.pdf|542195
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A3006-002_A.pdf|2716623
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A3006-003_1_Code 2.pdf|547260
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A3006-003_1.pdf|477800
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A3007-001_0_Code 3.pdf|158272
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A3008-001_B_Code 3.pdf|163265
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A3008-002_0_Code 3.pdf|154472
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A3204-001_0_Code 3.pdf|452312
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A4211-001_B_Code 2.pdf|326013
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A5016-001_A_Code 4.pdf|2374012
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-B1002-001_A_Code 2.pdf|360703
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-B1103-001_B_Code 3.pdf|591438
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-B1103-002_0_Code 3.pdf|416470
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-B1202-001_B_Code 3.pdf|2225901
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-B1202-002_0_Code 3.pdf|667815
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-B1304-001_0_Code 3.pdf|2245284
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A0001-001_0_Code 2.pdf|440202
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A0103-001_2_Code 3.pdf|450137
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A1001-001_0.pdf|401827
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A1001-001_C_Code 2.pdf|484867
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A1003-001_C.pdf|472752
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A1112-001_1_Code 3.pdf|314073
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A2001-001_0_Code 2.pdf|780255
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A2001-001_5.pdf|1088254
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A3006-002_B_Code 3.pdf|2284465
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A3006-003_2_Code 3.pdf|442478
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A3007-001_0_Code 2.pdf|152804
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A4102-001_C_Code 1.pdf|668043
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A5016-001_A.pdf|7831644
+5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-B1002-001_0_Code 3.pdf|452451
+5. Tài Liệu Tham Khảo/HAZOP Documentation/Air compressor (30-K-5001E)/2539-35-PID-0031-03-01_C (Process P&ID).pdf|1952597
+5. Tài Liệu Tham Khảo/HAZOP Documentation/Air compressor (30-K-5001E)/Air compressor_GA_VDB_0.pdf|632051
+5. Tài Liệu Tham Khảo/HAZOP Documentation/Air compressor (30-K-5001E)/Air compressor_PID_VDB_B.pdf|368713
+5. Tài Liệu Tham Khảo/HAZOP Documentation/Air Dryer (30-DR-5002)/Air dryer_GA_VDB_A-C.pdf|415104
+5. Tài Liệu Tham Khảo/HAZOP Documentation/Air Dryer (30-DR-5002)/Air dryer_PID_VDB_B.pdf|1152227
+3. 30-K-5001/data book.pdf|298300307

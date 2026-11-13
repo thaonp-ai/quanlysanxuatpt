@@ -1,0 +1,1209 @@
+[
+{
+"p": "7. Air System/30-K-5001A_D, DR-5001 (Air compressors).pdf",
+"t": "Data sheet máy nén 30-K-5001A–D (Atlas Copco ZR200) & máy sấy 30-DR-5001 (Delair PDH-0716)",
+"g": "Data sheet & tài liệu chính",
+"tags": [
+"30-K-5001",
+"30-K-5001A",
+"30-K-5001B",
+"30-K-5001C",
+"30-K-5001D",
+"30-DR-5001"
+],
+"no": "2098-30-SP-1031-01 / SP-4171",
+"src": "Dự án gốc 2098",
+"kb": 0
+},
+{
+"p": "7. Air System/Theo dõi máy nén không khí 30K5001A-E 2023-2024.xlsx",
+"t": "Theo dõi vận hành máy nén 30-K-5001A–E 2023–2024 (xlsx)",
+"g": "Vận hành & bảo dưỡng",
+"tags": [
+"30-K-5001",
+"30-K-5001A",
+"30-K-5001B",
+"30-K-5001C",
+"30-K-5001D",
+"30-K-5001E"
+],
+"no": "",
+"src": "Xưởng Phụ trợ",
+"kb": 0
+},
+{
+"p": "7. Air System/1. PROCESS DESCRIPTION/2539-1031-01-A5015-001_0-C.PDF",
+"t": "Quy trình lắp đặt, khởi động & chạy thử – máy nén 30-K-5001E (rev 0)",
+"g": "Chạy thử",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "2539-1031-01-A5015-001",
+"src": "Revamp · mô tả công nghệ · MR 2539-00-MR-1031-01",
+"kb": 0
+},
+{
+"p": "7. Air System/1. PROCESS DESCRIPTION/2539-1031-01-A5016-001_0-C.PDF",
+"t": "Hướng dẫn vận hành & bảo dưỡng – máy nén 30-K-5001E (rev 0)",
+"g": "Vận hành & bảo dưỡng",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "2539-1031-01-A5016-001",
+"src": "Revamp · mô tả công nghệ · MR 2539-00-MR-1031-01",
+"kb": 0
+},
+{
+"p": "7. Air System/1. PROCESS DESCRIPTION/2539-35-CN-0009-01_B.docx",
+"t": "Mô tả công nghệ Unit 35 (revamp) – 2539-35-CN-0009-01 (docx)",
+"g": "Hệ thống (P&ID, mô tả công nghệ)",
+"tags": [
+"30-K-5001",
+"30-V-5001",
+"30-V-5002",
+"30-DR-5001",
+"30-DR-5002"
+],
+"no": "2539-35-CN-0009-01",
+"src": "Revamp 2539",
+"kb": 0
+},
+{
+"p": "7. Air System/1. PROCESS DESCRIPTION/2539-35-CN-0009-01_B.pdf",
+"t": "Mô tả công nghệ Unit 35 (revamp) – 2539-35-CN-0009-01 (pdf)",
+"g": "Hệ thống (P&ID, mô tả công nghệ)",
+"tags": [
+"30-K-5001",
+"30-V-5001",
+"30-V-5002",
+"30-DR-5001",
+"30-DR-5002"
+],
+"no": "2539-35-CN-0009-01",
+"src": "Revamp 2539",
+"kb": 0
+},
+{
+"p": "7. Air System/1. PROCESS DESCRIPTION/2539-4171-01-A5015-001_0-C.PDF",
+"t": "Quy trình lắp đặt, khởi động & chạy thử – máy sấy 30-DR-5002 (rev 0)",
+"g": "Chạy thử",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A5015-001",
+"src": "Revamp · mô tả công nghệ · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/1. PROCESS DESCRIPTION/2539-4171-01-A5016-001_0-C.PDF",
+"t": "Hướng dẫn vận hành & bảo dưỡng – máy sấy 30-DR-5002 (rev 0)",
+"g": "Vận hành & bảo dưỡng",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A5016-001",
+"src": "Revamp · mô tả công nghệ · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/1. PROCESS DESCRIPTION/Unit 30-Air Compression.docx",
+"t": "Mô tả công nghệ hệ thống khí nén (tiếng Việt, docx)",
+"g": "Hệ thống (P&ID, mô tả công nghệ)",
+"tags": [
+"30-K-5001",
+"30-V-5001",
+"30-V-5002",
+"30-DR-5001",
+"30-DR-5002"
+],
+"no": "",
+"src": "Xưởng Phụ trợ",
+"kb": 0
+},
+{
+"p": "7. Air System/2. PI&D/PDF/2539-35-PID-0031-03-01_0 - Ties-in.pdf",
+"t": "P&ID 2539-35-PID-0031-03 – bình chứa & máy sấy (revamp) – điểm tie-in",
+"g": "Dự án cải tạo 2016–2017 (Revamp)",
+"tags": [
+"30-V-5001",
+"30-V-5002",
+"30-DR-5001",
+"30-DR-5002"
+],
+"no": "2539-35-PID-0031-03-01",
+"src": "Revamp 2539",
+"kb": 0
+},
+{
+"p": "7. Air System/2. PI&D/PDF/2539-35-PID-0031-05-01_0.pdf",
+"t": "P&ID 2539-35-PID-0031-05 – máy nén 30-K-5001E (mới) rev 0",
+"g": "Dự án cải tạo 2016–2017 (Revamp)",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "2539-35-PID-0031-05-01",
+"src": "Revamp 2539",
+"kb": 0
+},
+{
+"p": "7. Air System/2. PI&D/PDF/2539-35-PID-0031-06-01_0.pdf",
+"t": "P&ID 2539-35-PID-0031-06 – máy sấy 30-DR-5002 (mới) rev 0",
+"g": "Dự án cải tạo 2016–2017 (Revamp)",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-35-PID-0031-06-01",
+"src": "Revamp 2539",
+"kb": 0
+},
+{
+"p": "7. Air System/30-DR-5002/2539-35-SP-4171-01_0.pdf",
+"t": "Data sheet máy sấy 30-DR-5002 – 2539-35-SP-4171-01 rev 0 (pdf)",
+"g": "Data sheet & tài liệu chính",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-35-SP-4171-01",
+"src": "Revamp 2539",
+"kb": 0
+},
+{
+"p": "7. Air System/30-DR-5002/2539-35-SP-4171-01_PB.pdf",
+"t": "Data sheet máy sấy 30-DR-5002 – 2539-35-SP-4171-01 rev PB (pdf)",
+"g": "Data sheet & tài liệu chính",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-35-SP-4171-01",
+"src": "Revamp 2539",
+"kb": 0
+},
+{
+"p": "7. Air System/30-DR-5002/2539-35-SP-4171-01_PB.xls",
+"t": "Data sheet máy sấy 30-DR-5002 – 2539-35-SP-4171-01 rev PB (xls)",
+"g": "Data sheet & tài liệu chính",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-35-SP-4171-01",
+"src": "Revamp 2539",
+"kb": 0
+},
+{
+"p": "7. Air System/30-DR-5002/PVFCC0_T-T-P-00309.xlsx",
+"t": "Phiếu chuyển tài liệu T-T-P-00309 (xlsx)",
+"g": "Đơn hàng & yêu cầu kỹ thuật (MR/SR)",
+"tags": [
+"30-DR-5002"
+],
+"no": "",
+"src": "Revamp 2539",
+"kb": 0
+},
+{
+"p": "7. Air System/30-DR-5002/T-T-P-00309.pdf",
+"t": "Phiếu chuyển tài liệu T-T-P-00309 (pdf)",
+"g": "Đơn hàng & yêu cầu kỹ thuật (MR/SR)",
+"tags": [
+"30-DR-5002"
+],
+"no": "",
+"src": "Revamp 2539",
+"kb": 0
+},
+{
+"p": "7. Air System/30-K-5001E/2539-35-SP-1031-01_PB.pdf",
+"t": "Data sheet máy nén 30-K-5001E – 2539-35-SP-1031-01 rev PB (pdf)",
+"g": "Data sheet & tài liệu chính",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "2539-35-SP-1031-01",
+"src": "Revamp 2539",
+"kb": 0
+},
+{
+"p": "7. Air System/30-K-5001E/2539-35-SP-1031-01_PB.xls",
+"t": "Data sheet máy nén 30-K-5001E – 2539-35-SP-1031-01 rev PB (xls)",
+"g": "Data sheet & tài liệu chính",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "2539-35-SP-1031-01",
+"src": "Revamp 2539",
+"kb": 0
+},
+{
+"p": "7. Air System/30-K-5001E/PVFCC0_T-T-P-00314.xlsx",
+"t": "Phiếu chuyển tài liệu T-T-P-00314 (xlsx)",
+"g": "Đơn hàng & yêu cầu kỹ thuật (MR/SR)",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "",
+"src": "Revamp 2539",
+"kb": 0
+},
+{
+"p": "7. Air System/30-K-5001E/T-T-P-00314.pdf",
+"t": "Phiếu chuyển tài liệu T-T-P-00314 (pdf)",
+"g": "Đơn hàng & yêu cầu kỹ thuật (MR/SR)",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "",
+"src": "Revamp 2539",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/2539-35-MSD-0011-01-01_A_SCAN.pdf",
+"t": "2539-35-MSD-0011-01-01 (scan)",
+"g": "Dự án cải tạo 2016–2017 (Revamp)",
+"tags": [
+"30-K-5001",
+"30-V-5001",
+"30-V-5002",
+"30-DR-5001",
+"30-DR-5002"
+],
+"no": "2539-35-MSD-0011-01-01",
+"src": "Revamp 2539",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/2539-30-DW-0051-01-01_C.pdf",
+"t": "Bản vẽ tham chiếu 2539-30-DW-0051-01-01",
+"g": "Dự án cải tạo 2016–2017 (Revamp)",
+"tags": [
+"30-K-5001",
+"30-V-5001",
+"30-V-5002",
+"30-DR-5001",
+"30-DR-5002"
+],
+"no": "2539-30-DW-0051-01-01",
+"src": "Revamp 2539",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/PFD/2539-35-PFD-0010-01-01_0_Scan.pdf",
+"t": "PFD 2539-35-PFD-0010-01-01 rev 0 (bản scan)",
+"g": "Dự án cải tạo 2016–2017 (Revamp)",
+"tags": [
+"30-K-5001",
+"30-V-5001",
+"30-V-5002",
+"30-DR-5001",
+"30-DR-5002"
+],
+"no": "2539-35-PFD-0010-01-01",
+"src": "Revamp 2539",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/PFD/2539-35-PFD-0010-01-01_0.pdf",
+"t": "PFD 2539-35-PFD-0010-01-01 rev 0",
+"g": "Dự án cải tạo 2016–2017 (Revamp)",
+"tags": [
+"30-K-5001",
+"30-V-5001",
+"30-V-5002",
+"30-DR-5001",
+"30-DR-5002"
+],
+"no": "2539-35-PFD-0010-01-01",
+"src": "Revamp 2539",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/PI&D Scan/2539-35-PID-0031-03-01_0_Scan.pdf",
+"t": "P&ID 2539-35-PID-0031-03 – bình chứa & máy sấy (revamp) (bản scan rev 0)",
+"g": "Dự án cải tạo 2016–2017 (Revamp)",
+"tags": [
+"30-V-5001",
+"30-V-5002",
+"30-DR-5001",
+"30-DR-5002"
+],
+"no": "2539-35-PID-0031-03-01",
+"src": "Revamp 2539",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/PI&D Scan/2539-35-PID-0031-05-01_0_Scan.pdf",
+"t": "P&ID 2539-35-PID-0031-05 – máy nén 30-K-5001E (mới) (bản scan rev 0)",
+"g": "Dự án cải tạo 2016–2017 (Revamp)",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "2539-35-PID-0031-05-01",
+"src": "Revamp 2539",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/PI&D Scan/2539-35-PID-0031-06-01_0_Scan.pdf",
+"t": "P&ID 2539-35-PID-0031-06 – máy sấy 30-DR-5002 (mới) (bản scan rev 0)",
+"g": "Dự án cải tạo 2016–2017 (Revamp)",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-35-PID-0031-06-01",
+"src": "Revamp 2539",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A0001-001_0_Code 3.pdf",
+"t": "Danh mục tài liệu & bản vẽ nhà cung cấp – máy sấy 30-DR-5002 (rev 0)",
+"g": "Đơn hàng & yêu cầu kỹ thuật (MR/SR)",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A0001-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A0103-001_1.pdf",
+"t": "P&ID cụm máy sấy – máy sấy 30-DR-5002 (rev 1)",
+"g": "Hệ thống (P&ID, mô tả công nghệ)",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A0103-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A0103-001_E_Code 3.pdf",
+"t": "P&ID cụm máy sấy – máy sấy 30-DR-5002 (rev E)",
+"g": "Hệ thống (P&ID, mô tả công nghệ)",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A0103-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A1001-001_B.pdf",
+"t": "Data sheet cụm máy sấy – máy sấy 30-DR-5002 (rev B)",
+"g": "Data sheet & tài liệu chính",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A1001-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A1003-001_0.pdf",
+"t": "Tính toán kết cấu skid – máy sấy 30-DR-5002 (rev 0)",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A1003-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A1014-001_A_Code 2.pdf",
+"t": "Danh mục phụ trợ (utility list) – máy sấy 30-DR-5002 (rev A)",
+"g": "Data sheet & tài liệu chính",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A1014-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A1103-001_0_Code 3.pdf",
+"t": "Bản vẽ chế tạo bình áp lực (tháp hấp phụ) – máy sấy 30-DR-5002 (rev 0)",
+"g": "Bản vẽ chế tạo",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A1103-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A1112-001_0_Code 3.pdf",
+"t": "Bản vẽ nhãn thiết bị – máy sấy 30-DR-5002 (rev 0)",
+"g": "Bản vẽ chế tạo",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A1112-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A2001-001_1_Code 3.pdf",
+"t": "Bản vẽ bố trí chung (GA) – máy sấy 30-DR-5002 (rev 1)",
+"g": "Bản vẽ chế tạo",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A2001-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A2003-001_0_Code 3.pdf",
+"t": "Danh mục vật tư mua ngoài – máy sấy 30-DR-5002 (rev 0)",
+"g": "Đơn hàng & yêu cầu kỹ thuật (MR/SR)",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A2003-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A2006-001_0_Code 2.pdf",
+"t": "Bản vẽ chi tiết kết cấu – máy sấy 30-DR-5002 (rev 0)",
+"g": "Bản vẽ chế tạo",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A2006-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A2006-001_1_Code 2.pdf",
+"t": "Bản vẽ chi tiết kết cấu – máy sấy 30-DR-5002 (rev 1)",
+"g": "Bản vẽ chế tạo",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A2006-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A3006-002_A.pdf",
+"t": "Data sheet thiết bị đo – máy sấy 30-DR-5002 (rev A)",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A3006-002",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A3006-003_1_Code 2.pdf",
+"t": "Sơ đồ lắp đặt thiết bị đo (hook-up) – máy sấy 30-DR-5002 (rev 1)",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A3006-003",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A3006-003_1.pdf",
+"t": "Sơ đồ lắp đặt thiết bị đo (hook-up) – máy sấy 30-DR-5002 (rev 1)",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A3006-003",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A3007-001_0_Code 3.pdf",
+"t": "Lịch cáp thiết bị đo – máy sấy 30-DR-5002 (rev 0)",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A3007-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A3008-001_B_Code 3.pdf",
+"t": "Danh mục I/O – máy sấy 30-DR-5002 (rev B)",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A3008-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A3008-002_0_Code 3.pdf",
+"t": "Cause & Effect – máy sấy 30-DR-5002 (rev 0)",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A3008-002",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A3204-001_0_Code 3.pdf",
+"t": "Bản vẽ bố trí tủ điều khiển – máy sấy 30-DR-5002 (rev 0)",
+"g": "Điện & tủ điều khiển",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A3204-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A4211-001_B_Code 2.pdf",
+"t": "Sơ đồ đấu dây – máy sấy 30-DR-5002 (rev B)",
+"g": "Điện & tủ điều khiển",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A4211-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-A5016-001_A_Code 4.pdf",
+"t": "Hướng dẫn vận hành & bảo dưỡng – máy sấy 30-DR-5002 (rev A)",
+"g": "Vận hành & bảo dưỡng",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-A5016-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-B1002-001_A_Code 2.pdf",
+"t": "Kế hoạch kiểm tra & thử (ITP) – máy sấy 30-DR-5002 (rev A)",
+"g": "Chạy thử",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-B1002-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-B1103-001_B_Code 3.pdf",
+"t": "Quy trình thử thủy lực – máy sấy 30-DR-5002 (rev B)",
+"g": "Chạy thử",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-B1103-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-B1103-002_0_Code 3.pdf",
+"t": "Quy trình thử nghiệm tại xưởng (FAT) – máy sấy 30-DR-5002 (rev 0)",
+"g": "Chạy thử",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-B1103-002",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-B1202-001_B_Code 3.pdf",
+"t": "Hồ sơ B1202-001 (chứng chỉ chế tạo) – máy sấy 30-DR-5002 (rev B)",
+"g": "Chạy thử",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-B1202-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-B1202-002_0_Code 3.pdf",
+"t": "Chứng chỉ thợ NDE (skid & ống) – máy sấy 30-DR-5002 (rev 0)",
+"g": "Chạy thử",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-B1202-002",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-DR-5002/2539-4171-01-B1304-001_0_Code 3.pdf",
+"t": "WPS & PQR (skid & ống) – máy sấy 30-DR-5002 (rev 0)",
+"g": "Chạy thử",
+"tags": [
+"30-DR-5002"
+],
+"no": "2539-4171-01-B1304-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-4171-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A0001-001_0_Code 2.pdf",
+"t": "Danh mục tài liệu & bản vẽ nhà cung cấp – máy nén 30-K-5001E (rev 0)",
+"g": "Đơn hàng & yêu cầu kỹ thuật (MR/SR)",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "2539-1031-01-A0001-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-1031-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A0103-001_2_Code 3.pdf",
+"t": "P&ID cụm máy nén – máy nén 30-K-5001E (rev 2)",
+"g": "Hệ thống (P&ID, mô tả công nghệ)",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "2539-1031-01-A0103-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-1031-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A1001-001_0.pdf",
+"t": "Data sheet cụm máy nén – máy nén 30-K-5001E (rev 0)",
+"g": "Data sheet & tài liệu chính",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "2539-1031-01-A1001-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-1031-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A1001-001_C_Code 2.pdf",
+"t": "Data sheet cụm máy nén – máy nén 30-K-5001E (rev C)",
+"g": "Data sheet & tài liệu chính",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "2539-1031-01-A1001-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-1031-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A1003-001_C.pdf",
+"t": "Tính toán chọn van an toàn – máy nén 30-K-5001E (rev C)",
+"g": "Data sheet & tài liệu chính",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "2539-1031-01-A1003-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-1031-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A1112-001_1_Code 3.pdf",
+"t": "Bản vẽ nhãn thiết bị – máy nén 30-K-5001E (rev 1)",
+"g": "Bản vẽ chế tạo",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "2539-1031-01-A1112-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-1031-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A2001-001_0_Code 2.pdf",
+"t": "Bản vẽ bố trí chung (GA) – máy nén 30-K-5001E (rev 0)",
+"g": "Bản vẽ chế tạo",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "2539-1031-01-A2001-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-1031-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A2001-001_5.pdf",
+"t": "Bản vẽ bố trí chung (GA) – máy nén 30-K-5001E (rev 5)",
+"g": "Bản vẽ chế tạo",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "2539-1031-01-A2001-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-1031-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A3006-002_B_Code 3.pdf",
+"t": "Data sheet thiết bị đo – máy nén 30-K-5001E (rev B)",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "2539-1031-01-A3006-002",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-1031-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A3006-003_2_Code 3.pdf",
+"t": "Sơ đồ lắp đặt thiết bị đo (hook-up) – máy nén 30-K-5001E (rev 2)",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "2539-1031-01-A3006-003",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-1031-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A3007-001_0_Code 2.pdf",
+"t": "Lịch cáp thiết bị đo – máy nén 30-K-5001E (rev 0)",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "2539-1031-01-A3007-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-1031-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A4102-001_C_Code 1.pdf",
+"t": "Data sheet động cơ điện – máy nén 30-K-5001E (rev C)",
+"g": "Điện & tủ điều khiển",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "2539-1031-01-A4102-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-1031-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-A5016-001_A.pdf",
+"t": "Hướng dẫn vận hành & bảo dưỡng – máy nén 30-K-5001E (rev A)",
+"g": "Vận hành & bảo dưỡng",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "2539-1031-01-A5016-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-1031-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/30-K-5001E/2539-1031-01-B1002-001_0_Code 3.pdf",
+"t": "Kế hoạch kiểm tra & thử (ITP) – máy nén 30-K-5001E (rev 0)",
+"g": "Chạy thử",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "2539-1031-01-B1002-001",
+"src": "Revamp · tài liệu tham khảo · MR 2539-00-MR-1031-01",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/HAZOP Documentation/Air compressor (30-K-5001E)/2539-35-PID-0031-03-01_C (Process P&ID).pdf",
+"t": "P&ID 2539-35-PID-0031-03 rev C (hồ sơ HAZOP)",
+"g": "Dự án cải tạo 2016–2017 (Revamp)",
+"tags": [
+"30-K-5001",
+"30-V-5001",
+"30-V-5002",
+"30-DR-5001",
+"30-DR-5002"
+],
+"no": "",
+"src": "HAZOP revamp",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/HAZOP Documentation/Air compressor (30-K-5001E)/Air compressor_GA_VDB_0.pdf",
+"t": "Bản vẽ GA máy nén 30-K-5001E (hồ sơ HAZOP)",
+"g": "Dự án cải tạo 2016–2017 (Revamp)",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "",
+"src": "HAZOP revamp",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/HAZOP Documentation/Air compressor (30-K-5001E)/Air compressor_PID_VDB_B.pdf",
+"t": "P&ID vendor máy nén 30-K-5001E rev B (hồ sơ HAZOP)",
+"g": "Dự án cải tạo 2016–2017 (Revamp)",
+"tags": [
+"30-K-5001",
+"30-K-5001E"
+],
+"no": "",
+"src": "HAZOP revamp",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/HAZOP Documentation/Air Dryer (30-DR-5002)/Air dryer_GA_VDB_A-C.pdf",
+"t": "Bản vẽ GA máy sấy 30-DR-5002 (hồ sơ HAZOP)",
+"g": "Dự án cải tạo 2016–2017 (Revamp)",
+"tags": [
+"30-DR-5002"
+],
+"no": "",
+"src": "HAZOP revamp",
+"kb": 0
+},
+{
+"p": "7. Air System/5. Tài Liệu Tham Khảo/HAZOP Documentation/Air Dryer (30-DR-5002)/Air dryer_PID_VDB_B.pdf",
+"t": "P&ID vendor máy sấy 30-DR-5002 rev B (hồ sơ HAZOP)",
+"g": "Dự án cải tạo 2016–2017 (Revamp)",
+"tags": [
+"30-DR-5002"
+],
+"no": "",
+"src": "HAZOP revamp",
+"kb": 0
+},
+{
+"p": "7. Air System/3. 30-K-5001/data book.pdf",
+"t": "Vendor data book máy nén 30-K-5001A–D – Atlas Copco (bản gộp 269 trang)",
+"g": "Bộ sách đầy đủ",
+"tags": [
+"30-K-5001",
+"30-K-5001A",
+"30-K-5001B",
+"30-K-5001C",
+"30-K-5001D"
+],
+"no": "AC-7189",
+"src": "Atlas Copco · MR 2098-00-MR-1031-50",
+"kb": 0
+},
+{
+"p": "7. Air System/3. 30-K-5001/Tach theo tai lieu/01 - A1001 - Data sheet thiet bi (filled-in).pdf",
+"t": "Data sheet thiết bị (filled-in)",
+"g": "Data sheet & tài liệu chính",
+"tags": [
+"30-K-5001",
+"30-K-5001A",
+"30-K-5001B",
+"30-K-5001C",
+"30-K-5001D"
+],
+"no": "AC-7189-A1001",
+"src": "Atlas Copco ZR200 · MR 2098-00-MR-1031-50",
+"kb": 0,
+"bp": "7. Air System/3. 30-K-5001/data book.pdf",
+"bpg": 1
+},
+{
+"p": "7. Air System/3. 30-K-5001/Tach theo tai lieu/02 - A1005 - Data sheet do on.pdf",
+"t": "Data sheet độ ồn",
+"g": "Data sheet & tài liệu chính",
+"tags": [
+"30-K-5001",
+"30-K-5001A",
+"30-K-5001B",
+"30-K-5001C",
+"30-K-5001D"
+],
+"no": "AC-7189-A1005",
+"src": "Atlas Copco ZR200 · MR 2098-00-MR-1031-50",
+"kb": 0,
+"bp": "7. Air System/3. 30-K-5001/data book.pdf",
+"bpg": 11
+},
+{
+"p": "7. Air System/3. 30-K-5001/Tach theo tai lieu/03 - A1003 - Tinh toan van an toan.pdf",
+"t": "Tính toán van an toàn",
+"g": "Data sheet & tài liệu chính",
+"tags": [
+"30-K-5001",
+"30-K-5001A",
+"30-K-5001B",
+"30-K-5001C",
+"30-K-5001D"
+],
+"no": "AC-7189-A1003",
+"src": "Atlas Copco ZR200 · MR 2098-00-MR-1031-50",
+"kb": 0,
+"bp": "7. Air System/3. 30-K-5001/data book.pdf",
+"bpg": 13
+},
+{
+"p": "7. Air System/3. 30-K-5001/Tach theo tai lieu/04 - A1006 - Data sheet thiet bi phu tro.pdf",
+"t": "Data sheet thiết bị phụ trợ",
+"g": "Data sheet & tài liệu chính",
+"tags": [
+"30-K-5001",
+"30-K-5001A",
+"30-K-5001B",
+"30-K-5001C",
+"30-K-5001D"
+],
+"no": "AC-7189-A1006",
+"src": "Atlas Copco ZR200 · MR 2098-00-MR-1031-50",
+"kb": 0,
+"bp": "7. Air System/3. 30-K-5001/data book.pdf",
+"bpg": 17
+},
+{
+"p": "7. Air System/3. 30-K-5001/Tach theo tai lieu/05 - A1014 - Can bang phu tro (utility balance).pdf",
+"t": "Cân bằng phụ trợ (utility balance)",
+"g": "Data sheet & tài liệu chính",
+"tags": [
+"30-K-5001",
+"30-K-5001A",
+"30-K-5001B",
+"30-K-5001C",
+"30-K-5001D"
+],
+"no": "AC-7189-A1014",
+"src": "Atlas Copco ZR200 · MR 2098-00-MR-1031-50",
+"kb": 0,
+"bp": "7. Air System/3. 30-K-5001/data book.pdf",
+"bpg": 33
+},
+{
+"p": "7. Air System/3. 30-K-5001/Tach theo tai lieu/06 - A1015 - Danh muc dau mo boi tron.pdf",
+"t": "Danh mục dầu mỡ bôi trơn",
+"g": "Vận hành & bảo dưỡng",
+"tags": [
+"30-K-5001",
+"30-K-5001A",
+"30-K-5001B",
+"30-K-5001C",
+"30-K-5001D"
+],
+"no": "AC-7189-A1015",
+"src": "Atlas Copco ZR200 · MR 2098-00-MR-1031-50",
+"kb": 0,
+"bp": "7. Air System/3. 30-K-5001/data book.pdf",
+"bpg": 35
+},
+{
+"p": "7. Air System/3. 30-K-5001/Tach theo tai lieu/07 - A1106 - Ban ve phot co khi.pdf",
+"t": "Bản vẽ phớt cơ khí",
+"g": "Bản vẽ chế tạo",
+"tags": [
+"30-K-5001",
+"30-K-5001A",
+"30-K-5001B",
+"30-K-5001C",
+"30-K-5001D"
+],
+"no": "AC-7189-A1106",
+"src": "Atlas Copco ZR200 · MR 2098-00-MR-1031-50",
+"kb": 0,
+"bp": "7. Air System/3. 30-K-5001/data book.pdf",
+"bpg": 37
+},
+{
+"p": "7. Air System/3. 30-K-5001/Tach theo tai lieu/08 - A1201 - Quy cach son.pdf",
+"t": "Quy cách sơn",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"30-K-5001",
+"30-K-5001A",
+"30-K-5001B",
+"30-K-5001C",
+"30-K-5001D"
+],
+"no": "AC-7189-A1201",
+"src": "Atlas Copco ZR200 · MR 2098-00-MR-1031-50",
+"kb": 0,
+"bp": "7. Air System/3. 30-K-5001/data book.pdf",
+"bpg": 39
+},
+{
+"p": "7. Air System/3. 30-K-5001/Tach theo tai lieu/09 - A3005 - Danh muc & lich thiet bi do.pdf",
+"t": "Danh mục & lịch thiết bị đo",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"30-K-5001",
+"30-K-5001A",
+"30-K-5001B",
+"30-K-5001C",
+"30-K-5001D"
+],
+"no": "AC-7189-A3005",
+"src": "Atlas Copco ZR200 · MR 2098-00-MR-1031-50",
+"kb": 0,
+"bp": "7. Air System/3. 30-K-5001/data book.pdf",
+"bpg": 44
+},
+{
+"p": "7. Air System/3. 30-K-5001/Tach theo tai lieu/10 - A4102 - Data sheet dong co dien.pdf",
+"t": "Data sheet động cơ điện",
+"g": "Điện & tủ điều khiển",
+"tags": [
+"30-K-5001",
+"30-K-5001A",
+"30-K-5001B",
+"30-K-5001C",
+"30-K-5001D"
+],
+"no": "AC-7189-A4102",
+"src": "Atlas Copco ZR200 · MR 2098-00-MR-1031-50",
+"kb": 0,
+"bp": "7. Air System/3. 30-K-5001/data book.pdf",
+"bpg": 62
+},
+{
+"p": "7. Air System/3. 30-K-5001/Tach theo tai lieu/11 - B1002 - Ke hoach che tao & kiem soat chat luong.pdf",
+"t": "Kế hoạch chế tạo & kiểm soát chất lượng",
+"g": "Chạy thử",
+"tags": [
+"30-K-5001",
+"30-K-5001A",
+"30-K-5001B",
+"30-K-5001C",
+"30-K-5001D"
+],
+"no": "AC-7189-B1002",
+"src": "Atlas Copco ZR200 · MR 2098-00-MR-1031-50",
+"kb": 0,
+"bp": "7. Air System/3. 30-K-5001/data book.pdf",
+"bpg": 72
+},
+{
+"p": "7. Air System/3. 30-K-5001/Tach theo tai lieu/12 - B1302 - Quy trinh han (WPS).pdf",
+"t": "Quy trình hàn (WPS)",
+"g": "Chạy thử",
+"tags": [
+"30-K-5001",
+"30-K-5001A",
+"30-K-5001B",
+"30-K-5001C",
+"30-K-5001D"
+],
+"no": "AC-7189-B1302",
+"src": "Atlas Copco ZR200 · MR 2098-00-MR-1031-50",
+"kb": 0,
+"bp": "7. Air System/3. 30-K-5001/data book.pdf",
+"bpg": 105
+},
+{
+"p": "7. Air System/3. 30-K-5001/Tach theo tai lieu/13 - C1003 - Danh sach nha thau phu & nha cung cap chinh.pdf",
+"t": "Danh sách nhà thầu phụ & nhà cung cấp chính",
+"g": "Đơn hàng & yêu cầu kỹ thuật (MR/SR)",
+"tags": [
+"30-K-5001",
+"30-K-5001A",
+"30-K-5001B",
+"30-K-5001C",
+"30-K-5001D"
+],
+"no": "AC-7189-C1003",
+"src": "Atlas Copco ZR200 · MR 2098-00-MR-1031-50",
+"kb": 0,
+"bp": "7. Air System/3. 30-K-5001/data book.pdf",
+"bpg": 112
+},
+{
+"p": "7. Air System/3. 30-K-5001/Tach theo tai lieu/14 - C1006 - Phu tung 2 nam van hanh.pdf",
+"t": "Phụ tùng 2 năm vận hành",
+"g": "Phụ tùng",
+"tags": [
+"30-K-5001",
+"30-K-5001A",
+"30-K-5001B",
+"30-K-5001C",
+"30-K-5001D"
+],
+"no": "AC-7189-C1006",
+"src": "Atlas Copco ZR200 · MR 2098-00-MR-1031-50",
+"kb": 0,
+"bp": "7. Air System/3. 30-K-5001/data book.pdf",
+"bpg": 114
+},
+{
+"p": "7. Air System/3. 30-K-5001/Tach theo tai lieu/15 - A1101 - Ban ve mat cat, lap rap & danh muc chi tiet.pdf",
+"t": "Bản vẽ mặt cắt, lắp ráp & danh mục chi tiết",
+"g": "Bản vẽ chế tạo",
+"tags": [
+"30-K-5001",
+"30-K-5001A",
+"30-K-5001B",
+"30-K-5001C",
+"30-K-5001D"
+],
+"no": "AC-7189-A1101",
+"src": "Atlas Copco ZR200 · MR 2098-00-MR-1031-50",
+"kb": 0,
+"bp": "7. Air System/3. 30-K-5001/data book.pdf",
+"bpg": 116
+},
+{
+"p": "7. Air System/3. 30-K-5001/Tach theo tai lieu/16 - A5016 - Huong dan van hanh & bao duong (Instruction book).pdf",
+"t": "Hướng dẫn vận hành & bảo dưỡng (Instruction book)",
+"g": "Vận hành & bảo dưỡng",
+"tags": [
+"30-K-5001",
+"30-K-5001A",
+"30-K-5001B",
+"30-K-5001C",
+"30-K-5001D"
+],
+"no": "AC-7189-A5016",
+"src": "Atlas Copco ZR200 · MR 2098-00-MR-1031-50",
+"kb": 0,
+"bp": "7. Air System/3. 30-K-5001/data book.pdf",
+"bpg": 191
+},
+{
+"p": "7. Air System/3. 30-K-5001/Tach theo tai lieu/17 - A3201 - Ban ve vo che mua (weatherproof housing).pdf",
+"t": "Bản vẽ vỏ che mưa (weatherproof housing)",
+"g": "Bản vẽ chế tạo",
+"tags": [
+"30-K-5001",
+"30-K-5001A",
+"30-K-5001B",
+"30-K-5001C",
+"30-K-5001D"
+],
+"no": "AC-7189-A3201",
+"src": "Atlas Copco ZR200 · MR 2098-00-MR-1031-50",
+"kb": 0,
+"bp": "7. Air System/3. 30-K-5001/data book.pdf",
+"bpg": 259
+},
+{
+"p": "7. Air System/3. 30-K-5001/Tach theo tai lieu/18 - IO - So do module IO & dau day tu dieu khien.pdf",
+"t": "Sơ đồ module I/O & đấu dây tủ điều khiển",
+"g": "Điện & tủ điều khiển",
+"tags": [
+"30-K-5001",
+"30-K-5001A",
+"30-K-5001B",
+"30-K-5001C",
+"30-K-5001D"
+],
+"no": "",
+"src": "Atlas Copco ZR200 · MR 2098-00-MR-1031-50",
+"kb": 0,
+"bp": "7. Air System/3. 30-K-5001/data book.pdf",
+"bpg": 265
+}
+]

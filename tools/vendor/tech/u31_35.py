@@ -2,7 +2,8 @@
 
 Nguồn: PFD as-built 2539-31/35-PFD-0010-01-01 (cân bằng vật chất case 2/case 3) và bảng thông số
 thiết bị trên các P&ID 2098/2539-31-PID-0031-01…09, 2098/2539-35-PID-0031-01…06.
-Chưa dùng tài liệu vendor (thư mục "4. Demi", "7. Air System") – bổ sung khi đã có danh mục.
+Bổ sung (cuối file) từ tài liệu vendor: sách Chemitreat 30-PK-1001 (Vol 1, Vol 2 mục 1.3 – bản scan, OCR),
+mô tả công nghệ revamp 2539-31/35-CN-0009-01, data sheet & instruction book Atlas Copco, O&M máy sấy SPX Hankison.
 """
 
 
@@ -30,6 +31,33 @@ A5 = sh("2539-35-PID-0031-05", "P&ID 35-05 Máy nén E (mới)")
 A6 = sh("2539-35-PID-0031-06", "P&ID 35-06")
 
 
+DM = "4. Demi/"
+V1 = DM + "Demineralised Volume 1 of 6/"
+V_DESC = [V1 + "2 - Plant Description.pdf", "Chemitreat Vol 1 · 2 – Mô tả hệ thống"]
+V_CHEM = [V1 + "5 - Chemical And Utility Consumption.pdf", "Chemitreat Vol 1 · 5 – Tiêu hao hóa chất"]
+V_START = [V1 + "9 - Operation - Normal Startup And Shutdown.pdf", "Chemitreat Vol 1 · 9 – Khởi động & dừng"]
+V_REG = [V1 + "10 - Operation - Regeneration.pdf", "Chemitreat Vol 1 · 10 – Tái sinh"]
+V_MON = [V1 + "11 - Plant Monitoring.pdf", "Chemitreat Vol 1 · 11 – Giám sát, phân tích"]
+V_TS = [V1 + "13 - Trouble shooting.pdf", "Chemitreat Vol 1 · 13 – Xử lý sự cố"]
+V_MECH = [V1 + "Mechanical Equipment Specifications.pdf", "Chemitreat Vol 1 · Thông số thiết bị"]
+V_CTRL = [DM + "Demineralised Volume 2 of 6/Section 1.3/8 - Control Philosophy.pdf", "Chemitreat 1.3.8 – Triết lý điều khiển"]
+V_CALC = [DM + "Demineralised Volume 2 of 6/Section 1.3/2 - Process Calculation with blended water operation.pdf", "Chemitreat 1.3.2 – Tính toán (nước pha trộn)"]
+V_REV = [DM + "Revamp_.DEMINERALIZED WATER SYSTEM/1. PROCESS DESCRIPTION/2539-31-CN-0009-01_0.pdf", "2539-31-CN-0009-01 Mô tả công nghệ revamp"]
+V_E1001 = [DM + "30-E-1001/Tag 3.pdf", "Alfa Laval 30-E-1001 · Data sheet"]
+V_E1002 = [DM + "Revamp_.DEMINERALIZED WATER SYSTEM/4. DATASHEET/30-E1002/2539-31-SP-0660-01_PB.pdf", "Data sheet 30-E-1002"]
+
+AS = "7. Air System/"
+A_REV = [AS + "1. PROCESS DESCRIPTION/2539-35-CN-0009-01_B.pdf", "2539-35-CN-0009-01 Mô tả công nghệ revamp"]
+A_VN = [AS + "1. PROCESS DESCRIPTION/Unit 30-Air Compression.docx", "Mô tả công nghệ khí nén (tiếng Việt)"]
+A_DS = [AS + "30-K-5001A_D, DR-5001 (Air compressors).pdf", "Data sheet 30-K-5001A–D & 30-DR-5001"]
+A_IB = [AS + "3. 30-K-5001/Tach theo tai lieu/16 - A5016 - Huong dan van hanh & bao duong (Instruction book).pdf", "Atlas Copco ZR – Instruction book"]
+A_DBDS = [AS + "3. 30-K-5001/Tach theo tai lieu/01 - A1001 - Data sheet thiet bi (filled-in).pdf", "Atlas Copco – data sheet (data book)"]
+A_KE = [AS + "30-K-5001E/2539-35-SP-1031-01_PB.pdf", "Data sheet 30-K-5001E"]
+A_KEOM = [AS + "1. PROCESS DESCRIPTION/2539-1031-01-A5016-001_0-C.PDF", "O&M máy nén 30-K-5001E"]
+A_D2 = [AS + "30-DR-5002/2539-35-SP-4171-01_0.pdf", "Data sheet 30-DR-5002"]
+A_D2OM = [AS + "1. PROCESS DESCRIPTION/2539-4171-01-A5016-001_0-C.PDF", "O&M máy sấy 30-DR-5002 (SPX Hankison)"]
+
+
 def ent(t, intro, s=None, src=None):
     return {"t": t, "intro": intro, "s": s or [], "src": src or []}
 
@@ -49,7 +77,7 @@ UNIT31 = {
                 "Dây chuyền 2B3T: bình cation 30-PK-1001/V1A/B/C → tháp khử CO₂ 30-PK-1001/V2A/B/C (quạt K2A/B/C thổi gió ngược chiều) → bơm P2A/B/C → bình anion V3A/B/C. "
                 "Nước khử ion (156,3 t/h, 41 °C) vào bồn 30-TK-1001.",
                 "Nước ngưng turbine từ 10-E-4001 và 20-E-1022 (161,3 t/h, 60 °C) được chia đều cho hai bộ làm mát dạng tấm 30-E-1001 (cũ) và 30-E-1002 (mới, revamp), làm mát xuống 45 °C bằng nước làm mát. "
-                "Sau đó nhập với nước ngưng hơi từ 20-E1023 (25,9 t/h) thành 187,2 t/h vào 30-TK-1001. Na₂SO₃ được châm vào dòng nước khử ion.",
+                "Sau đó nhập với nước ngưng hơi từ 20-E1023 (25,9 t/h) thành 187,2 t/h vào 30-TK-1001.",
                 "Bơm 30-P-1001A/B lấy nước từ 30-TK-1001 (344,1 t/h, 5 barg) qua bình mixed bed 30-PK-1001/V4A/B/C (đánh bóng) rồi vào bồn 30-TK-1002.",
                 "Bơm 30-P-1002A/B cấp 343,5 t/h nước khử khoáng ở 9 barg, 43 °C tới bình khử khí 10-V-8001 và kho Urê. Có đường hồi lưu lưu lượng nhỏ nhất về bồn.",
                 "Nước thải: nước nhiễm amoniac 4,2 t/h (trung bình) về 40-BA2001; nước thải hóa chất không nhiễm bẩn 2,6 t/h (trung bình, sau trung hòa ở hố 30-PK-1001/BA1) về 30-BA3001.",
@@ -95,7 +123,7 @@ UNIT31 = {
                 "Bình chứa khí nén 30-PK-1001/V5 (Ø1.800 × 2.000 mm, 11 barg) cấp khí trộn nhựa cho mixed bed.",
                 "Nước thải tái sinh về hố trung hòa BA1. Hai quạt K1A/B (kiểu Roots, 350 m³/h, 11 kW) sục khí để khuấy trộn. "
                 "pH được chỉnh bằng NaOH (TK8, bơm P7A/B) hoặc H₂SO₄ (TK9, bơm P8A/B), sau đó bơm P5A/B (125 m³/h) đưa đi. Có phân tích AI-31205 báo động pH cao/thấp.",
-                "Na₂SO₃: bồn khuấy TK7 (6,28 m³) và bơm màng P6A/B (0,01 m³/h) châm vào nước khử ion để khử oxy hòa tan."],
+                "Na₂SO₃: bồn khuấy TK7 (6,28 m³) và bơm màng P6A/B (0,01 m³/h) châm vào đường nước thô trước bình cation (cách ≥ 20–30 m) để khử clo dư, bảo vệ nhựa cation."],
          "src": [D6, D7, D2, D5, D_PFD]},
     ],
 }
@@ -134,7 +162,7 @@ TAGS31 = {
     "30-PK-1001/P3": ent("Bơm nước thô tái sinh 30-PK-1001/P3",
                          "Bơm ly tâm 160 m³/h, 50 m, NPSHr 4,1 m, 37 kW, 2.940 v/ph. Dùng nước thô cho rửa ngược và tái sinh bình cation.", src=[D2]),
     "30-PK-1001/TK7": ent("Bồn Na₂SO₃ 30-PK-1001/TK7",
-                          "Bồn 6,28 m³ (Ø2.000 × 2.000 mm) có khuấy Z1. Bơm màng P6A/B (0,01 m³/h, 50 m, 0,25 kW) châm Na₂SO₃ vào nước khử ion để khử oxy.", src=[D6, D_PFD]),
+                          "Bồn 6,28 m³ (Ø2.000 × 2.000 mm) có khuấy Z1. Bơm màng P6A/B (0,01 m³/h, 50 m, 0,25 kW) châm Na₂SO₃ vào nước thô trước bình cation để khử clo dư (clo tự do 0,6 mg/l → 0). Lưu lượng châm chỉnh theo clo dư đo trước bình cation. Hệ thống tính cho lưu lượng nước thô tối đa 450 m³/h.", src=[V_DESC, D6, D_PFD]),
     "30-PK-1001/P6": ent("Bơm châm Na₂SO₃ 30-PK-1001/P6A/B", "Bơm màng 0,01 m³/h, cột áp 50 m, 0,25 kW, 112 lần/ph, hút từ bồn TK7.", src=[D6]),
     "30-PK-1001/TK3": ent("Bồn đong H₂SO₄ số 1 30-PK-1001/TK3", "0,28 m³ (Ø600 × 1.000 mm). Đong axit đặc trước khi pha loãng ở TK10 và đưa qua ejector J1.", src=[D6]),
     "30-PK-1001/TK4": ent("Bồn đong H₂SO₄ số 2 30-PK-1001/TK4", "0,28 m³ (Ø600 × 1.000 mm), dùng cho ejector J2 / bồn pha loãng TK11.", src=[D6]),
@@ -264,3 +292,121 @@ for x in "ABCDE":
     TAGS["30-K-5001" + x] = TAGS["30-K-5001"]
 for n in ("1001", "1002", "1003", "1004"):
     TAGS["30-MP-" + n] = TAGS["30-P-" + n]
+
+
+# ───────────── bổ sung từ tài liệu vendor (4. Demi, 7. Air System) ─────────────
+UNIT31["s"] += [
+    {"h": "Chế độ làm việc (theo vendor Chemitreat)",
+     "tb": [["", "Dây cation – khử CO₂ – anion", "Mixed bed (MBP)"],
+            ["Số dây / bình", "3 (2 chạy + 1 dự phòng / tái sinh)", "3 (2 chạy + 1 dự phòng / tái sinh)"],
+            ["Lưu lượng thường / tối đa", "150 / 170 m³/h mỗi dây", "200 / 210 m³/h mỗi bình"],
+            ["Sản lượng giữa hai lần tái sinh", "1.800 m³ (nước thô, chu kỳ 12 h); 3.600 m³ (nước pha trộn, 24 h)", "24.000 m³ (chu kỳ 120 h)"],
+            ["Thời gian tái sinh", "≈5,5 h kể cả xả thải (6 h nếu tái sinh kèm MBP)", "≈2 h"],
+            ["Hóa chất mỗi lần tái sinh (100 %)", "H₂SO₄ 396 kg (cation); NaOH 480 kg (anion)", "H₂SO₄ 265 kg; NaOH 265 kg"]],
+     "ul": ["Cation tái sinh ngược chiều (counter-flow): axit vào từ đáy, nồng độ 1,6 % rồi 4 %, đồng thời có dòng nước giữ lớp nhựa từ trên xuống. "
+            "Anion tái sinh ngược chiều bằng NaOH 5 %. Cứ 7 lần tái sinh thì có 1 lần rửa ngược và 1 lần dùng gấp đôi hóa chất.",
+            "Mixed bed: rửa ngược để phân lớp (nhựa cation nặng nằm dưới, anion nhẹ nằm trên), rồi tái sinh đồng thời: xút từ trên, axit từ dưới, thu về ống góp giữa. "
+            "Sau đó rửa, trộn lại bằng khí nén 0,4 bar trong 10 phút, rửa lần cuối rồi đưa vào chạy.",
+            "Nước tái sinh: cation dùng nước đã khử CO₂ (bể V2); anion và mixed bed dùng nước khử khoáng do bơm tái sinh P1A/B cấp."],
+     "src": [V_DESC, V_CHEM, V_REG]},
+    {"h": "Chất lượng nước",
+     "kv": [["Nước thô thiết kế", "pH 7,8; độ cứng 71 mg/l CaCO₃; SiO₂ 12,5–15 mg/l; Cl⁻ 30–42 mg/l; clo dư 0,6 mg/l; TDS 70 mg/l"],
+            ["Nước pha trộn (thô + nước ngưng)", "≈133 m³/h thiết kế; NH₃ ≈4,9 mg/l, urê ≈1,3 mg/l, methanol ≈7,2 mg/l; độ cứng ≈14,8 mg/l CaCO₃"],
+            ["Nước ra khỏi anion", "Độ dẫn điện thường < 30 µS/cm, tốt nhất 2–5 µS/cm"],
+            ["Nước khử khoáng (ra MBP)", "pH 6,5–7,0; độ dẫn điện < 0,2 µS/cm; SiO₂ < 0,02 mg/l; Fe < 0,02 mg/l; Na < 0,02 mg/l; ≈45 °C"]],
+     "p": ["Cation cạn trước thì độ dẫn điện nước ra tăng, pH tăng (rò Na⁺ tạo NaOH). Anion cạn trước thì pH nước ra giảm. SiO₂ ít làm thay đổi độ dẫn điện nên phải phân tích riêng."],
+     "src": [V_CHEM, V_MON]},
+    {"h": "Điều khiển (PLC)",
+     "ul": ["Toàn cụm điều khiển tự động bằng PLC Allen-Bradley (CPU và nguồn dự phòng kép, I/O từ xa qua ControlNet) trên tủ điều khiển chính có màn hình cảm ứng, còi và đèn báo. "
+            "Có 11 hộp điều khiển tại thiết bị: 3 cho cation, 3 cho anion + khử CO₂, 3 cho MBP, 1 cho hố trung hòa, 1 cho khu tái sinh và Na₂SO₃.",
+            "Van tái sinh là van màng hoặc van bướm khí nén, đóng mở qua van điện từ, có công tắc hành trình hiển thị trạng thái.",
+            "Mỗi dây và mỗi MBP có công tắc chọn SERVICE / OFF / REGENERATION. Công tắc RAW WATER / BLENDED WATER chọn cách xử lý nước thải tái sinh.",
+            "Tối đa 2 dây và 2 MBP cùng chạy. Mỗi lúc chỉ tái sinh 1 dây và 1 MBP. Nếu cùng chọn tái sinh một dây và một MBP thì dây tái sinh trước.",
+            "Dây hoặc MBP tự dừng về standby khi đạt sản lượng đặt (tổng lưu lượng) hoặc khi độ dẫn điện cao (AIT ở đầu ra anion / MBP).",
+            "Điều kiện cho phép tái sinh: không có tái sinh khác đang chạy; hố trung hòa còn đủ chỗ (theo LAL-31232); mức bể khử CO₂ (LT-31201) ≥ 80 %; bơm sau khử CO₂ và bơm tái sinh ở chế độ AUTO.",
+            "Khởi động: nạp đầy bình và xả khí 1 phút, rửa tuần hoàn đến khi độ dẫn điện đạt (báo động sau 10 phút nhưng vẫn rửa tiếp), rồi chuyển sang chạy. Người vận hành có thể bỏ qua bước bằng nút ADVANCE."],
+     "src": [V_CTRL, V_START]},
+    {"h": "Nước thải tái sinh",
+     "ul": ["Nước thải sạch (rửa ngược, rửa ống góp giữa, rửa lần cuối) xả thẳng ra 30-BA3001.",
+            "Nước thải chứa hóa chất (giai đoạn bơm hóa chất và rửa hóa chất) về hố trung hòa lát gạch chịu axit. Theo vendor, hố có 2 ngăn × 250 m³: ngăn trung hòa và ngăn điều hòa.",
+            "Khi chỉ dùng nước thô: sục khí, tuần hoàn và châm axit hoặc xút cho đến khi pH đạt 6–9 thì xả.",
+            "Khi dùng nước pha trộn: nước thải chứa NH₃ và urê nên không trung hòa. Nước chỉ được sục trộn rồi bơm đi xử lý ở hệ nước thải 40-BA2001 / tháp stripping 40-T2001."],
+     "src": [V_DESC, V_REV, V_CTRL]},
+    {"h": "Sau revamp (2539)",
+     "ul": ["Nước vào dây khử ion ở ≈41 °C. Nước ngưng turbine (10-E4001, 20-E1022) được làm mát xuống 45 °C ở 30-E-1001/1002, nhập với nước ngưng hơi Urê (20-E-1023), rồi qua 30-TK-1001 vào MBP.",
+            "Bồn 30-TK-1001: 500 / 450 m³ (danh định / hữu ích), đóng vai trò đệm giữa khử ion và MBP. "
+            "Bồn 30-TK-1002: 9.000 / 8.000 m³, đủ dự trữ khoảng 23 giờ tiêu thụ.",
+            "Hệ vẫn đủ cấp nước khi phải cô lập 30-E-1001 do rò (chỉ còn 30-E-1002 chạy).",
+            "Tái sinh có thể khởi động tự động theo thời gian, tự động khi nước ra không đạt (độ dẫn điện cao), hoặc bằng tay."],
+     "src": [V_REV]},
+    {"h": "Xử lý sự cố thường gặp (vendor)",
+     "tb": [["Hiện tượng", "Nguyên nhân / xử lý"],
+            ["Nước ra anion không đạt", "Cation hoặc anion cạn (kiểm tra pH và độ dẫn điện), nước vào thay đổi, thiếu hóa chất tái sinh, quạt khử CO₂ hỏng hoặc tháp bị ngập, lưu lượng quá lớn, nhựa bẩn, già hoặc thiếu"],
+            ["Lưu lượng giảm", "Áp nước vào thấp, bơm sau khử CO₂ yếu, lớp nhựa tắc hoặc nhiều hạt mịn, màng van kẹt"],
+            ["Ejector không hút hóa chất", "Van chưa mở đủ, ejector tắc, áp nước động lực thấp"],
+            ["Rửa lâu", "Nhựa anion nhiễm hữu cơ, van bị rò"],
+            ["Sản lượng giữa hai lần tái sinh giảm", "Tạo kênh trong lớp nhựa (lưới lọc hỏng), nhựa bẩn (cation rửa HCl, anion rửa nước muối kiềm), nhựa già hoặc thiếu"]],
+     "src": [V_TS]},
+]
+UNIT31["src"] = [V_DESC, V_REV, V_CTRL]
+
+for k, extra in {"30-PK-1001": [V_DESC, V_CTRL, V_CHEM, V_MECH], "30-PK-1001/V1": [V_DESC, V_REG], "30-PK-1001/V3": [V_DESC, V_REG],
+                 "30-PK-1001/V4": [V_DESC, V_REG], "30-PK-1001/V2": [V_DESC], "30-PK-1001/BA1": [V_DESC], "30-TK-1001": [V_REV],
+                 "30-TK-1002": [V_REV], "30-E-1001": [V_REV, V_E1001], "30-E-1002": [V_REV, V_E1002]}.items():
+    TAGS31[k]["src"] = extra + TAGS31[k]["src"]
+TAGS31["30-PK-1001/V1"]["intro"] += " Tái sinh ngược chiều: axit 1,6 % rồi 4 % vào từ đáy, có dòng nước giữ lớp nhựa từ trên xuống. Lượng H₂SO₄ ≈396 kg/lần (100 %)."
+TAGS31["30-PK-1001/V3"]["intro"] += " Tái sinh ngược chiều bằng NaOH 5 % (≈480 kg/lần, 100 %), nước tái sinh lấy từ nước khử khoáng."
+TAGS31["30-PK-1001/V4"]["intro"] += " Chu kỳ chạy ≈120 h, sản lượng ≈24.000 m³ giữa hai lần tái sinh; hóa chất mỗi lần ≈265 kg H₂SO₄ + 265 kg NaOH."
+TAGS31["30-PK-1001/V2"]["intro"] += " Đệm là vòng pall polypropylene; quạt có lọc gió hút và damper đầu đẩy. Bể nước khử CO₂ còn cấp nước tái sinh cho bình cation."
+TAGS31["30-E-1001"]["intro"] += " Thiết bị của Alfa Laval (cùng đơn hàng với 30-E-3001A/H và 20-E-1016/1017/1024)."
+TAGS31["30-TK-1002"]["intro"] += " Dung tích hữu ích 8.000 m³, đủ dự trữ khoảng 23 giờ tiêu thụ."
+
+UNIT35["s"] += [
+    {"h": "Công suất thiết kế sau revamp",
+     "kv": [["Khí điều khiển (instrument air)", "2.920 Nm³/h (DR-5001 1.820 + DR-5002 1.100), điểm sương −25 °C"],
+            ["Khí công nghệ (plant air)", "2.680 Nm³/h"],
+            ["Tổng nhu cầu tối đa", "5.600 Nm³/h, kể cả hao hụt tái sinh máy sấy ≈500 Nm³/h"],
+            ["Máy nén", "4 máy chạy + 1 dự phòng, mỗi máy 1.400 Nm³/h, 9 barg, 45 °C"],
+            ["Bình 30-V-5001 / 30-V-5002", "28,5 m³ / 154 m³; mỗi bình đủ cấp khoảng 10 phút (V-5002 tính khi áp giảm từ 8,1 xuống 5 barg)"],
+            ["Tiêu thụ lớn", "Cụm Nitơ 30-PK-6001 tối đa 1.096 Nm³/h; khí thụ động hóa Urê 700 Nm³/h khi khởi động; dùng gián đoạn tối đa 150 Nm³/h"]],
+     "src": [A_REV, A_VN]},
+    {"h": "Vận hành & dự phòng",
+     "ul": ["Máy nén khởi động và dừng tự động, lần lượt theo công tắc áp. Người vận hành chọn máy chạy và máy dự phòng bằng công tắc chọn tay.",
+            "Khi thiếu khí, PIC-35003 đóng dần van PV-35003 trên header khí công nghệ, ưu tiên giữ áp cho khí điều khiển.",
+            "Trước revamp, khí công nghệ từ máy nén 10-K-4021 (xưởng Amoniac) là nguồn dự phòng thường xuyên vào 30-V-5001. "
+            "Sau revamp, xưởng Amoniac cần toàn bộ khí này nên không còn dự phòng thường xuyên.",
+            "Nếu thiếu khí kéo dài (một máy hỏng trong khi máy dự phòng đang bảo dưỡng), người vận hành kích hoạt tay PIC-35001. "
+            "Tín hiệu điều khiển 10-FIC-4001 / 10-FV-4001 lấy khí từ xưởng Amoniac (phải giảm tải Amoniac). Thực tế hai xưởng liên lạc trực tiếp để mở 10-FV-4001 kịp thời."],
+     "src": [A_REV, A_VN]},
+    {"h": "Máy nén Atlas Copco ZR",
+     "ul": ["30-K-5001A–D: Atlas Copco ZR200-10-50. 30-K-5001E (mới): Atlas Copco dòng ZR. Đây là máy nén trục vít hai cấp, không dầu (oil-free), dẫn động motor điện, làm mát bằng nước, có vỏ cách âm.",
+            "Khí qua lọc gió → cấp áp thấp → làm mát trung gian → cấp áp cao → làm mát sau → tách nước → ra 45 °C. Dầu chỉ bôi trơn bánh răng và ổ đỡ, không tiếp xúc với khí.",
+            "Thông số (data sheet A–D): 1.400 Nm³/h; khí vào 36 °C, độ ẩm 99 %; ra 9 barg / 45 °C; tỉ số nén 9,9; công suất 204 kW; 1.485 v/ph; hiệu suất thể tích 75,8 %.",
+            "Bộ điều khiển Elektronikon giữ áp trong khoảng đặt bằng cách cho máy chạy có tải hoặc không tải (full-load / no-load). Máy chạy không tải 3 giây trước khi dừng.",
+            "Máy dừng bảo vệ khi: nhiệt độ khí ra cấp áp thấp hoặc áp cao vượt mức, nhiệt độ khí vào cấp áp cao cao, nhiệt độ dầu cao, áp dầu thấp, quá tải motor. Trước khi dừng có cảnh báo trên màn hình."],
+     "src": [A_DS, A_DBDS, A_IB, A_KE, A_KEOM]},
+    {"h": "Máy sấy khí điều khiển",
+     "ul": ["Cả hai máy là loại hấp phụ không gia nhiệt (heatless, pressure-swing), gồm hai tháp luân phiên. "
+            "Một tháp sấy khí; tháp kia được tái sinh bằng một phần khí khô hạ áp xuống gần áp khí quyển (purge), sau đó nạp lại áp trước khi đổi tháp.",
+            "30-DR-5001: Delair PDH-0716. Điểm sương −25 °C ở 6,5 barg; chu kỳ 10 phút; khí tái sinh tối đa 360 Nm³/h; activated alumina 450 kg mỗi tháp.",
+            "30-DR-5002: SPX Hankison (van chuyển AccuShift, bộ điều khiển có chức năng tiết kiệm khí purge). Ra 1.100 Nm³/h khí khô. "
+            "Lọc trước 1 µm (một chạy, một dự phòng); lọc sau 0,01 µm để giữ bụi hạt hấp phụ. Có đầu đo ẩm liên tục ở đầu ra."],
+     "src": [A_DS, A_D2, A_D2OM]},
+]
+UNIT35["src"] = [A_REV, A_VN]
+TAGS35["30-K-5001"]["intro"] = ("Máy nén Atlas Copco ZR trục vít hai cấp không dầu, làm mát bằng nước: 1.400 Nm³/h, 9 barg, 45 °C, motor 200 kW (công suất hấp thụ 204 kW), 1.485 v/ph. "
+                                "A–D (ZR200-10-50) có từ dự án gốc, E lắp mới khi revamp. 4 máy chạy + 1 dự phòng, khởi động và dừng lần lượt theo áp. "
+                                "Bộ điều khiển Elektronikon cho máy chạy có tải hoặc không tải theo các bậc áp 8,4–9,0 barg (không tải ở 9,0–9,6 barg).")
+TAGS35["30-K-5001"]["src"] = [A_DS, A_DBDS, A_IB, A_KE, A_KEOM] + TAGS35["30-K-5001"]["src"]
+TAGS35["30-DR-5001"]["intro"] += " Delair PDH-0716: chu kỳ 10 phút, activated alumina 450 kg mỗi tháp, điểm sương −25 °C ở 6,5 barg."
+TAGS35["30-DR-5001"]["src"] = [A_DS] + TAGS35["30-DR-5001"]["src"]
+TAGS35["30-DR-5002"]["intro"] += " SPX Hankison: lọc trước 1 µm, lọc sau 0,01 µm (mỗi loại một chạy, một dự phòng), có đầu đo ẩm ở đầu ra."
+TAGS35["30-DR-5002"]["src"] = [A_D2, A_D2OM] + TAGS35["30-DR-5002"]["src"]
+TAGS35["30-V-5001"]["intro"] += " Dung tích danh định 28,5 m³, đủ cấp khí công nghệ khoảng 10 phút."
+TAGS35["30-V-5002"]["intro"] += " Dung tích danh định 154 m³, đủ cấp khoảng 10 phút khi áp giảm từ 8,1 xuống 5 barg."
+for k in ("30-V-5001", "30-V-5002"):
+    TAGS35[k]["src"] = [A_REV] + TAGS35[k]["src"]
+TAGS.update(TAGS31)
+TAGS.update(TAGS35)
+for x in "ABCDE":
+    TAGS["30-K-5001" + x] = TAGS["30-K-5001"]

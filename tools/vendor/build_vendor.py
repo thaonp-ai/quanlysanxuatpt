@@ -48,6 +48,7 @@ GROUPS = [
     "Đơn hàng & yêu cầu kỹ thuật (MR/SR)",
     "Dự án cải tạo 2016–2017 (Revamp)",
     "Sự cố & trao đổi",
+    "Tài liệu tham khảo",
     "Bộ sách đầy đủ",
 ]
 
@@ -296,7 +297,7 @@ if os.path.exists(HDOCS):
 
 # ---------------- 4. Nước làm mát (Unit 33), danh mục do nlm/build_nlm.py tạo ----------------
 #     5. Raw-Pot-Fire (nước thô, sinh hoạt, cứu hỏa), danh mục do rpf/build_rpf.py tạo
-for sub in ("nlm", "rpf"):
+for sub in ("nlm", "rpf", "demi", "air"):
     NDOCS = os.path.join(HERE, sub, "docs.json")
     if not os.path.exists(NDOCS):
         continue
@@ -317,7 +318,9 @@ out = {
              "30-CT-3001": "Tháp giải nhiệt – Hamon/KHC (MR 0311-50)", "30-P-3001": "Bơm nước làm mát – Worthington (MR 0910-54)",
              "30-P-3002": "Bơm nước làm mát dẫn động turbine (MR 0910-54)", "30-E-3001": "Thiết bị trao đổi nhiệt tấm – Alfa Laval (MR 0660-60)",
              "30-P-2001": "Bơm nước thô (MR 0910-52)", "30-P-2002": "Bơm nước sinh hoạt (MR 0910-52)",
-             "30-P-4001": "Cụm bơm cứu hỏa 30-PK-4001/4002 (MR 0910-56)", "30-P-4002": "Cụm bơm cứu hỏa 30-PK-4001/4002 (MR 0910-56)"},
+             "30-P-4001": "Cụm bơm cứu hỏa 30-PK-4001/4002 (MR 0910-56)", "30-P-4002": "Cụm bơm cứu hỏa 30-PK-4001/4002 (MR 0910-56)",
+             "30-PK-1001": "Cụm khử khoáng – Chemitreat (vendor data book 6 volume)", "30-E-1001": "Làm mát nước ngưng turbine – Alfa Laval (MR 0660-60)",
+             "30-K-5001": "Máy nén khí – Atlas Copco ZR200 (A–D) / 30-K-5001E (revamp)"},
     "docs": docs,
     "tags": tagmap,
 }

@@ -214,5 +214,9 @@ TAGS = {
 }
 
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
-json.dump({"units": {"32": unit32}, "tags": TAGS}, open(OUT, "w"), ensure_ascii=False, separators=(",", ":"))
-print("tech.json:", len(TAGS), "thiết bị, Unit 32")
+import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import u18
+TAGS.update(u18.TAGS)
+json.dump({"units": {"32": unit32, "18": u18.UNIT}, "tags": TAGS}, open(OUT, "w"), ensure_ascii=False, separators=(",", ":"))
+print("tech.json:", len(TAGS), "thiết bị, Unit 32 + 18")

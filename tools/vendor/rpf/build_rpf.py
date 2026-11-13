@@ -28,8 +28,9 @@ POT = ["30-P-2002"]          # bơm nước sinh hoạt 30-P-2002A/B
 FIRE = ["30-P-4001", "30-P-4002"]  # cụm bơm cứu hỏa 30-PK-4001/4002 (bơm 30-P-4001A-C, 30-P-4002A/B)
 PK = "30-PK-2001"
 # tag con của cụm xử lý nước sinh hoạt 30-PK-2001 (theo P&ID 33/2001) – suy ra từ tên thiết bị
-CARBON = [PK + "/FL1A", PK + "/FL1B"]
-MICRO = [PK + "/FL2A", PK + "/FL2B"]
+# theo "4 - Mechanical Equipment Specification": lọc than hoạt tính = FL2A/B, lọc tinh 1 µm = FL1A/B
+CARBON = [PK + "/FL2A", PK + "/FL2B"]
+MICRO = [PK + "/FL1A", PK + "/FL1B"]
 DOSE = [PK + "/P1A", PK + "/P1B", PK + "/MP1A", PK + "/MP1B", PK + "/P2", PK + "/MP2"]
 DRUM = [PK + "/P3", PK + "/MP3"]
 TANK = [PK + "/TK1"]

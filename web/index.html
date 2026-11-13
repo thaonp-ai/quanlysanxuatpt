@@ -155,6 +155,33 @@ a.doc:hover{background:var(--line-soft)}
 .doc .go .dw:hover{color:var(--ink);border-color:var(--ink)}
 .doc .cp{border:1px solid var(--rule);background:var(--sheet);border-radius:5px;font-size:11.5px;padding:3px 8px;color:var(--ink)}
 .docs .empty{padding:24px 16px;color:var(--muted)}
+.dtabs{display:flex;gap:4px;padding:8px 16px 0;border-bottom:1px solid var(--rule)}
+.dtabs button{border:0;background:none;padding:8px 12px;font-family:var(--f-disp);font-size:14px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);border-bottom:2.5px solid transparent;margin-bottom:-1px}
+.dtabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--line)}
+.tech{flex:1;overflow:auto;padding:6px 16px 28px;font-size:14px;line-height:1.55}
+.tech .lead{margin:10px 0 4px;color:var(--ink)}
+.tech h4{font-family:var(--f-disp);font-size:15px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;margin:18px 0 6px;color:var(--ink)}
+.tech h4.sub{font-size:13px;color:var(--muted);margin-top:22px;padding-top:12px;border-top:1px dashed var(--rule)}
+.tech p{margin:6px 0;max-width:68ch}
+.tech ul{margin:6px 0;padding-left:20px}
+.tech li{margin:4px 0;max-width:68ch}
+.tech dl{display:grid;grid-template-columns:minmax(120px,38%) 1fr;gap:4px 12px;margin:6px 0}
+.tech dt{color:var(--muted);font-size:13px}
+.tech dd{margin:0;font-variant-numeric:tabular-nums}
+.tech .tw{overflow-x:auto;margin:6px 0}
+.tech table{border-collapse:collapse;font-size:13px;min-width:100%}
+.tech th,.tech td{border:1px solid var(--rule);padding:5px 8px;text-align:left;vertical-align:top}
+.tech th{background:var(--line-soft);font-weight:600}
+.tech td:first-child{font-family:var(--f-mono);white-space:nowrap}
+.tech .src{margin-top:8px;font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.tech .src a,.tech .src button{font:inherit;font-size:12px;color:var(--line);background:var(--sheet);border:1px solid var(--rule);border-radius:5px;padding:2px 8px;text-decoration:none;cursor:pointer}
+.tech .src a:hover,.tech .src button:hover{border-color:var(--line)}
+.tech .unitlink{margin-top:18px;border:1px solid var(--line);color:var(--line);background:none;border-radius:6px;padding:7px 12px;font-weight:600}
+.unitwrap{position:relative}
+.unittech{display:block;margin:-4px 0 4px 57px;border:0;background:none;color:var(--line);font-size:12px;font-weight:600;padding:2px 0}
+.unittech:hover{text-decoration:underline}
+.rowtech{border:0;background:none;color:var(--line);padding:0 8px;font-size:12px;font-weight:600;align-self:center;border-radius:5px;min-height:32px;white-space:nowrap}
+.rowtech:hover{background:var(--line-soft)}
 .pop{position:absolute;right:0;top:calc(100% + 6px);background:var(--sheet);border:1px solid var(--rule);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.14);padding:6px;display:flex;flex-direction:column;min-width:240px;z-index:30}
 .pop button{border:0;background:none;text-align:left;padding:8px 10px;border-radius:5px}
 .pop button:hover{background:var(--line-soft)}
@@ -188,6 +215,7 @@ a.doc:hover{background:var(--line-soft)}
   nav.units h2{display:none}
   .unit{grid-template-columns:auto;padding:6px 10px;border-left:0;border-bottom:3px solid transparent;white-space:nowrap;width:auto}
   .unit .n,.unit .k{display:none}
+  .unittech{margin:0;align-self:center;white-space:nowrap}
   .unit[aria-current="true"]{border-bottom-color:var(--line)}
   .panel{border-right:0}
   .viewer{position:fixed;inset:0;z-index:20;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -241,6 +269,7 @@ a.doc:hover{background:var(--line-soft)}
     <div class="vbar">
       <button class="vbtn back" id="back" aria-label="Quay lại danh sách">←</button>
       <div class="title"><b id="vTitle">Chưa mở bản vẽ</b><span id="vSub"></span></div>
+      <button class="vbtn" id="btnTech" hidden title="Mô tả công nghệ của thiết bị đang chọn">Công nghệ</button>
       <button class="vbtn" id="btnDocs" hidden title="Tài liệu vendor của thiết bị đang chọn">Tài liệu</button>
       <button class="vbtn" id="prev" aria-label="Vị trí trước" disabled>‹</button>
       <span id="pos" class="mono" style="font-size:12px;color:var(--muted)"></span>
@@ -283,8 +312,10 @@ a.doc:hover{background:var(--line-soft)}
   </div>
 </div>
 <aside class="docs" id="docs" hidden aria-labelledby="docsTag">
-  <div class="dh"><div><div class="eyebrow">Tài liệu vendor</div><h3 id="docsTag"></h3><p id="docsSub"></p></div><button class="vbtn" id="docsClose" aria-label="Đóng">✕</button></div>
-  <div class="dq"><input type="search" id="docsQ" placeholder="Lọc tài liệu: số bản vẽ, tên, ví dụ “fan”, “778-M-150”…" autocomplete="off"><div class="note" id="docsNote" hidden></div></div>
+  <div class="dh"><div><div class="eyebrow" id="docsEyebrow">Tài liệu vendor</div><h3 id="docsTag"></h3><p id="docsSub"></p></div><button class="vbtn" id="docsClose" aria-label="Đóng">✕</button></div>
+  <div class="dtabs" id="docsTabs" role="tablist" hidden><button role="tab" id="dtTech">Công nghệ</button><button role="tab" id="dtDocs">Tài liệu</button></div>
+  <div class="tech" id="techBody" hidden></div>
+  <div class="dq" id="docsQWrap"><input type="search" id="docsQ" placeholder="Lọc tài liệu: số bản vẽ, tên, ví dụ “fan”, “778-M-150”…" autocomplete="off"><div class="note" id="docsNote" hidden></div></div>
   <div class="dl" id="docsList"></div>
 </aside>
 <div class="toast" id="toast" role="status" hidden></div>
@@ -351,6 +382,7 @@ function rebuild(){
   showMode();
 }
 
+fetch("data/tech.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null).then(v=>{if(v){TECH=v;TECHIDX.clear();Object.entries(v.tags||{}).forEach(([k,e])=>TECHIDX.set(nk(k),e));if(DB){renderUnits();render();}}}).catch(()=>{});
 fetch("data/vendor.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null).then(v=>{if(v){setVendor(v);if(DB)render();}}).catch(()=>{});
 fetch("data/data.json",{cache:"no-cache"}).then(r=>r.json()).then(async d=>{
   DB=d;
@@ -384,8 +416,47 @@ function docLinks(d){const v=vinfo();if(!v)return null;
   const view=/\.(docx?|xls[xm]?|pptx?)$/i.test(d.p)?direct+"?web=1":v.origin+"/my?id="+encodeURIComponent(sp)+"&parent="+encodeURIComponent(sp.slice(0,sp.lastIndexOf("/")));
   return{view,dl:direct+"?download=1"};}
 function fmtKB(kb){return kb>=1024?(kb/1024).toFixed(kb>=10240?0:1)+" MB":Math.max(1,Math.round(kb))+" KB";}
-let docsCur=null;
-function openDocs(t){docsCur=t;$("docs").hidden=false;$("docsQ").value="";renderDocs();setTimeout(()=>$("docsQ").focus(),30);}
+/* ---- Công nghệ (data/tech.json) ---- */
+let TECH=null;const TECHIDX=new Map();
+function techKeys(k){const out=[k];const m=k.replace(/\/M(?=[A-Z]+\d)/,"/");if(m!==k)out.push(m);
+  [...out].forEach(x=>{if(/\d[A-Z]$/.test(x))out.push(x.slice(0,-1));});if(k.includes("/"))out.push(k.split("/")[0]);return [...new Set(out)];}
+function techFor(t){if(!TECH||!t)return null;
+  for(const k of [nk(t.t),nk(t.orig)].filter(Boolean))for(const c of techKeys(k)){const e=TECHIDX.get(c);if(e){
+    const par=c.includes("/")?TECHIDX.get(c.split("/")[0]):null;return{e,par:par&&par!==e?par:null};}}
+  return null;}
+function techUnitOf(t){if(!TECH||!t||!t._u)return null;for(const u of t._u)if(TECH.units&&TECH.units[u])return u;return null;}
+function srcLinks(list){if(!list||!list.length)return"";
+  return `<div class="src">Nguồn: ${list.map(([p,l])=>{
+    if(p.startsWith("sheet:"))return `<button data-sheet="${esc(p.slice(6))}">${esc(l)}</button>`;
+    const u=docLinks({p});return u?`<a href="${esc(u.view)}" target="_blank" rel="noopener">${esc(l)} ↗</a>`:`<span>${esc(l)}</span>`;}).join("")}</div>`;}
+function techHTML(e,sub){
+  let h=`${sub?`<h4 class="sub">${esc(e.t)}</h4>`:""}${e.intro?`<p class="lead">${esc(e.intro)}</p>`:""}`;
+  (e.s||[]).forEach(x=>{h+=`<h4>${esc(x.h)}</h4>`;
+    (x.p||[]).forEach(p=>h+=`<p>${esc(p)}</p>`);
+    if(x.ul)h+=`<ul>${x.ul.map(i=>`<li>${esc(i)}</li>`).join("")}</ul>`;
+    if(x.kv)h+=`<dl>${x.kv.map(([a,b])=>`<dt>${esc(a)}</dt><dd>${esc(b)}</dd>`).join("")}</dl>`;
+    if(x.tb)h+=`<div class="tw"><table><thead><tr>${x.tb[0].map(c=>`<th>${esc(c)}</th>`).join("")}</tr></thead><tbody>${x.tb.slice(1).map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+    h+=srcLinks(x.src);});
+  return h+srcLinks(e.src);}
+function wireTech(){$("techBody").querySelectorAll("[data-sheet]").forEach(b=>b.onclick=()=>{
+    const i=DB.sheets.findIndex(s=>s.dwg===b.dataset.sheet);if(i<0)return;$("docs").hidden=true;state.sel=null;openSheetAll(i);render();});
+  const ul=$("techBody").querySelector(".unitlink");if(ul)ul.onclick=()=>openUnitTech(ul.dataset.u);}
+let docsCur=null,docsTab="docs";
+function setDocsTab(tab){docsTab=tab;$("dtTech").setAttribute("aria-selected",tab==="tech");$("dtDocs").setAttribute("aria-selected",tab==="docs");
+  $("techBody").hidden=tab!=="tech";$("docsQWrap").hidden=tab!=="docs";$("docsList").hidden=tab!=="docs";
+  $("docsEyebrow").textContent=tab==="tech"?"Công nghệ":"Tài liệu vendor";}
+function openDocs(t,tab){docsCur=t;$("docs").hidden=false;$("docsQ").value="";
+  const tf=techFor(t),tu=techUnitOf(t),hasDocs=!!VD&&docCount(t)>0;
+  $("docsTabs").hidden=!((tf||tu)&&hasDocs);$("dtDocs").hidden=!hasDocs;
+  if(tf||tu){$("techBody").innerHTML=(tf?techHTML(tf.e)+(tf.par?techHTML(tf.par,true):""):`<p class="lead">Chưa có mô tả công nghệ riêng cho thiết bị này.</p>`)+
+      (tu?`<button class="unitlink" data-u="${esc(tu)}">Xem công nghệ toàn Unit ${esc(tu)} ›</button>`:"");wireTech();}
+  setDocsTab(tab==="tech"&&(tf||tu)||!hasDocs?"tech":"docs");
+  if(hasDocs)renderDocs();else{$("docsTag").textContent=t.t;$("docsSub").textContent=t.d||"";}
+  if(docsTab==="docs")setTimeout(()=>$("docsQ").focus(),30);}
+function openUnitTech(u){const e=TECH&&TECH.units&&TECH.units[u];if(!e)return;docsCur=null;$("docs").hidden=false;
+  $("docsTabs").hidden=true;$("docsTag").textContent="Unit "+u;$("docsSub").textContent=e.t;
+  $("techBody").innerHTML=techHTML(e);wireTech();setDocsTab("tech");$("techBody").scrollTop=0;}
+$("dtTech").onclick=()=>setDocsTab("tech");$("dtDocs").onclick=()=>{setDocsTab("docs");renderDocs();};
 function renderDocs(){
   const t=docsCur;if(!t||!VD)return;
   const {direct,pkg,pk}=docsFor(t),q=normq($("docsQ").value);
@@ -410,6 +481,7 @@ $("docsQ").addEventListener("input",renderDocs);
 $("docsClose").onclick=()=>{$("docs").hidden=true;};
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("docs").hidden)$("docs").hidden=true;});
 $("btnDocs").onclick=()=>{if(state.sel)openDocs(state.sel);};
+$("btnTech").onclick=()=>{if(state.sel)openDocs(state.sel,"tech");};
 
 function visible(){return VIEW.filter(v=>state.edited?v.edited:!v.del);}
 function renderUnits(){
@@ -426,6 +498,8 @@ function renderUnits(){
     b.setAttribute("aria-current",state.unit===u.code);
     b.onclick=()=>{state.unit=u.code;renderUnits();render();};
     box.appendChild(b);
+    if(TECH&&TECH.units&&TECH.units[u.code]){const tb=document.createElement("button");tb.className="unittech";tb.textContent="Công nghệ ›";
+      tb.title=TECH.units[u.code].t;tb.onclick=()=>openUnitTech(u.code);box.appendChild(tb);}
   });
 }
 function hl(tag,q){
@@ -456,7 +530,7 @@ function render(){
       const sh=[...new Set(t.o.map(o=>o[0]))];
       const badge=t.isNew?'<span class="badge new">Thêm mới</span>':t.del?'<span class="badge del">Đã xóa</span>':t.edited?'<span class="badge">Đã sửa</span>':"";
       const sub=[KIND[t.k],t.d,t.edited&&!t.isNew&&t.orig!==t.t?`tên OCR: ${t.orig}`:"",t.l&&!t.edited?`ghi trên bản vẽ: ${t.l.join(", ")}`:"",t.note?`ghi chú: ${t.note}`:"",t.edited&&t.by?`${t.by}, ${fmtTime(t.at)}`:""].filter(Boolean).map(esc).join(" · ");
-      row.innerHTML=`<button class="rowmain"><div class="tag"><i class="dot d-${t.k}"></i><span class="nm">${hl(t.t,q)}</span>${badge}</div><div class="sub">${sub}</div><div class="refs">${sh.slice(0,3).map(i=>esc(sheetLabel(DB.sheets[i]))).join(" · ")}${sh.length>3?` +${sh.length-3}`:""}</div></button>${(()=>{const r=docsFor(t),n=r.direct.length||r.pkg.length;return n?`<button class="rowdoc" title="${r.direct.length} tài liệu riêng · ${r.pkg.length} tài liệu chung của cụm" aria-label="Tài liệu vendor của ${esc(t.t)}">${r.direct.length?"Tài liệu":"Tài liệu cụm"}<b>${n}</b></button>`:"";})()}<button class="rowedit" aria-label="Sửa ${esc(t.t)}">Sửa</button><button class="rowdel" aria-label="${t.del?"Khôi phục":"Xóa"} ${esc(t.t)}">${t.del?"Khôi phục":"Xóa"}</button>`;
+      row.innerHTML=`<button class="rowmain"><div class="tag"><i class="dot d-${t.k}"></i><span class="nm">${hl(t.t,q)}</span>${badge}</div><div class="sub">${sub}</div><div class="refs">${sh.slice(0,3).map(i=>esc(sheetLabel(DB.sheets[i]))).join(" · ")}${sh.length>3?` +${sh.length-3}`:""}</div></button>${(()=>{const r=docsFor(t),n=r.direct.length||r.pkg.length;return n?`<button class="rowdoc" title="${r.direct.length} tài liệu riêng · ${r.pkg.length} tài liệu chung của cụm" aria-label="Tài liệu vendor của ${esc(t.t)}">${r.direct.length?"Tài liệu":"Tài liệu cụm"}<b>${n}</b></button>`:"";})()}${techFor(t)?`<button class="rowtech" aria-label="Công nghệ của ${esc(t.t)}">Công nghệ</button>`:""}<button class="rowedit" aria-label="Sửa ${esc(t.t)}">Sửa</button><button class="rowdel" aria-label="${t.del?"Khôi phục":"Xóa"} ${esc(t.t)}">${t.del?"Khôi phục":"Xóa"}</button>`;
       if(state.sel&&state.sel.key===t.key)row.setAttribute("aria-current","true");
       row.querySelector(".rowmain").onclick=()=>{state.sel=t;openTag(t);render();};
       row.querySelector(".rowedit").onclick=()=>openEditor(t);
@@ -464,6 +538,7 @@ function render(){
         if(!t.del&&!rx.classList.contains("arm")){rx.classList.add("arm");rx.textContent="Chắc chắn xóa?";setTimeout(()=>{if(rx.isConnected){rx.classList.remove("arm");rx.textContent="Xóa";}},3500);return;}
         quickDel(t,!t.del);};
       const rd=row.querySelector(".rowdoc");if(rd)rd.onclick=()=>{state.sel=t;openDocs(t);};
+      const rt=row.querySelector(".rowtech");if(rt)rt.onclick=()=>{state.sel=t;openDocs(t,"tech");};
       frag.appendChild(row);
     });
     list.appendChild(frag);
@@ -655,7 +730,7 @@ let view={s:1,x:0,y:0},cur=null;
 function apply(){layer.style.transform=`translate(${view.x}px,${view.y}px) scale(${view.s})`;}
 function openTag(t){
   state.occ=t.o;state.oi=0;
-  const dr=docsFor(t);$("btnDocs").hidden=!(dr.direct.length+dr.pkg.length);$("btnDocs").textContent=`Tài liệu (${dr.direct.length||dr.pkg.length})`;
+  const dr=docsFor(t);$("btnDocs").hidden=!(dr.direct.length+dr.pkg.length);$("btnTech").hidden=!techFor(t);$("btnDocs").textContent=`Tài liệu (${dr.direct.length||dr.pkg.length})`;
   $("viewer").dataset.open="true";
   showOcc();
 }

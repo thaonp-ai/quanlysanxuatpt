@@ -1,0 +1,650 @@
+2539-40-DW-0051-01-01 AMMONIA STORAGE DETAILED PLOT PLAN.PDF|5523141
+40-PK-5005 PFD.pdf|444034
+G2-00-PA-410 Phương án phối hợp đưa NH3 lỏng từ X.NH3 về bồn chứa 40-TK-5001.pdf|2750242
+Local Panel and Skid Compressors K1A.ppt|29443072
+seal 40P5002.pdf|230610
+40-P-5001AB 5002/40-P-5001-2-3.pdf|67303362
+40-P-5001AB 5002/5001AB - 1.pdf|23502859
+40-P-5001AB 5002/5001AB - 2.pdf|5982445
+40-P-5001AB 5002/5001AB - 3.pdf|192038
+40-P-5001AB 5002/5002 - 1.pdf|3982897
+40-P-5001AB 5002/5002 - 2.pdf|23502857
+40-P-5001AB 5002/5002 - 3.pdf|5982443
+40-P-5001AB 5002/5002 - 4.pdf|192036
+40-P-5001AB 5002/Datasheet.pdf|3982899
+40-PK-1001-1002/02-2014-CNSX.pdf|2805228
+40-PK-1001-1002/Report flare BDTT 2023 Rev.1.pdf|3621514
+40-PK-1001-1002/Utilityflares.ppt|1151488
+40-TK-5001/Kiểm soát áp suất bồn chứa NH3.doc|31232
+Dữ liệu KO/du lieu 40V1001 truoc BDTT2023.xlsx|2182682
+Dữ liệu KO/DULIEU 40V1001_40LI41011_BDTT2023.xlsx|1246300
+Dữ liệu KO/DULIEU 40V1001_40LI41011.xlsx|3059564
+Dữ liệu KO/Theo dõi mức bồn 40V1001.xlsx|20426
+Quy trình phương án liên quan/G2-30-PA-406_purge sua chua B1-44 B1-56 bom 40-p-5002.pdf|873169
+Quy trình phương án liên quan/Phương án xử lý nước nhiễm NH3 tại knock out drum 40V1001.pdf|594416
+Quy trình phương án liên quan/Trong trường hợp đang purge amo.docx|24326
+SCC NH3 Tank/01-NH3-SCC-NTT-Module-1-Fertilizer-Academy.pdf|6884325
+SCC NH3 Tank/02-NH3-SCC-NTT-Module-2-Fertilizer-Academy.pdf|5603761
+SCC NH3 Tank/Ammonia-Tank-Failure-in-South-Africa.pdf|1086097
+SCC NH3 Tank/Guidance_for_inspection_of_atmospheric__refrigerated_ammonia_storage_tanksVJ_website.pdf|5921115
+SCC NH3 Tank/Trinh-Van-Thanh-Stress-Corrosion-Cracking-SCC-in-Anhydrous-Ammonia-Storage-Tanks-GIEL-NOTTEN-Certificate-Fertilizer-Academy.pdf|356074
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/#Contents_CD.xls|40960
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D001-04.pdf|127321
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D002-04.pdf|104864
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D003-04.pdf|99182
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D004-05.pdf|196238
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D005-04.pdf|107221
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D006-02.pdf|77522
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D007-02.pdf|175850
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D011-03.pdf|162584
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D012-03.pdf|101130
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D013-03.pdf|166786
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D014-03.pdf|142900
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D015-04.pdf|115679
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D016-03.pdf|99854
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D017-02.pdf|99174
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D018-01.pdf|116628
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D021-03.pdf|135339
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D022-00.pdf|136788
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D023-01.pdf|103760
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D024-02.pdf|109788
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D025-01.pdf|127588
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D026-01.pdf|90859
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D027-00.pdf|135077
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D028-01.pdf|238181
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D029-00.pdf|129759
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D031-03.pdf|135766
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D032-01.pdf|144537
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D033-00.pdf|92902
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D034-01.pdf|146148
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D035-02.pdf|164228
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D036-01.pdf|101296
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D037-01.pdf|120798
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D038-01.pdf|162088
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D039-01.pdf|99276
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D040-01.pdf|98031
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D041-00.pdf|90755
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D042-01.pdf|134443
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D043-02.pdf|142210
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D044-01.pdf|120455
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D045-02.pdf|103802
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D046-02.pdf|131012
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D047-00.pdf|104628
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D048-01.pdf|81435
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D049-00.pdf|136245
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D050-00.pdf|122162
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D051-02.pdf|230979
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D052-02.pdf|220760
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D053-02.pdf|213218
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D054-01.pdf|154397
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D061-01.pdf|189342
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D062-00.pdf|175212
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D071-01.pdf|151204
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D072-00.pdf|108081
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D073-00.pdf|155610
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D074-00.pdf|93122
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D075-00.pdf|149013
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D076-00.pdf|96783
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D101-02.pdf|91283
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D102-02.pdf|91903
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D103-02.pdf|89133
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D104-02.PDF|379707
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D105-01.PDF|195497
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D107-00.PDF|117719
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D108-01.PDF|178901
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D109-00.PDF|354344
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D111-02.pdf|178508
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D112-02.pdf|165283
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D113-02.pdf|148869
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D205-01.pdf|152129
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D206-02.pdf|93978
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D207-00.pdf|82385
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D208-00.pdf|82387
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D209-00.pdf|74370
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D210-01.pdf|82342
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D211-03.pdf|109152
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D701-02.pdf|115169
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D702-01.pdf|102194
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D703-00.pdf|101831
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D704-02.pdf|108555
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D705-00.pdf|100925
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D706-01.pdf|112972
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D707-00.pdf|134015
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D708-01.pdf|151878
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D709-01.pdf|123681
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D710-02.pdf|85408
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D711-01.pdf|77473
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D721-01.pdf|88648
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D722-01.pdf|98777
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D723-02.pdf|183435
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D731-00.pdf|97666
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D732-00.pdf|99952
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D733-00.pdf|275135
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D734-00.pdf|173745
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D735-00.pdf|122306
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D736-00.pdf|101786
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D737-01.pdf|107047
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D738-00.pdf|81919
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D741-00.pdf|87751
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D742-00.pdf|104777
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D743-01.pdf|80039
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-D744-01.pdf|71841
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-S006-01.PDF|359065
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-S007-05.PDF|2378773
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-S008-01.PDF|423433
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-S009-01.PDF|449880
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-S010-01.PDF|749876
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-S012-01.PDF|721173
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-S014-01.PDF|300631
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-S015-01.PDF|234317
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-S016-00.PDF|139977
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-S017-01.PDF|803029
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-S018-01.PDF|287095
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-S019-01.PDF|623983
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-S020-01.PDF|231508
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-S021-00.PDF|215168
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-S022-00.PDF|110317
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-S023-01.PDF|285966
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-S101-01.PDF|211207
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-S102-00.PDF|96198
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-S103-00.PDF|68641
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-S104-02.PDF|930282
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/2098-01850-S105-03.PDF|393501
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/descrip.doc|339968
+40-PK-1001-1002/40-PK-1001-1002&20-PK-1005/Tài liệu tổng 40PK1001_1002.pdf|22960805
+40-TK-5001/Doc/L00202.doc|806400
+40-TK-5001/Doc/L00202.XLS|271360
+40-TK-5001/Doc/L00203.doc|1224704
+40-TK-5001/Doc/L00203.XLS|271360
+40-TK-5001/Doc/L00204.doc|200192
+40-TK-5001/Doc/L00204.xls|271360
+40-TK-5001/Doc/L00205.doc|227328
+40-TK-5001/Doc/L00205.xls|271360
+40-TK-5001/Doc/L00206.doc|39424
+40-TK-5001/Doc/L00206.xls|271360
+40-TK-5001/Doc/L00207.doc|207872
+40-TK-5001/Doc/L00207.xls|271360
+40-TK-5001/Doc/L00209.doc|96768
+40-TK-5001/Doc/L00209.xls|270848
+40-TK-5001/Doc/L00211.doc|73216
+40-TK-5001/Doc/L00211.xls|270848
+40-TK-5001/Doc/L00212.doc|66048
+40-TK-5001/Doc/L00212.xls|271872
+40-TK-5001/Doc/L00213-1.xls|270848
+40-TK-5001/Doc/L00213.xls|454656
+40-TK-5001/Doc/L00214-1.xls|270848
+40-TK-5001/Doc/L00214.xls|190464
+40-TK-5001/Doc/L00215-1.xls|23040
+40-TK-5001/Doc/L00215.XLS|270848
+40-TK-5001/Doc/L00216-1.doc|92160
+40-TK-5001/Doc/L00216-2.xls|111616
+40-TK-5001/Doc/L00216.xls|270848
+40-TK-5001/Doc/L00217-1.xls|648192
+40-TK-5001/Doc/L00217.XLS|271360
+40-TK-5001/Doc/L00221-1.doc|270848
+40-TK-5001/Doc/L00221-2.doc|202240
+40-TK-5001/Doc/L00221-3.pdf|605449
+40-TK-5001/Doc/L00221.xls|270848
+40-TK-5001/Doc/L00222-1.doc|215552
+40-TK-5001/Doc/L00222-1.pdf|1435632
+40-TK-5001/Doc/L00222.doc|481280
+40-TK-5001/Doc/L00222.xls|270848
+40-TK-5001/Doc/L00223.doc|1396736
+40-TK-5001/Doc/L00223.xls|270848
+40-TK-5001/Doc/L00224.doc|296960
+40-TK-5001/Doc/L00224.xls|270848
+40-TK-5001/Doc/L00225.doc|296448
+40-TK-5001/Doc/L00225.xls|271360
+40-TK-5001/Doc/L00226.doc|81920
+40-TK-5001/Doc/L00226.xls|271360
+40-TK-5001/Doc/L00239.DOC|53248
+40-TK-5001/Doc/L00239.XLS|270848
+40-TK-5001/Doc/L00240.pdf|2620182
+40-TK-5001/Doc/L00240.XLS|270848
+40-TK-5001/Doc/L00241.doc|455680
+40-TK-5001/Doc/L00241.XLS|270848
+40-TK-5001/Doc/L00242.doc|2121216
+40-TK-5001/Doc/L00242.XLS|270848
+40-TK-5001/Doc/L00243.doc|304128
+40-TK-5001/Doc/L00243.XLS|270848
+40-TK-5001/Doc/L00244.XLS|271360
+40-TK-5001/Doc/L00245.XLS|271360
+40-TK-5001/Doc/Pilot safety valve.pdf|3081289
+40-TK-5001/Doc/temperature transmitter.pdf|4003030
+40-TK-5001/dwg/full drawing 40-TK-5001.pdf|11229105
+40-TK-5001/dwg/L00001.pdf|132750
+40-TK-5001/dwg/L00002.pdf|284734
+40-TK-5001/dwg/L00003.pdf|115867
+40-TK-5001/dwg/L00004.pdf|109894
+40-TK-5001/dwg/L00005.pdf|197225
+40-TK-5001/dwg/L00006.pdf|138802
+40-TK-5001/dwg/L00007.pdf|92489
+40-TK-5001/dwg/L00008.pdf|197494
+40-TK-5001/dwg/L00009.pdf|92333
+40-TK-5001/dwg/L00010.pdf|146020
+40-TK-5001/dwg/L00011.pdf|148481
+40-TK-5001/dwg/L00012.pdf|113198
+40-TK-5001/dwg/L00013.pdf|107206
+40-TK-5001/dwg/L00014.pdf|170673
+40-TK-5001/dwg/L00015.pdf|137614
+40-TK-5001/dwg/L00016.pdf|93367
+40-TK-5001/dwg/L00017.pdf|102757
+40-TK-5001/dwg/L00018.pdf|135961
+40-TK-5001/dwg/L00019.pdf|192129
+40-TK-5001/dwg/L00020.pdf|137321
+40-TK-5001/dwg/L00021.pdf|170438
+40-TK-5001/dwg/L00022.pdf|101879
+40-TK-5001/dwg/L00023.pdf|90792
+40-TK-5001/dwg/L00024.pdf|173147
+40-TK-5001/dwg/L00025.pdf|119910
+40-TK-5001/dwg/L00026.pdf|92323
+40-TK-5001/dwg/L00027.pdf|130597
+40-TK-5001/dwg/L00028.pdf|124491
+40-TK-5001/dwg/L00029.pdf|165997
+40-TK-5001/dwg/L00030.pdf|173759
+40-TK-5001/dwg/L00031.pdf|145258
+40-TK-5001/dwg/L00032.pdf|156200
+40-TK-5001/dwg/L00033.pdf|147329
+40-TK-5001/dwg/L00034.pdf|154598
+40-TK-5001/dwg/L00035.pdf|169226
+40-TK-5001/dwg/L00036.pdf|135463
+40-TK-5001/dwg/L00037.pdf|107612
+40-TK-5001/dwg/L00038.pdf|105470
+40-TK-5001/dwg/L00039.pdf|113870
+40-TK-5001/dwg/L00040.pdf|118336
+40-TK-5001/dwg/L00041.pdf|116040
+40-TK-5001/dwg/L00042.pdf|111588
+40-TK-5001/dwg/L00043.pdf|124400
+40-TK-5001/dwg/L00044.pdf|132057
+40-TK-5001/dwg/L00045.pdf|114232
+40-TK-5001/dwg/L00046.pdf|130121
+40-TK-5001/dwg/L00047.pdf|123031
+40-TK-5001/dwg/L00048.pdf|114918
+40-TK-5001/dwg/L00049.pdf|165154
+40-TK-5001/dwg/L00050.pdf|161166
+40-TK-5001/dwg/L00051.pdf|177196
+40-TK-5001/dwg/L00052.pdf|121671
+40-TK-5001/dwg/L00053.pdf|170623
+40-TK-5001/dwg/L00054.pdf|153624
+40-TK-5001/dwg/L00055.pdf|139872
+40-TK-5001/dwg/L00056.pdf|136618
+40-TK-5001/dwg/L00057.pdf|151894
+40-TK-5001/dwg/L00058.pdf|814
+40-TK-5001/dwg/L00059.pdf|814
+40-TK-5001/dwg/L00060.pdf|151738
+40-TK-5001/dwg/L00061.pdf|156506
+40-TK-5001/dwg/L00062.pdf|141957
+40-TK-5001/dwg/L00063.pdf|38075
+40-TK-5001/dwg/L00064.pdf|36596
+40-TK-5001/dwg/L00065.pdf|37652
+40-TK-5001/dwg/L00066.pdf|131220
+40-TK-5001/dwg/L00067.pdf|132267
+40-TK-5001/dwg/L00068.pdf|165885
+40-TK-5001/dwg/L00069.pdf|159892
+40-TK-5001/dwg/L00070.pdf|160130
+40-TK-5001/dwg/L00071.pdf|128279
+40-TK-5001/dwg/L00072.pdf|147751
+40-TK-5001/dwg/L00073.pdf|119513
+40-TK-5001/dwg/L00074.pdf|97557
+40-TK-5001/dwg/L00075.pdf|112387
+40-TK-5001/dwg/L00076.pdf|142566
+40-TK-5001/dwg/L00077.pdf|112800
+40-TK-5001/dwg/L00078.pdf|112853
+40-TK-5001/dwg/L00079.pdf|143453
+40-TK-5001/dwg/L00080.pdf|133382
+40-TK-5001/dwg/L00081.pdf|102808
+40-TK-5001/dwg/L00082.pdf|95498
+40-TK-5001/dwg/L00083.pdf|110597
+40-TK-5001/dwg/L00084.pdf|120124
+40-TK-5001/dwg/L00085.pdf|130735
+40-TK-5001/dwg/L00086.pdf|114169
+40-TK-5001/dwg/L00087.pdf|112464
+40-TK-5001/dwg/L00088.pdf|97335
+Revamp/1. PROCESS DESCRIPTION/2539-45-CN-0009-01_0.docx|87735
+Revamp/1. PROCESS DESCRIPTION/2539-45-CN-0009-01_0.pdf|369267
+Revamp/1. PROCESS DESCRIPTION/Process Description.docx|153982
+Revamp/1. PROCESS DESCRIPTION/Tài liệu bồn chứa NH3&đuốc thải (đang cập nhật).doc|41799168
+Revamp/1. PROCESS DESCRIPTION/Unit 45 PROCESS DESCRIPTION VIE.docx|149423
+Revamp/5. Tài Liệu Tham Khảo/2539-00-MS-1330-002_0.doc|6860288
+Revamp/5. Tài Liệu Tham Khảo/2539-00-MS-1330-002_0.pdf|1557186
+Revamp/5. Tài Liệu Tham Khảo/2539-00-MS-1341-032_0.docx|3075604
+Revamp/5. Tài Liệu Tham Khảo/2539-00-MS-1341-032_0.pdf|12052051
+Revamp/5. Tài Liệu Tham Khảo/2539-00-MS-1341-033_0.docx|2888609
+Revamp/5. Tài Liệu Tham Khảo/2539-00-MS-1341-033_0.pdf|7804477
+Revamp/5. Tài Liệu Tham Khảo/2539-4151-01-A5015-001_0.pdf|48962980
+Revamp/5. Tài Liệu Tham Khảo/40-PK-5005 operation.pdf|48962031
+Revamp/5. Tài Liệu Tham Khảo/Set point list PLC.pdf|718293
+Revamp/5. Tài Liệu Tham Khảo/T-T-P-01668.pdf|100587
+40-PK-5001/40-PK-5001/Inspection Book/A) P.V - H.E.pdf|22402210
+40-PK-5001/40-PK-5001/Inspection Book/B) Compressors and Pumps.pdf|4552230
+40-PK-5001/40-PK-5001/Inspection Book/C) Motors.pdf|6499
+40-PK-5001/40-PK-5001/Inspection Book/D) Instrumentation.pdf|9728960
+40-PK-5001/40-PK-5001/Inspection Book/E) Piping.pdf|16253743
+40-PK-5001/40-PK-5001/Inspection Book/G) Package.pdf|6654
+Revamp/2. PI&D/PDF/2539-45-PID-0031-01-01_0 -Ties-in.pdf|2124678
+Revamp/2. PI&D/PDF/2539-45-PID-0031-02-01_0 - Ties-in.pdf|1222317
+Revamp/2. PI&D/PDF/2539-45-PID-0031-04-01_0 - Ties-in.pdf|659267
+Revamp/2. PI&D/PDF/2539-45-PID-0031-04-02_0.pdf|393936
+Revamp/2. PI&D/PDF/2539-45-PID-0031-05-01_0.pdf|456266
+Revamp/2. PI&D/PDF/2539-45-PID-0031-05-02_0.pdf|620128
+Revamp/2. PI&D/PDF/2539-45-PID-0031-05-03_0.pdf|616938
+Revamp/2. PI&D/PDF/2539-45-PID-0031-05-04_0.pdf|488006
+Revamp/2. PI&D/PDF/2539-45-PID-0031-05-05_0.pdf|517041
+Revamp/2. PI&D/PDF/2539-45-PID-0031-05-06_0.pdf|553870
+Revamp/4. DATASHEET/40-E-5002/2539-45-SP-0710-01_PB.pdf|315176
+Revamp/4. DATASHEET/40-E-5002/2539-45-SP-0710-01_PB.xls|507904
+Revamp/4. DATASHEET/40-E-5002/PVFCC0_T-T-P-00310.xlsx|10610
+Revamp/4. DATASHEET/40-E-5002/T-T-P-00310.pdf|58402
+Revamp/4. DATASHEET/40-LA-5003,04,05,06/2539-45-SP-4025-01_PA.pdf|218982
+Revamp/4. DATASHEET/40-LA-5003,04,05,06/2539-45-SP-4025-01_PA.xls|151552
+Revamp/4. DATASHEET/40-LA-5003,04,05,06/2539-45-SP-4025-02_PA.pdf|216102
+Revamp/4. DATASHEET/40-LA-5003,04,05,06/2539-45-SP-4025-02_PA.xls|151552
+Revamp/4. DATASHEET/40-LA-5003,04,05,06/T-T-P-00086.pdf|58469
+Revamp/4. DATASHEET/40-P-5003/2539-45-SP-0910-01_A.pdf|156170
+Revamp/4. DATASHEET/40-P-5003/2539-45-SP-0910-01_A.xls|482816
+Revamp/4. DATASHEET/40-PK-5005/2539-45-SP-4151-01_PB.docx|90037
+Revamp/4. DATASHEET/40-PK-5005/2539-45-SP-4151-01_PB.pdf|190132
+Revamp/4. DATASHEET/40-PK-5005/PVFCC0_T-T-P-00365.xlsx|10630
+Revamp/4. DATASHEET/40-PK-5005/T-T-P-00365.pdf|58379
+Revamp/4. DATASHEET/40-PSV-45512/2539-40-SP-1500-45_PA.docx|73383
+Revamp/4. DATASHEET/40-PSV-45512/2539-40-SP-1500-45_PA.pdf|87884
+Revamp/4. DATASHEET/40-PSV-45512/PVFCC0_T-T-P-00332.xlsx|9165
+Revamp/4. DATASHEET/40-PV-45004 A/2539-40-SP-1500-41_PA.docx|73439
+Revamp/4. DATASHEET/40-PV-45004 A/2539-40-SP-1500-41_PA.pdf|90147
+Revamp/4. DATASHEET/40-PV-45004 A/PVFCC0_T-T-P-00332.xlsx|10695
+Revamp/4. DATASHEET/40-PV-45004 A/T-T-P-00332.pdf|58444
+Revamp/4. DATASHEET/40-TV-45017/2539-40-SP-1500-43_PA.docx|73487
+Revamp/4. DATASHEET/40-TV-45017/2539-40-SP-1500-43_PA.pdf|91314
+Revamp/4. DATASHEET/40-TV-45017/PVFCC0_T-T-P-00352.xlsx|10601
+Revamp/4. DATASHEET/40-TV-45017/T-T-P-00352.pdf|58352
+Revamp/5. Tài Liệu Tham Khảo/INTERLOCK PROCESS DESCRIPTION/2539-45-CN-0009-02_0.docx|96621
+Revamp/5. Tài Liệu Tham Khảo/INTERLOCK PROCESS DESCRIPTION/2539-45-CN-0009-02_0.pdf|3799790
+Revamp/5. Tài Liệu Tham Khảo/INTERLOCK PROCESS DESCRIPTION/2539-45-NM-0013-01_0.pdf|473713
+Revamp/5. Tài Liệu Tham Khảo/INTERLOCK PROCESS DESCRIPTION/2539-45-NM-0013-01_0.xlsx|195228
+Revamp/5. Tài Liệu Tham Khảo/PFD/2539-45-PFD-0010-01-01_0_Scan.pdf|3720991
+Revamp/5. Tài Liệu Tham Khảo/PFD/2539-45-PFD-0010-01-01_0.pdf|381291
+Revamp/5. Tài Liệu Tham Khảo/PI&D Scan/2539-45-PID-0031-01-01_0_Scan.pdf|39312446
+Revamp/5. Tài Liệu Tham Khảo/PI&D Scan/2539-45-PID-0031-02-01_0_Scan.pdf|42733512
+Revamp/5. Tài Liệu Tham Khảo/PI&D Scan/2539-45-PID-0031-04-01_0_Scan.pdf|31339953
+Revamp/5. Tài Liệu Tham Khảo/PI&D Scan/2539-45-PID-0031-04-02_0_Scan.pdf|20714772
+Revamp/5. Tài Liệu Tham Khảo/PI&D Scan/2539-45-PID-0031-05-01_0_Scan.pdf|20065695
+Revamp/5. Tài Liệu Tham Khảo/PI&D Scan/2539-45-PID-0031-05-02_0_Scan.pdf|27553899
+Revamp/5. Tài Liệu Tham Khảo/PI&D Scan/2539-45-PID-0031-05-03_0_Scan.pdf|34798666
+Revamp/5. Tài Liệu Tham Khảo/PI&D Scan/2539-45-PID-0031-05-04_0_Scan.pdf|21748050
+Revamp/5. Tài Liệu Tham Khảo/PI&D Scan/2539-45-PID-0031-05-05_0_Scan.pdf|24483120
+Revamp/5. Tài Liệu Tham Khảo/PI&D Scan/2539-45-PID-0031-05-06_0_Scan.pdf|23229124
+Revamp/5. Tài Liệu Tham Khảo/Process Description  Control Philosophy/2539-4151-01-A0101-001_A_Code 1.pdf|1016980
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A0001-001_1_Code 3.pdf|130764
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A0101-001_1_Code 2.pdf|906670
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A0102-001_1_Code 3.pdf|444034
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A0103-001_1.pdf|984069
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A0105-001_A_Code 3.pdf|110687
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A0106-001_C_Code 3.pdf|843072
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A0403-001_A.pdf|61867
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1001-001_0.pdf|601079
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1001-001_C_Code 3.pdf|590177
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1002-001_0_Code 3.pdf|264083
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1003-002_0_Code 3.pdf|1073328
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1003-003_B_Code 4.pdf|1802959
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1003-004_B_Code 4.pdf|1073812
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1003-005_0_Code 4.pdf|791737
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1003-006_B_Code 4.pdf|396872
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1003-007_0_Code 4.pdf|2075484
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1003-008_0_Code 4.pdf|788186
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1003-009_A_Code 4.pdf|284112
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1012-001_C_Code 3.pdf|295279
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1014-001_1_Code 3.pdf|144556
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1101-001_A_Code 4.pdf|614902
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1102-001_A_Code 4.pdf|264235
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1102-002_A_Code 4.pdf|704833
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1103-002_2_Code 3.pdf|974006
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1103-003_2_Code 3.pdf|613552
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1103-004_2_Code 3.pdf|530799
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1103-005_2_Code 3.pdf|528686
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1103-006_0_Code 3.pdf|742071
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1103-007_0_Code 3.pdf|739896
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1103-008_2_Code 3.pdf|516997
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1103-009_3_Code 3.pdf|899950
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1103-010_2_Code 3.pdf|1359711
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1103-010_2.pdf|1272573
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1103-011_2_Code 3.pdf|1354521
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1103-011_2.pdf|1266540
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1103-012_0_Code 3.pdf|806926
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1103-013_0_Code 3.pdf|813548
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1112-002_0_Code 3.pdf|517752
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1112-003_0_Code 3.pdf|568465
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1112-004_0_Code 3.pdf|520872
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1112-005_0_Code 3.pdf|371799
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1112-006_0_Code 3.pdf|377372
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1112-007_0_Code 3.pdf|573757
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1112-009_A_Code 1.pdf|271156
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1113-002_0_Code 3.pdf|745460
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1113-003_1_Code 3.pdf|480852
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1113-004_2_Code 3.pdf|1413741
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A1113-005_1_Code 3.pdf|1148415
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A2001-001_1_Code 3.pdf|8556847
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A2001-002_2_Code 3.pdf|482591
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A2004-001_0.pdf|15611845
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A2006-001_2_Code 3.pdf|559067
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A2007-001_3_Code 3.pdf|1229778
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A2007-002_1_Code 4.pdf|1804688
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A2202-001_A_Code 4.pdf|10917561
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A3006-001_1_Code 2.pdf|2983631
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A3006-002_0.pdf|524522
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A3006-002_C_Code 2.pdf|583395
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A3006-003_0_Code 3.pdf|222390
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A3006-004_2_Code 2.pdf|1324985
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A3006-004_2.pdf|1235266
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A3006-005_0_Code 3.pdf|2030388
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A3006-006_0_Code 3.pdf|1953962
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A3006-007_0_Code 3.pdf|531755
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A3006-008_1_Code 3.pdf|1178613
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A3007-001_0_Code 3.pdf|150043
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A3007-002_0_Code 3.pdf|300992
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A3007-003_2_Code 3.pdf|1175183
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A3008-001_3_Code 3.pdf|159781
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A3008-001_3.pdf|71979
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A3008-002_0_Code 3.pdf|221373
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A3008-003_0_Code 3.pdf|1275644
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A3008-004_0.pdf|5097574
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A3008-006_0.pdf|128604
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A4102-001_0_Code 3.pdf|1505309
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A5001-001_A.pdf|300492
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A5002-001_A_Code 4.pdf|225834
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A5007-001_A.pdf|107011
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A5015-001_0.pdf|48962980
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A5015-001_A.pdf|4548038
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A5016-001_A.pdf|48962031
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A5020-001_A_Code 3.pdf|129388
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A5201-001_0_Code 4.pdf|167838
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A5201-001_0.pdf|107360
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-A5201-001_A_Code 4.pdf|156930
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1001-001_2_Code 3.pdf|155584
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1002-001_2_Code 3.pdf|556797
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1004-001_0_Code 2.pdf|122996
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1004-001_1.pdf|691364755
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1103-002_0_Code 4.pdf|564559
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1103-003_2_Code 3.pdf|525844
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1103-004_1.pdf|945984
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1104-001_0_Code 3.pdf|503539
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1104-002_0.pdf|284479
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1105-001_0_Code 2.pdf|714157
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1202-001_1_Code 3.pdf|12319440
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1304-002_A_Code 4.pdf|4056850
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1304-003_A_Code 4.pdf|14250238
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1304-004_0_Code 4.pdf|22625184
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1304-004_0.pdf|22538809
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1304-005_A_Code 4.pdf|7116243
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1304-006_C_Code 3.pdf|569331
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1304-007_1_Code 3.pdf|317708
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1304-008_1_Code 3.pdf|303077
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1304-009_1_Code 3.pdf|318270
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1304-010_1_Code 3.pdf|265191
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1304-011_1_Code 3.pdf|264598
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1304-012_1_Code 3.pdf|565793
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1304-013_1_Code 3.pdf|568229
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-B1304-014_1_Code 3.pdf|501937
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-C1001-001_0_Code 4.pdf|246643
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-C1002-001_1_Code 2.pdf|215158
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu nhà thầu gửi MR-4151-01 New Ammonia Refrigeration Package (Hung)/2539-4151-01-ML-224-001_0_Code 3.pdf|184957
+40-PK-5001/40-PK-5001/Vendor Data Book/Operating manual/A) Data Sheets.pdf|3002131
+40-PK-5001/40-PK-5001/Vendor Data Book/Operating manual/B) Installation Instruction & Start Up.pdf|514060
+40-PK-5001/40-PK-5001/Vendor Data Book/Operating manual/C) Plant & Logic Description.pdf|905054
+40-PK-5001/40-PK-5001/Vendor Data Book/Operating manual/D) Main Components Technical Description.pdf|8666310
+40-PK-5001/40-PK-5001/Vendor Data Book/Operating manual/E) Instrumentation.pdf|18116338
+40-PK-5001/40-PK-5001/Vendor Data Book/Operating manual/F) Safety.pdf|200082
+40-PK-5001/40-PK-5001/Vendor Data Book/Operating manual/G) Maintenance.pdf|424153
+40-PK-5001/40-PK-5001/Vendor Data Book/Operating manual/H) Mechanical Drawings.pdf|1423350
+40-PK-5001/40-PK-5001/Vendor Data Book/Operating manual/I) Electrical Drawings.pdf|20956480
+40-PK-5001/40-PK-5001/Vendor Data Book/Operating manual/Operating Manual Index.pdf|73144
+40-PK-5001/40-PK-5001/Vendor Data Book/PLC Installation Instructions/Installation and Operation Manual.pdf|22584335
+40-PK-5001/40-PK-5001/Vendor Data Book/Software List/Software List.pdf|9680418
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-E-5002/2539-0710-01-A1109-001_2.pdf|1778727
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-E-5002/2539-0710-01-A1109-001_A_Code 2.pdf|1094286
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-E-5002/2539-0710-01-A1109-002_0_Code 4.pdf|439882
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-E-5002/2539-0710-01-A1109-002_A_Code 2.pdf|456596
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-E-5002/2539-0710-01-A1112-001_0_Code 3.pdf|314210
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-E-5002/2539-0710-01-A1112-001_A.pdf|191730
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-E-5002/2539-0710-01-A1113-001_2_Code 3.pdf|562713
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-E-5002/2539-0710-01-A1113-001_B_Code 2.pdf|693171
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-E-5002/2539-0710-01-A1119-005_1_Code 3.pdf|396460
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-E-5002/2539-0710-01-A1119-005_B_Code 2.pdf|472732
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-E-5002/2539-0710-01-A2001-001_0.pdf|405754
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-E-5002/2539-0710-01-A2001-001_C_Code 2.pdf|482876
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-LA5003, 5005 40-LA5004, 5006/2539-4025-01-A1001-001_0_Code 3.pdf|162273
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-LA5003, 5005 40-LA5004, 5006/2539-4025-01-A1109-001_0.pdf|446649
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-LA5003, 5005 40-LA5004, 5006/2539-4025-01-A2001-001_1_Code 2.pdf|898405
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-LA5003, 5005 40-LA5004, 5006/2539-4025-01-A2001-001_3.pdf|845804
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-LA5003, 5005 40-LA5004, 5006/2539-4025-01-A2006-001_1_Code 3.pdf|472802
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-LA5003, 5005 40-LA5004, 5006/2539-4025-01-A3303-002_0_Code 3.pdf|341556
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-LA5003, 5005 40-LA5004, 5006/2539-4025-01-A3403-001_0.pdf|1560259
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-LA5003, 5005 40-LA5004, 5006/2539-4025-01-B1002-001_0_Code 3.pdf|264865
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-LA5003, 5005 40-LA5004, 5006/2539-4025-01-B1104-001_0_Code 3.pdf|1624079
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-P-5003/2539-0910-03-A1101-001_A.pdf|527288
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-P-5003/2539-0910-03-A1101-001_C.pdf|740662
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-P-5003/2539-0910-03-A1102-001_1.pdf|2880160
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-P-5003/2539-0910-03-A1102-001_A.pdf|986468
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-P-5003/2539-0910-03-A2001-001_0.pdf|1924056
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-P-5003/2539-0910-03-A2001-001_D_Code 1.pdf|2150752
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-P-5003/2539-0910-03-A4207-001_0.pdf|503648
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-P-5003/2539-0910-03-A4207-001_1_Code 3.pdf|493819
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-PK-5003,5004,5005/2539-1584-01-A2001-001_2_Code 3.pdf|338548
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-PK-5003,5004,5005/2539-1584-01-A2001-002_0_Code 3.pdf|451715
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-PK-5003,5004,5005/2539-1584-01-A2005-001_1_Code 2.pdf|704584
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-PK-5003,5004,5005/2539-1584-01-A2007-001_1_Code 3.pdf|484984
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-PK-5003,5004,5005/2539-4151-01-A1103-004_2_Code 3.pdf|530799
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-PK-5003,5004,5005/2539-4151-01-A1103-005_2_Code 3.pdf|528686
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-PK-5003,5004,5005/2539-4151-01-A2001-001_A_Code 1.pdf|3128973
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-PK-5003,5004,5005/2539-4151-01-A3006-001_0_Code 2.pdf|3105423
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-PK-5003,5004,5005/2539-4151-01-A3006-003_0_Code 3.pdf|222390
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-PK-5003,5004,5005/2539-4151-01-A3006-008_0_Code 3.pdf|1092466
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-PK-5003,5004,5005/2539-4151-01-A3008-002_0_Code 3.pdf|221373
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/40-PK-5003,5004,5005/2539-4151-01-B1202-001_1.pdf|12242056
+Revamp/5. Tài Liệu Tham Khảo/03. Reference Engineering Document/LAYOUT/2539-40-DW-0051-01-01_0.pdf|742970
+Revamp/5. Tài Liệu Tham Khảo/HAZOP Documentation/Ammonia Refrigeration Package (40-PK-5005)/Refrigeration Package_GA_VDB_A.pdf|3031541
+Revamp/5. Tài Liệu Tham Khảo/HAZOP Documentation/Ammonia Refrigeration Package (40-PK-5005)/Refrigeration Package_PID_VDB_A-C.pdf|5528657
+Revamp/5. Tài Liệu Tham Khảo/HAZOP Documentation/Loading Arms (40-LA-5003, 5004, 5005, 5006)/2539-45-PID-0031-02-01_C (Existing Arms).pdf|3517003
+Revamp/5. Tài Liệu Tham Khảo/HAZOP Documentation/Loading Arms (40-LA-5003, 5004, 5005, 5006)/2539-45-PID-0031-04-01_C (New Arms).pdf|2553220
+Revamp/5. Tài Liệu Tham Khảo/HAZOP Documentation/Loading Arms (40-LA-5003, 5004, 5005, 5006)/Loading Arm_GA_VDB_A_C.pdf|1818872
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Aux Drawing (Oil Pump)/2539-4151-01-A1102-001_A.pdf|197035
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Cable Block Diagram/2539-4151-01-A3007-002_0.pdf|214499
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Cable Routing Diagram/2539-4151-01-A3007-003_0.pdf|1005977
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Cable Schedule/2539-4151-01-A3007-001_0.pdf|83376
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Cause & Effect Chart/2539-4151-01-A3008-002_0.pdf|134548
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Compressor Air Run test Procedure/2539-4151-01-B1103-004_1.pdf|945984
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Compressor GA Drawing/2539-4151-01-A2001-002_2.pdf|391348
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Compressor GA Drawing/534E0497_sht1_revC (2).pdf|143416
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Compressor GA Drawing/534E0497_sht1_revC.pdf|663882
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Control Panel FAT Procedure/2539-4151-01-B1104-001_0.pdf|417570
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Control Philosophy/2539-4151-01-A0101-001_1.pdf|808131
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Control Valve & Relief Valve Calculation/2539-4151-01-A3006-005_0.pdf|1944907
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Coupling & Guard Drawing/2539-4151-01-A1102-002_A.pdf|617003
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Detail Drawing Condenser/2539-4151-01-A1113-005_1.pdf|1062170
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Detail Drawing Oil Distiller/2539-4151-01-A1103-009-Detail Drawing for Oil Distiller Rev.3.pdf|871052
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Detail Drawing Oil Filter A/2539-4151-01-A1103-012-Detail Drawing for Oil Filter Housing (FL1A) Rev.0.pdf|783239
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Detail Drawing Oil Filter B/2539-4151-01-A1103-013-Detail Drawing for Oil Filter Housing (FL1B) Rev.0.pdf|789897
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Detail Drawing Oil Separator A/2539-4151-01-A1103-010-Detail Drawing for Oil Separator (V3A)-Rev.2.pdf|1537555
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Detail Drawing Oil Separator B/2539-4151-01-A1103-011-Detail Drawing for Oil Separator (V3B)-Rev.2.pdf|1538988
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Detail Drawing Receiver/2539-4151-01-A1103-008_2.pdf|429998
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Detail Drawing Subcooler/2539-4151-01-A1113-004-Detail Drawing for Subcooler Rev.2.pdf|1417499
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Electrical Interconnecting Diagram/2539-4151-01-A3008-003_0.pdf|1188614
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Equipment Datasheet/2539-4151-01-A1001-001_0.pdf|601079
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Fabrication & Quality Plan/2539-4151-01-B1002-001_Fabrication and quality control plan_Rev2.pdf|810679
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Foundation Layout/2539-4151-01-A2006-001_2.pdf|492815
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/GA Drawing Condenser/2539-4151-01-A1113-003_1.pdf|393892
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/GA Drawing Oil Distiller/2539-4151-01-A1103-003_2.pdf|526511
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/GA Drawing Oil Filter A/2539-4151-01-A1103-006-GA Drawing for Oil Filter Housing (FL1A) Rev.0.pdf|718092
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/GA Drawing Oil Filter B/2539-4151-01-A1103-007-GA Drawing for Oil Filter Housing (FL1B) Rev.0.pdf|715932
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/GA Drawing Oil Separator A/2539-4151-01-A1103-004_2.pdf|444492
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/GA Drawing Oil Separator B/2539-4151-01-A1103-005_2.pdf|442381
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/GA Drawing Receiver/2539-4151-01-A1103-002_2.pdf|891856
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/GA Drawing Subcooler/2539-4151-01-A1113-002_0.pdf|658373
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Gauge Board & Support Drawing/2539-4151-01-A3006-008_1.pdf|1091708
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/General Arrangement Drawing/2539-4151-01-A2001-001_1.pdf|8490727
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Hydrostatic Test Procedure/2539-4151-01-B1103-003_Hydrostatic test procedure _Rev2.pdf|416801
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/I-O List/2539-4151-01-A3008-001_3.pdf|71979
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Inspection Invitiation/2539-4151-01-B1002-002_A.pdf|102603
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Inspection Invitiation/2539-4151-01-B1103-001.06_A.PDF|334956
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Inspection Test Plan/2539-4151-01-B1001-001_2.pdf|68763
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Installation, Startup and Commissioning Manual/2539-4151-01-A5015-001_0 - revised.pdf|4911457
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Instrument Datasheet/2539-4151-01-A3006-002_0.pdf|524522
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Instrument Hookup/2539-4151-01-A3006-004_2.pdf|1235266
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Instrument List/2539-4151-01-A3006-003_0.pdf|134303
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Junction Box Drawing/2539-4151-01-A3006-007_0.pdf|445679
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Leak test Procedure/2539-4151-01-B1103-002_0.pdf|498117
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Lifting Arrangement Drawing/2539-4151-01-A5001-001_A.pdf|300492
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/List of spare parts for 2 year operation/2539-4151-01-A5201-001_0.pdf|107367
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/List of spares for commissioning/2539-4151-01-A5007-001_A.pdf|107011
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Local Control Panel GA Drawing & Wiring/2539-4151-01-A3006-001_1.pdf|2838546
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Logic Diagrams/2539-4151-01-A3008-004_0.pdf|5097574
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Major Piping Layout and Drawing (ISO dwg)/2539-4151-01-A-2004-001-SHEET 003-128.pdf|15584775
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Mechanical Calculation Condenser/2539-4151-01-A1003-004_B.pdf|1007645
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Mechanical Calculation Oil Distiller/2539-4151-01-A1003-007-Mechanical Calculation for Oil Distiller Rev.0 22.02.pdf|2586923
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Mechanical Calculation Oil Filter A/2539-4151-01-A1003-006-Mechanical Calculation for Oil Filter Housing (40-PK-5005-FL1A) Rev.B.pdf|310414
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Mechanical Calculation Oil Filter B/2539-4151-01-A1003-009-Mechanical Calculation for Oil Filter Housing (40-PK-5005-FL1B) Rev.A.pdf|196873
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Mechanical Calculation Oil Separator A/2539-4151-01-A1003-005-Mechanical Calculation for Oil Separator (40-PK-5005-V3A) Rev.0.pdf|713927
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Mechanical Calculation Oil Separator B/2539-4151-01-A1003-008-Mechanical Calculation for Oil Separator (40-PK-5005-V3B) Rev.0.pdf|710205
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Mechanical Calculation Receiver/2539-4151-01-A1003-002_0.pdf|1044198
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Mechanical Calculation Subcooler/2539-4151-01-A1003-003_B.pdf|1734978
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Modbus List/2539-4151-01-A3008-006_0.pdf|128604
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Motor Data Sheet/2539-4151-01-A4102-001_0.pdf|1439886
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Nameplate Drawing Condenser/2539-4151-01-A1112-004-Name Plate Drawing for Condenser (40-PK-5005E1)-R....pdf|401209
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Nameplate Drawing Oil Distiller/2539-4151-01-A1112-007-Nameplate Drawing for Oil Distiller Rev.1.pdf|447335
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Nameplate Drawing Oil Filter/2539-4151-01-A1112-006_0.pdf|291085
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Nameplate Drawing Oil Separator/2539-4151-01-A1112-005_0.pdf|285505
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Nameplate Drawing Receiver/2539-4151-01-A1112-002_0.pdf|430674
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Nameplate Drawing Subcooler/2539-4151-01-A1112-003-Nameplate Drawing for Subcooler Rev.1.pdf|448325
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/NDE Operator Qualification/2539-4151-01-B1103-001.09_A.PDF|5788432
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/NDT Procedure/2539-4151-01-B1202-001_1.pdf|12221645
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Noise Datasheet/2539-4151-01-A0105-001_A.pdf|43992
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Operation & Maintenance Manual/2539-4151-A5016-001_A.pdf|48962031
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/P&ID/2539-4151-01-A0103-001_1.pdf|984069
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Package FAT Procedure/2539-4151-01-B1104-002_0.pdf|284479
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Painting Specification/2539-4151-01-A0106-001_C.pdf|777495
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Performance Curve (Compressor & Oil Pump)/2539-4151-01-A1002-001_0.pdf|197870
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Process Flow Diagram/2539-4151-01-A0102-001_1.pdf|377338
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Recommendation for Storage/2539-4151-01-A5002-001_A.pdf|138982
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Starter Panel GA Drawing/2539-4151-01-A3006-006_0.pdf|1867871
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Structural Calculation/2539-4151-01-A2007-002 -Structural calculation-Rev.1.pdf|1879030
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Structural Drawing/2539-4151-01-A2007-001_3.pdf|1142496
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Thermal Rating for Heat Exchanger/2539-4151-01-A1012-001_C.pdf|228615
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Thermal Stress Calculation Note (Piping Stress)/2539-4151-01-A2202-001_A.PDF|10830188
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Utility Consumption List/2539-4151-01-A1014-001_1.pdf|78338
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Vendor Document List/2539-4151-01-A0001-001_1.pdf|63492
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Weld Map (Condenser)/2539-4151-01-B1304-008_1.pdf|216216
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Weld Map (Oil Distiller)/2539-4151-01-B1304-001.03_0 (OIL DISTILLER) Rev.0.pdf|200179
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Weld Map (Oil Filter A)/2539-4151-01-B1304-001.04_0 (OIL FILTER HOUSING) Rev.0.pdf|147068
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Weld Map (Oil Filter B)/2539-4151-01-B1304-001.05_0 (OIL FILTER HOUSING) Rev.0.pdf|146443
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Weld Map (Oil Separator A)/2539-4151-01-B1304-001.06_Rev.1.pdf|483409
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Weld Map (Oil Separator B)/2539-4151-01-B1304-001.07_Rev.1.pdf|513287
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Weld Map (Receiver)/2539-4151-01-B1304-001.01_0 (AMMONIA RECEIVER) Rev.0.pdf|199622
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Weld Map (Skid)/2539-4151-01-B1304-006_C.PDF|483244
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Weld Map (Subcooler)/2539-4151-01-B1304-014_1.pdf|415037
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Welder Performance Qualification Certificate/2539-4151-01-B1103-001.08_B.pdf|4216538
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/WPS-PQR/2539-4151-01-B1103-001.05_Welding procedure specification & PQR_RevA.pdf|17403896
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/WPS-PQR for Structural/2539-4151-01-B1304-005_A.pdf|7049007
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/WPS-PQR for Vessel & Piping/2539-4151-01-B1103-001.05_Welding procedure specification & PQR_RevC.pdf|23439915
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Hazop Response Sheet/010317/2539-4151-01-ML-224-001.pdf|98301
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Hazop Response Sheet/010317/HAZOP Action Response Sheet Refrigeration Package.xlsx|457805
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Hazop Response Sheet/291117/2539-ML-224-001.pdf|97959
+Revamp/5. Tài Liệu Tham Khảo/Tài liệu PTSC gửi/Hazop Response Sheet/291117/HAZOP Action Response Sheet Refrigeration Package.xlsx|458129

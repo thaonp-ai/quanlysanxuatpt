@@ -1,0 +1,932 @@
+[
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Customer front sht.pdf",
+"t": "Vol 1 O&M – bìa",
+"g": "Bộ sách đầy đủ",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Index.doc",
+"t": "Vol 1 O&M – mục lục",
+"g": "Bộ sách đầy đủ",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Section frontsheets.doc",
+"t": "Vol 1 O&M – trang bìa các mục",
+"g": "Bộ sách đầy đủ",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 1/S1.doc",
+"t": "Mục 1 – Giới thiệu, danh mục các tập tài liệu",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 2/S2.doc",
+"t": "Mục 2 – An toàn (lưu chất lạnh sâu, thiếu oxy, cháy nổ…); HMI & hướng dẫn vận hành",
+"g": "Vận hành & bảo dưỡng",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 3/S3 Equip Dsheets.pdf",
+"t": "Mục 3 – Data sheet thiết bị",
+"g": "Data sheet & tài liệu chính",
+"tags": [
+"30-PK-6001",
+"30-PK-6001/ACC1",
+"30-PK-6001/E5",
+"30-PK-6001/E6",
+"30-PK-6001/DR1",
+"30-PK-6001/V2",
+"30-PK-6001/V3",
+"30-PK-6001/E3",
+"30-PK-6001/T1",
+"30-PK-6001/V4",
+"30-PK-6001/E4",
+"30-PK-6001/EK1",
+"30-PK-6001/ABC1",
+"30-PK-6001/TK1",
+"30-PK-6001/E1A",
+"30-PK-6001/E1B",
+"30-PK-6001/E2A",
+"30-PK-6001/E2B"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 3/S3 Vendor list.pdf",
+"t": "Mục 3 – Danh sách nhà cung cấp thiết bị",
+"g": "Data sheet & tài liệu chính",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 4/S4 Std & Symbols 2098-00 PID-0021-01-1b Key .pdf",
+"t": "Mục 4 – Ký hiệu P&ID (2098-00-PID-0021-01)",
+"g": "Hệ thống (P&ID, mô tả công nghệ)",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 4/Sect 4 Process Description.doc",
+"t": "Mục 4 – Mô tả công nghệ (Process description)",
+"g": "Hệ thống (P&ID, mô tả công nghệ)",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 5/S5 Plant Operation.doc",
+"t": "Mục 5 – Vận hành cụm (trang bìa)",
+"g": "Vận hành & bảo dưỡng",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 6/S6 Maint Schedule.doc",
+"t": "Mục 6 – Lịch bảo dưỡng định kỳ",
+"g": "Vận hành & bảo dưỡng",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 6/S6 OPM 097 Safety checks.DOC",
+"t": "Mục 6 – Kiểm tra an toàn định kỳ (OPM 097)",
+"g": "Vận hành & bảo dưỡng",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 6/S6 Routine Maint note.doc",
+"t": "Mục 6 – Ghi chú bảo dưỡng thường xuyên",
+"g": "Vận hành & bảo dưỡng",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 7/S7 Setpoints.doc",
+"t": "Mục 7 – Giá trị cài đặt chạy thử (trang bìa)",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/S8 Safety Inst for fitment of spares (OPM 089).doc",
+"t": "Mục 8 – Hướng dẫn an toàn khi thay phụ tùng (OPM 089)",
+"g": "Phụ tùng",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/S8 Spares ordering proc (OPM 103).DOC",
+"t": "Mục 8 – Thủ tục đặt phụ tùng (OPM 103)",
+"g": "Phụ tùng",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/Air Cooled Chiller Module  Package-1.DOC",
+"t": "Phụ tùng – cụm chiller giải nhiệt gió (1/2)",
+"g": "Phụ tùng",
+"tags": [
+"30-PK-6001/ACC1",
+"30-PK-6001/E5",
+"30-PK-6001/E6"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/Air Cooled Chiller Module-2.DOC",
+"t": "Phụ tùng – cụm chiller giải nhiệt gió (2/2)",
+"g": "Phụ tùng",
+"tags": [
+"30-PK-6001/ACC1",
+"30-PK-6001/E5",
+"30-PK-6001/E6"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/Chiller, Refigeration Drier System 1.DOC",
+"t": "Phụ tùng – hệ làm lạnh & tách ẩm khí vào (1/3)",
+"g": "Phụ tùng",
+"tags": [
+"30-PK-6001/ACC1",
+"30-PK-6001/E5",
+"30-PK-6001/E6",
+"30-PK-6001/V1"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/Chiller, Refigeration Drier System 2.DOC",
+"t": "Phụ tùng – hệ làm lạnh & tách ẩm khí vào (2/3)",
+"g": "Phụ tùng",
+"tags": [
+"30-PK-6001/ACC1",
+"30-PK-6001/E5",
+"30-PK-6001/E6",
+"30-PK-6001/V1"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/Chiller, Refigeration Drier System 3.DOC",
+"t": "Phụ tùng – hệ làm lạnh & tách ẩm khí vào (3/3)",
+"g": "Phụ tùng",
+"tags": [
+"30-PK-6001/ACC1",
+"30-PK-6001/E5",
+"30-PK-6001/E6",
+"30-PK-6001/V1"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/TSA1.doc",
+"t": "Phụ tùng – cụm hấp phụ TSA (1/3)",
+"g": "Phụ tùng",
+"tags": [
+"30-PK-6001/DR1",
+"30-PK-6001/V2",
+"30-PK-6001/V3"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/TSA2.doc",
+"t": "Phụ tùng – cụm hấp phụ TSA (2/3)",
+"g": "Phụ tùng",
+"tags": [
+"30-PK-6001/DR1",
+"30-PK-6001/V2",
+"30-PK-6001/V3"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/TSA3.doc",
+"t": "Phụ tùng – cụm hấp phụ TSA (3/3)",
+"g": "Phụ tùng",
+"tags": [
+"30-PK-6001/DR1",
+"30-PK-6001/V2",
+"30-PK-6001/V3"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/TSAControl.doc",
+"t": "Phụ tùng – điều khiển cụm TSA",
+"g": "Phụ tùng",
+"tags": [
+"30-PK-6001/DR1",
+"30-PK-6001/V2",
+"30-PK-6001/V3"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/Coldbox 1.doc",
+"t": "Phụ tùng – cold box (1/3)",
+"g": "Phụ tùng",
+"tags": [
+"30-PK-6001/E3",
+"30-PK-6001/T1",
+"30-PK-6001/V4",
+"30-PK-6001/E4",
+"30-PK-6001/EK1",
+"30-PK-6001/ABC1"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/Coldbox 2.doc",
+"t": "Phụ tùng – cold box (2/3)",
+"g": "Phụ tùng",
+"tags": [
+"30-PK-6001/E3",
+"30-PK-6001/T1",
+"30-PK-6001/V4",
+"30-PK-6001/E4",
+"30-PK-6001/EK1",
+"30-PK-6001/ABC1"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/Coldbox 3.doc",
+"t": "Phụ tùng – cold box (3/3)",
+"g": "Phụ tùng",
+"tags": [
+"30-PK-6001/E3",
+"30-PK-6001/T1",
+"30-PK-6001/V4",
+"30-PK-6001/E4",
+"30-PK-6001/EK1",
+"30-PK-6001/ABC1"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/Buffer-GasControl1.DOC",
+"t": "Phụ tùng – điều khiển khí đệm/khí bổ sung (1/2)",
+"g": "Phụ tùng",
+"tags": [
+"30-PK-6001/TK1",
+"30-PK-6001/E1A",
+"30-PK-6001/E1B",
+"30-PK-6001/E2A",
+"30-PK-6001/E2B"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/Buffer-GasControl2.DOC",
+"t": "Phụ tùng – điều khiển khí đệm/khí bổ sung (2/2)",
+"g": "Phụ tùng",
+"tags": [
+"30-PK-6001/TK1",
+"30-PK-6001/E1A",
+"30-PK-6001/E1B",
+"30-PK-6001/E2A",
+"30-PK-6001/E2B"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 9&10.doc",
+"t": "Mục 9 & 10 – không sử dụng",
+"g": "Bộ sách đầy đủ",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Inst Man Cust front sht.pdf",
+"t": "Vol 3 Lắp đặt – bìa",
+"g": "Bộ sách đầy đủ",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/VOL3-Index.doc",
+"t": "Vol 3 Lắp đặt – mục lục",
+"g": "Bộ sách đầy đủ",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/V3-Sect Frontshts.doc",
+"t": "Vol 3 Lắp đặt – trang bìa các mục",
+"g": "Bộ sách đầy đủ",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 1/V3s1 Amended by CEM.DOC",
+"t": "Vol 3 Mục 1 – Giới thiệu lắp đặt",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 2/S4 Std & Symbols 2098-00 PID-0021-01-1b Key .pdf",
+"t": "Vol 3 Mục 2 – Ký hiệu P&ID (2098-00-PID-0021-01)",
+"g": "Hệ thống (P&ID, mô tả công nghệ)",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 3/V3s3 Amended by CEM.DOC",
+"t": "Vol 3 Mục 3 – Vận chuyển, nâng hạ, định vị thiết bị",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 3/Site powder filling.pdf",
+"t": "Vol 3 Mục 3 – Nạp bột cách nhiệt perlite cold box tại công trường",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"30-PK-6001/E3",
+"30-PK-6001/T1",
+"30-PK-6001/V4",
+"30-PK-6001/E4"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 4/V3s4 Amended by CEM.DOC",
+"t": "Vol 3 Mục 4 – Lắp đặt cơ khí",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 4/Vap Inst 3-107.003.300 .pdf",
+"t": "Vol 3 Mục 4 – Lắp đặt cụm bay hơi (3-107.003.300)",
+"g": "Bản vẽ chế tạo",
+"tags": [
+"30-PK-6001/TK1",
+"30-PK-6001/E1A",
+"30-PK-6001/E1B",
+"30-PK-6001/E2A",
+"30-PK-6001/E2B"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 4/Folder of Inst Drgs/Inst Drgs.pdf",
+"t": "Vol 3 Mục 4 – Bản vẽ lắp đặt",
+"g": "Bản vẽ chế tạo",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 4/Folder of ISO's/ISO's.pdf",
+"t": "Vol 3 Mục 4 – Bản vẽ isometric đường ống",
+"g": "Bản vẽ chế tạo",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 5/LS drg schedule.pdf",
+"t": "Vol 3 Mục 5 – Danh mục sơ đồ đấu dây (LS)",
+"g": "Điện & tủ điều khiển",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 5/LS 1-20 of 39.pdf",
+"t": "Vol 3 Mục 5 – Sơ đồ đấu dây LS 1–20",
+"g": "Điện & tủ điều khiển",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 5/LS 21-39 of 39.pdf",
+"t": "Vol 3 Mục 5 – Sơ đồ đấu dây LS 21–39",
+"g": "Điện & tủ điều khiển",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 6/Mech Testing.pdf",
+"t": "Vol 3 Mục 6 – Thử nghiệm cơ khí",
+"g": "Chạy thử",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 7/Elec Testing.pdf",
+"t": "Vol 3 Mục 7 – Thử nghiệm điện",
+"g": "Chạy thử",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 8/Linde Specs.pdf",
+"t": "Vol 3 Mục 8 – Tiêu chuẩn kỹ thuật Linde",
+"g": "Tổng quát, móng & lắp dựng",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/PDF files/7829_0 Control Loops.pdf",
+"t": "Sơ đồ vòng điều khiển (control loops)",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/PDF files/7829_0 Electrical Block Diagram.pdf",
+"t": "Sơ đồ khối điện",
+"g": "Điện & tủ điều khiển",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/PDF files/7829_0 Panel Layout Drawings.pdf",
+"t": "Bản vẽ bố trí tủ điều khiển",
+"g": "Điện & tủ điều khiển",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/PDF files/7829_3 System Wiring Diagrams.pdf",
+"t": "Sơ đồ đấu dây hệ thống",
+"g": "Điện & tủ điều khiển",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/PDF files/7829_6 Instrument List.pdf",
+"t": "Danh mục thiết bị đo",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/PDF files/Hamrin TSA Diagrams.pdf",
+"t": "Sơ đồ cụm hấp phụ TSA (Hamrin)",
+"g": "Bản vẽ chế tạo",
+"tags": [
+"30-PK-6001/DR1",
+"30-PK-6001/V2",
+"30-PK-6001/V3"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/PDF files/Setpoints2.pdf",
+"t": "Danh sách giá trị cài đặt (van, analyser, bộ điều áp)",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/PDF files/SMS01_2005.pdf",
+"t": "Chương trình/cấu hình điều khiển SMS01 (2005)",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/30-PK-6001 (MR-4112-50) Nitrogen/Chiller.pdf",
+"t": "Tài liệu chiller giải nhiệt gió",
+"g": "Data sheet & tài liệu chính",
+"tags": [
+"30-PK-6001/ACC1",
+"30-PK-6001/E5",
+"30-PK-6001/E6"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/Nitrogen BD 2011/0-107.003.110 Sht 1 iss 6 Flowsheet.pdf",
+"t": "Lưu đồ công nghệ 0-107.003.110 tờ 1 (rev 6)",
+"g": "Hệ thống (P&ID, mô tả công nghệ)",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/Nitrogen BD 2011/0-107.003.110 Sht 2 iss 6 Flowsheet.pdf",
+"t": "Lưu đồ công nghệ 0-107.003.110 tờ 2 (rev 6)",
+"g": "Hệ thống (P&ID, mô tả công nghệ)",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/Nitrogen BD 2011/0-107.003.110 Sht 3 iss 6 Flowsheet.pdf",
+"t": "Lưu đồ công nghệ 0-107.003.110 tờ 3 (rev 6)",
+"g": "Hệ thống (P&ID, mô tả công nghệ)",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/Nitrogen BD 2011/116SAMa.doc",
+"t": "Hướng dẫn vận hành cụm (Plant operating instructions GAN 600)",
+"g": "Vận hành & bảo dưỡng",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/Nitrogen BD 2011/OPM114-SAM.doc",
+"t": "Hướng dẫn màn hình điều khiển HMI (OPM 114)",
+"g": "Vận hành & bảo dưỡng",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/Nitrogen BD 2011/Setpoints.doc",
+"t": "Danh sách giá trị cài đặt (set point list GAN 600)",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/Nitrogen BD 2011/Maint Schedule iss 3.doc",
+"t": "Lịch bảo dưỡng (rev 3)",
+"g": "Vận hành & bảo dưỡng",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/Nitrogen BD 2011/Process calculation Phu My7829  240+30.doc",
+"t": "Tính toán công nghệ (240 Nm³/h khí + 31 Nm³/h lỏng)",
+"g": "Data sheet & tài liệu chính",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/Nitrogen BD 2011/Process Training Vietnam.ppt",
+"t": "Đào tạo công nghệ (Linde, 2011)",
+"g": "Tài liệu tham khảo",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/Nitrogen BD 2011/GAN Operator Training Vietnam.ppt",
+"t": "Đào tạo vận hành (Linde, 2011)",
+"g": "Tài liệu tham khảo",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/Nitrogen BD 2011/GAN Maintenance Training Vietnam.ppt",
+"t": "Đào tạo bảo dưỡng (Linde, 2011)",
+"g": "Tài liệu tham khảo",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/Nitrogen BD 2011/Safety Training Vietnam.ppt",
+"t": "Đào tạo an toàn (Linde, 2011)",
+"g": "Tài liệu tham khảo",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "Linde CryoPlants · GAN 600 · MR 4112-50",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/a30-QT-01-006_QTVH CỤM SẢN XUẤT NITƠ ok.doc",
+"t": "Quy trình vận hành hệ thống sản xuất nitơ G2-30-QT-01-006",
+"g": "Vận hành & bảo dưỡng",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/Process Training Vietnam done.docx",
+"t": "Tài liệu đào tạo công nghệ (bản dịch tiếng Việt)",
+"g": "Tài liệu tham khảo",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/PID Nito Vendor.pdf",
+"t": "P&ID cụm nitơ của nhà cung cấp",
+"g": "Hệ thống (P&ID, mô tả công nghệ)",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/nito word ngày 04-12-2016.pdf",
+"t": "Màn hình điều khiển & giá trị cài đặt (04/12/2016)",
+"g": "Thiết bị đo & điều khiển",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/G2-00-HD-118 HD kiểm soát tiêu hao Nitơ.pdf",
+"t": "Hướng dẫn kiểm soát tiêu hao nitơ G2-00-HD-118",
+"g": "Vận hành & bảo dưỡng",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/STVB134898_KHBD_N2_ 2024_ban hanh da bo cac hang muc TDH da co KHBD trong T10 (1)_vps.pdf",
+"t": "Kế hoạch bảo dưỡng cụm N2 năm 2024",
+"g": "Vận hành & bảo dưỡng",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/HỘI THẢO TRAO ĐỔI KINH NGHIỆM KHI GS ĐẠI TU 30-PK-6001.pdf",
+"t": "Hội thảo kinh nghiệm giám sát đại tu 30-PK-6001",
+"g": "Sự cố & trao đổi",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/Bao cáo nito.docx",
+"t": "Báo cáo tình hình hệ thống N2 (09–18/09/2010)",
+"g": "Sự cố & trao đổi",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "",
+"kb": 0
+},
+{
+"p": "8. Hệ thống Nito/Su co Nito.xlsx",
+"t": "Thống kê sự cố hệ thống sản xuất nitơ 2009–2010",
+"g": "Sự cố & trao đổi",
+"tags": [
+"30-PK-6001"
+],
+"no": "",
+"src": "",
+"kb": 0
+}
+]

@@ -297,7 +297,7 @@ if os.path.exists(HDOCS):
 
 # ---------------- 4. Nước làm mát (Unit 33), danh mục do nlm/build_nlm.py tạo ----------------
 #     5. Raw-Pot-Fire (nước thô, sinh hoạt, cứu hỏa), danh mục do rpf/build_rpf.py tạo
-for sub in ("nlm", "rpf", "demi", "air", "nh3"):
+for sub in ("nlm", "rpf", "demi", "air", "nh3", "n2"):
     NDOCS = os.path.join(HERE, sub, "docs.json")
     if not os.path.exists(NDOCS):
         continue
@@ -322,7 +322,8 @@ out = {
              "30-PK-1001": "Cụm khử khoáng – Chemitreat (vendor data book 6 volume)", "30-E-1001": "Làm mát nước ngưng turbine – Alfa Laval (MR 0660-60)",
              "30-K-5001": "Máy nén khí – Atlas Copco ZR200 (A–D) / 30-K-5001E (revamp)",
              "40-TK-5001": "Bồn chứa NH3 – Samsung Heavy Industries", "40-PK-5001": "Cụm làm lạnh hơi NH3 – Industrie Technofrigo Dell'Orto (MR 4151-50)",
-             "40-PK-5005": "Cụm làm lạnh hơi NH3 mới (revamp, MR 2539-4151-01)", "40-PK-1001": "Đuốc NH3 (MR 2098-01850)", "40-PK-1002": "Đuốc khí tổng hợp (MR 2098-01850)"},
+             "40-PK-5005": "Cụm làm lạnh hơi NH3 mới (revamp, MR 2539-4151-01)", "40-PK-1001": "Đuốc NH3 (MR 2098-01850)", "40-PK-1002": "Đuốc khí tổng hợp (MR 2098-01850)",
+             "30-PK-6001": "Cụm sản xuất nitơ – Linde CryoPlants GAN 600 (MR 4112-50)"},
     "docs": docs,
     "tags": tagmap,
 }

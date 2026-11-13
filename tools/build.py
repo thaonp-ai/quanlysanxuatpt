@@ -498,7 +498,7 @@ def main():
                     if o[0] == si and abs(o[1] - fx["x"]) < 0.004 and abs(o[2] - fx["y"]) < 0.004:
                         occ = (k, o); break
                 if occ: break
-            if occ:
+            if occ and not fx.get("add"):
                 k, o = occ
                 if k == fx["to"]: continue
                 tags[k]["o"].remove(o)
@@ -507,7 +507,7 @@ def main():
                 t2 = tags.setdefault(fx["to"], {"t": fx["to"], "k": kind, "s": sub, "o": []})
                 t2["o"].append(o); t2["a"] = set(t2.get("a", ())) | {k}
                 FIXLOG.append(("pos", k, fx["to"]))
-            elif "w" in fx:
+            if (not occ or fx.get("add")) and "w" in fx:
                 t2 = tags.setdefault(fx["to"], {"t": fx["to"], "k": fx.get("k", "equipment"), "s": fx.get("s", ""), "o": []})
                 t2["o"].append([si, fx["x"], fx["y"], fx["w"], fx["h"]])
                 FIXLOG.append(("pos+", "", fx["to"]))

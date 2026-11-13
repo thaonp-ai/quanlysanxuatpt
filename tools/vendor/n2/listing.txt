@@ -1,0 +1,78 @@
+30-PK-6001 (MR-4112-50) Nitrogen/Chiller.pdf|596571
+30-PK-6001 (MR-4112-50) Nitrogen/PDF files/7829_0 Control Loops.pdf|9394350
+30-PK-6001 (MR-4112-50) Nitrogen/PDF files/7829_0 Electrical Block Diagram.pdf|112523
+30-PK-6001 (MR-4112-50) Nitrogen/PDF files/7829_0 Panel Layout Drawings.pdf|416774
+30-PK-6001 (MR-4112-50) Nitrogen/PDF files/7829_3 System Wiring Diagrams.pdf|4065657
+30-PK-6001 (MR-4112-50) Nitrogen/PDF files/7829_6 Instrument List.pdf|230701
+30-PK-6001 (MR-4112-50) Nitrogen/PDF files/Hamrin TSA Diagrams.pdf|231703
+30-PK-6001 (MR-4112-50) Nitrogen/PDF files/Setpoints2.pdf|97918
+30-PK-6001 (MR-4112-50) Nitrogen/PDF files/SMS01_2005.pdf|3355230
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Customer front sht.pdf|106009
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Index.doc|48128
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Section frontsheets.doc|33280
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 1/S1.doc|22528
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 2/S2.doc|499712
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 3/S3 Equip Dsheets.pdf|588370
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 3/S3 Vendor list.pdf|686786
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 4/S4 Std & Symbols 2098-00 PID-0021-01-1b Key .pdf|359759
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 4/Sect 4 Process Description.doc|27648
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 5/S5 Plant Operation.doc|24064
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 6/S6 Maint Schedule.doc|33792
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 6/S6 OPM 097 Safety checks.DOC|45056
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 6/S6 Routine Maint note.doc|25600
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 7/S7 Setpoints.doc|24064
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/S8 Safety Inst for fitment of spares (OPM 089).doc|13824
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/S8 Spares ordering proc (OPM 103).DOC|31744
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/Air Cooled Chiller Module  Package-1.DOC|27648
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/Air Cooled Chiller Module-2.DOC|29184
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/Buffer-GasControl1.DOC|32256
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/Buffer-GasControl2.DOC|31744
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/Chiller, Refigeration Drier System 1.DOC|34304
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/Chiller, Refigeration Drier System 2.DOC|28672
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/Chiller, Refigeration Drier System 3.DOC|50688
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/Coldbox 1.doc|30208
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/Coldbox 2.doc|31232
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/Coldbox 3.doc|40448
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/TSA1.doc|26112
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/TSA2.doc|25088
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/TSA3.doc|26624
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 8/Spares list/TSAControl.doc|24064
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 1 O&M/Sect 9&10.doc|19968
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Inst Man Cust front sht.pdf|101318
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/VOL3-Index.doc|49152
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/V3-Sect Frontshts.doc|38400
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 1/V3s1 Amended by CEM.DOC|57344
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 2/S4 Std & Symbols 2098-00 PID-0021-01-1b Key .pdf|359759
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 3/Site powder filling.pdf|414666
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 3/V3s3 Amended by CEM.DOC|16896
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 4/V3s4 Amended by CEM.DOC|17920
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 4/Vap Inst 3-107.003.300 .pdf|117624
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 4/Folder of Inst Drgs/Inst Drgs.pdf|1693784
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 4/Folder of ISO's/ISO's.pdf|4977081
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 5/LS drg schedule.pdf|140638
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 5/LS 1-20 of 39.pdf|1795145
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 5/LS 21-39 of 39.pdf|1590586
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 6/Mech Testing.pdf|135971
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 7/Elec Testing.pdf|77467
+30-PK-6001 (MR-4112-50) Nitrogen/Vol 3 Inst/Sect 8/Linde Specs.pdf|2082627
+Nitrogen BD 2011/0-107.003.110 Sht 1 iss 6 Flowsheet.pdf|478965
+Nitrogen BD 2011/0-107.003.110 Sht 2 iss 6 Flowsheet.pdf|384913
+Nitrogen BD 2011/0-107.003.110 Sht 3 iss 6 Flowsheet.pdf|339663
+Nitrogen BD 2011/116SAMa.doc|3050496
+Nitrogen BD 2011/GAN Maintenance Training Vietnam.ppt|26828288
+Nitrogen BD 2011/GAN Operator Training Vietnam.ppt|1640448
+Nitrogen BD 2011/Maint Schedule iss 3.doc|36352
+Nitrogen BD 2011/OPM114-SAM.doc|940544
+Nitrogen BD 2011/Process calculation Phu My7829  240+30.doc|26624
+Nitrogen BD 2011/Process Training Vietnam.ppt|14642176
+Nitrogen BD 2011/Safety Training Vietnam.ppt|781824
+Nitrogen BD 2011/Setpoints.doc|143360
+a30-QT-01-006_QTVH CỤM SẢN XUẤT NITƠ ok.doc|171008
+Bao cáo nito.docx|26012
+G2-00-HD-118 HD kiểm soát tiêu hao Nitơ.pdf|742700
+HỘI THẢO TRAO ĐỔI KINH NGHIỆM KHI GS ĐẠI TU 30-PK-6001.pdf|3749910
+nito word ngày 04-12-2016.pdf|116019
+PID Nito Vendor.pdf|1203655
+Process Training Vietnam done.docx|3721375
+STVB134898_KHBD_N2_ 2024_ban hanh da bo cac hang muc TDH da co KHBD trong T10 (1)_vps.pdf|938441
+Su co Nito.xlsx|19374

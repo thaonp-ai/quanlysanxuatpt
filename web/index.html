@@ -247,7 +247,7 @@ a.doc:hover{background:var(--line-soft)}
     <button class="chip" data-k="line" aria-pressed="false"><i class="dot d-line"></i>Đường ống</button>
     <button class="chip" data-k="equipment" aria-pressed="false"><i class="dot d-equipment"></i>Thiết bị</button>
     <button class="chip" data-k="valve" aria-pressed="false"><i class="dot d-valve"></i>Van</button>
-    <button class="chip" id="chipEdited" aria-pressed="false">Đã chỉnh sửa</button>
+    <button class="chip" id="chipEdited" aria-pressed="false" hidden>Đã chỉnh sửa</button>
   </div>
   <div class="tools">
     <span class="mode" id="mode"></span>
@@ -372,7 +372,7 @@ const api={
 function setEdits(st){EDITS=st.edits||{};LOG=st.log||[];rebuild();}
 function showMode(){
   if(ME){document.body.classList.toggle("ro",ME.role==="viewer");$("who").hidden=false;$("btnAcct").textContent=ME.role==="admin"?"Quản lý tài khoản":"Tài khoản";}
-  $("mode").innerHTML=MODE==="server"?(ME?`<b>${esc(ME.name)}</b> (${ROLE[ME.role]||ME.role}) · `:"")+`<b>${Object.keys(EDITS).length}</b> tag đã sửa`:`Xem trước: chỉnh sửa chỉ lưu trên trình duyệt này · <b>${Object.keys(EDITS).length}</b> tag đã sửa`;
+  $("mode").innerHTML=MODE==="server"?(ME?`<b>${esc(ME.name)}</b> (${ROLE[ME.role]||ME.role})`:""):`Xem trước: chỉnh sửa chỉ lưu trên trình duyệt này · <b>${Object.keys(EDITS).length}</b> tag đã sửa`;
 }
 
 /* ---- merged view of OCR data + edits ---- */
@@ -656,7 +656,7 @@ async function quickDel(t,del){
   try{const st=await api.save({key:t.key,patch:{del},by});setEdits(st);
     if(state.sel&&state.sel.key===t.key)state.sel=del?null:VIEW.find(v=>v.key===t.key)||null;
     renderUnits();render();if(state.sheet!=null&&!state.sel)openSheetAll(state.sheet);
-    toast(del?`Đã xóa ${t.t} · bấm “Đã chỉnh sửa” để khôi phục`:"Đã khôi phục "+t.t);
+    toast(del?`Đã xóa ${t.t}`:"Đã khôi phục "+t.t);
   }catch(e){if(e.status===401){location.href="login?next="+encodeURIComponent(location.pathname);return;}toast(e.message||"Không lưu được");}
 }
 

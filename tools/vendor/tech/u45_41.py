@@ -47,7 +47,7 @@ S_FBD = [R + "40-PK-1001-1002/Report flare BDTT 2023 Rev.1.pdf", "Báo cáo đu�
 S_KO = [R + "Quy trình phương án liên quan/Phương án xử lý nước nhiễm NH3 tại knock out drum 40V1001.pdf", "PA xử lý nước nhiễm NH3 tại 40-V-1001"]
 
 UNIT45 = {
-    "t": "Công nghệ Unit 45 – Kho chứa NH3",
+    "t": "Công nghệ Unit 45 – Bồn chứa Amoniac",
     "intro": "Kho NH3 gồm ba phần. Bồn 40-TK-5001 chứa NH3 lỏng −33 °C ở áp suất khí quyển. Hai cụm làm lạnh 40-PK-5001 và 40-PK-5005 hóa lỏng lại hơi NH3 bay ra trong bồn. "
              "Hệ bơm và cần nạp chuyển NH3 sang xưởng Urê, nạp xe bồn và cấp cho xưởng NPK. "
              "Sau revamp (Amoniac 1.620 t/ngày) có thêm cụm làm lạnh 40-PK-5005, bơm 40-P-5003, bộ gia nhiệt 40-E-5002 và hai tuyến cần nạp 40-LA-5003…5006.",

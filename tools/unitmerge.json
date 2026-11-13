@@ -1,0 +1,10 @@
+{
+ "_ghi_chu": "Gộp Unit (mã bản vẽ -> Unit hiển thị) và bỏ Unit khỏi web (bỏ bản vẽ và tag chỉ có trên bản vẽ đó)",
+ "merge": {
+  "34": "32",
+  "43": "42"
+ },
+ "drop": [
+  "61"
+ ]
+}

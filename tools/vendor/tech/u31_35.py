@@ -208,7 +208,7 @@ TAGS31 = {
 
 # ───────────────────────── Unit 35 – khí nén ─────────────────────────
 UNIT35 = {
-    "t": "Công nghệ Unit 35 – Khí nén điều khiển & khí công nghệ",
+    "t": "Công nghệ Unit 35 – Khí nén - Khí điều khiển",
     "intro": "Năm máy nén trục vít 30-K-5001A–E (mỗi máy 1.400 Nm³/h, 9 barg) nén không khí vào bình chứa 30-V-5001. Từ đây có hai nhánh. "
              "Nhánh khí công nghệ (plant air) đi thẳng tới các hộ dùng. "
              "Nhánh khí điều khiển (instrument air) qua hai máy sấy hấp phụ không gia nhiệt 30-DR-5001/5002 (điểm sương −25 °C), vào bình 30-V-5002, rồi phân phối ở 7,5 barg. "

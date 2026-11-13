@@ -540,6 +540,19 @@ def main():
         if e["k"] == "valve": e["d"] = P.VALVE_NAME.get(s, "Van") if s != "CHECK" else "Van một chiều (check)"
         elif e["k"] == "equipment": e["d"] = P.EQUIP_NAME.get(s, "Thiết bị")
         else: e["d"] = f"Dịch vụ {s}"
+    # tools/unitmerge.json: units shown together on the web, and units removed from the web
+    if os.path.exists("/home/claude/work/unitmerge.json"):
+        UM = json.load(open("/home/claude/work/unitmerge.json"))
+        keep = [i for i, s_ in enumerate(sheets) if s_["unit"] not in UM.get("drop", [])]
+        newidx = {o: n for n, o in enumerate(keep)}
+        sheets = [sheets[i] for i in keep]
+        for s_ in sheets:
+            s_["unit"] = UM.get("merge", {}).get(s_["unit"], s_["unit"])
+        for k in list(tags):
+            e = tags[k]
+            e["o"] = [[newidx[o[0]]] + o[1:] for o in e["o"] if o[0] in newidx]
+            if not e["o"]:
+                tags.pop(k)
     used = sorted({s["unit"] for s in sheets})
     units = [{"code": u, "name": UNIT_NAMES.get(u, "Unit " + u)} for u in used]
     out = {"updated": sys.argv[1] if len(sys.argv) > 1 else "", "units": units, "sheets": sheets,

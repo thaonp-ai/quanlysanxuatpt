@@ -1,0 +1,136 @@
+30-P-2002AB (MR-0910-52)/Vendor Data Book - Portable Water Pumps/Section 00 - Title & Contents.pdf|47401
+30-P-2002AB (MR-0910-52)/Vendor Data Book - Portable Water Pumps/Section 1 - Pump as Built Data.pdf|1109875
+30-P-2002AB (MR-0910-52)/Vendor Data Book - Portable Water Pumps/Section 2 - I O & Ms.pdf|2442392
+30-P-2002AB (MR-0910-52)/Vendor Data Book - Portable Water Pumps/Section 3 - Driver.pdf|311998
+30-P-2002AB (MR-0910-52)/Vendor Data Book - Portable Water Pumps/Section 4 - Recommended Spare Parts List.pdf|369915
+30-P-2002AB (MR-0910-52)/Vendor Data Book - Portable Water Pumps/Section 5 - General Documentation.pdf|692197
+30-P-2002AB (MR-0910-52)/Vendor Data Book - Portable Water Pumps/Drawings/6-1 G A Drawing/B684-1929.pdf|68436
+30-P-2002AB (MR-0910-52)/Vendor Data Book - Portable Water Pumps/Drawings/6-2 Section Drawing With Parts List/B731-416.pdf|80340
+30-P-2002AB (MR-0910-52)/Vendor Data Book - Portable Water Pumps/Drawings/6-3 Mechanical Seal/W-27290 b.pdf|117206
+30-P-2002AB (MR-0910-52)/Vendor Data Book - Portable Water Pumps/Drawings/6-4 Coupling/Metastream Fitting O&M Instructions.pdf|371700
+30-P-2002AB (MR-0910-52)/Vendor Data Book - Portable Water Pumps/Drawings/6-4 Coupling/T98-105.pdf|224393
+30-P-2002AB (MR-0910-52)/Vendor Data Book - Portable Water Pumps/Drawings/6-5 Nameplate Drawing/J218-234.pdf|57368
+30-P-2002AB (MR-0910-52)/30-P-2001ABC (MR-0910-52)copy/Vendor Data Book - Raw Water Pumps/Title & Contents.pdf|47849
+30-P-2002AB (MR-0910-52)/30-P-2001ABC (MR-0910-52)copy/Vendor Data Book - Raw Water Pumps/Section 01 - Pump as Built Data.pdf|1240741
+30-P-2002AB (MR-0910-52)/30-P-2001ABC (MR-0910-52)copy/Vendor Data Book - Raw Water Pumps/Section 02 - I O Ms.pdf|2525767
+30-P-2002AB (MR-0910-52)/30-P-2001ABC (MR-0910-52)copy/Vendor Data Book - Raw Water Pumps/Section 03 - Driver.pdf|314225
+30-P-2002AB (MR-0910-52)/30-P-2001ABC (MR-0910-52)copy/Vendor Data Book - Raw Water Pumps/Section 04 - Recommended Spare Parts List.pdf|376364
+30-P-2002AB (MR-0910-52)/30-P-2001ABC (MR-0910-52)copy/Vendor Data Book - Raw Water Pumps/Section 05 - General Documentation.pdf|688484
+30-P-2002AB (MR-0910-52)/30-P-2001ABC (MR-0910-52)copy/Vendor Data Book - Raw Water Pumps/Drawings/6-1 G A Drawing/B684-1928.pdf|65408
+30-P-2002AB (MR-0910-52)/30-P-2001ABC (MR-0910-52)copy/Vendor Data Book - Raw Water Pumps/Drawings/6-2 Section Drawing With Parts List/B731-1415.pdf|83194
+30-P-2002AB (MR-0910-52)/30-P-2001ABC (MR-0910-52)copy/Vendor Data Book - Raw Water Pumps/Drawings/6-3 Mechanical Seal/W-27289 C.pdf|118241
+30-P-2002AB (MR-0910-52)/30-P-2001ABC (MR-0910-52)copy/Vendor Data Book - Raw Water Pumps/Drawings/6-4 Coupling/Metastream Fitting O&M Instructions.pdf|370633
+30-P-2002AB (MR-0910-52)/30-P-2001ABC (MR-0910-52)copy/Vendor Data Book - Raw Water Pumps/Drawings/6-4 Coupling/T98-105.pdf|227687
+30-P-2002AB (MR-0910-52)/30-P-2001ABC (MR-0910-52)copy/Vendor Data Book - Raw Water Pumps/Drawings/6-5 Nameplate Drawing/J218-234.pdf|57142
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Calculation notes.tif|69644
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Calculation sheet.tif|58751
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Completed Lubricant chart.pdf|30113
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/COVER.tif|130107
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Cross sectional assembly drawings-with part list.tif|276946
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Drawings of auxiliaries and itemized equipments supplied loos.tif|932990
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Electric Motor Data Sheets.tif|213732
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Electrical connection block diaggrams.tif|240772
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Electrical motor drawings.tif|212593
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Engineering Procurement Manufacturing Test Schedule.tif|65681
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Equipment Filled-in Data Sheets.tif|1170903
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Fabrication-Quality  Control Plan.tif|253104
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/General Arrangement Drawings.tif|313636
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Instrument Data Sheet.tif|511062
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/List of Instruments.pdf|25256
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/List of spare parts for 2 year Operation.tif|180168
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/List of spare parts for erection commissioning-start -up.tif|124466
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Logic diagrams-interlock-safety sequence diagrams-cause-effec.tif|1215706
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Nameplate drawing.tif|154410
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Noise data sheet.tif|77900
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/On Site Performance Test Procedure.tif|59857
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Packing List.tif|245044
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Painting Specification.tif|65534
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Panels arrangement drawings.tif|215810
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Performance curves.tif|188855
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Procedure Qualification Record.tif|198206
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Recommendation for protection during transportation.tif|60758
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Sub-vendors-main  suppliers list.tif|89225
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Testing Procedure.tif|170766
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Torque versus Speed-Current-Power Factor Curves.tif|140672
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Utility Balance.tif|234046
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Vendor Print Index-Schedule.tif|865234
+30-PK 4001,2 (MR-0910-56)FIRE-WATER-PUMP/VENDOR DATA BOOK/Welding Procedure Specification.tif|241106
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Table of Contents.pdf|108477
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section A - Erection, Operating And Maintenance Instruction Manu/Section 1/1.1 General Safety Guidelines.pdf|183719
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section A - Erection, Operating And Maintenance Instruction Manu/Section 1/1.2 Specific Safety Precautions.pdf|96513
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section A - Erection, Operating And Maintenance Instruction Manu/Section 1/1.3 Material Safety Data Sheets.pdf|275901
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section A - Erection, Operating And Maintenance Instruction Manu/Section 2/2.1 System Design Specification.pdf|73144
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section A - Erection, Operating And Maintenance Instruction Manu/Section 2/2.2 Process Description.pdf|424261
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section A - Erection, Operating And Maintenance Instruction Manu/Section 3/3 - Scope of Supply.pdf|26307
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section A - Erection, Operating And Maintenance Instruction Manu/Section 4/4 - Mechanical Equipment Specification.pdf|89590
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section A - Erection, Operating And Maintenance Instruction Manu/Section 5/5 - Chemicals And Utilities Consumption.pdf|23819
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section A - Erection, Operating And Maintenance Instruction Manu/Section 6/6 - Recommendation For Transportation, Handling And Storage.pdf|245043
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section A - Erection, Operating And Maintenance Instruction Manu/Section 7/7 - Erection.pdf|329613
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section A - Erection, Operating And Maintenance Instruction Manu/Section 8/8 - Precommissioning, Commissioning And Start-up Procedure.pdf|172828
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section A - Erection, Operating And Maintenance Instruction Manu/Section 9/9.1.1-Activated Carbon Filter.pdf|814775
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section A - Erection, Operating And Maintenance Instruction Manu/Section 9/9.1.2 - Sodium Hypochlorite Dosing System.pdf|169309
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section A - Erection, Operating And Maintenance Instruction Manu/Section 9/9.1.3 - Micro Filter.pdf|106772
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section A - Erection, Operating And Maintenance Instruction Manu/Section 9/9.2 - Sequence Flow Chart.pdf|36757
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section A - Erection, Operating And Maintenance Instruction Manu/Section 9/9.3 - Process Control Write-up.pdf|426207
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section A - Erection, Operating And Maintenance Instruction Manu/Section 9/9.4 List of Alarms.pdf|190363
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section A - Erection, Operating And Maintenance Instruction Manu/Section 9/9.5 - Program List-PLC Ladder Diagram.pdf|2003684
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section A - Erection, Operating And Maintenance Instruction Manu/Section 9/9.6 - Cause & Effect.pdf|135667
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section A - Erection, Operating And Maintenance Instruction Manu/Section 10/10 - Shutdown Procedures.pdf|24263
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section A - Erection, Operating And Maintenance Instruction Manu/Section 11/11 - Trouble Shooting.pdf|105995
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section A - Erection, Operating And Maintenance Instruction Manu/Section 12/12 - Maintenance.pdf|508413
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section B - Documents And Drawings/B 1.1 - Drawing List.pdf|18478
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section B - Documents And Drawings/1.2 Process & Instrumentation Diagram-P&ID.pdf|161846
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section B - Documents And Drawings/1.3 - Block Diagram For Potable Water Plant.pdf|47301
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section B - Documents And Drawings/1.4 General Arrangement For Potable Water System.pdf|196750
+30-PK-2001 (MR-0230-50)/Potable - Vol 1 of 3/Section B - Documents And Drawings/1.5 Welding Key Form For Act. Carbon Filter.pdf|186862
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 1/1.1 Datasheet for Act Carbon Filter.pdf|152218
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 1/1.2 GA Arrangement Drawing For Act Carbon Filter.pdf|192738
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 1/1.3 Thickness Calculation For Act Carbon Filter.pdf|267768
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 1/1.4THONG TIN CARBON Datasheet for carbon media.pdf|360074
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 1/1.5 Datasheet for Sodium Hypochlorite Tank.pdf|159174
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 1/1.6 GA Drawing For Sodium Hypochlorite Tank.pdf|106430
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 1/1.7 Thickness Calculation For Sodium Hypochlorite Tank.pdf|25818
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 2/2 - Milton Roy Metering Pumps.pdf|1484485
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 2/2.2 Finish Thompson - Drum Pump.pdf|1951571
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 2/Section 2.1 - Milton Roy & Accessories/2.1 Hypochlorite Shock Dosing Pump Data & Milton Roy maxRoy .pdf|1589158
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 2/Section 2.1 - Milton Roy & Accessories/2.1 L-Series Safety & Back Pressure Valves.pdf|743140
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 2/Section 2.1 - Milton Roy & Accessories/2.1 Miltron Roy & Accessories.pdf|3991856
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 3/3.1 Filterite Micro Filter.pdf|424496
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 3/3.2 Suzler Chemtech Satic Mixer.pdf|448318
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 4/4.1.1-Bayard Pressure Reducing Valve.pdf|424025
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 4/4.1.2 Crosby Safety Valve.pdf|2310152
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 4/4.1.3 Actuators.pdf|429509
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 4/4.1.3 Saunders Butterfly Valve.pdf|1142647
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 4/4.1.4 Velan Globe & Gate Valve.pdf|4198414
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 4/4.1.5 - Convey Check Valve.pdf|678679
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 4/4.1.6-Tacmina Antisiphone Check Valve.pdf|154885
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 4/4.1.7-GF Manual Diaphragm Valve.pdf|473036
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 4/4.1.8-Kitz Ball Valve.pdf|727623
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 5/5.1 - Instrument List.pdf|91294
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 5/5.2.1-Krohne Flow Indicator-H250.pdf|2033613
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 5/5.2.2 Rosemount Flow Transmitter.pdf|8338826
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 5/5.2.3 Free Residual Chlorine Sensor Assembly.pdf|1187307
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 5/5.2.3 Rosemount Chlorine Analyser.pdf|2429049
+30-PK-2001 (MR-0230-50)/Potable - Vol 2 of 3/Section 5/5.24 Penberthy Level Gauge.pdf|1193824
+30-PK-2001 (MR-0230-50)/Potable - Vol 3 of 3/Section 5C/5.2.6 Wika Pressure Gauge.pdf|474085
+30-PK-2001 (MR-0230-50)/Potable - Vol 3 of 3/Section 5C/5.2.7-UE Differential Pressure.pdf|568097
+30-PK-2001 (MR-0230-50)/Potable - Vol 3 of 3/Section 5C/5.2.8-Process Display Indicator 1-E&H.pdf|1358678
+30-PK-2001 (MR-0230-50)/Potable - Vol 3 of 3/Section 5C/5.2.9 Process Display Indicator 2 - Burkert.pdf|1189207
+30-PK-2001 (MR-0230-50)/Potable - Vol 3 of 3/Section 5C/5.2.10 ASCO Solenoid Valve.pdf|63926
+30-PK-2001 (MR-0230-50)/Potable - Vol 3 of 3/Section 5C/5.2.11 Stainless Steel Enclosure.pdf|86986
+30-PK-2001 (MR-0230-50)/Potable - Vol 3 of 3/Section 5C/5.2.12 Instrument Cable.pdf|396666
+30-PK-2001 (MR-0230-50)/Potable - Vol 3 of 3/Section 5C/5.25 - Magnetrol Displacer Type Liquid Level Switches.pdf|2398922
+30-PK-2001 (MR-0230-50)/Potable - Vol 3 of 3/Section 5C/5.25 - Magnetrol Electric Switch Mechanisms.pdf|1464716
+30-PK-2001 (MR-0230-50)/Potable - Vol 3 of 3/Section 5C/5.25 - Magnetrol Liquid Level and Proof-er Switches.pdf|3943353
+30-PK-2001 (MR-0230-50)/Potable - Vol 3 of 3/Section 5C/5.3 Control Panel Drawing.pdf|1179773
+30-PK-2001 (MR-0230-50)/Potable - Vol 3 of 3/Section 5C/5.4 Loop Diagram.pdf|441822
+30-PK-2001 (MR-0230-50)/Potable - Vol 3 of 3/Section 5C/5.5 Instrument Hookup Diagram.pdf|411007
+30-PK-2001 (MR-0230-50)/Potable - Vol 3 of 3/Section 5C/5.6 PLC Manual.pdf|10453146
+30-TK-3002/FRP TANK DATA.xls|133120
+30-TK-3002/PE TANK DATA.xls|74752
+30-TK-3002/FABRICATION PROCEDURE.doc|76288
+30-TK-3002/INSPECTION PROCEDURE.doc|75264
+30-TK-3002/FQCP.xls|19968
+30-TK-3002/INDEX.xls|984576
+30-TK-3002/SPAREPARTLIST.xls|418304
+Revamp_FIRE FIGHTING SYSTEM/2539-34-PID-0031-02-01_B Ties-in.pdf|589355

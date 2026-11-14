@@ -442,7 +442,7 @@ function srcLinks(list){if(!list||!list.length)return"";
     if(p.startsWith("sheet:"))return `<button data-sheet="${esc(p.slice(6))}">${esc(l)}</button>`;
     const u=docLinks({p});return u?`<a href="${esc(u.view)}" target="_blank" rel="noopener">${esc(l)} ↗</a>`:`<span>${esc(l)}</span>`;}).join("")}</div>`;}
 function techHTML(e,sub){
-  let h=`${sub?`<h4 class="sub">${esc(e.t)}</h4>`:""}${e.intro?`<p class="lead">${esc(e.intro)}</p>`:""}`;
+  let h=`${sub?`<h4 class="sub">${esc(e.t)}</h4>`:""}${e.intro?`${sub?"":"<h4>Mô tả công nghệ</h4>"}${e.intro.split("\n").map(x=>`<p class="lead">${esc(x)}</p>`).join("")}`:""}`;
   (e.s||[]).forEach(x=>{h+=`<h4>${esc(x.h)}</h4>`;
     (x.p||[]).forEach(p=>h+=`<p>${esc(p)}</p>`);
     if(x.ul)h+=`<ul>${x.ul.map(i=>/^• /.test(i)?`<li class="ind">${esc(i.slice(2))}</li>`:`<li>${esc(i)}</li>`).join("")}</ul>`;

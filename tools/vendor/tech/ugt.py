@@ -483,6 +483,85 @@ PATCH["33"] = {"src": [OMU]}
 PATCH["42"] = {"src": [OMW]}
 
 
+# ---- Đoạn "Mô tả công nghệ" đầu trang Unit: ưu tiên lấy từ giáo trình cương vị (11/2026) ----
+GT02 = gt(2, "GT dao tao HT nuoc lam mat - nuoc NHR")
+GT05 = gt(5, "GT dao tao HT xu ly nuoc thai")
+INTRO = {
+    "18": ("Hệ thống nước cấp lò hơi điều chỉnh pH và khử oxy cho nước trước khi cấp tới các hộ tiêu thụ. "
+           "Nước khử khoáng từ bơm 30-P-1002A/B được gia nhiệt ở các trao đổi nhiệt bên X.Amo, rồi vào thiết bị khử khí 10-PK-8004 qua van 10-FV-8003. "
+           "Tại đây nước phân phối từ trên xuống, tiếp xúc ngược chiều với hơi LP đi từ dưới lên để loại khí hòa tan (chủ yếu O₂, CO₂). "
+           "Nước đã khử khí chứa ở bồn 10-V-8001, được chỉnh pH bằng hóa chất kiềm hóa (10-PK-8002) và khử oxy bằng hóa chất (10-PK-8003). "
+           "Bơm 10-P-8002A/B (nước cấp HP) và 10-P-8001A/B (nước cấp HHP, X.Amo quản lý) cấp nước cho lò hơi phụ 10-B-8001, lò thu hồi nhiệt 10-B-9001, lò hơi HHP X.Amo, X.UFC85 và nước quench. "
+           "\nLò hơi phụ 10-B-8001 là lò Macchi \u201cTitan M\u201d 140 t/h, kiểu ống nước, tuần hoàn tự nhiên, đốt khí. "
+           "Quạt gió FD 10-B-8001/K1 cấp không khí cháy dưới áp suất dương. Khói đi hết buồng đốt, qua bộ quá nhiệt, chùm ống sinh hơi và bộ hâm nước E1, rồi ra ống khói cao 30 m. "
+           "Nước trong ống sinh hơi hóa hơi và đối lưu tự nhiên về bao hơi V1. Hơi bão hòa qua bộ quá nhiệt SH1/SH2 (có giảm ôn DSH) thành hơi cao áp 39 barg / 380 °C. "
+           "Hệ thống BMS-1 giám sát tự động lò và các đầu đốt.", [GT03]),
+    "31": ("Nước khử khoáng được sản xuất bằng nhựa trao đổi ion dương, ion âm và nhựa tầng hỗn hợp. Nhựa loại bỏ Na⁺, Mg²⁺, Ca²⁺, Cl⁻, SO₄²⁻, HCO₃⁻, HSiO₃⁻… trong nước thô và nước ngưng công nghệ. "
+           "\nHệ thống có 3 chuyền giống nhau: 2 chuyền chạy, 1 chuyền dự phòng hoặc tái sinh. "
+           "Nước thô đã khử clo bằng Na₂SO₃, trộn với nước ngưng công nghệ, lần lượt qua bình cation 30-PK-1001/V1, tháp khử CO₂ V2 và bình anion V3 để thành nước khử ion. "
+           "Nước khử ion chứa ở bồn 30-TK-1001 (500 m³), cùng nước ngưng hơi và nước ngưng tuabin từ các xưởng. Nếu nước ngưng tuabin nhiễm nước sông thì được đưa về đầu chuyền cation hoặc tháp khử khí. "
+           "Bơm 30-P-1001A/B đưa nước khử ion qua các bình trao đổi tầng hỗn hợp (2 chạy, 1 dự phòng/tái sinh), rồi vào bồn nước khử khoáng 30-TK-1002 (9.000 m³, đủ cho toàn nhà máy dùng 24 giờ). "
+           "Bơm 30-P-1002A/B cấp nước từ đây tới các hộ tiêu thụ. Chỉ tiêu nước khử khoáng: độ dẫn điện < 0,2 µS/cm, SiO₂ < 0,02 ppm, Na⁺ < 0,02 ppm, pH 6,5–7. "
+           "\nNước thải tái sinh nhiễm hóa chất gom về bể 30-PK-1001/BA1, trung hòa bằng axit sunfuric hoặc xút rồi xả sang bể nước sông làm mát 30-BA-3001. "
+           "Nước rửa không nhiễm hóa chất xả thẳng về 30-BA-3001.", [GT06]),
+    "33": ("Nhà máy dùng hệ thống làm mát gián tiếp: nước sông giải nhiệt cho nước sạch làm mát. "
+           "Nước sông tuần hoàn qua tháp giải nhiệt 30-CT-3001A~L (12 khoang × 3.109,2 m³/h, 1 khoang dự phòng); bể tháp đủ cấp cho 10 phút vận hành. "
+           "Bơm 30-P-3001A~E (trục đứng, 10.100 m³/h, 40 mH₂O; A~D ở bể 30-BA-3001, E ở bể mới 30-BA-3003) cấp nước sông đi ba hướng. "
+           "Hướng thứ nhất làm mát trực tiếp các bình ngưng tuabin hơi X.Amo/X.Urê. Hướng thứ hai làm mát bình ngưng NH₃ bằng titan, chịu được clo trong nước sông. "
+           "Hướng thứ ba giải nhiệt nước sạch tại các trao đổi nhiệt tấm 30-E-3001A~I. Nước về tháp ở khoảng 43 °C và cấp đi ở 34 °C. "
+           "\nNước sạch làm mát chạy trong vòng kín, nhận nhiệt của các thiết bị X.Amo, X.Urê và X.Phụ trợ. Nhờ vòng kín, các thiết bị này dùng được thép cacbon thay cho titan (không dùng đồng vì NH₃ hòa tan gây ăn mòn). "
+           "Bơm 30-P-3002A~D (2 chạy) tuần hoàn nước sạch, cấp ở 37 °C và nhận về ở 46 °C. "
+           "Bình giãn nở 30-V-3001 đệm N₂ ở 2–2,3 barg (30-PIC-33101, split range) giữ áp đầu hút và tách khí khi có rò từ các xưởng. Nước Demi bổ sung qua 30-LIT-33101. "
+           "\nNước sông được bơm từ sông qua cụm lọc 30-PK-3006 để bù lượng bay hơi và xả đáy (30-FV-33002). Hệ số cô đặc giữ ở 1,2 để tránh tích tụ clorua và đóng cặn CaCO₃/CaSO₄. "
+           "Chất lượng nước được kiểm soát bằng H₂SO₄ (pH), hóa chất chống cặn và NaOCl diệt vi sinh, châm vào bể 30-BA-3001/3003.", [GT02]),
+    "35": ("Hệ thống cấp khí nén (plant air) và khí điều khiển (instrument air) cho toàn nhà máy, nhu cầu thiết kế 5.600 Nm³/h (khí điều khiển 2.920, khí nén 2.680). "
+           "Các hộ dùng lớn là cụm nitơ (tối đa 1.096 Nm³/h), thụ động hóa X.Urê (700 Nm³/h) và 20-E-1001/20-K-1001. "
+           "Các máy nén 30-K-5001A~E đẩy khí vào bình chứa khí nén 30-V-5001 (28,5 m³). Theo giáo trình có 4 máy chạy, 1 dự phòng, mỗi máy 1.400 Nm³/h, 9 barg, 45 °C. "
+           "\nTừ đây một nhánh cấp khí nén cho nhà máy. Nhánh còn lại qua hai máy sấy hấp phụ chạy song song 30-DR-5001 (1.820 Nm³/h) và 30-DR-5002 (1.100 Nm³/h) để đạt điểm sương −25 °C, rồi vào bình khí điều khiển 30-V-5002 (154 m³). "
+           "Mỗi bình chứa đủ cấp khí cho khoảng 10 phút; 30-V-5002 giảm áp từ 8,1 xuống 5 barg trong thời gian đó. Nhà máy còn nhận khí bổ sung từ 10-K-4021 của X.Amo. "
+           "\nKhí điều khiển được ưu tiên hơn khí nén. Khi 2/3 tín hiệu PIT-35004 xuống 5 barg, IS-6 tác động: sau 3 s đóng 30-PV-35003/35004, sau 30 s tiếp theo dừng X.Urê. "
+           "Khi thiếu khí kéo dài, X.Phụ trợ liên lạc với X.Amo để mở 10-FV-4001, lấy process air từ X.Amo bù sang.", [GT04]),
+    "36": ("Cụm 30-PK-6001 sản xuất N₂ bằng chưng cất không khí ở nhiệt độ thấp. "
+           "Khí nén vào bình trung gian V1 để tách nước và ổn định áp suất, lưu lượng. Khi khởi động, 30-XYS-36257 mở cho hệ tăng áp từ từ; 30-XV-36205 chỉ mở khi chênh áp V1–TSA khoảng 0,5 bar. "
+           "Không khí được làm lạnh xuống 7–10 °C ở E5/E6 bằng nước glycol của chiller ACC1 (nhiệt độ nước không dưới 5 °C để tránh đóng băng). Sau đó khí qua bộ tách nước kiểu cyclone WS100 và lọc coalescer FIL1509A/B. "
+           "\nTiếp theo khí vào cụm hấp phụ APU gồm 2 bình V2/V3 (1 làm việc, 1 tái sinh). Mỗi bình có ba lớp: alumina hoạt tính khử ẩm, xúc tác khử CO, rây phân tử 13X giữ CO₂ và hydrocacbon nhẹ, tránh đóng băng ở E3/E4 và nguy cơ nổ ở V4. "
+           "Bình chuyển khi tổng lưu lượng đạt 7.148 m³ hoặc sau 680 phút. Bình tái sinh bằng khí thải từ coldbox được gia nhiệt. "
+           "\nTrong coldbox, không khí sạch được làm lạnh ở trao đổi nhiệt chính E3 rồi vào cột chưng cất T1. N₂ lấy ở đỉnh cột; bình tách pha V4 và thiết bị ngưng tụ chính E4 tạo dòng hồi lưu. "
+           "Lạnh cho quá trình do turbine giãn nở EK1 tạo ra (giáo trình ghi K1), có bộ làm mát ABC1. Sản phẩm là N₂ khí 99,9 %, khoảng 7 barg, cấp cho nhà máy. "
+           "N₂ lỏng chứa ở bồn TK1. Khi cụm dừng hoặc thiếu N₂, nitơ lỏng được bay hơi qua E1A/B; E2A/B là bộ bay hơi tạo áp cho bồn.", [GT07]),
+    "37": ("Khí thiên nhiên từ trạm khí (24,5 barg, 18–36 °C) được cấp trực tiếp cho X.NPK và cho X.Amo làm nguyên liệu reforming. "
+           "Khí cũng qua 30-PV-37003 vào bình 30-V-7003 cấp cho hệ thống đuốc, và qua 30-PV-37001 (thiết kế 34.317 Nm³/h) vào bình khí nhiên liệu cao áp 30-V-7001. "
+           "Từ 30-V-7001, khí cấp cho tuabin khí 10-GT-9001, đồng thời qua 30-PV-37002 (27.053 Nm³/h) vào bình thấp áp 30-V-7002. "
+           "Bình 30-V-7002 cấp nhiên liệu cho lò reforming X.Amo, lò hơi phụ 10-B-8001 và lò thu hồi nhiệt 10-B-9001.", [GT03]),
+    "41": ("Hệ thống đuốc đốt các dòng khí chứa NH₃ hoặc hydrocacbon dễ cháy, xả ra khi van an toàn hoặc van thở trên đường ống tác động và trong lúc khởi động, dừng nhà máy. "
+           "Có hai cụm đuốc riêng: đuốc NH₃ 40-PK-1001 (thiết kế 298.190 kg/h) và đuốc khí tổng hợp 40-PK-1002 (349.674 kg/h). Các dòng chứa CO/CO₂ được tách riêng khỏi dòng chứa NH₃ để không tạo carbamate trong hệ thống đuốc. "
+           "\nĐuốc khí tổng hợp nhận khí từ các van an toàn và khí xả công đoạn cuối X.Amo. Khí gom vào header 36\u2033, qua bình tách lỏng KO drum 40-V-1001 rồi lên đuốc cao 45 m. Chiều cao này giữ bức xạ ≤ 1.450 Btu/h·ft² trong bán kính 60 m. "
+           "Một dòng purge liên tục giữ hệ thống ở áp suất dương. Đầu đuốc có ba đầu đốt với thiết bị đánh lửa; tủ điều khiển đánh lửa đặt dưới đất, ngoài vùng ảnh hưởng của đuốc. "
+           "\nĐuốc NH₃ nhận khí từ các máy nén 10-K-4031/4041/4051, bồn chứa NH₃, cụm 40-PK-5001 và 40-T-2001.", [GT09]),
+    "42": ("Nước thải của nhà máy được xử lý qua ba cụm. "
+           "\n(1) Cụm nước thải nhiễm dầu 40-PK-2001: lưới vớt rác Z1, bể tách dầu trọng lực V1 có dây đai gạt dầu Z2, rồi thiết bị tách CPI V4. Sau đó nước được phá nhũ, keo tụ (khuấy nhanh TK3, keo tụ TK4) và tuyển nổi khí hòa tan (bộ bão hòa khí V5, bể tuyển nổi Z5). Cuối cùng nước qua lọc đa lớp V6 và than hoạt tính V7. Dầu thu về bể BA3. "
+           "\n(2) Cụm nước thải sinh hoạt cũ 40-PK-2002 (50 m³/ngày): bể cân bằng BA1, bể oxy hóa BA2A/B, bể lắng ổn định BA3A/B, bể clo hóa BA5, lọc FL1. Bùn được ổn định ở BA4 và lên men hiếu khí ở BA6A/B. "
+           "\n(3) Hệ thống mới 40-PK-2003 (khoảng 680 m³/ngày) xử lý chung nước sinh hoạt (200 m³/ngày) với nước nhiễm dầu đã qua 40-PK-2001 nhưng chưa đạt chuẩn thải (480 m³/ngày). "
+           "Nước đi qua bể thu gom TK-100, sàng rác tinh FS-101, bể điều hòa TK-102, bể khử nitơ TK-103 (có bùn tuần hoàn và bổ sung photpho), bể đệm TK-104 rồi bể sinh học màng MBR TK-105. Màng được rửa bằng NaClO hoặc axit oxalic. "
+           "Nước sau MBR đạt tiêu chuẩn thải. Bùn dư được nén ở TK-201 rồi xử lý tiếp (máy ép bùn BF-202 theo thiết kế).", [GT05]),
+    "45": ("Hệ thống tồn chứa NH₃ gồm bồn chứa NH₃ lỏng 40-TK-5001 (35.000/29.500 m³, 20.000 tấn, −33 °C, 0,04–0,10 barg), hai cụm làm lạnh hơi 40-PK-5001 (600 kg/h) và 40-PK-5005 (250 kg/h), "
+           "bơm chuyển 40-P-5001A/B và bơm nạp xe bồn 40-P-5002/5003 (85 m³/h, 368 m), cùng bộ gia nhiệt NH₃ 40-E-5001/5002 (20.000 kg/h). "
+           "\nKhi chạy bình thường, một phần NH₃ của X.Amo cấp thẳng cho X.Urê. Phần còn lại ở dạng lỏng −33 °C theo đường ống bảo ôn về bồn chứa. "
+           "40-TK-5001 là bồn kép hai vách kim loại; vách trong và vách ngoài đều chứa được toàn bộ lượng NH₃. "
+           "Hơi NH₃ sinh ra do bồn hấp thụ nhiệt hoặc khi xuất lỏng được đưa về máy nén 10-K-4051 (X.Amo) hoặc cụm làm lạnh 40-PK-5001/5005. Tại đó hơi được nén, hóa lỏng rồi trả lại bồn, tránh tăng áp phải xả ra đuốc.", [GT09]),
+    "19A": ("Tuabin khí 10-GT-9001 (MS-5001) chạy chu trình hở đơn giản, một trục từ máy nén tới tuabin, có 10 buồng đốt kiểu dòng khí nén chạy ngược (reverse flow). "
+            "Tổ máy gồm năm phần: hệ thống không khí vào, máy nén dọc trục, hệ thống buồng đốt, tuabin hai cấp và hệ thống khói thải. "
+            "\nKhi khởi động, khớp SSS nối thiết bị khởi động (diesel) với trục tuabin. Không khí được lọc rồi nén trong máy nén dọc trục. Để chống rung (surge), hai van trích khí ở tầng nén thứ 10 mở hoàn toàn và cánh dẫn hướng IGV ở vị trí nhỏ nhất 41°. "
+            "Ở 1.120 rpm (22 % tốc độ), bugi đánh lửa và van khí nhiên liệu mở. Ngọn lửa lan qua các ống cross-fire tới mọi buồng đốt, các đầu dò lửa xác nhận cháy ổn định. "
+            "Ở 101 % tốc độ (5.100 rpm), hai van trích khí đóng và IGV mở tới vị trí vận hành 46°. "
+            "\nKhí cháy qua 10 ống chuyển dòng (transition piece) vào tuabin hai cấp. Tại các dãy vòi phun, động năng tăng và áp suất giảm; một phần năng lượng chuyển thành cơ năng quay rotor, kéo máy phát. "
+            "Sau cấp 2, khí đi qua bộ khuếch tán có cánh dẫn hướng để giảm tổn thất, rồi ra ống khói hoặc sang lò hơi thu hồi nhiệt 10-B-9001.", [GT08]),
+}
+for _u, (_t, _s) in INTRO.items():
+    PATCH.setdefault(_u, {})["intro"] = _t
+    PATCH[_u]["src"] = _s + [x for x in PATCH[_u].get("src", []) if x not in _s]
+
+
 def apply(units, tags):
     for u, e in UNITS_NEW.items():
         units[u] = e
@@ -495,6 +574,10 @@ def apply(units, tags):
         drop, rep = set(p.get("drop", [])), p.get("replace", {})
         e["s"] = p.get("pre", []) + [dict(s, **rep[s["h"]]) if s["h"] in rep else s for s in e.get("s", []) if s["h"] not in drop] + p.get("add", [])
         e["src"] = list(e.get("src", [])) + [x for x in p.get("src", []) if x not in e.get("src", [])]
+        if u in INTRO:  # nguồn giáo trình của đoạn mô tả lên đầu, bỏ trùng đường dẫn
+            first = INTRO[u][1]
+            seen = {x[0] for x in first}
+            e["src"] = first + [x for x in e["src"] if x[0] not in seen]
     tags.update(TAG_NEW)
     for k, p in TAG_ADD.items():
         if k not in tags:

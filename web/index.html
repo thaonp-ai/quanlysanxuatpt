@@ -207,6 +207,7 @@ a.doc:hover{background:var(--line-soft)}
 .toc li.lv1{padding-left:8px}
 .toc .pg{white-space:nowrap;color:var(--muted);font-size:12px}
 .gq li{margin:6px 0}
+.tech h5.gth{font-size:14px;font-weight:600;margin:14px 0 4px;color:var(--ink)}
 .rowtech{border:0;background:none;color:var(--line);padding:0 8px;font-size:12px;font-weight:600;align-self:center;border-radius:5px;min-height:32px;white-space:nowrap}
 .rowtech:hover{background:var(--line-soft)}
 .pop{position:absolute;right:0;top:calc(100% + 6px);background:var(--sheet);border:1px solid var(--rule);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.14);padding:6px;display:flex;flex-direction:column;min-width:240px;z-index:30}
@@ -490,7 +491,7 @@ function gtHTML(u){const ids=(TECH.gtu&&TECH.gtu[u])||[];let h="";
   ids.forEach(k=>{const g=TECH.gt[k],l=docLinks({p:g.f});
     h+=`<div class="gtc"><div class="gtno">${esc(g.no)}</div><h4 class="gtt">${esc(g.t)}</h4><p class="gtcv">${esc(g.cv)}</p>`+
       (l?`<div class="src"><a href="${esc(l.view)}" target="_blank" rel="noopener">Mở giáo trình (PDF) ↗</a></div>`:"")+
-      `<h4>Tóm tắt nội dung</h4><ul>${g.sum.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`+
+      (g.sec&&g.sec.length?`<h4>Tóm tắt nội dung</h4>`+g.sec.map(x=>`<h5 class="gth">${esc(x.h)}</h5><ul>${x.ul.map(i=>/^• /.test(i)?`<li class="ind">${esc(i.slice(2))}</li>`:`<li>${esc(i)}</li>`).join("")}</ul>`).join(""):`<h4>Tóm tắt nội dung</h4><ul>${g.sum.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`)+
       `<h4>Điểm cần nhớ</h4><ul>${g.key.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`+
       (g.toc&&g.toc.length?`<details class="gtd"><summary>Mục lục (${g.toc.length} mục)</summary><ol class="toc">${g.toc.map(([lv,t,pg])=>`<li class="lv${lv}"><span>${esc(t)}</span>${pg?`<span class="pg">tr. ${pg}</span>`:""}</li>`).join("")}</ol></details>`:"")+
       (g.q&&g.q.length?`<details class="gtd"><summary>Câu hỏi ôn tập (${g.q.length} câu)</summary><ol class="gq">${g.q.map(x=>`<li>${esc(x)}</li>`).join("")}</ol></details>`:"")+`</div>`;});

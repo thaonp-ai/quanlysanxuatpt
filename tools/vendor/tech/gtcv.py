@@ -7,6 +7,7 @@ build(): {"gt": {mã: {...}}, "gtu": {unit: [mã…]}} — build_tech.py ghi và
   - Tóm tắt (sum), điểm cần nhớ (key) viết tay từ nội dung giáo trình.
 """
 import json, os
+import gtcv_sec
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 F = "Giáo trình tham khảo các cương vị/"
@@ -126,7 +127,7 @@ def build():
     auto = json.load(open(os.path.join(HERE, "gtcv_auto.json")))
     gt, gtu = {}, {}
     for k, e in GT.items():
-        e = dict(e, toc=auto[k]["toc"], q=auto[k]["q"])
+        e = dict(e, toc=auto[k]["toc"], q=auto[k]["q"], sec=[{"h": h, "ul": ul} for h, ul in gtcv_sec.SEC.get(k, [])])
         gt[k] = e
         for u in e["units"]:
             gtu.setdefault(u, []).append(k)

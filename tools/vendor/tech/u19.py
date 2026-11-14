@@ -76,7 +76,7 @@ UNIT = {
         {"h": "Hệ thống dầu",
          "ul": ["Dầu bôi trơn: bồn ≈8.160 L trong bệ tuabin. Áp đầu ổ đỡ 1,7 barg do van VPR-2 điều chỉnh; lọc 5 µm; tuabin trip ở 0,96 barg. "
                 "Có 3 bơm: bơm chính dẫn động từ hộp số phụ; bơm phụ motor AC 88QA (10-GT-9001/P-2), chạy khi khởi động/dừng máy tới ≈95 % tốc độ; "
-                "bơm sự cố motor DC 88QE (P-3). Dầu được làm mát ở quạt mát dầu 10-GT-9001/HXL-2.",
+                "bơm sự cố motor DC 88QE (P-3). Dầu được làm mát ở bộ làm mát dầu bằng không khí 10-GT-9001/E-1 (NP tag HXL-2).",
                 "Độ nhớt dầu khi khởi động ≤ 800 SUS. Nhiệt độ dầu vào ổ đỡ danh định ≈130 °F (≈54 °C).",
                 "Dầu thủy lực: bơm piston lưu lượng thay đổi trên hộp số phụ, lấy dầu từ header ổ đỡ, có bộ bù áp VPR-3 và van an toàn VR-21. "
                 "Dầu được lọc 3 µm qua 2 lọc FH2-1/2 (chuyển đổi khi đang chạy; thay lõi khi chênh áp báo 5 bar). "
@@ -116,15 +116,16 @@ TAGS = {
                       "Công suất 21,2 MW ở 100 % tải. Khí nhiên liệu cao áp 24 barg từ bình 30-V-7001. Khói thải sang HRSG 10-B-9001. "
                       "Hệ điều khiển Speedtronic Mark VI TMR, HMI riêng, giám sát rung/nhiệt Bently Nevada 3500, hệ phát hiện cháy khí riêng (F&G GT9001). "
                       "Trên P&ID 2098-19-PID-0031-01, cụm tuabin được vẽ dạng hộp đen, chỉ có các đường tiện ích: "
-                      "nước khử khoáng rửa máy nén (cụm rửa online/offline), khí điều khiển, nước làm mát sạch, khí nhiên liệu, dầu sang quạt mát HXL-2. "
+                      "nước khử khoáng rửa máy nén (cụm rửa online/offline), khí điều khiển, nước làm mát sạch, khí nhiên liệu, dầu sang bộ làm mát E-1 (HXL-2). "
                       "Chi tiết bên trong xem P&ID của nhà cung cấp (SOM 09996/1, \"PID GT9001.pdf\").",
                       [{"h": "Chu kỳ bảo dưỡng tiêu chuẩn",
                         "tb": [["Kiểm tra", "Giờ đốt", "Khởi động"], ["Buồng đốt", "8.000", "400"], ["Đường khí nóng", "24.000", "1.200"], ["Đại tu", "48.000", "2.400"]]}],
                       [PFD, PID, sec("Vol I", 1), sec("Vol II", 3), [R + "PID GT9001.pdf", "P&ID cụm tuabin của nhà cung cấp"]]),
-    "10-GT-9001/HXL-2": ent("Quạt mát dầu 10-GT-9001/HXL-2",
-                            "Bộ làm mát dầu bôi trơn bằng quạt không khí (airfin oil cooler) của tuabin khí, có 3 quạt motor. "
+    "10-GT-9001/E-1": ent("Bộ làm mát dầu 10-GT-9001/E-1 (HXL-2)",
+                            "Bộ làm mát dầu bôi trơn bằng không khí (airfin) của tuabin khí, Astra, 680 kW: dầu 78 → 55 °C, áp thiết kế 12 bar, 3 quạt F-1/2/3 với motor MF-1/2/3 (Siemens 11 kW, 1.440 v/ph). "
+                            "Van 3 ngã nhiệt TCV-9700 (VTR-1) chia dòng qua/bypass bộ làm mát. Trên P&ID 2098-19-PID-0031-01 ghi theo NP tag HXL-2. "
                             "Dầu từ bồn trong bệ tuabin qua các đường 8\"-LO-1901001/1901003 sang HXL-2 và trở về, rồi qua lọc 5 µm vào header ổ đỡ (1,7 barg). "
                             "Theo sách, nhiệt độ dầu vào ổ đỡ danh định ≈54 °C; với hệ làm mát bằng không khí, ở nhiệt độ môi trường cao nhất có thể tới ≈71 °C. "
                             "Tài liệu nhà cung cấp ở Vol IV mục 5 (Oil aircooler).",
-                            src=[PID, sec("Vol I", 9), S_AUX]),
+                            src=[PID, sh("SOM09996/1 tờ 7", "P&ID nhà cung cấp tờ 7 – Bộ làm mát dầu"), sec("Vol I", 9), S_AUX]),
 }

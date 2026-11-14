@@ -32,7 +32,7 @@ G_REF = "Tài liệu tham khảo"
 G_BOOK = "Bộ sách đầy đủ"
 
 GT = "10-GT-9001"
-HXL = GT + "/HXL-2"
+HXL = GT + "/E-1"   # bộ làm mát dầu (NP tag HXL-2; trên P&ID 2098-19-PID-0031-01 ghi HXL-2)
 NP = "Nuovo Pignone MS5001PA DLN · job 170.5540"
 
 # group of each split section: [volume tag][section number] -> group (default by volume)
@@ -114,6 +114,42 @@ L = [
 ]
 
 
+
+# ---- tài liệu theo thiết bị con (tag khách hàng trên P&ID nhà cung cấp SOM09996/1) ----
+def g(*sfx): return [GT + "/" + x for x in sfx]
+LUBE = g("P-1", "P-2", "P-3", "MP-2", "MP-3", "V-1", "FL-1", "FL-2", "EH-1", "EH-2", "E-1", "F-1", "F-2", "F-3", "MF-1", "MF-2", "MF-3")
+HYD = g("P-4", "P-5", "MP-5", "FL-3", "FL-4", "Z-2", "Z-3")
+CTRL_OIL = g("FL-5", "FL-6")
+START = g("Z-1", "Z-3", "Z-4", "Z-5", "E-2", "SL-1", "SL-2", "V-4", "F-9", "MF-9")
+FIRE = g("PK-1")
+WASH = g("PK-2", "PK-3", "V-2", "V-3", "P-6", "MP-6")
+GEAR = g("G-1", "G-2", "Z-1")
+INTAKE = g("PK-5", "F-4", "F-5", "MF-4", "MF-5")
+VENT = g("F-6", "F-7", "MF-6", "MF-7")
+GEN = g("F-10", "F-11", "F-12", "F-13", "MF-10", "MF-11", "MF-12", "MF-13")
+ALLSUB = sorted(set(LUBE + HYD + CTRL_OIL + START + FIRE + WASH + GEAR + INTAKE + VENT + GEN + g("PK-4")))
+SUB = {
+    ("Vol I", 6): INTAKE, ("Vol I", 7): g("G-1", "P-1", "P-4"), ("Vol I", 8): START, ("Vol I", 9): LUBE + g("PK-4"),
+    ("Vol I", 11): HYD, ("Vol I", 12): CTRL_OIL, ("Vol I", 5): g("G-2"),
+    ("Vol II", 8): LUBE + HYD + CTRL_OIL + START + INTAKE + VENT,
+    "Volume IV   Aux Equipment Vendor.pdf": LUBE + HYD + CTRL_OIL + g("PK-4"),
+    "Volume IV tome 2 of 4.pdf": START + FIRE + WASH + GEAR, "Volume IV tome 3 of 4.pdf": START + FIRE + WASH + GEAR,
+    "Volume IV tome 4 of 4.pdf": INTAKE + VENT,
+    "Volume VI tome 1 of 2.pdf": GEN, "Volume VI tome 2 of 2.pdf": GEN + g("G-2"),
+    "Volume IX Vent Sys.pdf": VENT, "Volume XI.pdf": g("Z-5"),
+    "Them/FILTER HOUSE/VFR 01154.pdf": INTAKE,
+    "Them/Vol. IV Auxialiary Equipment/ABB.pdf": g("MP-2"), "Them/Vol. IV Auxialiary Equipment/ARIS CHIAPPA.pdf": g("P-2", "P-3"),
+    "Them/Vol. IV Auxialiary Equipment/SICME MOTORI.pdf": g("MP-3", "MP-5"),
+    "Them/Vol. IV Auxialiary Equipment/Aux_index.doc": ALLSUB,
+    "Voith Torque Converter.pdf": g("Z-4"), "TORQUE CONVERTER/Manual_213214.pdf": g("Z-4"),
+    "TORQUE CONVERTER/SQ14284 Petrovietnam E7WAT.PDF": g("Z-4"), "TORQUE CONVERTER/SQ14299 Petrovietnam E7WAT Spare Parts.pdf": g("Z-4"),
+    "TORQUE CONVERTER/SMQ10343 Petrovietnam Service Rate_Daily.pdf": g("Z-4"), "TORQUE CONVERTER/Voith GTC Version Singapore 2014-10.pdf": g("Z-4"),
+    "SSS MAIN CLUTCH/IB.71710.pdf": g("Z-1"), "SSS MAIN CLUTCH/17737.pdf": g("Z-1"), "SSS MAIN CLUTCH/Parts list 17737.pdf": g("Z-1"),
+    "Gearbox BHS.PDF": g("G-2"), "Can tam may phat - hop so.pdf": g("G-2"), "SOM6600967_001_A coupling assembly.pdf": g("G-2"),
+    "Auxilary Coupling.pdf": g("G-1"),
+    "PID GT9001.pdf": ALLSUB,
+}
+
 def split_names():
     S = json.load(open(os.path.join(HERE, "sections.json")))
     out = []
@@ -144,15 +180,16 @@ docs, seen = [], set()
 for book, vt, no, t, p0, p1, name in split_names():
     p = SPLIT + "/" + name
     sizes[p] = ssz[name]
-    g = SEC_G.get(vt, {}).get(no, G_OM if vt == "Vol II" else G_SYS)
-    docs.append({"p": R + "/" + p, "t": f"{vt} mục {no} – {t}" if no else f"{vt} – {t}", "g": g,
-                 "tags": SEC_TAGS.get((vt, no), [GT]), "no": "", "src": NP, "kb": 0, "bp": R + "/" + book, "bpg": p0})
+    grp = SEC_G.get(vt, {}).get(no, G_OM if vt == "Vol II" else G_SYS)
+    docs.append({"p": R + "/" + p, "t": f"{vt} mục {no} – {t}" if no else f"{vt} – {t}", "g": grp,
+                 "tags": SEC_TAGS.get((vt, no), [GT]) + [x for x in SUB.get((vt, no), []) if x not in SEC_TAGS.get((vt, no), [])], "no": "", "src": NP, "kb": 0, "bp": R + "/" + book, "bpg": p0})
     seen.add(p)
-for p, t, g, tags in L:
+for p, t, g_, tags in L:
     assert p in sizes, "không có trong listing: " + p
     seen.add(p)
     np_ = p.startswith("Volume") or p.startswith("Them/")
-    docs.append({"p": R + "/" + p, "t": t, "g": g, "tags": tags, "no": "", "src": NP if np_ else "", "kb": 0})
+    tags = tags + [x for x in SUB.get(p, []) if x not in tags]
+    docs.append({"p": R + "/" + p, "t": t, "g": g_, "tags": tags, "no": "", "src": NP if np_ else "", "kb": 0})
 miss = sorted(set(sizes) - seen)
 if miss:
     print("chưa xếp:", *miss, sep="\n  ")

@@ -510,6 +510,7 @@ def main():
             if (not occ or fx.get("add")) and "w" in fx:
                 t2 = tags.setdefault(fx["to"], {"t": fx["to"], "k": fx.get("k", "equipment"), "s": fx.get("s", ""), "o": []})
                 t2["o"].append([si, fx["x"], fx["y"], fx["w"], fx["h"]])
+                if fx.get("a"): t2["a"] = set(t2.get("a", ())) | set(fx["a"])
                 FIXLOG.append(("pos+", "", fx["to"]))
     # equipment is indexed from the P&IDs only: PFD positions are dropped (a PFD repeats the P&ID equipment,
     # often with a different OCR reading). Lines/valves on both P&ID and PFD keep only the P&ID positions.
@@ -558,6 +559,20 @@ def main():
             e["o"] = [[newidx[o[0]]] + o[1:] for o in e["o"] if o[0] in newidx]
             if not e["o"]:
                 tags.pop(k)
+    # vendor P&IDs drawn outside the plant P&ID set (tools/vendor_pid_*.json, built by hand-checked label lists):
+    # extra sheets + equipment occurrences, merged after the unit regrouping
+    for vf in sorted(glob.glob("/home/claude/work/vendor_pid_*.json")):
+        VP = json.load(open(vf))
+        base = len(sheets)
+        sheets += VP["sheets"]
+        vidx = {s_["id"]: base + i for i, s_ in enumerate(VP["sheets"])}
+        for vt in VP["tags"]:
+            occ = [[vidx[o[0]]] + o[1:] for o in vt["o"]]
+            if vt["t"] in tags:
+                tags[vt["t"]]["o"] += occ
+                tags[vt["t"]]["d"] = vt.get("d", tags[vt["t"]]["d"])
+            else:
+                tags[vt["t"]] = {"t": vt["t"], "k": vt["k"], "s": vt["s"], "d": vt["d"], "o": occ}
     used = sorted({u for s in sheets for u in [s["unit"]] + s.get("also", [])})
     units = [{"code": u, "name": UNIT_NAMES.get(u, "Unit " + u)} for u in used]
     out = {"updated": sys.argv[1] if len(sys.argv) > 1 else "", "units": units, "sheets": sheets,

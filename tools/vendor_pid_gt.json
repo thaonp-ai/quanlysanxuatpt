@@ -1,0 +1,1222 @@
+{
+"sheets": [
+{
+"id": "VGT-01",
+"kind": "PID",
+"unit": "19A",
+"dwg": "SOM09996/1 tờ 1",
+"title": "GT 10-GT-9001 – Trang bìa & danh mục tờ",
+"img": "img/VGT-01.png",
+"w": 4800,
+"h": 3492,
+"src": "Vendor Data/10GT9001/PID GT9001.pdf – trang 1"
+},
+{
+"id": "VGT-02",
+"kind": "PID",
+"unit": "19A",
+"dwg": "SOM09996/1 tờ 2",
+"title": "GT 10-GT-9001 – Ký hiệu & chú giải",
+"img": "img/VGT-02.png",
+"w": 4800,
+"h": 3492,
+"src": "Vendor Data/10GT9001/PID GT9001.pdf – trang 2"
+},
+{
+"id": "VGT-03",
+"kind": "PID",
+"unit": "19A",
+"dwg": "SOM09996/1 tờ 3",
+"title": "GT 10-GT-9001 – Điểm đấu nối (terminal point)",
+"img": "img/VGT-03.png",
+"w": 4800,
+"h": 3492,
+"src": "Vendor Data/10GT9001/PID GT9001.pdf – trang 3"
+},
+{
+"id": "VGT-04",
+"kind": "PID",
+"unit": "19A",
+"dwg": "SOM09996/1 tờ 4",
+"title": "GT 10-GT-9001 – Hệ thống dầu bôi trơn",
+"img": "img/VGT-04.png",
+"w": 4800,
+"h": 3492,
+"src": "Vendor Data/10GT9001/PID GT9001.pdf – trang 4"
+},
+{
+"id": "VGT-05",
+"kind": "PID",
+"unit": "19A",
+"dwg": "SOM09996/1 tờ 5",
+"title": "GT 10-GT-9001 – Dầu thủy lực & ratchet thủy lực",
+"img": "img/VGT-05.png",
+"w": 4800,
+"h": 3492,
+"src": "Vendor Data/10GT9001/PID GT9001.pdf – trang 5"
+},
+{
+"id": "VGT-06",
+"kind": "PID",
+"unit": "19A",
+"dwg": "SOM09996/1 tờ 6",
+"title": "GT 10-GT-9001 – Dầu điều khiển (control oil)",
+"img": "img/VGT-06.png",
+"w": 4800,
+"h": 3493,
+"src": "Vendor Data/10GT9001/PID GT9001.pdf – trang 6"
+},
+{
+"id": "VGT-07",
+"kind": "PID",
+"unit": "19A",
+"dwg": "SOM09996/1 tờ 7",
+"title": "GT 10-GT-9001 – Bộ làm mát dầu (oil cooler)",
+"img": "img/VGT-07.png",
+"w": 4800,
+"h": 3488,
+"src": "Vendor Data/10GT9001/PID GT9001.pdf – trang 7"
+},
+{
+"id": "VGT-08",
+"kind": "PID",
+"unit": "19A",
+"dwg": "SOM09996/1 tờ 8",
+"title": "GT 10-GT-9001 – Khí nhiên liệu",
+"img": "img/VGT-08.png",
+"w": 4800,
+"h": 3493,
+"src": "Vendor Data/10GT9001/PID GT9001.pdf – trang 8"
+},
+{
+"id": "VGT-09",
+"kind": "PID",
+"unit": "19A",
+"dwg": "SOM09996/1 tờ 9",
+"title": "GT 10-GT-9001 – Cụm khí nhiên liệu DLN",
+"img": "img/VGT-09.png",
+"w": 4800,
+"h": 3493,
+"src": "Vendor Data/10GT9001/PID GT9001.pdf – trang 9"
+},
+{
+"id": "VGT-10",
+"kind": "PID",
+"unit": "19A",
+"dwg": "SOM09996/1 tờ 10",
+"title": "GT 10-GT-9001 – Điều khiển & bảo vệ tuabin",
+"img": "img/VGT-10.png",
+"w": 4800,
+"h": 3490,
+"src": "Vendor Data/10GT9001/PID GT9001.pdf – trang 10"
+},
+{
+"id": "VGT-11",
+"kind": "PID",
+"unit": "19A",
+"dwg": "SOM09996/1 tờ 11",
+"title": "GT 10-GT-9001 – Khí làm mát & làm kín",
+"img": "img/VGT-11.png",
+"w": 4800,
+"h": 3488,
+"src": "Vendor Data/10GT9001/PID GT9001.pdf – trang 11"
+},
+{
+"id": "VGT-12",
+"kind": "PID",
+"unit": "19A",
+"dwg": "SOM09996/1 tờ 12",
+"title": "GT 10-GT-9001 – Lọc gió đầu vào",
+"img": "img/VGT-12.png",
+"w": 4800,
+"h": 3492,
+"src": "Vendor Data/10GT9001/PID GT9001.pdf – trang 12"
+},
+{
+"id": "VGT-13",
+"kind": "PID",
+"unit": "19A",
+"dwg": "SOM09996/1 tờ 13",
+"title": "GT 10-GT-9001 – Hệ thống chữa cháy CO₂",
+"img": "img/VGT-13.png",
+"w": 4800,
+"h": 3489,
+"src": "Vendor Data/10GT9001/PID GT9001.pdf – trang 13"
+},
+{
+"id": "VGT-14",
+"kind": "PID",
+"unit": "19A",
+"dwg": "SOM09996/1 tờ 14",
+"title": "GT 10-GT-9001 – Hệ thống thông gió",
+"img": "img/VGT-14.png",
+"w": 4800,
+"h": 3492,
+"src": "Vendor Data/10GT9001/PID GT9001.pdf – trang 14"
+},
+{
+"id": "VGT-15",
+"kind": "PID",
+"unit": "19A",
+"dwg": "SOM09996/1 tờ 15",
+"title": "GT 10-GT-9001 – Rửa máy nén off-line & on-line",
+"img": "img/VGT-15.png",
+"w": 4800,
+"h": 3492,
+"src": "Vendor Data/10GT9001/PID GT9001.pdf – trang 15"
+},
+{
+"id": "VGT-16",
+"kind": "PID",
+"unit": "19A",
+"dwg": "SOM09996/1 tờ 16",
+"title": "GT 10-GT-9001 – Hệ thống khởi động",
+"img": "img/VGT-16.png",
+"w": 4800,
+"h": 3494,
+"src": "Vendor Data/10GT9001/PID GT9001.pdf – trang 16"
+},
+{
+"id": "VGT-17",
+"kind": "PID",
+"unit": "19A",
+"dwg": "SOM09996/1 tờ 17",
+"title": "GT 10-GT-9001 – Hộp số & máy phát – dầu bôi trơn, rung, nhiệt độ",
+"img": "img/VGT-17.png",
+"w": 4800,
+"h": 3490,
+"src": "Vendor Data/10GT9001/PID GT9001.pdf – trang 17"
+},
+{
+"id": "VGT-18",
+"kind": "PID",
+"unit": "19A",
+"dwg": "SOM09996/1 tờ 18",
+"title": "GT 10-GT-9001 – Máy phát – nhiệt độ cuộn dây stator & gió làm mát",
+"img": "img/VGT-18.png",
+"w": 4800,
+"h": 3491,
+"src": "Vendor Data/10GT9001/PID GT9001.pdf – trang 18"
+},
+{
+"id": "VGT-19",
+"kind": "PID",
+"unit": "19A",
+"dwg": "SOM09996/1 tờ 19",
+"title": "GT 10-GT-9001 – Bộ tách hơi dầu",
+"img": "img/VGT-19.png",
+"w": 4800,
+"h": 3493,
+"src": "Vendor Data/10GT9001/PID GT9001.pdf – trang 19"
+}
+],
+"tags": [
+{
+"t": "10-GT-9001/E-1",
+"k": "equipment",
+"s": "E",
+"d": "Bộ làm mát dầu bôi trơn bằng không khí (NP: HXL-2) – Astra, 680 kW",
+"o": [
+[
+"VGT-03",
+0.075,
+0.1326,
+0.0723,
+0.0127
+],
+[
+"VGT-07",
+0.4069,
+0.5002,
+0.05,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/PK-5",
+"k": "equipment",
+"s": "PK",
+"d": "Nhà lọc gió đầu vào (inertial vane, lọc thô, lọc tinh)",
+"o": [
+[
+"VGT-03",
+0.5281,
+0.0598,
+0.0758,
+0.0127
+],
+[
+"VGT-12",
+0.0912,
+0.3506,
+0.05,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/PK-4",
+"k": "equipment",
+"s": "PK",
+"d": "Cụm tách hơi dầu (PDS-1, quạt FNL-1) – Forain Lube Oil 900",
+"o": [
+[
+"VGT-03",
+0.7215,
+0.0913,
+0.0758,
+0.0129
+],
+[
+"VGT-19",
+0.5922,
+0.5961,
+0.058,
+0.013
+]
+]
+},
+{
+"t": "10-GT-9001/PK-1",
+"k": "equipment",
+"s": "PK",
+"d": "Cụm chai CO₂ chữa cháy (CBVF-1…26) – Sanco",
+"o": [
+[
+"VGT-03",
+0.1325,
+0.3999,
+0.0719,
+0.0127
+],
+[
+"VGT-13",
+0.1112,
+0.5513,
+0.058,
+0.013
+]
+]
+},
+{
+"t": "10-GT-9001/SL-1",
+"k": "equipment",
+"s": "SL",
+"d": "Bộ tiêu âm khí xả động cơ diesel",
+"o": [
+[
+"VGT-03",
+0.133,
+0.5204,
+0.0749,
+0.0127
+],
+[
+"VGT-16",
+0.0594,
+0.0881,
+0.058,
+0.013
+]
+]
+},
+{
+"t": "10-GT-9001/SL-2",
+"k": "equipment",
+"s": "SL",
+"d": "Bộ tiêu âm khí xả động cơ diesel",
+"o": [
+[
+"VGT-03",
+0.1332,
+0.5819,
+0.0758,
+0.0127
+],
+[
+"VGT-16",
+0.163,
+0.0881,
+0.058,
+0.013
+]
+]
+},
+{
+"t": "10-GT-9001/Z-5",
+"k": "equipment",
+"s": "Z",
+"d": "Động cơ diesel khởi động",
+"o": [
+[
+"VGT-03",
+0.3344,
+0.6227,
+0.0705,
+0.0125
+],
+[
+"VGT-16",
+0.1083,
+0.3903,
+0.058,
+0.013
+]
+]
+},
+{
+"t": "10-GT-9001/V-4",
+"k": "equipment",
+"s": "V",
+"d": "Bồn dầu diesel – 0,776 m³",
+"o": [
+[
+"VGT-03",
+0.5219,
+0.685,
+0.0646,
+0.0125
+],
+[
+"VGT-16",
+0.282,
+0.8484,
+0.05,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/E-2",
+"k": "equipment",
+"s": "E",
+"d": "Bộ làm mát nước động cơ diesel khởi động – 323 kW",
+"o": [
+[
+"VGT-03",
+0.1472,
+0.8767,
+0.0661,
+0.0125
+],
+[
+"VGT-16",
+0.3185,
+0.2318,
+0.058,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/PK-3",
+"k": "equipment",
+"s": "PK",
+"d": "Xe rửa máy nén on-line (bồn TW-3, Rochem Marine)",
+"o": [
+[
+"VGT-03",
+0.774,
+0.6657,
+0.0765,
+0.0127
+],
+[
+"VGT-15",
+0.6392,
+0.6648,
+0.058,
+0.013
+]
+]
+},
+{
+"t": "10-GT-9001/PK-2",
+"k": "equipment",
+"s": "PK",
+"d": "Xe rửa máy nén off-line (bồn V-2/V-3, bơm P-6)",
+"o": [
+[
+"VGT-03",
+0.5716,
+0.8742,
+0.0761,
+0.0127
+],
+[
+"VGT-15",
+0.2418,
+0.7941,
+0.058,
+0.013
+]
+]
+},
+{
+"t": "10-GT-9001/FL-1",
+"k": "equipment",
+"s": "FL",
+"d": "Lọc dầu bôi trơn kép (duplex) 25 µm",
+"o": [
+[
+"VGT-04",
+0.2109,
+0.2083,
+0.0503,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/FL-2",
+"k": "equipment",
+"s": "FL",
+"d": "Lọc dầu bôi trơn kép (duplex) 25 µm",
+"o": [
+[
+"VGT-04",
+0.2438,
+0.3691,
+0.0524,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/G-1",
+"k": "equipment",
+"s": "G",
+"d": "Hộp số phụ (accessory gear)",
+"o": [
+[
+"VGT-04",
+0.453,
+0.4615,
+0.058,
+0.013
+]
+]
+},
+{
+"t": "10-GT-9001/P-1",
+"k": "equipment",
+"s": "P",
+"d": "Bơm dầu bôi trơn chính (bánh răng, dẫn động từ hộp số phụ) – 1.187 L/ph",
+"o": [
+[
+"VGT-04",
+0.4277,
+0.5492,
+0.05,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/MP-2",
+"k": "equipment",
+"s": "MP",
+"d": "Motor bơm dầu phụ 88QA – ABB 37 kW, 400 V",
+"o": [
+[
+"VGT-04",
+0.2744,
+0.604,
+0.012,
+0.062
+]
+]
+},
+{
+"t": "10-GT-9001/P-2",
+"k": "equipment",
+"s": "P",
+"d": "Bơm dầu bôi trơn phụ – Aris Chiappa CVTG65/250A, 1.187 L/ph",
+"o": [
+[
+"VGT-04",
+0.2459,
+0.7927,
+0.0501,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/MP-3",
+"k": "equipment",
+"s": "MP",
+"d": "Motor bơm dầu sự cố 88QE – SICME 6,5 kW, 110 V DC",
+"o": [
+[
+"VGT-04",
+0.3594,
+0.5909,
+0.012,
+0.062
+]
+]
+},
+{
+"t": "10-GT-9001/P-3",
+"k": "equipment",
+"s": "P",
+"d": "Bơm dầu bôi trơn sự cố – Aris Chiappa CVTG65/250E, 693 L/ph",
+"o": [
+[
+"VGT-04",
+0.3151,
+0.7919,
+0.05,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/EH-2",
+"k": "equipment",
+"s": "EH",
+"d": "Điện trở sấy dầu bôi trơn 23QT-2 – FATI 10 kW",
+"o": [
+[
+"VGT-04",
+0.4357,
+0.7096,
+0.012,
+0.062
+]
+]
+},
+{
+"t": "10-GT-9001/EH-1",
+"k": "equipment",
+"s": "EH",
+"d": "Điện trở sấy dầu bôi trơn 23QT-1 – FATI 10 kW",
+"o": [
+[
+"VGT-04",
+0.4702,
+0.7096,
+0.012,
+0.062
+]
+]
+},
+{
+"t": "10-GT-9001/V-1",
+"k": "equipment",
+"s": "V",
+"d": "Bồn dầu bôi trơn – 8.610 L (Deiuliis)",
+"o": [
+[
+"VGT-04",
+0.604,
+0.7892,
+0.05,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/P-4",
+"k": "equipment",
+"s": "P",
+"d": "Bơm dầu thủy lực chính (dẫn động từ hộp số phụ)",
+"o": [
+[
+"VGT-05",
+0.1735,
+0.3137,
+0.05,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/FL-3",
+"k": "equipment",
+"s": "FL",
+"d": "Lọc dầu thủy lực kép (FH2-1) 3 µm",
+"o": [
+[
+"VGT-05",
+0.3472,
+0.2683,
+0.0522,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/FL-4",
+"k": "equipment",
+"s": "FL",
+"d": "Lọc dầu thủy lực kép (FH2-2) 3 µm",
+"o": [
+[
+"VGT-05",
+0.4014,
+0.4015,
+0.0518,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/Z-2",
+"k": "equipment",
+"s": "Z",
+"d": "Bộ chấp hành IGV",
+"o": [
+[
+"VGT-05",
+0.6594,
+0.3944,
+0.0501,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/Z-1",
+"k": "equipment",
+"s": "Z",
+"d": "Ly hợp tự đồng bộ (SSS clutch)",
+"o": [
+[
+"VGT-05",
+0.6215,
+0.505,
+0.05,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/MP-5",
+"k": "equipment",
+"s": "MP",
+"d": "Motor bơm ratchet 88HR – SICME 0,57 kW, 110 V DC",
+"o": [
+[
+"VGT-05",
+0.5298,
+0.5803,
+0.058,
+0.013
+]
+]
+},
+{
+"t": "10-GT-9001/P-5",
+"k": "equipment",
+"s": "P",
+"d": "Bơm dầu thủy lực ratchet – Casappa PLP103.15",
+"o": [
+[
+"VGT-05",
+0.5684,
+0.6822,
+0.05,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/Z-3",
+"k": "equipment",
+"s": "Z",
+"d": "Cơ cấu ratchet thủy lực / bộ biến mô",
+"o": [
+[
+"VGT-05",
+0.3761,
+0.7006,
+0.05,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/FL-5",
+"k": "equipment",
+"s": "FL",
+"d": "Lọc dầu điều khiển kép – Murisengo 25/5 µm",
+"o": [
+[
+"VGT-06",
+0.2089,
+0.3043,
+0.0527,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/FL-6",
+"k": "equipment",
+"s": "FL",
+"d": "Lọc dầu điều khiển kép – Murisengo 25/5 µm",
+"o": [
+[
+"VGT-06",
+0.2088,
+0.4833,
+0.0525,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/MF-1",
+"k": "equipment",
+"s": "MF",
+"d": "Motor quạt làm mát dầu 88FC-1 – Siemens 11 kW",
+"o": [
+[
+"VGT-07",
+0.3333,
+0.274,
+0.0524,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/MF-2",
+"k": "equipment",
+"s": "MF",
+"d": "Motor quạt làm mát dầu 88FC-2 – Siemens 11 kW",
+"o": [
+[
+"VGT-07",
+0.4639,
+0.2717,
+0.053,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/MF-3",
+"k": "equipment",
+"s": "MF",
+"d": "Motor quạt làm mát dầu 88FC-3 – Siemens 11 kW",
+"o": [
+[
+"VGT-07",
+0.5998,
+0.2688,
+0.0537,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/F-1",
+"k": "equipment",
+"s": "F",
+"d": "Quạt bộ làm mát dầu E-1",
+"o": [
+[
+"VGT-07",
+0.2991,
+0.3396,
+0.05,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/F-2",
+"k": "equipment",
+"s": "F",
+"d": "Quạt bộ làm mát dầu E-1",
+"o": [
+[
+"VGT-07",
+0.4298,
+0.3373,
+0.05,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/F-3",
+"k": "equipment",
+"s": "F",
+"d": "Quạt bộ làm mát dầu E-1",
+"o": [
+[
+"VGT-07",
+0.5658,
+0.3351,
+0.05,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/F-4",
+"k": "equipment",
+"s": "F",
+"d": "Quạt hút bụi lọc quán tính (inertial filter)",
+"o": [
+[
+"VGT-12",
+0.0657,
+0.6112,
+0.058,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/F-5",
+"k": "equipment",
+"s": "F",
+"d": "Quạt hút bụi lọc quán tính (inertial filter)",
+"o": [
+[
+"VGT-12",
+0.1289,
+0.6102,
+0.05,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/MF-4",
+"k": "equipment",
+"s": "MF",
+"d": "Motor quạt lọc quán tính 88ED-1 – Flakt 7,5 kW",
+"o": [
+[
+"VGT-12",
+0.0968,
+0.6911,
+0.058,
+0.013
+]
+]
+},
+{
+"t": "10-GT-9001/MF-5",
+"k": "equipment",
+"s": "MF",
+"d": "Motor quạt lọc quán tính 88ED-2 – Flakt 7,5 kW",
+"o": [
+[
+"VGT-12",
+0.1579,
+0.6888,
+0.05,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/G-2",
+"k": "equipment",
+"s": "G",
+"d": "Hộp số tải (load gear)",
+"o": [
+[
+"VGT-13",
+0.8448,
+0.4558,
+0.0557,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/MF-6",
+"k": "equipment",
+"s": "MF",
+"d": "Motor quạt thông gió 88BA-1 – ABB 37 kW",
+"o": [
+[
+"VGT-14",
+0.0941,
+0.2241,
+0.0546,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/F-6",
+"k": "equipment",
+"s": "F",
+"d": "Quạt thông gió vỏ máy chính/phụ – CBI 40.000 m³/h",
+"o": [
+[
+"VGT-14",
+0.1016,
+0.2451,
+0.058,
+0.013
+]
+]
+},
+{
+"t": "10-GT-9001/F-7",
+"k": "equipment",
+"s": "F",
+"d": "Quạt thông gió vỏ máy chính/phụ – CBI 40.000 m³/h",
+"o": [
+[
+"VGT-14",
+0.1022,
+0.3811,
+0.0507,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/MF-7",
+"k": "equipment",
+"s": "MF",
+"d": "Motor quạt thông gió 88BA-2 – ABB 37 kW",
+"o": [
+[
+"VGT-14",
+0.0872,
+0.4259,
+0.058,
+0.013
+]
+]
+},
+{
+"t": "10-GT-9001/V-2",
+"k": "equipment",
+"s": "V",
+"d": "Bồn nước rửa (rinsing) – 0,35 m³",
+"o": [
+[
+"VGT-15",
+0.1904,
+0.6759,
+0.05,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/V-3",
+"k": "equipment",
+"s": "V",
+"d": "Bồn nước rửa + chất tẩy – 0,125 m³",
+"o": [
+[
+"VGT-15",
+0.386,
+0.6344,
+0.05,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/P-6",
+"k": "equipment",
+"s": "P",
+"d": "Bơm nước rửa máy nén – 50 L/ph",
+"o": [
+[
+"VGT-15",
+0.3618,
+0.7505,
+0.058,
+0.013
+]
+]
+},
+{
+"t": "10-GT-9001/MP-6",
+"k": "equipment",
+"s": "MP",
+"d": "Motor bơm nước rửa 88TW-1 – 2,2 kW",
+"o": [
+[
+"VGT-15",
+0.3819,
+0.7202,
+0.058,
+0.013
+]
+]
+},
+{
+"t": "10-GT-9001/F-9",
+"k": "equipment",
+"s": "F",
+"d": "Quạt bộ làm mát nước động cơ diesel",
+"o": [
+[
+"VGT-16",
+0.375,
+0.1937,
+0.05,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/MF-9",
+"k": "equipment",
+"s": "MF",
+"d": "Motor quạt làm mát diesel 88DW – 11 kW",
+"o": [
+[
+"VGT-16",
+0.383,
+0.2509,
+0.0525,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/Z-4",
+"k": "equipment",
+"s": "Z",
+"d": "Bộ biến mô thủy lực (torque converter, Voith) & hộp số đảo chiều/ratchet",
+"o": [
+[
+"VGT-16",
+0.5402,
+0.4027,
+0.058,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/MF-10",
+"k": "equipment",
+"s": "MF",
+"d": "Motor quạt làm mát máy phát 88BG-1 – 11 kW",
+"o": [
+[
+"VGT-18",
+0.258,
+0.2379,
+0.0565,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/MF-11",
+"k": "equipment",
+"s": "MF",
+"d": "Motor quạt làm mát máy phát 88BG-2 – 11 kW",
+"o": [
+[
+"VGT-18",
+0.3499,
+0.2381,
+0.0568,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/MF-12",
+"k": "equipment",
+"s": "MF",
+"d": "Motor quạt làm mát máy phát 88BG-3 – 11 kW",
+"o": [
+[
+"VGT-18",
+0.4482,
+0.2381,
+0.0501,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/MF-13",
+"k": "equipment",
+"s": "MF",
+"d": "Motor quạt làm mát máy phát 88BG-4 – 11 kW",
+"o": [
+[
+"VGT-18",
+0.5415,
+0.2381,
+0.058,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/F-10",
+"k": "equipment",
+"s": "F",
+"d": "Quạt làm mát máy phát",
+"o": [
+[
+"VGT-18",
+0.2595,
+0.2958,
+0.058,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/F-11",
+"k": "equipment",
+"s": "F",
+"d": "Quạt làm mát máy phát",
+"o": [
+[
+"VGT-18",
+0.3513,
+0.2958,
+0.0527,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/F-12",
+"k": "equipment",
+"s": "F",
+"d": "Quạt làm mát máy phát",
+"o": [
+[
+"VGT-18",
+0.4499,
+0.296,
+0.0531,
+0.01
+]
+]
+},
+{
+"t": "10-GT-9001/F-13",
+"k": "equipment",
+"s": "F",
+"d": "Quạt làm mát máy phát",
+"o": [
+[
+"VGT-18",
+0.5432,
+0.296,
+0.0537,
+0.01
+]
+]
+}
+]
+}

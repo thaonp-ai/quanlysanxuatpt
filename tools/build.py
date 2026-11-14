@@ -548,12 +548,17 @@ def main():
         sheets = [sheets[i] for i in keep]
         for s_ in sheets:
             s_["unit"] = UM.get("merge", {}).get(s_["unit"], s_["unit"])
+            su = UM.get("sheet", {}).get(s_["id"])
+            if su:
+                su = [su] if isinstance(su, str) else su
+                s_["unit"] = su[0]
+                if su[1:]: s_["also"] = su[1:]
         for k in list(tags):
             e = tags[k]
             e["o"] = [[newidx[o[0]]] + o[1:] for o in e["o"] if o[0] in newidx]
             if not e["o"]:
                 tags.pop(k)
-    used = sorted({s["unit"] for s in sheets})
+    used = sorted({u for s in sheets for u in [s["unit"]] + s.get("also", [])})
     units = [{"code": u, "name": UNIT_NAMES.get(u, "Unit " + u)} for u in used]
     out = {"updated": sys.argv[1] if len(sys.argv) > 1 else "", "units": units, "sheets": sheets,
            "tags": sorted(tags.values(), key=lambda e: e["t"])}

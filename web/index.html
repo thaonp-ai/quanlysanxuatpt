@@ -389,7 +389,7 @@ function rebuild(){
     if(!o.length)return;
     VIEW.push({key,orig:"",t:e.t,k:e.k||"equipment",d:"Thêm thủ công",o,note:e.note||"",del:!!e.del,edited:true,isNew:true,by:e.by,at:e.at});
   });
-  VIEW.forEach(v=>{v._n=normq(v.t);v._no=normq(v.orig);v._u=new Set(v.o.map(o=>DB.sheets[o[0]].unit));});
+  VIEW.forEach(v=>{v._n=normq(v.t);v._no=normq(v.orig);v._u=new Set(v.o.flatMap(o=>sheetUnits(DB.sheets[o[0]])));});
   showMode();
 }
 
@@ -494,6 +494,8 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("docs").hidden)$
 $("btnDocs").onclick=()=>{if(state.sel)openDocs(state.sel);};
 $("btnTech").onclick=()=>{if(state.sel)openDocs(state.sel,"tech");};
 
+// a sheet can belong to several units (e.g. the power-generation PFD covers both 19A gas turbine and 19B HRSG)
+function sheetUnits(s){return s.also?[s.unit,...s.also]:[s.unit];}
 function visible(){return VIEW.filter(v=>state.edited?v.edited:!v.del);}
 function renderUnits(){
   const box=$("units");box.innerHTML='<h2>Unit</h2>';
@@ -554,13 +556,13 @@ function render(){
     });
     list.appendChild(frag);
   }else{
-    const ss=DB.sheets.filter(s=>!state.unit||s.unit===state.unit);
+    const ss=DB.sheets.filter(s=>!state.unit||sheetUnits(s).includes(state.unit));
     $("count").textContent=`${ss.length} bản vẽ`;
     const vis=visible();
     ss.forEach(s=>{
       const n=vis.filter(t=>t.o.some(o=>o[0]===s._i)).length;
       const row=document.createElement("div");row.className="row sheetrow";
-      row.innerHTML=`<button class="rowmain"><div class="tag">${esc(s.title||"Bản vẽ")}</div><div class="refs">${s.kind} · ${esc(sheetLabel(s))} · Unit ${s.unit} · ${n} tag</div></button>`;
+      row.innerHTML=`<button class="rowmain"><div class="tag">${esc(s.title||"Bản vẽ")}</div><div class="refs">${s.kind} · ${esc(sheetLabel(s))} · Unit ${sheetUnits(s).join(", ")} · ${n} tag</div></button>`;
       if(state.sheet===s._i&&!state.sel)row.setAttribute("aria-current","true");
       row.querySelector(".rowmain").onclick=()=>{state.sel=null;openSheetAll(s._i);render();};
       list.appendChild(row);
@@ -755,7 +757,7 @@ function openSheet(i,hits,focus){
   const s=DB.sheets[i];state.sheet=i;
   $("viewer").dataset.open="true";$("ph").hidden=true;$("btnAdd").disabled=false;
   $("vTitle").textContent=s.title||sheetLabel(s);
-  $("vSub").textContent=`${s.kind} · ${sheetLabel(s)} · Unit ${s.unit}`;$("vSub").title=s.src||"";
+  $("vSub").textContent=`${s.kind} · ${sheetLabel(s)} · Unit ${sheetUnits(s).join(", ")}`;$("vSub").title=s.src||"";
   if(!focus){$("pos").textContent="";$("prev").disabled=$("next").disabled=true;}
   layer.querySelectorAll(".hit").forEach(h=>h.remove());
   const draw=()=>{

@@ -125,9 +125,17 @@ OM = {  # Operation Manual gốc của Technip (tham khảo thêm)
 
 def build():
     auto = json.load(open(os.path.join(HERE, "gtcv_auto.json")))
+    split = json.load(open(os.path.join(HERE, "gtcv_split.json")))
     gt, gtu = {}, {}
     for k, e in GT.items():
-        e = dict(e, toc=auto[k]["toc"], q=auto[k]["q"], sec=[{"h": h, "ul": ul} for h, ul in gtcv_sec.SEC.get(k, [])], pdf="gt/%s.pdf" % k)  # bản PDF đặt trên web để mở đúng trang (#page=N)
+        e = dict(e, toc=auto[k]["toc"], q=auto[k]["q"], sec=[{"h": h, "ul": ul} for h, ul in gtcv_sec.SEC.get(k, [])])
+        rows = split.get(k, [])
+        d = F + "Tach theo muc/" + k.replace("GT", "GT-") + "/"
+        def part(pg):  # file tách chứa trang pg (OneDrive không mở PDF tới trang cụ thể)
+            for a, b, name in rows:
+                if a <= pg <= b:
+                    return d + name
+        e["toc"] = [x + [part(x[2])] if x[2] else x for x in e["toc"]]
         gt[k] = e
         for u in e["units"]:
             gtu.setdefault(u, []).append(k)

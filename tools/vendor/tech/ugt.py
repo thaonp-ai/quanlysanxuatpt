@@ -588,3 +588,5 @@ def apply(units, tags):
         e["s"] = list(e.get("s", [])) + p.get("s", [])
         e["src"] = list(e.get("src", [])) + [x for x in p.get("src", []) if x not in e.get("src", [])]
         tags[k] = e
+    import pumps  # đường đi của bơm (đọc trên P&ID)
+    pumps.apply(tags)

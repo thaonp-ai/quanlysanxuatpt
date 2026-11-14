@@ -63,7 +63,7 @@ S_SL2 = [EQ + "10-SL-8002.pdf", "Data sheet 10-SL-8002"]
 S_SL3 = [EQ + "10-SL-8003.pdf", "Data sheet 10-SL-8003"]
 
 UNIT = {
-    "t": "Công nghệ Unit 18 – Lò hơi phụ & nước cấp lò",
+    "t": "Công nghệ Unit 18 – Nước cấp lò hơi và lò hơi phụ trợ",
     "intro": "Unit 18 sinh hơi cao áp (HS, 39 barg / 380 °C) cho nhà máy bằng lò hơi phụ 10-B-8001 (Macchi TITAN M, đốt khí). "
              "Unit này cũng chuẩn bị và bơm nước cấp lò cho lò phụ và cho các nồi hơi thu hồi nhiệt (WHB) của xưởng Amoniac. "
              "Nước khử khoáng và nước ngưng được khử khí ở 10-PK-8004/10-V-8001, sau đó bơm 10-P-8001A/B (HHP, 144 barg) và 10-P-8002A/B (HP, 60 barg) đẩy đi. "

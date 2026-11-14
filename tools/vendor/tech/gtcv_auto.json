@@ -1,0 +1,2088 @@
+{
+"GT01": {
+"toc": [
+[
+0,
+"CHƯƠNG I: LÝ THUYẾT CÔNG NGHỆ SẢN XUẤT NƯỚC SINH HOẠT",
+7
+],
+[
+1,
+"I.1. Các thông số đánh giá chất lượng nước",
+7
+],
+[
+2,
+"I.1.1. Các chỉ tiêu vật lý",
+7
+],
+[
+2,
+"I.1.2. Các chỉ tiêu hóa học",
+8
+],
+[
+2,
+"I.1.3. Các chỉ tiêu vi sinh",
+14
+],
+[
+1,
+"I.2. Khử trùng bằng clo và các hợp chất của clo",
+15
+],
+[
+2,
+"I.2.1. Lý thuyết quá trình khử trùng",
+15
+],
+[
+2,
+"I.2.2. Khử Clo dư trong nước",
+18
+],
+[
+2,
+"I.2.3. Các hóa chất khử trùng gốc clo",
+18
+],
+[
+0,
+"CHƯƠNG II: HỆ THỐNG NƯỚC THÔ - NƯỚC SINH HOẠT NHÀ MÁY ĐẠM PHÚ MỸ",
+20
+],
+[
+1,
+"II.1. Mô tả chung",
+20
+],
+[
+2,
+"II.1.1. Hệ thống thiết bị",
+20
+],
+[
+2,
+"II.1.2. Thông số thiết kế của hệ thống",
+20
+],
+[
+2,
+"II.1.3. Các tính chất của nguyên liệu thô",
+21
+],
+[
+2,
+"II.1.4. Tính chất của nước sạch sinh hoạt cho Nhà máy",
+22
+],
+[
+1,
+"II.2. Công nghệ sản xuất nước sinh hoạt",
+22
+],
+[
+2,
+"II.2.1. Phương pháp khử trùng bằng clo hóa",
+23
+],
+[
+2,
+"II.2.2. Bộ lọc than hoạt tính",
+24
+],
+[
+1,
+"II.3. Công nghệ hệ thống nước thô - nước sinh hoạt",
+25
+],
+[
+2,
+"II.3.1. Hệ thống nước thô",
+25
+],
+[
+2,
+"II.3.2. Hệ thống sản xuất nước sạch sinh hoạt",
+26
+],
+[
+2,
+"II.3.3. Đặc tính và lượng tiêu thụ các yếu tố phụ trợ, xúc tác và hoá chất",
+27
+],
+[
+1,
+"II.4. Quy trình vận hành hệ thống nước thô và nước sinh hoạt",
+30
+],
+[
+2,
+"II.4.1. Khởi động hệ thống nước thô",
+30
+],
+[
+2,
+"II.4.2. Khởi động/ngừng bình thường hệ thống nước sinh hoạt",
+31
+],
+[
+2,
+"II.4.3. Các interlock trong hệ thống",
+33
+],
+[
+0,
+"PHẦN III: HỆ THỐNG NƯỚC CỨU HỎA",
+35
+],
+[
+1,
+"III.1. Thông số thiết kế của hệ thống",
+35
+],
+[
+1,
+"III.2. Các tính chất của nguồn nước cấp",
+35
+],
+[
+1,
+"III.3. Lý thuyết công nghệ",
+37
+],
+[
+1,
+"III.4. Đặc tính và lượng tiêu thụ các yếu tố phụ trợ",
+38
+],
+[
+1,
+"III.5. Các quy trình/hướng dẫn vận hành hệ thống bơm cứu hỏa",
+39
+],
+[
+2,
+"III.5.1 Hướng dẫn vận hành hệ thống bơm cứu hỏa",
+40
+],
+[
+2,
+"III.5.2. Hướng dẫn thử liên động và thử tải định kỳ hệ thống bơm nước cứu hỏa",
+41
+],
+[
+0,
+"PHỤ LỤC",
+43
+],
+[
+0,
+"CÂU HỎI ÔN TẬP",
+66
+]
+],
+"q": [
+"Vẽ và thuyết minh sơ khối hệ thống nước thô? Nêu các chỉ tiêu công nghệ chính của nước thô.",
+"Vẽ và thuyết minh sơ đồ khối hệ thống nước sinh hoạt? Nêu chỉ tiêu công nghệ chính của nước sinh hoạt.",
+"Vẽ và thuyết minh sơ đồ khối hệ thống nước cứu hỏa? Dấu hiệu nào có thể nhận biết được hệ thống nước cứu hỏa đang vận hành bình thường mà không có hộ tiêu thụ nào đang sử dụng nước cứu hỏa?",
+"Hệ thống nước sinh hoạt theo thiết kế sử dụng loại hóa chất nào, vai trò của loại hóa chất này trong hệ thống? Các yếu tố ảnh hưởng đến hoạt động của bơm 30-PK-2001/P1A/B (làm việc/dừng).",
+"Hãy vẽ sơ đồ chi tiết và trình bày hoạt động của bộ lọc than hoạt tính 30-PK-2001/FL2A/B trong quá trình làm việc bình thường và tái sinh bộ lọc.",
+"Theo thông báo từ trưởng ca, hệ thống cấp nước công nghiệp vào nhà máy sẽ tạm ngưng cung cấp nước trong khoảng thời gian 8 giờ (từ 7h30 đến 15h30), phải thực hiện những công việc gì để đảm bảo hệ thống làm việc ổn định?",
+"Hãy trình bày các bước chuẩn bị và quy trình khởi động/dừng hệ thống nước thô? Các nguyên nhân có thể dẫn đến mức bồn nước thô 30-TK-2001 giảm và cách xử lý.",
+"Đối với các bơm 30-P-4001B/C sử dụng động cơ diesel, giả thiết rằng bồn dầu diesel nhiên liệu của bơm đang chứa 80% dung tích thiết kế của bồn. Như vậy, theo thiết kế bơm có thể vận hành liên tục trong thời gian bao lâu?",
+"Trình bày các bước chuẩn bị và chạy thử bơm cứu hỏa định kỳ.",
+"Trong trường hợp Xưởng Tự động hóa cần bảo dưỡng thiết bị đo mức 30-LIT-32001, vận hành cương vị cần phải kiểm tra và phối hợp với vận hành DCS như thế nào để việc bảo dưỡng thiết bị trên an toàn?"
+]
+},
+"GT02": {
+"toc": [
+[
+0,
+"Chương I: LÝ THUYẾT CHUNG VỀ HỆ THỐNG NƯỚC LÀM MÁT",
+6
+],
+[
+1,
+"I.1. Giới thiệu chung về hệ thống nước sông làm mát",
+6
+],
+[
+1,
+"I.2. Các dạng của tháp giải nhiệt",
+6
+],
+[
+2,
+"I.2.1. Tháp giải nhiệt tuần hoàn tự nhiên",
+6
+],
+[
+2,
+"I.2.2. Tháp giải nhiệt tuần hoàn cưỡng bức",
+7
+],
+[
+1,
+"I.3. Hiệu suất tháp giải nhiệt (Cooling Tower Performance)",
+11
+],
+[
+1,
+"I.4. Các yếu tố ảnh hưởng đến hiệu suất tháp giải nhiệt",
+12
+],
+[
+2,
+"I.4.1. Công suất (capacity)",
+12
+],
+[
+2,
+"I.4.2. Range",
+13
+],
+[
+2,
+"I.4.3. Heat Load",
+13
+],
+[
+2,
+"I.4.4. Nhiệt độ bầu ướt (Wet Bulb Temperature - WBT)",
+13
+],
+[
+1,
+"I.5. Kiểm soát chất lượng nước làm mát",
+14
+],
+[
+2,
+"1.5.1. Blowdown",
+14
+],
+[
+2,
+"1.5.2. Ngăn ngừa cáu cặn",
+14
+],
+[
+2,
+"1.5.3. Kiểm soát ăn mòn",
+15
+],
+[
+2,
+"1.5.4. Kiểm soát vi sinh",
+15
+],
+[
+2,
+"I.5.5. Chống ăn mòn",
+17
+],
+[
+0,
+"Chương II: HỆ THỐNG NƯỚC LÀM MÁT TẠI XƯỞNG PHỤ TRỢ – NHÀ MÁY ĐẠM PHÚ MỸ",
+19
+],
+[
+1,
+"II.1. Thiết kế cơ bản",
+19
+],
+[
+2,
+"II.1.1. Hệ thống nước sông làm mát",
+19
+],
+[
+2,
+"II.1.2. Hệ thống nước sạch làm mát",
+19
+],
+[
+1,
+"II.2. Mô tả công nghệ hệ thống nước làm mát",
+20
+],
+[
+1,
+"II.3. Hệ thống nước sông làm mát",
+23
+],
+[
+2,
+"II.3.1. Chỉ tiêu công nghệ",
+23
+],
+[
+2,
+"II.3.2. Thông số công nghệ các thiết bị trong hệ thống nước sông làm mát",
+23
+],
+[
+2,
+"II.3.3. Các hóa chất sử dụng cho nước sông làm mát",
+29
+],
+[
+2,
+"II.3.4. Quy trình hướng dẫn vận hành hệ thống nước sông làm mát",
+29
+],
+[
+1,
+"II.4. Hệ thống nước ngoài hàng rào",
+32
+],
+[
+2,
+"II.4.1. Chỉ tiêu công nghệ",
+32
+],
+[
+2,
+"II.4.2. Quy trình vận hành hệ thống nước ngoài hàng rào",
+32
+],
+[
+1,
+"II.5. Hệ thống River Make-up and Side Stream Filters (30-PK-3006)",
+36
+],
+[
+2,
+"II.5.1. Mô tả công nghệ",
+36
+],
+[
+2,
+"II.5.2. Quy trình vận hành hệ thống 30-PK-3006",
+41
+],
+[
+1,
+"II.6. Hệ thống nước sạch làm mát",
+70
+],
+[
+2,
+"II.6.1. Chỉ tiêu công nghệ",
+70
+],
+[
+2,
+"II.6.2. Thông số công nghệ các thiết bị/cụm thiết bị trong hệ thống",
+70
+],
+[
+2,
+"II.6.3. Quy trình vận hành bơm nước sạch làm mát",
+73
+],
+[
+2,
+"II.6.4. Hệ thống khóa liên động Interlock hệ thống nước sạch làm mát",
+75
+],
+[
+0,
+"PHỤ LỤC HÌNH VẼ, BẢNG BIỂU TRONG GIÁO TRÌNH",
+77
+],
+[
+0,
+"CÂU HỎI ÔN TẬP",
+79
+]
+],
+"q": [
+"Các bước khởi động hệ thống nước sông và nước sạch làm mát (đã xả hết nước trong hệ thống).",
+"Tỷ số tuần hoàn của nước sông làm mát là gì? Các cách xác định tỷ số này?",
+"Các bước chuẩn bị và đổi bơm nước sông 30-P-3001A~E làm mát? Các thông số cài đặt bảo vệ của bơm?",
+"Hệ thống nước sông và nước sạch làm mát đang sử dụng những loại hóa chất nào? Hàm lượng và công dụng của từng loại?",
+"Các bước chuẩn bị và đổi bơm nước sạch làm mát 30-P-3002A~D? Các thông số cài đặt bảo vệ của bơm?",
+"Mục đích của việc châm nước Javen vào hệ thống của nước sông làm mát? Hiện tại việc bổ sung Javen vào hệ thống nước sông làm mát được tiến hành như thế nào?",
+"Hãy vẽ và thuyết minh sơ đồ công nghệ hệ thống lọc nước sông đầu vào 30-PK-3006. Các chỉ tiêu cơ bản của nước sông trước và sau hệ thống lọc.",
+"Các bước chuẩn bị và khởi động bơm nước sông 30-P-3010A/B.",
+"Nguyên tắc hoạt động của bơm ly tâm? Thế nào là hiện tượng xâm thực của bơm ly tâm, nguyên nhân và cách xử lý?",
+"Vai trò của bồn giãn nở? Tại sao phải đưa khí N2 vào bồn giãn nở? Trong quá trình vận hành, mức bồn giãn nở dao động bất thường: hãy trình bày nguyên nhân và cách xử lý?",
+"Hệ thống tháp làm mát 30-CT-3001A-J tại nhà máy có các thông số vận hành như sau: -Lưu lượng tuần hoàn : 29900 m3/h -Nhiệt độ vào tháp : 43oC -Nhiệt độ ra khỏi tháp : 34oC -Nhiệt độ bầu ướt của không khí vào tháp : 30.3oC Anh (chị) hãy cho biết hiệu suất (Effitiveness) của các tháp làm mát là bao nhiêu (%)?",
+"Hệ thống tháp làm mát 30-CT-3001A-J tại nhà máy có các thông số vận hành như sau: -Lưu lượng tuần hoàn : 29900 m3/h -Nhiệt độ vào tháp : 43oC -Nhiệt độ ra khỏi tháp : 34oC -C.O.C : 1.2 Anh (chị) hãy cho biết lưu lượng blowdown của hệ thống là bao nhiêu (m3/h)?"
+]
+},
+"GT03": {
+"toc": [
+[
+0,
+"CHƯƠNG I. LÝ THUYẾT CHUNG",
+8
+],
+[
+1,
+"I.1. Yêu cầu chất lượng nước lò hơi",
+8
+],
+[
+2,
+"I.1.1. Đặc tính của nước",
+8
+],
+[
+2,
+"I.1.2. Các thông số theo dõi đánh giá chất lượng nước nồi hơi",
+8
+],
+[
+2,
+"I.1.3. Tác hại của các tạp chất",
+11
+],
+[
+2,
+"I.1.4. Các biện pháp xử lý nước",
+13
+],
+[
+1,
+"I.2. Lý thuyết chung về truyền nhiệt và các tính chất của hơi nước",
+21
+],
+[
+2,
+"I.2.1. Lý thuyết chung về truyền nhiệt",
+21
+],
+[
+2,
+"I.2.2. Sự chuyển từ thể lỏng sang thể khí (hơi)",
+22
+],
+[
+1,
+"I.3. Một số dạng ăn mòn xảy ra trong hệ thống lò hơi",
+25
+],
+[
+2,
+"I.3.1. Các khái niệm cơ bản về ăn mòn và chống ăn mòn.",
+25
+],
+[
+2,
+"I.3.2. Các nguyên lý và các dạng ăn mòn",
+26
+],
+[
+1,
+"I.4. Các phương pháp xử lý nước cấp và nước nồi hơi",
+40
+],
+[
+2,
+"I.4.1. Khử khí",
+40
+],
+[
+2,
+"I.4.2. Cơ chế làm việc của hoá chất",
+41
+],
+[
+0,
+"CHƯƠNG II: HỆ THỐNG LÒ HƠI PHỤ TRỢ 10-B-8001",
+48
+],
+[
+1,
+"II.1. Hệ thống xử lý nước cấp lò hơi",
+48
+],
+[
+2,
+"II.1.1. Mục đích",
+48
+],
+[
+2,
+"II.1.2. Chỉ tiêu nước cấp nồi hơi",
+48
+],
+[
+2,
+"II.1.3. Các hộ tiêu thụ HP Boiler Feed Water",
+48
+],
+[
+2,
+"II.1.4. Hệ thống thiết bị/cụm thiết bị",
+48
+],
+[
+2,
+"II.1.5. Thuyết minh công nghệ",
+49
+],
+[
+2,
+"II.1.6. Các Interlock của hệ thống nước cấp lò hơi",
+49
+],
+[
+2,
+"II.1.7. Quy trình vận hành hệ thống",
+49
+],
+[
+2,
+"II.1.8. Thông số kỹ thuật các thiết bị chính của hệ thống nước cấp lò hơi",
+55
+],
+[
+1,
+"II.2. Hệ thống khí nhiên liệu",
+58
+],
+[
+2,
+"II.2.1. Hệ thống thiết bị",
+58
+],
+[
+2,
+"II.2.2. Mô tả công nghệ",
+58
+],
+[
+2,
+"II.2.3. Chỉ tiêu công nghệ",
+59
+],
+[
+2,
+"II.2.4. Thông số các thiết bị trong hệ thống",
+60
+],
+[
+2,
+"II.2.5. Quy trình vận hành",
+63
+],
+[
+1,
+"II.3. Hệ thống quạt gió FD Fan 10-B-8001/K1",
+63
+],
+[
+2,
+"II.3.1. Quạt gió 10-B-8001/K1",
+63
+],
+[
+2,
+"II.3.2. Động cơ dẫn động 10-B-8001/STK1 & 10-B-8001/MK1",
+64
+],
+[
+1,
+"II.4. Hệ thống lò hơi phụ trợ",
+66
+],
+[
+2,
+"II.4.1. Các thiết bị chính trong hệ thống",
+66
+],
+[
+2,
+"II.4.2. Mô tả công nghệ",
+69
+],
+[
+2,
+"II.4.3. Thông số các thiết bị chính trong hệ thống",
+70
+],
+[
+2,
+"II.4.4. Quy trình vận hành",
+71
+],
+[
+2,
+"II.4.5. Các nguyên nhân dẫn đến MFT (Master Fuel Trip) 10-B-8001",
+76
+],
+[
+2,
+"II.4.6. Các logic của hệ thống lò hơi phụ trợ 10-B-8001",
+77
+],
+[
+1,
+"II.5. Hệ thống condensate và blowdown",
+85
+],
+[
+2,
+"II.5.1. Hệ thống thiết bị",
+85
+],
+[
+2,
+"II.5.2. Mô tả công nghệ",
+85
+],
+[
+2,
+"II.5.3. Thông số các thiết bị trong hệ thống",
+85
+],
+[
+1,
+"II.6. Giám sát trong quá trình vận hành bình thường",
+87
+],
+[
+2,
+"II.6.1. Mức nước bao hơi",
+87
+],
+[
+2,
+"II.6.2. Đặc tính của nước cấp và nước nồi hơi",
+87
+],
+[
+2,
+"II.6.3. Xả cặn (blowdown)",
+87
+],
+[
+2,
+"II.6.4. Phân tích mẫu",
+87
+],
+[
+2,
+"II.6.5. Kiểm tra xung quanh nồi hơi",
+87
+],
+[
+2,
+"II.6.6. Ghi các thông số vận hành vào sổ nhật ký (logsheet)",
+88
+],
+[
+0,
+"PHỤ LỤC",
+88
+],
+[
+1,
+"Phụ lục 1. Công thức tính lưu lượng khí nhiên liệu bù nhiệt độ và áp suất",
+88
+],
+[
+1,
+"Phụ lục 2. Mức thực và mức nước trong bao hơi tính bù áp suất",
+89
+],
+[
+1,
+"Phụ lục 3. Lưu lượng hơi HP tính bù nhiệt độ và áp suất",
+91
+],
+[
+1,
+"Phụ lục 4. Datasheet một số van và thiết bị của 10-B-8001",
+92
+],
+[
+0,
+"CÂU HỎI ÔN TẬP",
+106
+]
+],
+"q": [
+"Tại sao phải khử oxy trong nước cấp lò hơi? Hiện nay, nhà máy đang sử dụng những phương pháp nào để khử oxy, giải thích nguyên lý của từng phương pháp.",
+"Hãy nêu các loại hóa chất được sử dụng tại hệ thống nước cấp lò hơi và lò hơi phụ trợ, thành phần chính/tác dụng và cách pha của mỗi loại hóa chất. Nếu pha hoá chất photphaste với nồng độ cao hơn nồng độ khuyến cáo có thể dẫn đến những vấn đề gì?",
+"Hãy trình bày quy trình khởi động hệ thống nước cấp lò hơi khi khởi động nhà máy lại từ đầu? Tại sao trong điều kiện vận hành hiện tại, đường hơi LP vào 10-PK-8004 lại đóng hoàn toàn?",
+"Hãy trình bày các bước thực hiện để thử quá tốc steam turbine 10-STP-8002? Khi nào thì tiến hành thử quá tốc steam turbine, ý nghĩa của việc thử quá tốc này? Các nguyên nhân gây trip bơm 10-P-8002A/B.",
+"Vẽ sơ đồ khối và thuyết minh hệ thống khí nhiên liệu tại nhà máy. Tại xưởng phụ trợ, khí nhiên liệu được cung cấp đến những hộ tiêu thụ nào?",
+"Trình bày nguyên lý cấu tạo cơ bản của lò hơi phụ trợ 10-B8001 và mô tả vòng tuần hoàn (đường đi) của nước và hơi trong thiết bị? Các bước chuẩn bị và khởi động 10-B-8001 từ hiện trường.",
+"Logic 2 out of 3 có nghĩa là gì? Anh (chị) hãy trình bày tất cả các logic 2 out of 3 hiện có tại nước cấp lò hơi và lò hơi phụ trợ.",
+"Hãy trình bày về MFT lò hơi 10-B8001 với các tín hiệu và giá trị kích hoạt cụ thể. hãy trình bày rõ: quá trình Natural draft và Waiting time for air trip xảy ra khi nào?",
+"Hãy trình bày điều kiện để sẵn sàng thực hiện bước Leak test và trình tự thực hiện Leak test của BMS-1?",
+"Hãy trình bày điều kiện để sẵn sàng thực hiện purge lò hơi và các bước thực hiện hòa hơi lên mạng hơi chung (trong 2 trường hợp: hòa hơi từ đầu và hòa hơi khi mạng hơi nhà máy đang ở điều kiện vận hành bình thường)."
+]
+},
+"GT04": {
+"toc": [
+[
+0,
+"CHƯƠNG I: LÝ THUYẾT CHUNG VỀ MÁY NÉN KHÍ",
+7
+],
+[
+1,
+"I.1. Một số khái niệm cơ bản liên quan đến quá trình nén",
+7
+],
+[
+2,
+"I.1.1. Tỷ số nén",
+7
+],
+[
+2,
+"I.1.2. Thể tích riêng",
+7
+],
+[
+1,
+"I.2. Các quá trình nén",
+7
+],
+[
+2,
+"I.2.1. Quá trình đẳng nhiệt",
+8
+],
+[
+2,
+"I.2.2. Quá trình đoạn nhiệt",
+8
+],
+[
+2,
+"I.2.3. Quá trình đa biến",
+8
+],
+[
+2,
+"I.2.4. So sánh 3 quá trình nén",
+9
+],
+[
+2,
+"I.2.5. Máy nén nhiều cấp",
+9
+],
+[
+0,
+"CHƯƠNG II: CÁC LOẠI MÁY NÉN KHÍ",
+11
+],
+[
+1,
+"II.1. Máy nén khí kiểu piston",
+11
+],
+[
+2,
+"II.1.1. Đặc điểm cấu tạo và nguyên lý làm việc",
+11
+],
+[
+2,
+"II.1.2. Quá trình nén lý thuyết và thực tế",
+11
+],
+[
+2,
+"II.1.3. Máy nén khí piston nhiều cấp",
+13
+],
+[
+2,
+"II.1.4. Ưu/nhược điểm của máy nén khí kiểu piston",
+14
+],
+[
+1,
+"II.2. Máy nén khí rotor trục vít",
+15
+],
+[
+2,
+"II.2.1. Cấu tạo và nguyên lý làm việc của máy nén rotor trục vít",
+15
+],
+[
+2,
+"II.2.2. Ưu/nhược điểm của máy nén rotor trục vít",
+16
+],
+[
+1,
+"II.3. Máy nén khí ly tâm",
+16
+],
+[
+2,
+"II.3.1. Nguyên lý làm việc và đặc điểm",
+16
+],
+[
+2,
+"II.3.2. Cấu tạo của máy nén ly tâm",
+17
+],
+[
+2,
+"II.3.3. Đường đặc tuyến, năng suất và công suất của máy nén ly tâm",
+25
+],
+[
+1,
+"II.4. Máy nén khí dọc trục",
+27
+],
+[
+0,
+"CHƯƠNG III: KIẾN THỨC CHUNG VỀ KHÔNG KHÍ ẨM VÀ QUÁ TRÌNH HẤP PHỤ LÀM KHÔ KHÍ",
+29
+],
+[
+1,
+"III.1. Không khí ẩm",
+29
+],
+[
+2,
+"III.1.1. Định nghĩa và phân loại",
+29
+],
+[
+2,
+"III.1.2. Các thông số đặc trưng của không khí ẩm",
+30
+],
+[
+1,
+"III.2. Phương pháp hấp phụ làm khô khí",
+33
+],
+[
+2,
+"III.2.1. Mục đích, ý nghĩa",
+33
+],
+[
+2,
+"III.2.2. Nguyên lý hoạt động của thiết bị làm khô khí",
+33
+],
+[
+0,
+"CHƯƠNG IV: HỆ THỐNG KHÍ NÉN - KHÍ ĐIỀU KHIỂN TẠI NHÀ MÁY ĐẠM PHÚ MỸ",
+37
+],
+[
+1,
+"IV.1. Mô tả công nghệ hệ thống khí nén và khí điều khiển",
+37
+],
+[
+2,
+"IV.1.1. Thiết kế cơ bản",
+37
+],
+[
+2,
+"IV.1.2. Mô tả công nghệ",
+38
+],
+[
+2,
+"IV.1.3. Các tính chất của nguyên liệu và sản phẩm",
+39
+],
+[
+1,
+"IV.2. Mô tả chi tiết công nghệ hệ thống khí nén và khí điều khiển",
+40
+],
+[
+2,
+"IV.2.1. Máy nén không khí 30-K-5001A~E",
+40
+],
+[
+2,
+"IV.2.2. Thiết bị làm khô khí",
+44
+],
+[
+1,
+"IV.3. Quy trình vận hành hệ thống khí nén-khí điều khiển",
+49
+],
+[
+2,
+"IV.3.1. Quy trình khởi động máy nén không khí 30-K-5001A~E",
+49
+],
+[
+2,
+"IV.3.2. Quy trình khởi động hệ thống làm khô khí 30-DR-5001",
+50
+],
+[
+2,
+"IV.3.3. Quy trình khởi động hệ thống làm khô khí 30-DR-5002",
+50
+],
+[
+2,
+"IV.3.4. Các chỉ tiêu công nghệ",
+52
+],
+[
+0,
+"PHỤ LỤC",
+52
+],
+[
+0,
+"CÂU HỎI ÔN TẬP",
+59
+]
+],
+"q": [
+"Anh (chị) hãy phân biệt 2 đơn vị hay sử dụng để đo lường lưu lượng dòng khí: m3/h và Nm3/h. Đối với khí điều khiển ở điều kiện 8.6 barg và 30oC thì 2500 Nm3/h tương đương với bao nhiêu m3/h?",
+"Nhiệt độ điểm sương của khí là gì? Anh (chị) hãy giải thích các nguyên nhân có thể dẫn đến nhiệt độ điểm sương của khí điều khiển cao hơn bình thường (-25oC).",
+"Các bước chuẩn bị và khởi động 1 máy nén không khí 30-K-5001A~E? Các thông số cài đặt bảo vệ của máy nén?",
+"Vẽ và thuyết minh sơ đồ khối hệ thống khí nén, khí điều khiển? Nêu các chỉ tiêu công nghệ chính của công đoạn?",
+"Các bước chuẩn bị và khởi động cụm làm khô khí 30-DR-5001 và 30-DR-5002?"
+]
+},
+"GT05": {
+"toc": [
+[
+0,
+"PHẦN I: CƠ SỞ LÝ THUYẾT",
+7
+],
+[
+1,
+"I.1. Các thông số đánh giá chất lượng nước và tiêu chuẩn chất lượng nước",
+7
+],
+[
+1,
+"I.2. Quá trình lắng và tuyển nổi",
+13
+],
+[
+2,
+"I. 2.1. Khái niệm chung",
+13
+],
+[
+2,
+"I.2.2. Lắng có keo tụ tạo bông",
+14
+],
+[
+2,
+"I.2.3. Quá trình tuyển nổi",
+16
+],
+[
+1,
+"I.3. Quá trình lọc",
+20
+],
+[
+2,
+"I.3.1. Quá trình lọc nhanh",
+22
+],
+[
+2,
+"I.3.2. Quá trình lọc chậm",
+32
+],
+[
+1,
+"I.4. Quá trình keo tụ",
+33
+],
+[
+2,
+"I.4.1. Khái niệm",
+33
+],
+[
+2,
+"I.4.2. Cấu tạo của hạt keo",
+35
+],
+[
+2,
+"I.4.3. Các phương pháp keo tụ",
+37
+],
+[
+2,
+"I.4.4. Các cơ chế của quá trình keo tụ tạo bông",
+41
+],
+[
+1,
+"I.5. Các bước thực hiện quá trình keo tụ",
+46
+],
+[
+2,
+"I.5.1. Trộn chất keo tụ và phá vỡ trạng thái ổn định của hệ keo",
+47
+],
+[
+2,
+"I.5.4. Quá trình tạo bông keo tụ kích thước lớn hơn",
+48
+],
+[
+1,
+"I.6. Quá trình khử trùng",
+51
+],
+[
+2,
+"I.6.1. Phương pháp vật lý",
+51
+],
+[
+2,
+"I.6.2. Phương pháp hóa học",
+52
+],
+[
+0,
+"PHẦN II: HỆ THỐNG XỬ LÝ NƯỚC THẢI – NHÀ MÁY ĐẠM PHÚ MỸ",
+60
+],
+[
+0,
+"Chương I: HỆ THỐNG XỬ LÝ NƯỚC THẢI NHIỄM DẦU",
+60
+],
+[
+1,
+"I.1. Lý thuyết công nghệ",
+60
+],
+[
+2,
+"I.1.1. Các thiết bị chính",
+60
+],
+[
+2,
+"I.1.2. Đặc tính của nước thải",
+62
+],
+[
+2,
+"I.1.3. Lý thuyết công nghệ",
+63
+],
+[
+2,
+"I.1.4. Mô tả dòng công nghệ",
+67
+],
+[
+1,
+"I.2. Quy trình vận hành hệ thống xử lý nước thải nhiễm dầu",
+67
+],
+[
+2,
+"I.2.1. Quy trình vận hành hệ thống xử lý nước thải nhiễm dầu",
+68
+],
+[
+2,
+"I.2.2. Hướng dẫn pha và bổ sung hóa chất hệ thống xử lý nước thải",
+69
+],
+[
+0,
+"Chương II: CÔNG NGHỆ XỬ LÝ NƯỚC THẢI SINH HOẠT",
+70
+],
+[
+1,
+"II.1. Lý thuyết công nghệ",
+70
+],
+[
+2,
+"II.1.1. Các thiết bị chính",
+70
+],
+[
+2,
+"II.1.2. Chỉ tiêu kỹ thuật của nước sinh hoạt",
+70
+],
+[
+0,
+"Chương III: HỆ THỐNG XỬ LÝ NƯỚC THẢI MỚI 40-PK-2003",
+73
+],
+[
+1,
+"III.1. Lý thuyết công nghệ hệ thống XLNT vi sinh",
+73
+],
+[
+2,
+"III.1.1. Mục đích",
+73
+],
+[
+2,
+"III.1.2. Những ký hiệu viết tắt",
+73
+],
+[
+2,
+"III.1.3. Các loại hóa chất sử dụng trong hệ thống",
+74
+],
+[
+2,
+"III.1.4. Cơ sở dữ liệu thiết kế đầu vào của dòng thải",
+74
+],
+[
+2,
+"III.1.5. Mô tả công nghệ",
+75
+],
+[
+2,
+"III.1.6. Mô tả chi tiết mục đích và nguyên lý vận hành",
+80
+],
+[
+1,
+"III.2. Quy trình vận hành hệ thống xử lý nước thải mới",
+98
+],
+[
+1,
+"III.3. Hướng dẫn rửa hệ thống màng MBR",
+100
+],
+[
+1,
+"III.4. Hướng dẫn shock javel định kỳ tại bể 40-PK-2002/BA8",
+101
+],
+[
+0,
+"CÂU HỎI ÔN TẬP",
+119
+]
+],
+"q": [
+"Vẽ và thuyết minh sơ đồ khối hệ thống xử lý nước thải nhiễm dầu? Nêu các chỉ tiêu chính của công đoạn?",
+"Nêu các thiết bị chính và trình bày sơ đồ hệ thống dây chuyền xử lý nước thải sinh hoạt 40-PK-2003? Chức năng của từng thiết bị?",
+"Nêu nguyên lý làm việc của thiết bị tách dầu API 40-PK-2001/V1 và CPI 40-PK-2001/V4?",
+"Định nghĩa BOD, COD? Nêu ý nghĩa của chỉ tiêu BOD và COD trong nước thải tại TK-102?",
+"Hệ thống xử lý nước thải 40-PK-2003 đang sử dụng các loại hóa chất nào? Vai trò của từng loại hóa chất này?",
+"Hãy trình bày cấu tạo chính và nguyên lý làm việc của màng MBR. Tại sao cần phải duy trì lưu lượng khí nhất định vào màng MBR?",
+"Các bước chuẩn bị và rửa màng MBR? Ý nghĩa của từng bước?",
+"Các yếu tố ảnh hưởng đến khả năng làm việc của vi sinh vật tại hệ thống xử lý nước thải 40-PK-2003?",
+"Các bước chuẩn bị và khởi động hệ thống xử lý nước thải 40-PK-2003?",
+"Tiêu chuẩn nước thải đầu vào/ra của hệ thống xử lý nước thải 40-PK-2003? Tiêu chuẩn nước thải theo TCVN cột A/B và ngưỡng tiếp nhận của Izico."
+]
+},
+"GT06": {
+"toc": [
+[
+0,
+"CHƯƠNG I. LÝ THUYẾT CHUNG",
+8
+],
+[
+1,
+"I.1. Các chỉ tiêu chính của nước",
+8
+],
+[
+2,
+"I.1.1. Độ pH",
+8
+],
+[
+2,
+"I.1.2. Độ cứng của nước",
+8
+],
+[
+2,
+"I.1.3. Độ kiềm của nước",
+8
+],
+[
+1,
+"I.2. Tác hại của tạp chất",
+9
+],
+[
+2,
+"I.2.1. Các tạp chất khí",
+9
+],
+[
+2,
+"I.2.2. Các tạp chất rắn",
+9
+],
+[
+1,
+"I.3. Biện pháp xử lý nước",
+10
+],
+[
+2,
+"I.3.1. Phương pháp xử lý nước bằng trao đổi cation",
+12
+],
+[
+2,
+"1.3.2. Phương pháp xử lý nước bằng trao đổi anion",
+13
+],
+[
+1,
+"I.4. Hạt nhựa trao đổi ion",
+14
+],
+[
+2,
+"I.4.1. Hạt nhựa trao đổi ion dương",
+14
+],
+[
+2,
+"I.4.2. Hạt nhựa trao đổi ion âm",
+16
+],
+[
+2,
+"I.4.3. Đặc tính trao đổi ion của hạt nhựa trao đổi ion",
+18
+],
+[
+1,
+"I.5. Các loại hóa chất sử dụng tại cương vị sản xuất nước khử khoáng",
+22
+],
+[
+2,
+"I.5.1. Axit sunphuric H2SO4",
+22
+],
+[
+2,
+"I.5.2. Natri hydroxit NaOH",
+23
+],
+[
+2,
+"I.5.3. Natri sunphit Na2SO3",
+23
+],
+[
+0,
+"CHƯƠNG II. HỆ THỐNG NƯỚC KHỬ KHOÁNG-NHÀ MÁY ĐẠM PHÚ MỸ",
+25
+],
+[
+1,
+"II.1. Thông số của các thiết bị chính",
+25
+],
+[
+2,
+"II.1.1. Thiết bị trao đổi ion dương 30-PK-1001/V1A/B/C",
+26
+],
+[
+2,
+"II.1.2. Thiết bị khử khí 30-PK-1001/V2A/B/C",
+28
+],
+[
+2,
+"II.1.3. Thiết bị trao đổi ion âm 30-PK-1001/V3A/B/C",
+29
+],
+[
+2,
+"II.1.4. Thiết bị trao đổi ion tầng hỗn hợp 30-PK-1001/V4A/B/C",
+31
+],
+[
+2,
+"II.1.6. Bồn pha loãng axit để tái sinh mixed bed 30-PK-1001/TK11",
+33
+],
+[
+2,
+"II.1.8. Bồn định lượng axit để tái sinh mixed bed 30-PK-1001/TK4",
+33
+],
+[
+2,
+"II.1.10. Bồn định lượng xút để tái sinh mixed bed 30-PK-1001/TK6",
+34
+],
+[
+2,
+"II.1.11. Bơm nước tái sinh 30-PK-1001/P5A/B",
+34
+],
+[
+2,
+"II.1.12. Bồn định lượng Natri sulphit Na2SO3 30-PK-1001/TK7",
+34
+],
+[
+2,
+"II.1.13. Bể trung hoà 30-PK-1001/BA1",
+35
+],
+[
+2,
+"II.1.14. Bể cân bằng 30-PK-1001/BA2",
+35
+],
+[
+2,
+"II.1.15. Bồn chứa axit để trung hoà 30-PK-1001/TK9",
+35
+],
+[
+2,
+"II.1.17. Bồn chứa xút để trung hoà 30-PK-1001/TK8",
+36
+],
+[
+2,
+"II.1.19. Bơm nước thải tái sinh đã trung hòa 30-PK-1001/P5A/B",
+36
+],
+[
+2,
+"II.1.20. Quạt không khí bể trung hoà 30-PK-1001/K1A/B",
+37
+],
+[
+2,
+"II.1.21. Bồn chứa khí nén để tái sinh mixed bed 30-PK-1001/V5",
+37
+],
+[
+1,
+"II.2. Chỉ tiêu nước cấp, yêu cầu sản phẩm và tiêu hao hóa chất",
+37
+],
+[
+2,
+"II.2.1. Đặc tính của các nguồn nước cấp",
+37
+],
+[
+2,
+"II.2.2. Tính chất nước khử ion đầu vào thiết bị trao đổi ion tầng hỗn hợp",
+39
+],
+[
+2,
+"II.2.3. Đặc tính nước khử khoáng ra khỏi thiết bị trao đổi ion tầng hỗn hợp",
+40
+],
+[
+2,
+"II.2.4. Các thông số thiết kế khi hệ thống chỉ sử dụng nước thô",
+40
+],
+[
+1,
+"II.3. Các thông số công nghệ khi tái sinh hệ thống",
+41
+],
+[
+2,
+"II.3.1. Các thông số khi tái sinh thiết bị trao đổi ion dương",
+41
+],
+[
+2,
+"II.3.2. Các thông số khi tái sinh thiết bị trao đổi ion âm",
+43
+],
+[
+2,
+"II.3.2. Các thông số khi tái sinh mixed bed",
+44
+],
+[
+1,
+"II.4. Mô tả nguyên lý hoạt động của hệ thống sản xuất nước khử khoáng",
+47
+],
+[
+2,
+"II.4.1. Nguyên lý hoạt động",
+47
+],
+[
+2,
+"II.4.2. Chỉ tiêu nước khử khoáng",
+49
+],
+[
+1,
+"II.5. Quy trình khởi động hệ thống",
+50
+],
+[
+2,
+"II.5.1. Công tác chuẩn bị trước khi khởi động",
+50
+],
+[
+2,
+"II.5.2. Quy trình khởi động công đoạn khử ion",
+51
+],
+[
+2,
+"II.5.3. Quy trình khởi động mixed bed",
+52
+],
+[
+1,
+"II.6. Quy trình tái sinh hạt nhựa trao đổi ion",
+53
+],
+[
+2,
+"II.6.1. Các phản ứng hóa học trong quá trình tái sinh hạt nhựa trao đổi ion",
+53
+],
+[
+2,
+"II.6.2. Tái sinh cụm khử ion",
+54
+],
+[
+2,
+"II.6.3. Tái sinh bình trao đổi ion tầng hỗn hợp",
+64
+],
+[
+1,
+"II.7. Quy trình ngừng bình thường hệ thống",
+71
+],
+[
+2,
+"II.7.1. Quy trình ngừng bình thường cụm khử ion",
+71
+],
+[
+2,
+"II.7.2. Quy trình ngừng bình thường mixed bed",
+72
+],
+[
+0,
+"CÂU HỎI ÔN TẬP",
+77
+]
+],
+"q": [
+"Hãy vẽ và thuyết minh sơ đồ khối hệ thống sản xuất nước khử khoáng. Các chỉ tiêu cơ bản của nước khử khoáng. Tại sao nước sau khi trao đổi ion dương lại có giá trị pH thấp?",
+"Hãy trình bày các bước chuẩn bị hóa chất để tái sinh 1 train bất kỳ. Và giải thích rõ nguyên nhân tại sao khi phun axit ở 2 nồng độ khác nhau (phun axit 1.6% trước, 4% sau) sẽ tránh được hiện tượng kết tủa muối trên bề mặt hạt nhựa.",
+"Hãy trình bày các bước thực hiện tái sinh 1 train bất kỳ, trong đó trình bày rõ tác động của van (kể cả van của hệ thống hóa chất) và các thao tác điều chỉnh của người vận hành để đảm bảo nồng độ hóa chất theo yêu cầu. Tại sao nước sau khi trao đổi ion âm lại có giá trị pH cao?",
+"Hãy trình bày các bước chuẩn bị hóa chất để tái sinh 1 mixed bed bất kỳ. Các điều kiện để thực hiện được việc tái sinh mixed bed.",
+"Hãy trình bày các bước thực hiện tái sinh 1 mixbed bất kỳ, trong đó trình bày rõ tác động của van (kể cả van của hệ thống hóa chất).",
+"Tại sao thiết bị khử khí 30-PK-1001/V2A/B/C lại được đặt sau thiết bị trao đổi cation?",
+"Hãy trình bày các bước chuẩn bị và thực hiện thay hạt nhựa ion dương, ion âm hoặc mixed bed. Những nguyên nhân nào có thể làm giảm chất lượng của hạt nhựa ion dương trong quá trình vận hành?",
+"Trong trường hợp các nguồn condensate về hệ thống sản xuất nước demi có độ dẫn cao (process condensate, turbine condensate và steam condensate), người vận hành phải xử lý như thế nào?"
+]
+},
+"GT07": {
+"toc": [
+[
+0,
+"CHƯƠNG I: CƠ SỞ LÝ THUYẾT CHUNG",
+7
+],
+[
+1,
+"I.1. Tính chất vật lý của N2 và O2",
+7
+],
+[
+2,
+"I.1.1. Tính chất vật lý của N2",
+7
+],
+[
+2,
+"I.1.2. Tính chất vật lý của O2",
+7
+],
+[
+1,
+"I.2. Cơ sở lý thuyết công nghệ sản xuất N2 bằng phương pháp chưng cất-hóa lỏng không khí",
+8
+],
+[
+2,
+"I.2.1. Hệ thống làm lạnh (Chiller)",
+8
+],
+[
+2,
+"I.2.2. Hệ thống làm sạch không khí",
+10
+],
+[
+2,
+"I.2.3. Lý thuyết quá trình chưng cất",
+14
+],
+[
+0,
+"CHƯƠNG II: HỆ THỐNG SẢN XUẤT NITƠ - NHÀ MÁY ĐẠM PHÚ MỸ",
+17
+],
+[
+1,
+"II.1. Mô tả chung về hệ thống",
+17
+],
+[
+2,
+"II.1.1. Cấu tạo và vai trò của các thiết bị chính",
+17
+],
+[
+2,
+"II.1.2. Chỉ tiêu kỹ thuật của khí nitơ",
+24
+],
+[
+2,
+"II.1.3. Sơ đồ công nghệ hệ thống sản xuất khí N2",
+24
+],
+[
+1,
+"II.2. Quy trình vận hành hệ thống sản xuất nitơ",
+24
+],
+[
+2,
+"II.2.1. Quy trình khởi động hệ thống sản xuất nitơ",
+24
+],
+[
+2,
+"II.2.2. Giám sát quá trình làm lạnh và chuyển sang trạng thái ổn định",
+26
+],
+[
+2,
+"II.2.3. Quy trình ngừng bình thường",
+29
+],
+[
+2,
+"II.2.4. Hướng dẫn thao tác trên màn hình HMI",
+30
+],
+[
+0,
+"PHỤ LỤC 1: Kiểm tra vị trí các van trước khi khởi động",
+58
+],
+[
+0,
+"PHỤ LỤC 2: Các bộ khóa liên động của hệ thống sản xuất Nito",
+61
+],
+[
+0,
+"PHỤ LỤC 3: Hoạt động của bộ làm sạch khí",
+62
+],
+[
+0,
+"PHỤ LỤC 4. Lưu ý về hệ thống điều khiển",
+63
+],
+[
+0,
+"PHỤ LỤC 5. Giá trị cài đặt các tín hiệu trên HMI Hệ thống sản xuất khí N2",
+64
+],
+[
+0,
+"PHỤ LỤC 6 . Giá trị tác động các bộ điều khiển hệ thống sản xuất N2",
+65
+],
+[
+0,
+"PHỤ LỤC 7. Datasheet các thiết bị chính",
+68
+],
+[
+0,
+"CÂU HỎI ÔN TẬP",
+74
+]
+],
+"q": [
+"Vẽ và thuyết minh sơ đồ công nghệ của hệ thống sản xuất N2 30-PK-6001? Các chỉ tiêu của sản phẩm N2.",
+"Vẽ và thuyết minh sơ đồ hệ thống Chiller 30-PK-6001/ACC1. Vai trò của đối với hệ thống sản xuất N2 là gì?",
+"Vẽ sơ đồ cấu tạo của APU 30-PK-6001/V2/3. Thiết bị hấp phụ 30-PK-6001/V2/3 bao gồm những loại nào và chức năng của chúng.",
+"Các bước chuẩn bị và khởi động lại hệ thống sản xuất N2 30-PK-6001 sau khi dừng hệ thống đại tu. Trong quá trình khởi động, người vận hành cần lưu ý những vấn đề gì?",
+"Các bước chuẩn bị và warm-up hệ thống sản xuất N2 ở mode 0 và mode 5."
+]
+},
+"GT08": {
+"toc": [
+[
+0,
+"PHẦN I: LÝ THUYẾT VỀ CHU TRÌNH TURBINE KHÍ",
+8
+],
+[
+1,
+"I.1. Các chu trình nhiệt điển hình",
+9
+],
+[
+2,
+"I.1.1. Chu trình hở đơn giản nhất không dùng bộ trao đổi nhiệt",
+9
+],
+[
+2,
+"I.1.2. Chu trình hở có dùng trao đổi nhiệt",
+13
+],
+[
+2,
+"I.1.3. Chu trình hỗn hợp (combined cycle)",
+15
+],
+[
+1,
+"I.2. Điều kiện môi trường ảnh hưởng tới quá trình vận hành của turbine khí",
+17
+],
+[
+1,
+"I.3. Các phần tử chính của thiết bị turbine khí",
+17
+],
+[
+2,
+"I.3.1. Máy nén",
+17
+],
+[
+0,
+"PHẦN II: HỆ THỐNG TURBINE KHÍ MS 5001 - NHÀ MÁY ĐẠM PHÚ MỸ",
+30
+],
+[
+1,
+"II.1. Phần mở đầu",
+30
+],
+[
+2,
+"II.1.1. Tổng quan",
+30
+],
+[
+2,
+"II.1.2. Mô tả đường đi của không khí và khí cháy trong thiết bị turbine khí",
+30
+],
+[
+1,
+"II.2. Mô tả chung về turbine khí MS-5001",
+32
+],
+[
+2,
+"II.2.1. Giới thiệu chung",
+32
+],
+[
+2,
+"II.2.2. Quy ước về hướng của thiết bị turbine khí",
+32
+],
+[
+2,
+"II.2.3. Máy nén không khí dọc trục",
+33
+],
+[
+2,
+"II.2.4. Hệ thống buồng đốt “DLN”",
+41
+],
+[
+2,
+"II.2.5. Turbine khí",
+49
+],
+[
+2,
+"II.2.6. Hệ thống không khí vào và khí thải",
+59
+],
+[
+1,
+"II.3. Cấu tạo các phần của turbine khí 10-GT-9001",
+69
+],
+[
+2,
+"II.3.1. Hệ thống phụ trợ của turbine khí",
+69
+],
+[
+2,
+"II.3.2. Hệ thống khởi động",
+74
+],
+[
+2,
+"II.3.3. Hệ thống dầu bôi trơn",
+87
+],
+[
+2,
+"II.3.4. Hệ thống khí nhiên liệu",
+94
+],
+[
+2,
+"II.3.5. Hệ thống dầu thủy lực",
+100
+],
+[
+2,
+"II.3.6. Hệ thống dầu điều khiển",
+102
+],
+[
+2,
+"II.3.7. Hệ thống khí làm mát và làm kín",
+105
+],
+[
+2,
+"II.3.8. Những cảnh báo trong quá trình vận hành",
+108
+],
+[
+1,
+"II.4. Quy trình và vòng điều khiển turbine khí MS-5001 trên hệ thống Mark VI",
+115
+],
+[
+2,
+"II.4.1. Quy trình và nguyên lý điều khiển",
+115
+],
+[
+2,
+"II.4.2. Vòng điều khiển (control loops)",
+128
+],
+[
+1,
+"II.5. Những sự cố thường gặp trong quá trình vận hành",
+141
+]
+],
+"q": []
+},
+"GT09": {
+"toc": [
+[
+0,
+"PHẦN I: HỆ THỐNG ĐUỐC ĐỐT",
+7
+],
+[
+1,
+"I.1. Mô tả hệ thống",
+7
+],
+[
+2,
+"I.1.1. Năng suất thiết kế của hệ thống",
+7
+],
+[
+2,
+"I.1.2. Các trường hợp khẩn cấp, lưu lượng dòng và thành phần khí cháy",
+7
+],
+[
+2,
+"I.1.3. Mô tả công nghệ hệ thống đuốc đốt",
+9
+],
+[
+1,
+"I.2. Quy trình vận hành hệ thống đuốc",
+10
+],
+[
+2,
+"I.2.1. Các định nghĩa và thuật ngữ",
+10
+],
+[
+2,
+"I.2.2. Nguyên lý làm việc của đuốc",
+10
+],
+[
+0,
+"PHẦN II: HỆ THỐNG BỒN CHỨA AMMONIA",
+13
+],
+[
+1,
+"II.1. Mô tả hệ thống",
+13
+],
+[
+2,
+"II.1.1. Các thiết bị chính",
+13
+],
+[
+2,
+"II.1.2. Thiết kế cơ bản",
+13
+],
+[
+2,
+"II.1.3. Tính chất của ammonia tồn trữ",
+13
+],
+[
+1,
+"II.2. Bồn chứa ammonia lỏng 40-TK-5001",
+14
+],
+[
+2,
+"II.2.1. Thông số thiết kế",
+14
+],
+[
+2,
+"II.2.3. Mô tả logic bảo vệ đối với bồn chứa 40-TK-5001",
+16
+],
+[
+2,
+"II.2.3. Tác động của NH3 đến sức khỏe con người",
+16
+],
+[
+1,
+"II.3. Quy trình vận hành hệ thống bồn chứa NH3",
+17
+],
+[
+2,
+"II.3.1. Công tác chuẩn bị",
+17
+],
+[
+2,
+"II.3.2. Quy trình khởi động",
+17
+],
+[
+2,
+"II.3.3. Quy trình ngừng hệ thống bồn chứa NH3",
+19
+],
+[
+1,
+"II.4. Hướng dẫn vận hành cụm làm lạnh hóa lỏng hơi NH3 40-PK-5001",
+20
+],
+[
+2,
+"II.4.1. Các nút/công tắc và chức năng",
+20
+],
+[
+2,
+"II.4.2. Công tác chuẩn bị",
+23
+],
+[
+2,
+"II.4.3. Thiết lập điều kiện khởi động",
+24
+],
+[
+2,
+"II.4.4. Khởi động hệ thống 40-PK-5001",
+24
+],
+[
+2,
+"II.4.5. Ngừng hệ thống 40-PK-5001",
+25
+],
+[
+1,
+"II.5. Hướng dẫn đưa hơi từ bồn chứa 40-TK-5001 sang máy nén 10-K-4051 xưởng Amo",
+26
+],
+[
+2,
+"II.5.1. Công tác chuẩn bị",
+26
+],
+[
+2,
+"II.5.2. Các bước thực hiện",
+26
+],
+[
+2,
+"II.5.4. Dừng đưa hơi NH3 sang xưởng Amo",
+26
+],
+[
+2,
+"II.5.5. Sự cố hoặc dừng nhà máy dài ngày",
+27
+],
+[
+1,
+"II.6. Hướng dẫn vận hành bơm NH3 lỏng",
+27
+],
+[
+2,
+"II.6.1. Hướng dẫn vận hành bơm NH3 cấp cho xưởng Ure/Amo/NPK",
+27
+],
+[
+2,
+"II.6.2. Hướng dẫn vận hành hệ thống bơm NH3 cấp xe bồn",
+28
+],
+[
+1,
+"II.7. Hướng dẫn vận hành hệ thống làm lạnh hóa lỏng hơi NH3 40-PK-5005",
+31
+],
+[
+2,
+"II.7.1. Quy trình công nghệ cụm làm lạnh 40-PK-5005",
+31
+],
+[
+2,
+"II.7.2. Các trang màn hình của HMI",
+32
+],
+[
+2,
+"II.7.3. Quá tải hệ thống",
+34
+],
+[
+2,
+"II.7.4. Các logic của hệ thống",
+35
+],
+[
+2,
+"II.7.5. Hệ thống dầu bôi trơn",
+40
+],
+[
+2,
+"II.7.6. Quy trình xả dầu trong 40-PK-5005/V4",
+42
+],
+[
+2,
+"II.7.7. Công tác chuẩn bị",
+43
+],
+[
+2,
+"II.7.8. Thiết lập điều kiện khởi động",
+43
+],
+[
+2,
+"II.7.9. Khởi động máy nén 40-PK-5005/K1A/B",
+45
+],
+[
+2,
+"II.7.10. Ngừng hệ thống làm lạnh NH3",
+46
+],
+[
+2,
+"II.7.11. Pump out thiết bị 40-PK-5005/V5",
+46
+],
+[
+0,
+"CÂU HỎI ÔN TẬP",
+53
+]
+],
+"q": [
+"Hãy vẽ sơ đồ và thuyết minh công nghệ cụm làm lạnh hơi ammoniac 40-PK-5001. Khi trong hệ thống có lẫn 1 lượng lớn khí không ngưng (điển hình là khí N2) thì hiện tượng gì sẽ xảy ra? Tại sao khi hệ thống có lẫn khí không ngưng thì hệ thống sẽ làm việc kém hiệu quả?",
+"Hãy vẽ sơ đồ và thuyết minh công nghệ cụm làm lạnh hơi ammoniac 40-PK-5005? Hãy cho biết những điểm khác nhau cơ bản nhất của 40-PK-5005 và 40-PK-5001?",
+"Hãy cho biết các chỉ tiêu công nghệ của ammoniac lỏng được tồn trữ tại bồn 40-TK-5001. Ammoniac lỏng từ bồn chứa 40-TK-5001 có thể cấp đi đến những hộ tiêu thụ nào?",
+"Hãy nêu các nguyên nhân dẫn đến áp suất bồn chứa ammoniac 40-TK-5001 tăng cao và cách xử lý?",
+"Hãy trình bày tóm tắt các bước chính của quy trình phối hợp đưa hơi ammoniac từ bồn 40-TK-5001 sang máy nén 40-K-4051 xưởng Ammonia. Trình bày cụ thể các mức giá trị áp suất bồn chứa có liên quan đến việc huy động chạy/dừng thiết bị.",
+"Khí nhiên liệu (fuel gas) có những tác dụng gì đối với hệ thống đuốc đốt? Hệ thống đuốc 40-PK-1001 và 40-PK-1002 tiếp nhận những nguồn thải cụ thể nào?",
+"Khi khởi động hệ thống máy nén làm lạnh hơi ammoniac 40-PK-5001, tại thiết bị 40-PK-5001/E1/V2 không xuất hiện mức lỏng. Các nguyên nhân nào có thể dẫn đến hiện tượng nói trên? Tại sao logic lại cài đặt mức cao cao 40-LSHH-45703 gây trip hệ thống?",
+"Hãy trình bày các bước chuẩn bị và khởi động hệ thống đuốc 40-PK-1001 và 40-PK-1002."
+]
+}
+}

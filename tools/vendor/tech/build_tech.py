@@ -226,5 +226,6 @@ TAGS.update(u33_42.TAGS)
 import ugt
 UNITS = {"32": unit32, "18": u18.UNIT, **u31_35.UNITS, **u45_41.UNITS, "36": u36.UNIT, "19A": u19.UNIT, **u33_42.UNITS}
 ugt.apply(UNITS, TAGS)
-json.dump({"units": UNITS, "tags": TAGS}, open(OUT, "w"), ensure_ascii=False, separators=(",", ":"))
+import gtcv
+json.dump({"units": UNITS, "tags": TAGS, **gtcv.build()}, open(OUT, "w"), ensure_ascii=False, separators=(",", ":"))
 print("tech.json:", len(TAGS), "thiết bị, Unit", ", ".join(UNITS))

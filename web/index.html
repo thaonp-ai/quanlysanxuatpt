@@ -187,10 +187,26 @@ a.doc:hover{background:var(--line-soft)}
 .tech .src{margin-top:8px;font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .tech .src a,.tech .src button{font:inherit;font-size:12px;color:var(--line);background:var(--sheet);border:1px solid var(--rule);border-radius:5px;padding:2px 8px;text-decoration:none;cursor:pointer}
 .tech .src a:hover,.tech .src button:hover{border-color:var(--line)}
-.tech .unitlink{margin-top:18px;border:1px solid var(--line);color:var(--line);background:none;border-radius:6px;padding:7px 12px;font-weight:600}
+.tech .unitlink,.tech .gtlink{margin-top:18px;border:1px solid var(--line);color:var(--line);background:none;border-radius:6px;padding:7px 12px;font-weight:600}
 .unitwrap{position:relative}
 .unittech{display:block;margin:-4px 0 4px 57px;border:0;background:none;color:var(--line);font-size:12px;font-weight:600;padding:2px 0}
 .unittech:hover{text-decoration:underline}
+.ulinks{display:flex;gap:14px;margin:-4px 0 4px 57px}
+.ulinks .unittech{margin:0}
+.gtc{border-top:1px solid var(--rule);padding-top:10px;margin-top:10px}
+.gtc:first-child{border-top:0;margin-top:0}
+.gtno{font-size:12px;color:var(--muted);letter-spacing:.04em}
+.tech h4.gtt{margin-top:2px;text-transform:none;letter-spacing:0;font-size:16px}
+.gtcv{color:var(--muted);margin:2px 0 6px}
+.gtd{margin:10px 0}
+.gtd summary{cursor:pointer;font-weight:600;color:var(--line)}
+.toc{list-style:none;padding:0;margin:6px 0}
+.toc li{display:flex;justify-content:space-between;gap:12px;margin:2px 0;max-width:68ch}
+.toc li.lv0{font-weight:600;margin-top:8px}
+.toc li.lv2{padding-left:16px;color:var(--muted)}
+.toc li.lv1{padding-left:8px}
+.toc .pg{white-space:nowrap;color:var(--muted);font-size:12px}
+.gq li{margin:6px 0}
 .rowtech{border:0;background:none;color:var(--line);padding:0 8px;font-size:12px;font-weight:600;align-self:center;border-radius:5px;min-height:32px;white-space:nowrap}
 .rowtech:hover{background:var(--line-soft)}
 .pop{position:absolute;right:0;top:calc(100% + 6px);background:var(--sheet);border:1px solid var(--rule);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.14);padding:6px;display:flex;flex-direction:column;min-width:240px;z-index:30}
@@ -227,6 +243,7 @@ a.doc:hover{background:var(--line-soft)}
   .unit{grid-template-columns:auto;padding:6px 10px;border-left:0;border-bottom:3px solid transparent;white-space:nowrap;width:auto}
   .unit .n,.unit .k{display:none}
   .unittech{margin:0;align-self:center;white-space:nowrap}
+  .ulinks{margin:0;align-self:center;gap:10px}
   .unit[aria-current="true"]{border-bottom-color:var(--line)}
   .panel{border-right:0}
   .viewer{position:fixed;inset:0;z-index:20;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -452,7 +469,8 @@ function techHTML(e,sub){
   return h+srcLinks(e.src);}
 function wireTech(){$("techBody").querySelectorAll("[data-sheet]").forEach(b=>b.onclick=()=>{
     const i=DB.sheets.findIndex(s=>s.dwg===b.dataset.sheet);if(i<0)return;$("docs").hidden=true;state.sel=null;openSheetAll(i);render();});
-  const ul=$("techBody").querySelector(".unitlink");if(ul)ul.onclick=()=>openUnitTech(ul.dataset.u);}
+  const ul=$("techBody").querySelector(".unitlink");if(ul)ul.onclick=()=>openUnitTech(ul.dataset.u);
+  const gl=$("techBody").querySelector(".gtlink");if(gl)gl.onclick=()=>openUnitGT(gl.dataset.u);}
 let docsCur=null,docsTab="docs";
 function setDocsTab(tab){docsTab=tab;$("dtTech").setAttribute("aria-selected",tab==="tech");$("dtDocs").setAttribute("aria-selected",tab==="docs");
   $("techBody").hidden=tab!=="tech";$("docsQWrap").hidden=tab!=="docs";$("docsList").hidden=tab!=="docs";
@@ -467,7 +485,22 @@ function openDocs(t,tab){docsCur=t;$("docs").hidden=false;$("docsQ").value="";
   if(docsTab==="docs")setTimeout(()=>$("docsQ").focus(),30);}
 function openUnitTech(u){const e=TECH&&TECH.units&&TECH.units[u];if(!e)return;docsCur=null;$("docs").hidden=false;
   $("docsTabs").hidden=true;$("docsTag").textContent="Unit "+u;$("docsSub").textContent=e.t;
-  $("techBody").innerHTML=techHTML(e);wireTech();setDocsTab("tech");$("techBody").scrollTop=0;}
+  $("techBody").innerHTML=techHTML(e)+(TECH.gtu&&TECH.gtu[u]?`<button class="gtlink" data-u="${esc(u)}">Giáo trình đào tạo cương vị ›</button>`:"");wireTech();setDocsTab("tech");$("techBody").scrollTop=0;}
+function gtHTML(u){const ids=(TECH.gtu&&TECH.gtu[u])||[];let h="";
+  ids.forEach(k=>{const g=TECH.gt[k],l=docLinks({p:g.f});
+    h+=`<div class="gtc"><div class="gtno">${esc(g.no)}</div><h4 class="gtt">${esc(g.t)}</h4><p class="gtcv">${esc(g.cv)}</p>`+
+      (l?`<div class="src"><a href="${esc(l.view)}" target="_blank" rel="noopener">Mở giáo trình (PDF) ↗</a></div>`:"")+
+      `<h4>Tóm tắt nội dung</h4><ul>${g.sum.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`+
+      `<h4>Điểm cần nhớ</h4><ul>${g.key.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`+
+      (g.toc&&g.toc.length?`<details class="gtd"><summary>Mục lục (${g.toc.length} mục)</summary><ol class="toc">${g.toc.map(([lv,t,pg])=>`<li class="lv${lv}"><span>${esc(t)}</span>${pg?`<span class="pg">tr. ${pg}</span>`:""}</li>`).join("")}</ol></details>`:"")+
+      (g.q&&g.q.length?`<details class="gtd"><summary>Câu hỏi ôn tập (${g.q.length} câu)</summary><ol class="gq">${g.q.map(x=>`<li>${esc(x)}</li>`).join("")}</ol></details>`:"")+`</div>`;});
+  const om=(TECH.gtom&&TECH.gtom[u])||[];
+  if(om.length)h+=`<h4>Tài liệu gốc tham khảo</h4>`+srcLinks(om).replace("Nguồn: ","");
+  if(TECH.units&&TECH.units[u])h+=`<button class="unitlink" data-u="${esc(u)}">Xem công nghệ Unit ${esc(u)} ›</button>`;
+  return h;}
+function openUnitGT(u){if(!TECH||!TECH.gtu||!TECH.gtu[u])return;docsCur=null;$("docs").hidden=false;
+  $("docsTabs").hidden=true;$("docsTag").textContent="Unit "+u;$("docsSub").textContent="Giáo trình đào tạo cương vị";
+  $("techBody").innerHTML=gtHTML(u);wireTech();setDocsTab("tech");$("docsEyebrow").textContent="Giáo trình";$("techBody").scrollTop=0;}
 $("dtTech").onclick=()=>setDocsTab("tech");$("dtDocs").onclick=()=>{setDocsTab("docs");renderDocs();};
 function renderDocs(){
   const t=docsCur;if(!t||!VD)return;
@@ -512,8 +545,13 @@ function renderUnits(){
     b.setAttribute("aria-current",state.unit===u.code);
     b.onclick=()=>{state.unit=u.code;renderUnits();render();};
     box.appendChild(b);
-    if(TECH&&TECH.units&&TECH.units[u.code]){const tb=document.createElement("button");tb.className="unittech";tb.textContent="Công nghệ ›";
-      tb.title=TECH.units[u.code].t;tb.onclick=()=>openUnitTech(u.code);box.appendChild(tb);}
+    const hasT=TECH&&TECH.units&&TECH.units[u.code],hasG=TECH&&TECH.gtu&&TECH.gtu[u.code];
+    if(hasT||hasG){const row=document.createElement("div");row.className="ulinks";
+      if(hasT){const tb=document.createElement("button");tb.className="unittech";tb.textContent="Công nghệ ›";
+        tb.title=TECH.units[u.code].t;tb.onclick=()=>openUnitTech(u.code);row.appendChild(tb);}
+      if(hasG){const gb=document.createElement("button");gb.className="unittech";gb.textContent="Giáo trình ›";
+        gb.title="Giáo trình đào tạo cương vị";gb.onclick=()=>openUnitGT(u.code);row.appendChild(gb);}
+      box.appendChild(row);}
   });
 }
 function hl(tag,q){

@@ -223,5 +223,8 @@ TAGS.update(u45_41.TAGS)
 TAGS.update(u36.TAGS)
 TAGS.update(u19.TAGS)
 TAGS.update(u33_42.TAGS)
-json.dump({"units": {"32": unit32, "18": u18.UNIT, **u31_35.UNITS, **u45_41.UNITS, "36": u36.UNIT, "19A": u19.UNIT, **u33_42.UNITS}, "tags": TAGS}, open(OUT, "w"), ensure_ascii=False, separators=(",", ":"))
-print("tech.json:", len(TAGS), "thiết bị, Unit 32, 18, 31, 35, 45, 41, 36, 19A, 33, 42")
+import ugt
+UNITS = {"32": unit32, "18": u18.UNIT, **u31_35.UNITS, **u45_41.UNITS, "36": u36.UNIT, "19A": u19.UNIT, **u33_42.UNITS}
+ugt.apply(UNITS, TAGS)
+json.dump({"units": UNITS, "tags": TAGS}, open(OUT, "w"), ensure_ascii=False, separators=(",", ":"))
+print("tech.json:", len(TAGS), "thiết bị, Unit", ", ".join(UNITS))

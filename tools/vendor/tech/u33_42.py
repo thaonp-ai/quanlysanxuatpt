@@ -11,7 +11,7 @@ phương án G2-00-PA-174 lần 3 (12/2023), tờ trình 24-143/TTr-CNSX (08/202
 NLM = "Nuoc lam mat/"
 REV = NLM + "Revamp_COOLING WATER SYSTEM_revamp/"
 WW = "9. Xử lý nước thải/"
-GTN = "Giáo trình_New/"
+GTN = "Giáo trình tham khảo các cương vị/"
 
 
 def sh(dwg, label):

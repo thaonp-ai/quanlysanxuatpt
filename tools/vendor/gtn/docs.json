@@ -1,22 +1,6 @@
 [
 {
-"p": "Giáo trình_New/GT Nuoc lam mat_Rev01.docx",
-"t": "Giáo trình vận hành nước làm mát & nước NHR (Rev01, Word)",
-"g": "Tài liệu tham khảo",
-"tags": [
-"30-CT-3001",
-"30-P-3001",
-"30-P-3002",
-"30-E-3001",
-"30-PK-3006",
-"30-V-3001"
-],
-"no": "",
-"src": "Giáo trình đào tạo X.Phụ trợ",
-"kb": 0
-},
-{
-"p": "Giáo trình_New/STVB102393_G2-30-GT-02 GT dao tao HT nuoc lam mat - nuoc NHR_vps.pdf",
+"p": "Giáo trình tham khảo các cương vị/STVB102393_G2-30-GT-02 GT dao tao HT nuoc lam mat - nuoc NHR_vps.pdf",
 "t": "Giáo trình G2-30-GT-02 – hệ thống nước làm mát & nước NHR",
 "g": "Tài liệu tham khảo",
 "tags": [
@@ -28,24 +12,11 @@
 "30-V-3001"
 ],
 "no": "",
-"src": "Giáo trình đào tạo X.Phụ trợ",
+"src": "Giáo trình tham khảo các cương vị",
 "kb": 0
 },
 {
-"p": "Giáo trình_New/GT He thong xu ly nuoc thai_Rev01.docx",
-"t": "Giáo trình vận hành hệ thống xử lý nước thải (Rev01, Word)",
-"g": "Tài liệu tham khảo",
-"tags": [
-"40-PK-2001",
-"40-PK-2002",
-"40-PK-2003"
-],
-"no": "",
-"src": "Giáo trình đào tạo X.Phụ trợ",
-"kb": 0
-},
-{
-"p": "Giáo trình_New/STVB102393_G2-30-GT-05 GT dao tao HT xu ly nuoc thai_vps.pdf",
+"p": "Giáo trình tham khảo các cương vị/STVB102393_G2-30-GT-05 GT dao tao HT xu ly nuoc thai_vps.pdf",
 "t": "Giáo trình G2-30-GT-05 – hệ thống xử lý nước thải",
 "g": "Tài liệu tham khảo",
 "tags": [
@@ -54,26 +25,83 @@
 "40-PK-2003"
 ],
 "no": "",
-"src": "Giáo trình đào tạo X.Phụ trợ",
+"src": "Giáo trình tham khảo các cương vị",
 "kb": 0
 },
 {
-"p": "Giáo trình_New/GT Nuoc tho-Sinh hoat-Cuu hoa_Rev01.docx",
-"t": "Giáo trình nước thô – sinh hoạt – cứu hỏa (Rev01, Word)",
+"p": "Giáo trình tham khảo các cương vị/Operation Manual Utilities.doc",
+"t": "Operation Manual – Utilities (Technip, bản gốc: nước thô, nước làm mát, demi, cứu hỏa, khí nén, nitơ, khí nhiên liệu, máy phát diesel)",
 "g": "Tài liệu tham khảo",
 "tags": [
-"30-P-2001",
-"30-P-2002",
+"30-TK-2001",
 "30-PK-2001",
+"30-P-2001",
 "30-P-4001",
-"30-P-4002"
+"30-CT-3001",
+"30-P-3001",
+"30-P-3002",
+"30-PK-1001",
+"30-K-5001",
+"30-PK-6001",
+"30-V-7001",
+"10-B-8001"
 ],
 "no": "",
-"src": "Giáo trình đào tạo X.Phụ trợ",
+"src": "Giáo trình tham khảo các cương vị",
 "kb": 0
 },
 {
-"p": "Giáo trình_New/STVB102393_G2-30-GT-01 GT dao tao HT nuoc tho-sinh hoat-cuu hoa_vps.pdf",
+"p": "Giáo trình tham khảo các cương vị/OM Utility.pdf",
+"t": "Operation Manual – Utilities (bản scan)",
+"g": "Tài liệu tham khảo",
+"tags": [
+"30-TK-2001",
+"30-PK-2001",
+"30-P-2001",
+"30-P-4001",
+"30-CT-3001",
+"30-P-3001",
+"30-P-3002",
+"30-PK-1001",
+"30-K-5001",
+"30-PK-6001",
+"30-V-7001",
+"10-B-8001"
+],
+"no": "",
+"src": "Giáo trình tham khảo các cương vị",
+"kb": 0
+},
+{
+"p": "Giáo trình tham khảo các cương vị/Operating Manual WWT.doc",
+"t": "Operating Manual – Waste Water Treatment (Technip, bản gốc)",
+"g": "Tài liệu tham khảo",
+"tags": [
+"40-PK-2001",
+"40-PK-2002",
+"40-PK-2003"
+],
+"no": "",
+"src": "Giáo trình tham khảo các cương vị",
+"kb": 0
+},
+{
+"p": "Giáo trình tham khảo các cương vị/Operation Manual flare&ammonia storage.doc",
+"t": "Operation Manual – Flare & Ammonia Storage (Technip, bản gốc)",
+"g": "Tài liệu tham khảo",
+"tags": [
+"40-TK-5001",
+"40-PK-5001",
+"40-PK-5005",
+"40-PK-1001",
+"40-PK-1002"
+],
+"no": "",
+"src": "Giáo trình tham khảo các cương vị",
+"kb": 0
+},
+{
+"p": "Giáo trình tham khảo các cương vị/STVB102393_G2-30-GT-01 GT dao tao HT nuoc tho-sinh hoat-cuu hoa_vps.pdf",
 "t": "Giáo trình G2-30-GT-01 – nước thô, sinh hoạt, cứu hỏa",
 "g": "Tài liệu tham khảo",
 "tags": [
@@ -84,46 +112,22 @@
 "30-P-4002"
 ],
 "no": "",
-"src": "Giáo trình đào tạo X.Phụ trợ",
+"src": "Giáo trình tham khảo các cương vị",
 "kb": 0
 },
 {
-"p": "Giáo trình_New/GT Lo hoi phu tro 10-B-8001_Rev01.docx",
-"t": "Giáo trình lò hơi phụ trợ 10-B-8001 (Rev01, Word)",
-"g": "Tài liệu tham khảo",
-"tags": [
-"10-B-8001"
-],
-"no": "",
-"src": "Giáo trình đào tạo X.Phụ trợ",
-"kb": 0
-},
-{
-"p": "Giáo trình_New/STVB102393_G2-30-GT-03 GT dao tao HT nuoc cap-lo hoi phu tro va khi nhien lieu_vps.pdf",
+"p": "Giáo trình tham khảo các cương vị/STVB102393_G2-30-GT-03 GT dao tao HT nuoc cap-lo hoi phu tro va khi nhien lieu_vps.pdf",
 "t": "Giáo trình G2-30-GT-03 – nước cấp, lò hơi phụ trợ & khí nhiên liệu",
 "g": "Tài liệu tham khảo",
 "tags": [
 "10-B-8001"
 ],
 "no": "",
-"src": "Giáo trình đào tạo X.Phụ trợ",
+"src": "Giáo trình tham khảo các cương vị",
 "kb": 0
 },
 {
-"p": "Giáo trình_New/GT Khi nen-Khi dieu khien_Rev01.docx",
-"t": "Giáo trình khí nén – khí điều khiển (Rev01, Word)",
-"g": "Tài liệu tham khảo",
-"tags": [
-"30-K-5001",
-"30-DR-5001",
-"30-DR-5002"
-],
-"no": "",
-"src": "Giáo trình đào tạo X.Phụ trợ",
-"kb": 0
-},
-{
-"p": "Giáo trình_New/STVB102393_G2-30-GT-04 GT dao tao HT khi nen-khi dieu khien_vps.pdf",
+"p": "Giáo trình tham khảo các cương vị/STVB102393_G2-30-GT-04 GT dao tao HT khi nen-khi dieu khien_vps.pdf",
 "t": "Giáo trình G2-30-GT-04 – khí nén, khí điều khiển",
 "g": "Tài liệu tham khảo",
 "tags": [
@@ -132,92 +136,44 @@
 "30-DR-5002"
 ],
 "no": "",
-"src": "Giáo trình đào tạo X.Phụ trợ",
+"src": "Giáo trình tham khảo các cương vị",
 "kb": 0
 },
 {
-"p": "Giáo trình_New/GT He thong san xuat nuoc khu khoang_Rev01.docx",
-"t": "Giáo trình hệ thống sản xuất nước khử khoáng (Rev01, Word)",
-"g": "Tài liệu tham khảo",
-"tags": [
-"30-PK-1001"
-],
-"no": "",
-"src": "Giáo trình đào tạo X.Phụ trợ",
-"kb": 0
-},
-{
-"p": "Giáo trình_New/STVB102393_G2-30-GT-06 GT dao tao HT san xuat nuoc khu khoang_vps.pdf",
+"p": "Giáo trình tham khảo các cương vị/STVB102393_G2-30-GT-06 GT dao tao HT san xuat nuoc khu khoang_vps.pdf",
 "t": "Giáo trình G2-30-GT-06 – sản xuất nước khử khoáng",
 "g": "Tài liệu tham khảo",
 "tags": [
 "30-PK-1001"
 ],
 "no": "",
-"src": "Giáo trình đào tạo X.Phụ trợ",
+"src": "Giáo trình tham khảo các cương vị",
 "kb": 0
 },
 {
-"p": "Giáo trình_New/GT He thong san xuat Nito_Rev01.docx",
-"t": "Giáo trình hệ thống sản xuất nitơ (Rev01, Word)",
-"g": "Tài liệu tham khảo",
-"tags": [
-"30-PK-6001"
-],
-"no": "",
-"src": "Giáo trình đào tạo X.Phụ trợ",
-"kb": 0
-},
-{
-"p": "Giáo trình_New/STVB102393_G2-30-GT-07 GT dao tao HT san xuat Nito_vps.pdf",
+"p": "Giáo trình tham khảo các cương vị/STVB102393_G2-30-GT-07 GT dao tao HT san xuat Nito_vps.pdf",
 "t": "Giáo trình G2-30-GT-07 – sản xuất nitơ",
 "g": "Tài liệu tham khảo",
 "tags": [
 "30-PK-6001"
 ],
 "no": "",
-"src": "Giáo trình đào tạo X.Phụ trợ",
+"src": "Giáo trình tham khảo các cương vị",
 "kb": 0
 },
 {
-"p": "Giáo trình_New/GT Gasturbine_Rev01.docx",
-"t": "Giáo trình tuabin khí (Rev01, Word)",
-"g": "Tài liệu tham khảo",
-"tags": [
-"10-GT-9001"
-],
-"no": "",
-"src": "Giáo trình đào tạo X.Phụ trợ",
-"kb": 0
-},
-{
-"p": "Giáo trình_New/STVB102393_G2-30-GT-08 GT dao tao HT Gasturbine_vps.pdf",
+"p": "Giáo trình tham khảo các cương vị/STVB102393_G2-30-GT-08 GT dao tao HT Gasturbine_vps.pdf",
 "t": "Giáo trình G2-30-GT-08 – tuabin khí",
 "g": "Tài liệu tham khảo",
 "tags": [
 "10-GT-9001"
 ],
 "no": "",
-"src": "Giáo trình đào tạo X.Phụ trợ",
+"src": "Giáo trình tham khảo các cương vị",
 "kb": 0
 },
 {
-"p": "Giáo trình_New/GT Bon chua NH3 & duoc thai_Rev01.docx",
-"t": "Giáo trình bồn chứa NH3 & đuốc (Rev01, Word)",
-"g": "Tài liệu tham khảo",
-"tags": [
-"40-TK-5001",
-"40-PK-5001",
-"40-PK-5005",
-"40-PK-1001",
-"40-PK-1002"
-],
-"no": "",
-"src": "Giáo trình đào tạo X.Phụ trợ",
-"kb": 0
-},
-{
-"p": "Giáo trình_New/STVB102393_G2-30-GT-09 GT dao tao HT bon chua NH3 & flare_vps.pdf",
+"p": "Giáo trình tham khảo các cương vị/STVB102393_G2-30-GT-09 GT dao tao HT bon chua NH3 & flare_vps.pdf",
 "t": "Giáo trình G2-30-GT-09 – bồn chứa NH3 & đuốc",
 "g": "Tài liệu tham khảo",
 "tags": [
@@ -228,7 +184,7 @@
 "40-PK-1002"
 ],
 "no": "",
-"src": "Giáo trình đào tạo X.Phụ trợ",
+"src": "Giáo trình tham khảo các cương vị",
 "kb": 0
 }
 ]

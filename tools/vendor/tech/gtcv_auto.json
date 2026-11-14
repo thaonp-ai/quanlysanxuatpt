@@ -177,6 +177,21 @@
 43
 ],
 [
+3,
+"1. Tính toán tiêu hao nhiên liệu cho động cơ diesel và nguyên lý vận hành Air Release Valve",
+43
+],
+[
+3,
+"2. Datasheet các thiết bị chính của hệ thống",
+43
+],
+[
+3,
+"3. Tính toán lượng Javel tiêu hao cho hệ thống",
+62
+],
+[
 0,
 "CÂU HỎI ÔN TẬP",
 66
@@ -319,7 +334,7 @@
 ],
 [
 2,
-"II.3.2. Thông số công nghệ các thiết bị trong hệ thống nước sông làm mát",
+"II.3.2. Thông số công nghệ các thiết bị/cụm thiết bị trong hệ thống nước sông làm mát",
 23
 ],
 [
@@ -331,6 +346,16 @@
 2,
 "II.3.4. Quy trình hướng dẫn vận hành hệ thống nước sông làm mát",
 29
+],
+[
+3,
+"II.3.4.1. Quy trình vận hành bơm nước sông làm mát",
+29
+],
+[
+3,
+"II.3.4.2. Hệ thống khóa liên động Interlock hệ thống nước sông làm mát",
+32
 ],
 [
 1,
@@ -843,7 +868,7 @@
 ],
 [
 0,
-"CHƯƠNG III: KIẾN THỨC CHUNG VỀ KHÔNG KHÍ ẨM VÀ QUÁ TRÌNH HẤP PHỤ LÀM KHÔ KHÍ",
+"CHƯƠNG III: CÁC KIẾN THỨC CHUNG VỀ KHÔNG KHÍ ẨM VÀ QUÁ TRÌNH HẤP PHỤ LÀM KHÔ KHÍ",
 29
 ],
 [
@@ -1340,6 +1365,11 @@
 ],
 [
 2,
+"II.1.7. Bồn định lượng axit để tái sinh thiết bị trao đổi ion dương 30-PK-1001/TK3",
+33
+],
+[
+2,
 "II.1.8. Bồn định lượng axit để tái sinh mixed bed 30-PK-1001/TK4",
 33
 ],
@@ -1528,6 +1558,11 @@
 "GT07": {
 "toc": [
 [
+3,
+"IV. ĐỊNH NGHĨA VÀ CHỮ VIẾT TẮT",
+4
+],
+[
 0,
 "CHƯƠNG I: CƠ SỞ LÝ THUYẾT CHUNG",
 7
@@ -1549,7 +1584,7 @@
 ],
 [
 1,
-"I.2. Cơ sở lý thuyết công nghệ sản xuất N2 bằng phương pháp chưng cất-hóa lỏng không khí",
+"I.2. Cơ sở lý thuyết liên quan đến công nghệ sản xuất N2 bằng phương pháp chưng cất-hóa lỏng không khí",
 8
 ],
 [
@@ -1583,6 +1618,61 @@
 17
 ],
 [
+3,
+"1. Bình trung gian 30-PK-6001/V1",
+17
+],
+[
+3,
+"2. Chiller 30-PK-6001/ACC1",
+18
+],
+[
+3,
+"3. Air Purification Unit (APU)",
+18
+],
+[
+3,
+"4. Cold box",
+20
+],
+[
+3,
+"5. Dòng khí thải tái sinh (Waste stream)",
+21
+],
+[
+3,
+"6. Điều khiển độ tinh khiết",
+21
+],
+[
+3,
+"7. Condenser waste purge",
+22
+],
+[
+3,
+"8. Khí thải (Waste gas)",
+22
+],
+[
+3,
+"9. Điều khiển dòng sản phẩm N2",
+22
+],
+[
+3,
+"10. Turbine Expander",
+23
+],
+[
+3,
+"11. Điều khiển áp suất bồn N2 lỏng",
+24
+],
+[
 2,
 "II.1.2. Chỉ tiêu kỹ thuật của khí nitơ",
 24
@@ -1608,6 +1698,21 @@
 26
 ],
 [
+3,
+"1. Chế độ turbine (Mode 1 và 2)",
+26
+],
+[
+3,
+"2. Chế độ “Economiser” - Mode 5",
+27
+],
+[
+3,
+"3. Quy trình thổi coldbox ở Mode 0",
+28
+],
+[
 2,
 "II.2.3. Quy trình ngừng bình thường",
 29
@@ -1616,6 +1721,71 @@
 2,
 "II.2.4. Hướng dẫn thao tác trên màn hình HMI",
 30
+],
+[
+3,
+"1. Alarms",
+30
+],
+[
+3,
+"2. User login",
+32
+],
+[
+3,
+"3. Trang vận hành - Operation page",
+34
+],
+[
+3,
+"4. Trang công nghệ - Process Page",
+36
+],
+[
+3,
+"5. PID LOOPS- vòng điều khiển",
+41
+],
+[
+3,
+"6. Valve operation/ Điều khiển van",
+42
+],
+[
+3,
+"7. Turbine Operation",
+43
+],
+[
+3,
+"8. Condenser Drain Temperature",
+45
+],
+[
+3,
+"9. Trang bộ làm sạch khí – APU page",
+46
+],
+[
+3,
+"10. Trang các tín hiệu ngừng khẩn cấp",
+47
+],
+[
+3,
+"11. Emergency stop relay",
+49
+],
+[
+3,
+"12. Trang các đồ thị - trends page",
+49
+],
+[
+3,
+"13. Trang hệ thống - System Page",
+51
 ],
 [
 0,
@@ -1654,6 +1824,16 @@
 ],
 [
 0,
+"DANH MỤC HÌNH VẼ",
+72
+],
+[
+0,
+"DANH MỤC BẢNG BIỂU",
+73
+],
+[
+0,
 "CÂU HỎI ÔN TẬP",
 74
 ]
@@ -1684,6 +1864,21 @@
 9
 ],
 [
+3,
+"a) Mô tả nguyên lý vận hành của turbine khí theo chu trình Brayton",
+9
+],
+[
+3,
+"b) Hiệu suất nhiệt của chu trình Brayton",
+11
+],
+[
+3,
+"c) Công của chu trình",
+12
+],
+[
 2,
 "I.1.2. Chu trình hở có dùng trao đổi nhiệt",
 13
@@ -1707,6 +1902,21 @@
 2,
 "I.3.1. Máy nén",
 17
+],
+[
+3,
+"a) Máy nén dọc trục",
+18
+],
+[
+3,
+"b) Buồng đốt",
+21
+],
+[
+3,
+"c) Turbine",
+24
 ],
 [
 0,
@@ -1749,9 +1959,69 @@
 33
 ],
 [
+3,
+"a) Tổng quan",
+33
+],
+[
+3,
+"b) Cánh động (rotor) của máy nén không khí",
+33
+],
+[
+3,
+"c) Cánh tĩnh (stator) của máy nén không khí",
+33
+],
+[
+3,
+"d) Vỏ đầu vào của máy nén không khí (inlet casing)",
+34
+],
+[
+3,
+"e) Vỏ đầu ra của máy nén không khí (compressor discharge casing)",
+34
+],
+[
+3,
+"f) Bộ cánh máy nén",
+34
+],
+[
+3,
+"g) Cánh hướng không khí vào máy nén",
+35
+],
+[
+3,
+"h) Van inlet bleed heat (IBH)",
+36
+],
+[
 2,
 "II.2.4. Hệ thống buồng đốt “DLN”",
 41
+],
+[
+3,
+"a) Tổng quan",
+41
+],
+[
+3,
+"b) Mô tả sự hoạt động và các chế độ đốt",
+42
+],
+[
+3,
+"c) Hệ thống dò lửa trong buồng đốt",
+44
+],
+[
+3,
+"d) Hệ thống đánh lửa",
+44
 ],
 [
 2,
@@ -1759,9 +2029,49 @@
 49
 ],
 [
+3,
+"a) Tổng quan",
+49
+],
+[
+3,
+"b) Thiết bị tĩnh (stator) của turbine",
+49
+],
+[
+3,
+"c) Thiết bị động (rotor) của turbine",
+51
+],
+[
+3,
+"d) Ổ đỡ (bearing)",
+51
+],
+[
+3,
+"e) Khớp nối",
+53
+],
+[
 2,
 "II.2.6. Hệ thống không khí vào và khí thải",
 59
+],
+[
+3,
+"a) Tổng quan",
+59
+],
+[
+3,
+"b) Hệ thống không khí đầu vào",
+60
+],
+[
+3,
+"c) Hệ thống khí thải",
+67
 ],
 [
 1,
@@ -1774,9 +2084,44 @@
 69
 ],
 [
+3,
+"a) Tổng quan",
+69
+],
+[
+3,
+"b) Hệ thống dẫn động phụ trợ (accessory drive)",
+69
+],
+[
 2,
 "II.3.2. Hệ thống khởi động",
 74
+],
+[
+3,
+"a) Tổng quan",
+74
+],
+[
+3,
+"b) Động cơ diesel",
+75
+],
+[
+3,
+"c) Hệ thống truyền động momen (torque converter)",
+78
+],
+[
+3,
+"d) Hệ thống bánh cóc thủy lực (hydraulic ratchet)",
+82
+],
+[
+3,
+"e) Khớp nối ly hợp (khớp vấu) khởi động (starting jaw clutch)",
+84
 ],
 [
 2,
@@ -1784,9 +2129,79 @@
 87
 ],
 [
+3,
+"a) Tổng quan",
+87
+],
+[
+3,
+"b) Mô tả chức năng hoạt động",
+88
+],
+[
+3,
+"c) Hệ thống đường ống và bồn chứa dầu",
+88
+],
+[
+3,
+"d) Hệ thống bơm dầu",
+89
+],
+[
+3,
+"e) Hệ thống lọc dầu",
+91
+],
+[
+3,
+"f) Van điều chỉnh áp suất",
+93
+],
+[
+3,
+"g) Những thiết bị bảo vệ nhiệt độ và áp suất",
+93
+],
+[
+3,
+"h) Oil Mist Eliminator",
+94
+],
+[
 2,
 "II.3.4. Hệ thống khí nhiên liệu",
 94
+],
+[
+3,
+"a) Tổng quan",
+94
+],
+[
+3,
+"b) Mô tả chức năng hoạt động",
+95
+],
+[
+3,
+"c) Tổ hợp van stop ratio (SRV) và van gas control (GCV)",
+96
+],
+[
+3,
+"d) Bộ lọc khí (gas strainer)",
+97
+],
+[
+3,
+"e) Những thiết bị bảo vệ",
+97
+],
+[
+3,
+"f) Hệ thống khí nhiên liệu “DLN”",
+98
 ],
 [
 2,
@@ -1794,8 +2209,33 @@
 100
 ],
 [
+3,
+"a) Tổng quan",
+100
+],
+[
+3,
+"b) Mô tả chức năng hoạt động",
+100
+],
+[
+3,
+"c) Điều khiển cánh dẫn hướng (IGV)",
+101
+],
+[
 2,
 "II.3.6. Hệ thống dầu điều khiển",
+102
+],
+[
+3,
+"a) Tổng quan",
+102
+],
+[
+3,
+"b) Mô tả chức năng hoạt động",
 102
 ],
 [
@@ -1804,13 +2244,33 @@
 105
 ],
 [
+3,
+"a) Tổng quan",
+105
+],
+[
+3,
+"b) Mô tả chức năng hoạt động",
+105
+],
+[
 2,
 "II.3.8. Những cảnh báo trong quá trình vận hành",
 108
 ],
 [
+3,
+"a) Nhiệm vụ của nhân viên vận hành thiết bị",
+108
+],
+[
+3,
+"b) Những lưu ý trong quá trình vận hành",
+109
+],
+[
 1,
-"II.4. Quy trình và vòng điều khiển turbine khí MS-5001 trên hệ thống Mark VI",
+"II.4. Quy trình và vòng điều khiển turbine khí MS-5001 trên hệ thống điều khiển Mark VI",
 115
 ],
 [
@@ -1819,9 +2279,69 @@
 115
 ],
 [
+3,
+"a) Nguyên lý điều khiển - khởi động gas turbine",
+116
+],
+[
+3,
+"b) Nguyên lý điều khiển dừng khẩn cấp gas turbine",
+118
+],
+[
+3,
+"c) Nguyên lý điều khiển dừng bình thường gas turbine",
+118
+],
+[
+3,
+"d) Những lưu ý khi vận hành hệ thống",
+119
+],
+[
+3,
+"e) Nguyên lý điều khiển các thiết bị phụ trợ",
+121
+],
+[
+3,
+"f) Nguyên lý điều khiển hệ thống phòng chống cháy nổ",
+124
+],
+[
+3,
+"g) Nguyên lý điều khiển hệ thống dò khí cháy",
+127
+],
+[
 2,
 "II.4.2. Vòng điều khiển (control loops)",
 128
+],
+[
+3,
+"a) Giới thiệu",
+128
+],
+[
+3,
+"b) Điều khiển khởi động",
+130
+],
+[
+3,
+"c) Điều khiển tốc độ và phụ tải",
+130
+],
+[
+3,
+"d) Điều khiển nhiệt độ",
+137
+],
+[
+3,
+"e) Hệ thống điều khiển khí nhiên liệu",
+139
 ],
 [
 1,
@@ -1985,6 +2505,11 @@
 ],
 [
 2,
+"II.5.3. Điều chỉnh áp suất đầu hút máy nén 10-K-4051 và huy động chạy/dừng máy nén 40-PK-5001/K1A/B",
+26
+],
+[
+2,
 "II.5.4. Dừng đưa hơi NH3 sang xưởng Amo",
 26
 ],
@@ -2000,7 +2525,7 @@
 ],
 [
 2,
-"II.6.1. Hướng dẫn vận hành bơm NH3 cấp cho xưởng Ure/Amo/NPK",
+"II.6.1. Hướng dẫn vận hành hệ thống bơm cấp NH3 lỏng sang xưởng Ure/Amo/NPK",
 27
 ],
 [

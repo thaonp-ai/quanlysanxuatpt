@@ -127,7 +127,7 @@ def build():
     auto = json.load(open(os.path.join(HERE, "gtcv_auto.json")))
     gt, gtu = {}, {}
     for k, e in GT.items():
-        e = dict(e, toc=auto[k]["toc"], q=auto[k]["q"], sec=[{"h": h, "ul": ul} for h, ul in gtcv_sec.SEC.get(k, [])])
+        e = dict(e, toc=auto[k]["toc"], q=auto[k]["q"], sec=[{"h": h, "ul": ul} for h, ul in gtcv_sec.SEC.get(k, [])], pdf="gt/%s.pdf" % k)  # bản PDF đặt trên web để mở đúng trang (#page=N)
         gt[k] = e
         for u in e["units"]:
             gtu.setdefault(u, []).append(k)

@@ -175,6 +175,7 @@ a.doc:hover{background:var(--line-soft)}
 .tech p{margin:6px 0;max-width:68ch}
 .tech ul{margin:6px 0;padding-left:20px}
 .tech li{margin:4px 0;max-width:68ch}
+.tech li.ind{list-style:circle;margin-left:18px;margin-top:2px}
 .tech dl{display:grid;grid-template-columns:minmax(120px,38%) 1fr;gap:4px 12px;margin:6px 0}
 .tech dt{color:var(--muted);font-size:13px}
 .tech dd{margin:0;font-variant-numeric:tabular-nums}
@@ -444,7 +445,7 @@ function techHTML(e,sub){
   let h=`${sub?`<h4 class="sub">${esc(e.t)}</h4>`:""}${e.intro?`<p class="lead">${esc(e.intro)}</p>`:""}`;
   (e.s||[]).forEach(x=>{h+=`<h4>${esc(x.h)}</h4>`;
     (x.p||[]).forEach(p=>h+=`<p>${esc(p)}</p>`);
-    if(x.ul)h+=`<ul>${x.ul.map(i=>`<li>${esc(i)}</li>`).join("")}</ul>`;
+    if(x.ul)h+=`<ul>${x.ul.map(i=>/^• /.test(i)?`<li class="ind">${esc(i.slice(2))}</li>`:`<li>${esc(i)}</li>`).join("")}</ul>`;
     if(x.kv)h+=`<dl>${x.kv.map(([a,b])=>`<dt>${esc(a)}</dt><dd>${esc(b)}</dd>`).join("")}</dl>`;
     if(x.tb)h+=`<div class="tw"><table><thead><tr>${x.tb[0].map(c=>`<th>${esc(c)}</th>`).join("")}</tr></thead><tbody>${x.tb.slice(1).map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
     h+=srcLinks(x.src);});

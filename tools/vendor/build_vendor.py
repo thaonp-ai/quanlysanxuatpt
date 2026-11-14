@@ -297,7 +297,7 @@ if os.path.exists(HDOCS):
 
 # ---------------- 4. Nước làm mát (Unit 33), danh mục do nlm/build_nlm.py tạo ----------------
 #     5. Raw-Pot-Fire (nước thô, sinh hoạt, cứu hỏa), danh mục do rpf/build_rpf.py tạo
-for sub in ("nlm", "rpf", "demi", "air", "nh3", "n2", "gt"):
+for sub in ("nlm", "rpf", "demi", "air", "nh3", "n2", "gt", "ww", "gtn"):
     NDOCS = os.path.join(HERE, sub, "docs.json")
     if not os.path.exists(NDOCS):
         continue
@@ -324,6 +324,8 @@ out = {
              "40-TK-5001": "Bồn chứa NH3 – Samsung Heavy Industries", "40-PK-5001": "Cụm làm lạnh hơi NH3 – Industrie Technofrigo Dell'Orto (MR 4151-50)",
              "40-PK-5005": "Cụm làm lạnh hơi NH3 mới (revamp, MR 2539-4151-01)", "40-PK-1001": "Đuốc NH3 (MR 2098-01850)", "40-PK-1002": "Đuốc khí tổng hợp (MR 2098-01850)",
              "30-PK-6001": "Cụm sản xuất nitơ – Linde CryoPlants GAN 600 (MR 4112-50)",
+             "40-PK-2001": "Cụm xử lý nước thải nhiễm dầu (API + CPI + DAF)", "40-PK-2002": "Cụm xử lý nước thải sinh hoạt (bùn hoạt tính, 50 m³/ngày)",
+             "40-PK-2003": "Hệ thống xử lý nước thải mới – khử nitơ + MBR (680 m³/ngày, 2012)",
              "10-GT-9001": "Tuabin khí phát điện – Nuovo Pignone MS5001PA DLN (job 170.5540)"},
     "docs": docs,
     "tags": tagmap,

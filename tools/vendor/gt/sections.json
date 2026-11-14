@@ -1,0 +1,30 @@
+{
+ "Volume I    Turb Desc Op.pdf": {"tag": "Vol I", "n": 161, "s": [
+  [0, 1, "Bìa, lịch sử sửa đổi & mục lục bộ sách"],
+  [1, 15, "Giới thiệu, thông số kỹ thuật, mô tả chức năng"],
+  [2, 22, "Mô tả chung tuabin khí, bệ & gối đỡ"],
+  [3, 24, "Máy nén dọc trục"],
+  [4, 30, "Hệ thống buồng đốt DLN (Dry Low NOx)"],
+  [5, 39, "Tuabin, ổ đỡ & khớp nối"],
+  [6, 71, "Hệ thống cửa hút & thải khí"],
+  [7, 74, "Hệ thống phụ trợ – hộp số phụ (accessory gear)"],
+  [8, 79, "Hệ thống khởi động (diesel, bộ biến mô, ratchet, ly hợp)"],
+  [9, 83, "Hệ thống dầu bôi trơn"],
+  [10, 103, "Hệ thống khí nhiên liệu (SRV/GCV, DLN)"],
+  [11, 111, "Hệ thống dầu thủy lực & điều khiển IGV"],
+  [12, 114, "Hệ thống dầu trip (dầu điều khiển)"],
+  [13, 115, "Hệ thống khí làm mát & làm kín"],
+  [14, 118, "Vận hành"],
+  [15, 135, "Xử lý sự cố (tiêu chuẩn)"]]},
+ "Volume II   Maintenance.pdf": {"tag": "Vol II", "n": 512, "s": [
+  [0, 1, "Bìa & mục lục"],
+  [1, 15, "Giới thiệu, các loại & chu kỳ kiểm tra"],
+  [2, 33, "Thực hành tiêu chuẩn"],
+  [3, 39, "Tiêu chí bảo dưỡng, kế hoạch & tuổi thọ chi tiết"],
+  [4, 60, "Bảo dưỡng định kỳ (kiểm tra khi chạy, ghi số liệu)"],
+  [5, 76, "Kiểm tra buồng đốt (Combustion inspection)"],
+  [6, 148, "Kiểm tra đường khí nóng (Hot gas path inspection)"],
+  [7, 244, "Đại tu (Major inspection)"],
+  [8, 413, "Bảo dưỡng hệ thống phụ trợ & điều khiển"],
+  [9, 486, "Thông báo kỹ thuật (TIL)"]]}
+}

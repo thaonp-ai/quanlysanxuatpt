@@ -47,14 +47,58 @@ header>.brand{grid-area:brand}header>.search{grid-area:search}header>.chips{grid
 .dot{width:8px;height:8px;border-radius:50%;display:inline-block}
 .d-line{background:var(--pipe)} .d-equipment{background:var(--equip)} .d-valve{background:var(--valve)}
 
-main{flex:1;display:grid;grid-template-columns:230px minmax(280px,380px) 1fr;min-height:0}
+main{flex:1;display:grid;grid-template-columns:250px minmax(0,1fr);min-height:0}
+.ws{display:grid;grid-template-rows:auto minmax(0,1fr);min-height:0;min-width:0}
+.ws>*{min-width:0}
+.utabs{min-width:0;max-width:100%}
+.wsdraw{display:grid;grid-template-columns:minmax(300px,400px) minmax(0,1fr);min-height:0}
+.uhead{background:var(--sheet);border-bottom:1px solid var(--rule);padding:12px 20px 0;display:flex;flex-wrap:wrap;align-items:flex-end;gap:4px 28px}
+.uhead .ut{min-width:0;padding-bottom:12px}
+.uhead .uc{font-family:var(--f-mono);font-weight:600;color:var(--line);font-size:12.5px;letter-spacing:.06em}
+.uhead h2{margin:1px 0 0;font-size:20px;font-weight:600;line-height:1.25;text-wrap:balance}
+.utabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.utabs button{border:0;background:none;padding:10px 14px 11px;font-weight:600;font-size:14.5px;color:var(--muted);border-bottom:3px solid transparent;white-space:nowrap;border-radius:6px 6px 0 0}
+.utabs button:hover{color:var(--ink);background:var(--paper)}
+.utabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--line)}
+.utabs .n{font-family:var(--f-mono);font-size:11.5px;font-weight:500;margin-left:7px;color:var(--muted);background:var(--paper);border:1px solid var(--rule);border-radius:999px;padding:0 7px}
+.uread{overflow:auto;background:var(--sheet);min-height:0}
+.uread .in.tech{flex:none;overflow:visible;max-width:900px;margin:0 auto;padding:22px 28px 64px;font-size:15px;line-height:1.65}
+.uread .tech p,.uread .tech li{max-width:75ch}
+.eqg{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px;margin:10px 0 4px}
+.eqg button{text-align:left;border:1px solid var(--rule);background:var(--paper);border-radius:8px;padding:9px 12px;display:flex;flex-direction:column;gap:2px;line-height:1.35}
+.eqg button:hover{border-color:var(--line);background:var(--line-soft)}
+.eqg b{font-family:var(--f-mono);font-size:13.5px;color:var(--line);font-weight:600}
+.eqg span{font-size:13px;color:var(--muted)}
+.crumb{border:0;background:none;color:var(--line);font-weight:600;padding:4px 0;font-size:14px}
+.crumb:hover{text-decoration:underline}
+.tsh{margin:8px 0 4px}.tsh code{font-family:var(--f-mono);font-weight:600;color:var(--line);font-size:14px}.tsh h3{margin:2px 0 0;font-size:21px;font-weight:600;line-height:1.3}
+.tagacts{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 4px}
+.tagacts button{border:1px solid var(--line);color:var(--line);background:none;border-radius:6px;padding:6px 12px;font-weight:600;font-size:13.5px}
+.tagacts button:hover{background:var(--line-soft)}
+.uq{position:sticky;top:0;z-index:2;background:var(--sheet);padding:2px 0 10px}
+.uq input{font:inherit;font-size:15px;color:var(--ink);background:var(--paper);border:1.5px solid var(--rule);border-radius:8px;padding:9px 12px;width:100%;box-sizing:border-box}
+.uq input:focus{border-color:var(--line);outline:none}
+.uq small{display:block;color:var(--muted);font-size:12.5px;margin-top:6px}
+details.vd{border:1px solid var(--rule);border-radius:8px;margin:8px 0;overflow:hidden;background:var(--sheet)}
+details.vd>summary{list-style:none;cursor:pointer;padding:11px 14px;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;background:var(--paper)}
+details.vd>summary::-webkit-details-marker{display:none}
+details.vd>summary::before{content:"▸";color:var(--muted);font-size:12px;transition:transform .15s}
+details.vd[open]>summary::before{transform:rotate(90deg)}
+details.vd>summary b{font-family:var(--f-mono);font-weight:600;color:var(--line);font-size:14px}
+details.vd>summary span{color:var(--ink);font-size:14px;min-width:0}
+details.vd>summary small{margin-left:auto;font-family:var(--f-mono);color:var(--muted);font-size:12px}
+.vg{font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:600;padding:12px 16px 4px;border-top:1px solid var(--rule)}
+.uread .doc{padding-left:16px}
+.uread .doc .dt{font-size:14px}
+.ulead{color:var(--muted);margin:2px 0 14px}
 nav.units{border-right:1px solid var(--rule);overflow:auto;background:var(--sheet);padding-block:10px}
 nav.units h2,.panel h2{font-family:var(--f-disp);font-weight:600;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:6px 16px 8px}
-.unit{display:grid;grid-template-columns:38px 1fr auto;gap:8px;align-items:baseline;width:100%;text-align:left;border:0;background:none;padding:7px 16px;border-left:3px solid transparent}
+.unit{display:grid;grid-template-columns:40px 1fr auto;gap:8px;align-items:baseline;width:100%;text-align:left;border:0;background:none;padding:9px 16px;border-left:3px solid transparent}
 .unit:hover{background:var(--line-soft)}
 .unit[aria-current="true"]{border-left-color:var(--line);background:var(--line-soft)}
+.unit[aria-current="true"] .n{font-weight:600}
 .unit .c{font-family:var(--f-mono);font-weight:600;color:var(--line)}
-.unit .n{font-size:13px;min-width:0}
+.unit .n{font-size:13.5px;min-width:0;line-height:1.3}
 .unit .k{font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums}
 
 .panel{display:flex;flex-direction:column;min-height:0;border-right:1px solid var(--rule);background:var(--paper)}
@@ -66,8 +110,8 @@ nav.units h2,.panel h2{font-family:var(--f-disp);font-weight:600;font-size:13px;
 .row{display:block;width:100%;text-align:left;border:0;border-bottom:1px solid var(--rule);background:none;padding:9px 16px}
 .row:hover{background:var(--sheet)}
 .row[aria-current="true"]{background:var(--sheet);box-shadow:inset 3px 0 0 var(--mark)}
-.row .tag{font-family:var(--f-mono);font-weight:600;font-size:14px;word-break:break-all;display:flex;gap:8px;align-items:center}
-.row .sub{font-size:12.5px;color:var(--muted);margin-top:2px}
+.row .tag{font-family:var(--f-mono);font-weight:600;font-size:15px;word-break:break-all;display:flex;gap:8px;align-items:center}
+.row .sub{font-size:13px;color:var(--muted);margin-top:3px;line-height:1.4}
 .row .refs{font-size:11.5px;color:var(--muted);font-family:var(--f-mono);margin-top:3px}
 .row mark{background:var(--mark-soft);color:inherit;border-radius:2px}
 .empty{padding:24px 16px;color:var(--muted)}
@@ -168,10 +212,11 @@ a.doc:hover{background:var(--line-soft)}
 .dtabs{display:flex;gap:4px;padding:8px 16px 0;border-bottom:1px solid var(--rule)}
 .dtabs button{border:0;background:none;padding:8px 12px;font-family:var(--f-disp);font-size:14px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);border-bottom:2.5px solid transparent;margin-bottom:-1px}
 .dtabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--line)}
-.tech{flex:1;overflow:auto;padding:6px 16px 28px;font-size:14px;line-height:1.55}
+.tech{flex:1;overflow:auto;padding:6px 18px 28px;font-size:14.5px;line-height:1.6}
 .tech .lead{margin:10px 0 4px;color:var(--ink)}
-.tech h4{font-family:var(--f-disp);font-size:15px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;margin:18px 0 6px;color:var(--ink)}
-.tech h4.sub{font-size:13px;color:var(--muted);margin-top:22px;padding-top:12px;border-top:1px dashed var(--rule)}
+.tech h4{font-family:var(--f-body);font-size:16.5px;font-weight:600;margin:24px 0 8px;padding-bottom:5px;border-bottom:1px solid var(--rule);color:var(--ink)}
+.tech h4:first-child{margin-top:6px}
+.tech h4.sub{font-size:14px;color:var(--muted);margin-top:26px;padding-top:12px;border-top:1px dashed var(--rule);border-bottom:0}
 .tech p{margin:6px 0;max-width:68ch}
 .tech ul{margin:6px 0;padding-left:20px}
 .tech li{margin:4px 0;max-width:68ch}
@@ -193,20 +238,21 @@ a.doc:hover{background:var(--line-soft)}
 .unittech:hover{text-decoration:underline}
 .ulinks{display:flex;gap:14px;margin:-4px 0 4px 57px}
 .ulinks .unittech{margin:0}
-.gtc{border-top:1px solid var(--rule);padding-top:10px;margin-top:10px}
+.gtc{border-top:2px solid var(--rule);padding-top:16px;margin-top:22px}
 .gtc:first-child{border-top:0;margin-top:0}
 .gtno{font-size:12px;color:var(--muted);letter-spacing:.04em}
-.tech h4.gtt{margin-top:2px;text-transform:none;letter-spacing:0;font-size:16px}
+.tech h4.gtt{margin-top:2px;font-size:19px;border-bottom:0;padding-bottom:0}
 .gtcv{color:var(--muted);margin:2px 0 6px}
 .gtd{margin:10px 0}
-.gtd summary{cursor:pointer;font-weight:600;color:var(--line)}
+.gtd summary{cursor:pointer;font-weight:600;color:var(--line);padding:6px 0}
 .toc{list-style:none;padding:0;margin:6px 0}
-.toc li{display:flex;justify-content:space-between;gap:12px;margin:2px 0;max-width:68ch}
+.toc li{display:flex;justify-content:space-between;gap:12px;margin:1px 0;max-width:75ch}
 .toc li.lv0{font-weight:600;margin-top:8px}
 .toc li.lv2{padding-left:16px;color:var(--muted)}
 .toc li.lv1{padding-left:8px}
 .toc li.lv3{padding-left:28px;color:var(--muted);font-size:13px}
-.toc li>a{display:flex;justify-content:space-between;gap:12px;flex:1;color:inherit;text-decoration:none;border-radius:4px}
+.toc li>a{display:flex;justify-content:space-between;gap:12px;flex:1;color:inherit;text-decoration:none;border-radius:4px;padding:2px 6px;margin:0 -6px}
+.toc li>a:hover{background:var(--line-soft)}
 .toc li>a:hover{color:var(--line);text-decoration:underline}
 .toc li>a:hover .pg{color:var(--line)}
 .toc .pg{white-space:nowrap;color:var(--muted);font-size:12px}
@@ -242,7 +288,11 @@ a.doc:hover{background:var(--line-soft)}
 .toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--sheet);padding:9px 16px;border-radius:999px;font-size:13px;z-index:50}
 
 @media (max-width:900px){
-  main{grid-template-columns:1fr;grid-template-rows:auto 1fr}
+  main{grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr)}
+  .wsdraw{grid-template-columns:minmax(0,1fr)}
+  .uhead{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  .uhead .ut{padding-bottom:4px}.uhead h2{font-size:17px}.utabs{width:100%}
+  .uread .in.tech{padding:16px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
   nav.units{border-right:0;border-bottom:1px solid var(--rule);display:flex;overflow-x:auto;padding:6px 8px;gap:4px}
   nav.units h2{display:none}
   .unit{grid-template-columns:auto;padding:6px 10px;border-left:0;border-bottom:3px solid transparent;white-space:nowrap;width:auto}
@@ -290,6 +340,9 @@ a.doc:hover{background:var(--line-soft)}
 
 <main>
   <nav class="units" id="units" aria-label="Unit"></nav>
+  <div class="ws">
+  <div class="uhead" id="uhead"><div class="ut"><div class="uc" id="uCode">TẤT CẢ UNIT</div><h2 id="uName">Tra cứu tag và bản vẽ</h2></div><div class="utabs" role="tablist" id="utabs"></div></div>
+  <div class="wsdraw" id="wsdraw">
   <section class="panel">
     <div class="tabs" role="tablist">
       <button role="tab" id="tabTags" aria-selected="true">Tag</button>
@@ -319,6 +372,10 @@ a.doc:hover{background:var(--line-soft)}
     </div>
     <div class="note">Tag được nhận dạng tự động từ bản vẽ (OCR) và chỉ lấy trong vùng dòng công nghệ. Thấy tên sai thì bấm “Sửa” cạnh tag; thiếu tag thì mở bản vẽ và bấm “+ Thêm tag”. Luôn đối chiếu với bản vẽ gốc trước khi thao tác.</div>
   </section>
+  </div>
+  <div class="uread" id="uread" hidden><div class="in tech" id="ureadIn"></div></div>
+  </div>
+
 </main>
 
 <div class="scrim" id="scrim" hidden>
@@ -412,18 +469,19 @@ function rebuild(){
     if(!o.length)return;
     VIEW.push({key,orig:"",t:e.t,k:e.k||"equipment",d:"Thêm thủ công",o,note:e.note||"",del:!!e.del,edited:true,isNew:true,by:e.by,at:e.at});
   });
+  UMAP=null;UKC.clear();
   VIEW.forEach(v=>{v._n=normq(v.t);v._no=normq(v.orig);v._u=new Set(v.o.flatMap(o=>sheetUnits(DB.sheets[o[0]])));});
   showMode();
 }
 
-fetch("data/tech.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null).then(v=>{if(v){TECH=v;TECHIDX.clear();Object.entries(v.tags||{}).forEach(([k,e])=>TECHIDX.set(nk(k),e));if(DB){renderUnits();render();}}}).catch(()=>{});
-fetch("data/vendor.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null).then(v=>{if(v){setVendor(v);if(DB)render();}}).catch(()=>{});
+fetch("data/tech.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null).then(v=>{if(v){TECH=v;TECHIDX.clear();Object.entries(v.tags||{}).forEach(([k,e])=>TECHIDX.set(nk(k),e));if(DB){renderUnits();render();renderUHead();}}}).catch(()=>{});
+fetch("data/vendor.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null).then(v=>{if(v){setVendor(v);if(DB){render();renderUHead();}}}).catch(()=>{});
 fetch("data/data.json",{cache:"no-cache"}).then(r=>r.json()).then(async d=>{
   DB=d;
   d.sheets.forEach((s,i)=>{s._i=i;SIDX[s.id]=i;});
   $("updated").textContent="Dữ liệu bản vẽ "+d.updated;
   setEdits(await api.load());
-  renderUnits();render();
+  renderUnits();render();renderUHead();
 }).catch(()=>{$("count").textContent="Không tải được dữ liệu (data/data.json).";});
 
 /* ---- Vendor documents (data/vendor.json) ---- */
@@ -473,7 +531,7 @@ function techHTML(e,sub){
     h+=srcLinks(x.src);});
   return h+srcLinks(e.src);}
 function wireTech(){$("techBody").querySelectorAll("[data-sheet]").forEach(b=>b.onclick=()=>{
-    const i=DB.sheets.findIndex(s=>s.dwg===b.dataset.sheet);if(i<0)return;$("docs").hidden=true;state.sel=null;openSheetAll(i);render();});
+    const i=DB.sheets.findIndex(s=>s.dwg===b.dataset.sheet);if(i<0)return;$("docs").hidden=true;showDraw();state.sel=null;openSheetAll(i);render();});
   const ul=$("techBody").querySelector(".unitlink");if(ul)ul.onclick=()=>openUnitTech(ul.dataset.u);
   const gl=$("techBody").querySelector(".gtlink");if(gl)gl.onclick=()=>openUnitGT(gl.dataset.u);}
 let docsCur=null,docsTab="docs";
@@ -484,29 +542,31 @@ function openDocs(t,tab){docsCur=t;$("docs").hidden=false;$("docsQ").value="";
   const tf=techFor(t),tu=techUnitOf(t),hasDocs=!!VD&&docCount(t)>0;
   $("docsTabs").hidden=!((tf||tu)&&hasDocs);$("dtDocs").hidden=!hasDocs;
   if(tf||tu){$("techBody").innerHTML=(tf?techHTML(tf.e)+(tf.par?techHTML(tf.par,true):""):`<p class="lead">Chưa có mô tả công nghệ riêng cho thiết bị này.</p>`)+
-      (tu?`<button class="unitlink" data-u="${esc(tu)}">Xem công nghệ toàn Unit ${esc(tu)} ›</button>`:"");wireTech();}
+      (tu?`<button class="unitlink" data-u="${esc(tu)}">Mở trang Unit ${esc(tu)} ›</button>`:"");wireTech();}
   setDocsTab(tab==="tech"&&(tf||tu)||!hasDocs?"tech":"docs");
   if(hasDocs)renderDocs();else{$("docsTag").textContent=t.t;$("docsSub").textContent=t.d||"";}
   if(docsTab==="docs")setTimeout(()=>$("docsQ").focus(),30);}
-function openUnitTech(u){const e=TECH&&TECH.units&&TECH.units[u];if(!e)return;docsCur=null;$("docs").hidden=false;
+function openUnitTech(u){$("docs").hidden=true;selectUnit(u,"tech");}
+function _oldUnitTech(u){const e=TECH&&TECH.units&&TECH.units[u];if(!e)return;docsCur=null;$("docs").hidden=false;
   $("docsTabs").hidden=true;$("docsTag").textContent="Unit "+u;$("docsSub").textContent=e.t;
   $("techBody").innerHTML=techHTML(e)+(TECH.gtu&&TECH.gtu[u]?`<button class="gtlink" data-u="${esc(u)}">Giáo trình đào tạo cương vị ›</button>`:"");wireTech();setDocsTab("tech");$("techBody").scrollTop=0;}
-function gtHTML(u){const ids=(TECH.gtu&&TECH.gtu[u])||[];let h="";
-  ids.forEach(k=>{const g=TECH.gt[k],l=docLinks({p:g.f});
-    h+=`<div class="gtc"><div class="gtno">${esc(g.no)}</div><h4 class="gtt">${esc(g.t)}</h4><p class="gtcv">${esc(g.cv)}</p>`+
+function gtOne(k,open){const g=TECH.gt[k],l=docLinks({p:g.f});
+    return `<div class="gtc"><div class="gtno">${esc(g.no)}</div><h4 class="gtt">${esc(g.t)}</h4><p class="gtcv">${esc(g.cv)}</p>`+
       (l?`<div class="src"><a href="${esc(l.view)}" target="_blank" rel="noopener">Mở giáo trình trên OneDrive ↗</a></div>`:"")+
       (g.sec&&g.sec.length?`<h4>Tóm tắt nội dung</h4>`+g.sec.map(x=>`<h5 class="gth">${esc(x.h)}</h5><ul>${x.ul.map(i=>/^• /.test(i)?`<li class="ind">${esc(i.slice(2))}</li>`:`<li>${esc(i)}</li>`).join("")}</ul>`).join(""):`<h4>Tóm tắt nội dung</h4><ul>${g.sum.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`)+
       `<h4>Điểm cần nhớ</h4><ul>${g.key.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`+
-      (g.toc&&g.toc.length?`<details class="gtd"><summary>Mục lục (${g.toc.length} mục)</summary><ol class="toc">${g.toc.map(([lv,t,pg,fp])=>{const dl=fp&&docLinks({p:fp});return `<li class="lv${lv}">${dl?`<a href="${esc(dl.view)}" target="_blank" rel="noopener" title="Mở trên OneDrive phần giáo trình từ trang ${pg}"><span>${esc(t)}</span><span class="pg">tr. ${pg}</span></a>`:`<span>${esc(t)}</span>${pg?`<span class="pg">tr. ${pg}</span>`:""}`}</li>`}).join("")}</ol></details>`:"")+
-      (g.q&&g.q.length?`<details class="gtd"><summary>Câu hỏi ôn tập (${g.q.length} câu)</summary><ol class="gq">${g.q.map(x=>`<li>${esc(x)}</li>`).join("")}</ol></details>`:"")+`</div>`;});
+      (g.toc&&g.toc.length?`<details class="gtd"${open?" open":""}><summary>Mục lục (${g.toc.length} mục) – bấm một mục để mở đúng phần đó trên OneDrive</summary><ol class="toc">${g.toc.map(([lv,t,pg,fp])=>{const dl=fp&&docLinks({p:fp});return `<li class="lv${lv}">${dl?`<a href="${esc(dl.view)}" target="_blank" rel="noopener" title="Mở trên OneDrive phần giáo trình từ trang ${pg}"><span>${esc(t)}</span><span class="pg">tr. ${pg}</span></a>`:`<span>${esc(t)}</span>${pg?`<span class="pg">tr. ${pg}</span>`:""}`}</li>`}).join("")}</ol></details>`:"")+
+      (g.q&&g.q.length?`<details class="gtd"><summary>Câu hỏi ôn tập (${g.q.length} câu)</summary><ol class="gq">${g.q.map(x=>`<li>${esc(x)}</li>`).join("")}</ol></details>`:"")+`</div>`;}
+function gtHTML(u,open){const ids=(TECH.gtu&&TECH.gtu[u])||[];let h=ids.map(k=>gtOne(k,open)).join("");
   const om=(TECH.gtom&&TECH.gtom[u])||[];
   if(om.length)h+=`<h4>Tài liệu gốc tham khảo</h4>`+srcLinks(om).replace("Nguồn: ","");
-  if(TECH.units&&TECH.units[u])h+=`<button class="unitlink" data-u="${esc(u)}">Xem công nghệ Unit ${esc(u)} ›</button>`;
   return h;}
-function openUnitGT(u){if(!TECH||!TECH.gtu||!TECH.gtu[u])return;docsCur=null;$("docs").hidden=false;
-  $("docsTabs").hidden=true;$("docsTag").textContent="Unit "+u;$("docsSub").textContent="Giáo trình đào tạo cương vị";
-  $("techBody").innerHTML=gtHTML(u);wireTech();setDocsTab("tech");$("docsEyebrow").textContent="Giáo trình";$("techBody").scrollTop=0;}
+function openUnitGT(u){$("docs").hidden=true;selectUnit(u,"gt");}
 $("dtTech").onclick=()=>setDocsTab("tech");$("dtDocs").onclick=()=>{setDocsTab("docs");renderDocs();};
+function docRow(d){const u=docLinks(d);
+      const meta=[d.src,d.pg?`trang ${d.pg}`:"",d.kb?fmtKB(d.kb):""].filter(Boolean).map(esc).join(" · ");
+      const inner=`<div class="dt">${d.no?`<code>${esc(d.no)}</code>`:""}${esc(d.t)}</div><div class="dm">${meta}</div>`;
+      return u?`<div class="doc"><a class="dlink" href="${esc(u.view)}" target="_blank" rel="noopener" title="Xem trước trên OneDrive${d.pg?` – đến trang ${d.pg}`:""}">${inner}</a><span class="go"><a class="vw" href="${esc(u.view)}" target="_blank" rel="noopener">Xem ↗</a>${d.bp?(()=>{const b=docLinks({p:d.bp});return `<a class="dw" href="${esc(b.view)}" target="_blank" rel="noopener" title="Mở cả cuốn sách gốc (mục này bắt đầu ở trang ${d.bpg})">Sách gốc</a>`;})():""}<a class="dw" href="${esc(u.dl)}" target="_blank" rel="noopener" title="Tải file về máy">Tải về</a></span></div>`:`<div class="doc">${inner}<span class="go"><button class="cp" data-p="${esc(d.p)}">Chép đường dẫn</button></span></div>`;}
 function renderDocs(){
   const t=docsCur;if(!t||!VD)return;
   const {direct,pkg,pk}=docsFor(t),q=normq($("docsQ").value);
@@ -520,18 +580,81 @@ function renderDocs(){
   const secs=[...groups(direct,""),...groups(pkg,"pkg")];
   const pkName=pk?(Object.keys(VD.tags).find(k=>nk(k)===pk)||pk):"";
   const many=direct.length+pkg.length>25&&!q;
-  $("docsList").innerHTML=secs.length?secs.map(({g,ds,lvl},si)=>`<details ${!many||si===0||(!lvl&&direct.length<=25)?"open":""}><summary>${esc(g)} <small>${ds.length}</small>${lvl?`<span class="lvl">CHUNG CỦA ${esc(pkName)}</span>`:""}</summary>${ds.map(d=>{const u=docLinks(d);
-      const meta=[d.src,d.pg?`trang ${d.pg}`:"",d.kb?fmtKB(d.kb):""].filter(Boolean).map(esc).join(" · ");
-      const inner=`<div class="dt">${d.no?`<code>${esc(d.no)}</code>`:""}${esc(d.t)}</div><div class="dm">${meta}</div>`;
-      return u?`<div class="doc"><a class="dlink" href="${esc(u.view)}" target="_blank" rel="noopener" title="Xem trước trên OneDrive${d.pg?` – đến trang ${d.pg}`:""}">${inner}</a><span class="go"><a class="vw" href="${esc(u.view)}" target="_blank" rel="noopener">Xem ↗</a>${d.bp?(()=>{const b=docLinks({p:d.bp});return `<a class="dw" href="${esc(b.view)}" target="_blank" rel="noopener" title="Mở cả cuốn sách gốc (mục này bắt đầu ở trang ${d.bpg})">Sách gốc</a>`;})():""}<a class="dw" href="${esc(u.dl)}" target="_blank" rel="noopener" title="Tải file về máy">Tải về</a></span></div>`:`<div class="doc">${inner}<span class="go"><button class="cp" data-p="${esc(d.p)}">Chép đường dẫn</button></span></div>`;}).join("")}</details>`).join(""):'<div class="empty">Không có tài liệu phù hợp.</div>';
-  $("docsList").querySelectorAll(".cp").forEach(bt=>bt.onclick=()=>{const p="Vendor Data\\"+bt.dataset.p.replace(/\//g,"\\");
-    (navigator.clipboard?navigator.clipboard.writeText(p):Promise.reject()).then(()=>toast("Đã chép: "+p),()=>toast(p));});
+  $("docsList").innerHTML=secs.length?secs.map(({g,ds,lvl},si)=>`<details ${!many||si===0||(!lvl&&direct.length<=25)?"open":""}><summary>${esc(g)} <small>${ds.length}</small>${lvl?`<span class="lvl">CHUNG CỦA ${esc(pkName)}</span>`:""}</summary>${ds.map(docRow).join("")}</details>`).join(""):'<div class="empty">Không có tài liệu phù hợp.</div>';
 }
 $("docsQ").addEventListener("input",renderDocs);
+document.addEventListener("click",e=>{const bt=e.target.closest(".cp");if(!bt)return;const p="Vendor Data\\"+bt.dataset.p.replace(/\//g,"\\");
+  (navigator.clipboard?navigator.clipboard.writeText(p):Promise.reject()).then(()=>toast("Đã chép: "+p),()=>toast(p));});
 $("docsClose").onclick=()=>{$("docs").hidden=true;};
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("docs").hidden)$("docs").hidden=true;});
 $("btnDocs").onclick=()=>{if(state.sel)openDocs(state.sel);};
 $("btnTech").onclick=()=>{if(state.sel)openDocs(state.sel,"tech");};
+
+
+/* ---- Trang Unit: bấm một Unit ở cột trái → các tab Công nghệ · Giáo trình · Tài liệu Vendor · Tag & bản vẽ ----
+   Thêm tab mới (ví dụ "Quy trình"): thêm một phần tử vào UTABS với has(u), n(u) và html(u). */
+let UT="draw",USUB=null;
+let UMAP=null;const UKC=new Map();
+const uname=u=>((DB&&DB.units.find(x=>x.code===u))||{}).name||"";
+function umap(){if(UMAP)return UMAP;UMAP=new Map();
+  VIEW.forEach(v=>[v.t,v.orig].filter(Boolean).forEach(n=>{const k=nk(n);if(!UMAP.has(k))UMAP.set(k,new Set());v._u.forEach(x=>UMAP.get(k).add(x));}));return UMAP;}
+const AREA={"10":{8:"18",9:"19A"},"30":{1:"31",2:"32",3:"33",4:"32",5:"35",6:"36",7:"37"},"40":{1:"41",2:"42",5:"45"}};
+function unitsOfKey(key){const k=nk(key);if(UKC.has(k))return UKC.get(k);const m=umap();let r=new Set(m.get(k)||[]);
+  if(!r.size)for(const [kk,us] of m)if(kk.startsWith(k)&&!/^\d/.test(kk.slice(k.length)))us.forEach(x=>r.add(x));
+  if(!r.size&&k.includes("/"))r=new Set(unitsOfKey(k.split("/")[0]));
+  if(!r.size){const up=String(key).toUpperCase(),a=up.match(/^(10|30|40)-[A-Z]+-(\d)/),b=up.match(/^[A-Z]+-(\d\d)/);
+    const c=a?(AREA[a[1]]||{})[a[2]]:b&&DB.units.some(x=>x.code===b[1])?b[1]:null;if(c)r.add(c);}
+  UKC.set(k,r);return r;}
+function techTagsOf(u){return TECH?Object.keys(TECH.tags||{}).filter(k=>unitsOfKey(k).has(u)).sort((a,b)=>a.localeCompare(b,"vi",{numeric:true})):[];}
+function vendorTagsOf(u){return VD?Object.keys(VD.tags||{}).filter(k=>unitsOfKey(k).has(u)).sort((a,b)=>a.localeCompare(b,"vi",{numeric:true})):[];}
+function vendorDocsOf(u){const s=new Set();vendorTagsOf(u).forEach(k=>VD.tags[k].forEach(i=>s.add(i)));return s;}
+const UTABS=[
+  {id:"tech",t:"Công nghệ",has:u=>!!(TECH&&((TECH.units||{})[u]||techTagsOf(u).length)),n:u=>techTagsOf(u).length,html:techPage},
+  {id:"gt",t:"Giáo trình",has:u=>!!(TECH&&TECH.gtu&&TECH.gtu[u]),n:u=>TECH.gtu[u].length,html:u=>gtHTML(u,true)},
+  {id:"docs",t:"Tài liệu Vendor",has:u=>!!(VD&&vendorTagsOf(u).length),n:u=>vendorDocsOf(u).size,html:docsPage},
+  {id:"draw",t:"Tag & bản vẽ",has:()=>true,n:u=>DB?visible().filter(t=>t._u.has(u)).length:0}
+];
+function selectUnit(u,tab){state.unit=u;USUB=null;
+  const av=u?UTABS.filter(t=>t.has(u)):[];
+  UT=tab&&av.some(t=>t.id===tab)?tab:(av[0]||{id:"draw"}).id;
+  renderUnits();render();renderUHead();$("uread").scrollTop=0;}
+function showDraw(){if(UT!=="draw"){UT="draw";renderUHead();}}
+function renderUHead(){if(!DB)return;const u=state.unit;
+  $("uCode").textContent=u?"UNIT "+u:"TẤT CẢ UNIT";$("uName").textContent=u?uname(u):"Tra cứu tag và bản vẽ";
+  const tabs=u?UTABS.filter(t=>t.has(u)):[];
+  if(!tabs.some(t=>t.id===UT))UT="draw";
+  $("utabs").innerHTML=tabs.length>1?tabs.map(t=>`<button role="tab" data-t="${t.id}" aria-selected="${t.id===UT}">${esc(t.t)}<span class="n">${t.n(u)}</span></button>`).join(""):"";
+  $("utabs").querySelectorAll("button").forEach(b=>b.onclick=()=>{UT=b.dataset.t;USUB=null;renderUHead();$("uread").scrollTop=0;});
+  $("wsdraw").hidden=UT!=="draw";$("uread").hidden=UT==="draw";
+  if(UT!=="draw")renderURead();}
+function renderURead(){const t=UTABS.find(x=>x.id===UT),u=state.unit;const box=$("ureadIn");
+  box.innerHTML=t.html(u);wireURead(box);
+  const q=$("uq");if(q){q.oninput=()=>{$("udl").innerHTML=docsList(u,q.value);};}}
+function techPage(u){
+  if(USUB){const e=TECH.tags[USUB],tf=techFor({t:USUB,orig:""});const v=findTag(USUB);const dn=v?docCount(v):0;
+    return `<button class="crumb" data-back="1">‹ Công nghệ Unit ${esc(u)}</button><div class="tsh"><code>${esc(USUB)}</code><h3>${esc(e.t||"")}</h3></div>`+techHTML(e)+(tf&&tf.par?techHTML(tf.par,true):"")+
+      `<div class="tagacts">${v?`<button data-show="${esc(USUB)}">Xem trên bản vẽ</button>`:""}${dn?`<button data-tdocs="${esc(USUB)}">Tài liệu vendor (${dn})</button>`:""}</div>`;}
+  const e=TECH.units&&TECH.units[u],keys=techTagsOf(u);
+  return (e?techHTML(e):`<p class="ulead">Chưa có trang mô tả công nghệ tổng quan cho Unit này.</p>`)+
+    (keys.length?`<h4>Thiết bị trong Unit (${keys.length})</h4><p class="ulead">Bấm một thiết bị để xem mô tả công nghệ riêng.</p><div class="eqg">${keys.map(k=>`<button data-sub="${esc(k)}"><b>${esc(k)}</b><span>${esc(TECH.tags[k].t||"")}</span></button>`).join("")}</div>`:"");}
+function findTag(key){const k=nk(key);return VIEW.find(v=>!v.del&&(nk(v.t)===k||nk(v.orig)===k))||VIEW.find(v=>!v.del&&nk(v.t).startsWith(k)&&!/^\d/.test(nk(v.t).slice(k.length)));}
+function docsPage(u){const n=vendorDocsOf(u).size;
+  return `<div class="uq"><input type="search" id="uq" placeholder="Lọc tài liệu trong Unit ${esc(u)}: tag, số bản vẽ, tên… (ví dụ “bơm”, “data sheet”)" autocomplete="off"><small>${n} tài liệu, xếp theo thiết bị. Bấm tên thiết bị để mở danh sách.</small></div><div id="udl">${docsList(u,"")}</div>`;}
+function docsList(u,qs){const q=normq(qs),keys=vendorTagsOf(u),order=VD.groups||[];
+  const out=keys.map(k=>{const kq=q&&normq(k).includes(q);
+    const ds=VD.tags[k].map(i=>VD.docs[i]).filter(d=>!q||kq||normq([d.no,d.t,d.src,d.g,d.p].join(" ")).includes(q));
+    if(!ds.length)return"";const by=new Map();ds.forEach(d=>{if(!by.has(d.g))by.set(d.g,[]);by.get(d.g).push(d);});
+    const gs=[...by.entries()].sort((a,b)=>(order.indexOf(a[0])+1||99)-(order.indexOf(b[0])+1||99));
+    const nm=(VD.pkgs&&VD.pkgs[k])||(TECH&&TECH.tags&&TECH.tags[k]&&TECH.tags[k].t)||((findTag(k)||{}).d)||"";
+    return `<details class="vd"${q||keys.length===1?" open":""}><summary><b>${esc(k)}</b><span>${esc(nm)}</span><small>${ds.length} tài liệu</small></summary>${gs.map(([g,l])=>`<div class="vg">${esc(g)} · ${l.length}</div>${l.map(docRow).join("")}`).join("")}</details>`;}).join("");
+  return out||'<div class="empty">Không có tài liệu phù hợp.</div>';}
+function wireURead(box){
+  box.querySelectorAll("[data-sub]").forEach(b=>b.onclick=()=>{USUB=b.dataset.sub;renderURead();$("uread").scrollTop=0;});
+  box.querySelectorAll("[data-back]").forEach(b=>b.onclick=()=>{USUB=null;renderURead();});
+  box.querySelectorAll("[data-show]").forEach(b=>b.onclick=()=>{const v=findTag(b.dataset.show);if(!v)return;showDraw();state.sel=v;openTag(v);render();});
+  box.querySelectorAll("[data-tdocs]").forEach(b=>b.onclick=()=>{const v=findTag(b.dataset.tdocs);if(v)openDocs(v);});
+  box.querySelectorAll("[data-sheet]").forEach(b=>b.onclick=()=>{const i=DB.sheets.findIndex(s=>s.dwg===b.dataset.sheet);if(i<0)return;showDraw();state.sel=null;openSheetAll(i);render();});
+  box.querySelectorAll(".unitlink,.gtlink").forEach(b=>b.onclick=()=>selectUnit(b.dataset.u,b.classList.contains("gtlink")?"gt":"tech"));}
 
 // a sheet can belong to several units (e.g. the power-generation PFD covers both 19A gas turbine and 19B HRSG)
 function sheetUnits(s){return s.also?[s.unit,...s.also]:[s.unit];}
@@ -541,22 +664,15 @@ function renderUnits(){
   const vis=visible();
   const all=document.createElement("button");all.className="unit";
   all.innerHTML=`<span class="c">ALL</span><span class="n">Tất cả Unit</span><span class="k">${vis.length}</span>`;
-  all.onclick=()=>{state.unit=null;renderUnits();render();};
+  all.onclick=()=>selectUnit(null);
   all.setAttribute("aria-current",state.unit===null);box.appendChild(all);
   DB.units.forEach(u=>{
     const n=vis.filter(t=>t._u.has(u.code)).length;
     const b=document.createElement("button");b.className="unit";b.title=u.name;
     b.innerHTML=`<span class="c">${u.code}</span><span class="n">${esc(u.name)}</span><span class="k">${n}</span>`;
     b.setAttribute("aria-current",state.unit===u.code);
-    b.onclick=()=>{state.unit=u.code;renderUnits();render();};
+    b.onclick=()=>selectUnit(u.code);
     box.appendChild(b);
-    const hasT=TECH&&TECH.units&&TECH.units[u.code],hasG=TECH&&TECH.gtu&&TECH.gtu[u.code];
-    if(hasT||hasG){const row=document.createElement("div");row.className="ulinks";
-      if(hasT){const tb=document.createElement("button");tb.className="unittech";tb.textContent="Công nghệ ›";
-        tb.title=TECH.units[u.code].t;tb.onclick=()=>openUnitTech(u.code);row.appendChild(tb);}
-      if(hasG){const gb=document.createElement("button");gb.className="unittech";gb.textContent="Giáo trình ›";
-        gb.title="Giáo trình đào tạo cương vị";gb.onclick=()=>openUnitGT(u.code);row.appendChild(gb);}
-      box.appendChild(row);}
   });
 }
 function hl(tag,q){
@@ -614,8 +730,8 @@ function render(){
   }
 }
 function openSheetAll(i){const all=[];visible().forEach(t=>t.o.forEach(o=>{if(o[0]===i)all.push([o[0],o[1],o[2],o[3],o[4],t.t]);}));openSheet(i,all);}
-$("q").addEventListener("input",e=>{state.q=e.target.value;if(state.tab!=="tags")setTab("tags");else render();});
-document.querySelectorAll(".chip[data-k]").forEach(c=>c.onclick=()=>{const k=c.dataset.k;state.kinds.has(k)?state.kinds.delete(k):state.kinds.add(k);c.setAttribute("aria-pressed",state.kinds.has(k));render();});
+$("q").addEventListener("input",e=>{state.q=e.target.value;showDraw();if(state.tab!=="tags")setTab("tags");else render();});
+document.querySelectorAll(".chip[data-k]").forEach(c=>c.onclick=()=>{const k=c.dataset.k;state.kinds.has(k)?state.kinds.delete(k):state.kinds.add(k);c.setAttribute("aria-pressed",state.kinds.has(k));showDraw();render();});
 $("chipEdited").onclick=()=>{state.edited=!state.edited;$("chipEdited").setAttribute("aria-pressed",state.edited);if(state.tab!=="tags")setTab("tags");renderUnits();render();};
 function setTab(t){state.tab=t;$("tabTags").setAttribute("aria-selected",t==="tags");$("tabSheets").setAttribute("aria-selected",t==="sheets");render();}
 $("tabTags").onclick=()=>setTab("tags");$("tabSheets").onclick=()=>setTab("sheets");

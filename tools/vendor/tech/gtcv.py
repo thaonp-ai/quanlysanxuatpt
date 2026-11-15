@@ -92,7 +92,7 @@ GT = {
         key=["N₂ sản phẩm 99,9 %, khoảng 7 barg.",
              "Không khí làm lạnh 7–10 °C ở E5/E6; nước chiller không dưới 5 °C (tránh đóng băng).",
              "APU chuyển bình khi tổng lưu lượng 7.148 m³ hoặc 680 phút; tái sinh bằng khí thải coldbox."]),
-    "GT08": dict(no="G2-30-GT-08", t="Hệ thống Gas Turbine", units=["19A", "19B"],
+    "GT08": dict(no="G2-30-GT-08", t="Hệ thống Gas Turbine", units=["19A"],
         f=p(8, "GT dao tao HT Gasturbine"),
         cv="Cương vị vận hành máy phát điện 10-GT-9001 và HRSG",
         sum=["Phần I: chu trình Brayton (hở đơn giản, có trao đổi nhiệt, hỗn hợp), ảnh hưởng điều kiện môi trường, máy nén dọc trục, buồng đốt, turbine.",

@@ -610,13 +610,13 @@ function vendorTagsOf(u){return VD?Object.keys(VD.tags||{}).filter(k=>unitsOfKey
 function vendorDocsOf(u){const s=new Set();vendorTagsOf(u).forEach(k=>VD.tags[k].forEach(i=>s.add(i)));return s;}
 const UTABS=[
   {id:"tech",t:"Công nghệ",has:u=>!!(TECH&&((TECH.units||{})[u]||techTagsOf(u).length)),n:u=>techTagsOf(u).length,html:techPage},
-  {id:"gt",t:"Giáo trình",has:u=>!!(TECH&&TECH.gtu&&TECH.gtu[u]),n:u=>TECH.gtu[u].length,html:u=>gtHTML(u,true)},
+  {id:"gt",t:"Giáo trình",has:()=>true,n:u=>((TECH&&TECH.gtu&&TECH.gtu[u])||[]).length,html:u=>TECH&&TECH.gtu&&TECH.gtu[u]?gtHTML(u,true):`<p class="ulead">Chưa có giáo trình cho Unit ${esc(u)}. Phần này sẽ được bổ sung sau.</p>`},
   {id:"docs",t:"Tài liệu Vendor",has:u=>!!(VD&&vendorTagsOf(u).length),n:u=>vendorDocsOf(u).size,html:docsPage},
   {id:"draw",t:"Tag & bản vẽ",has:()=>true,n:u=>DB?visible().filter(t=>t._u.has(u)).length:0}
 ];
 function selectUnit(u,tab){state.unit=u;USUB=null;
   const av=u?UTABS.filter(t=>t.has(u)):[];
-  UT=tab&&av.some(t=>t.id===tab)?tab:(av[0]||{id:"draw"}).id;
+  UT=tab&&av.some(t=>t.id===tab)?tab:(av.find(t=>t.id==="draw"||t.n(u)>0)||{id:"draw"}).id;
   renderUnits();render();renderUHead();$("uread").scrollTop=0;}
 function showDraw(){if(UT!=="draw"){UT="draw";renderUHead();}}
 function renderUHead(){if(!DB)return;const u=state.unit;

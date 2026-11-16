@@ -573,6 +573,11 @@ def main():
                 tags[vt["t"]]["d"] = vt.get("d", tags[vt["t"]]["d"])
             else:
                 tags[vt["t"]] = {"t": vt["t"], "k": vt["k"], "s": vt["s"], "d": vt["d"], "o": occ}
+    # tools/valves: danh mục van tay CMMS của X.PT (block/drain/vent/bypass) thay cho nhãn van chặn OCR "B1-xx"
+    if os.path.exists("/home/claude/work/valves/valves.json"):
+        sys.path.insert(0, "/home/claude/work/valves")
+        import apply_valves
+        tags = {e["t"]: e for e in apply_valves.apply(sheets, list(tags.values()))}
     used = sorted({u for s in sheets for u in [s["unit"]] + s.get("also", [])})
     units = [{"code": u, "name": UNIT_NAMES.get(u, "Unit " + u)} for u in used]
     out = {"updated": sys.argv[1] if len(sys.argv) > 1 else "", "units": units, "sheets": sheets,

@@ -461,7 +461,7 @@ function rebuild(){
   DB.tags.forEach(t=>{
     // tags renamed when the data is rebuilt keep their former OCR names in t.a, so earlier web edits still match
     const nm=[t.t,...(t.a||[])].find(n=>EDITS["o:"+n])||t.t,key="o:"+nm,e=EDITS[key];
-    VIEW.push({key,orig:nm,t:(e&&e.t)||t.t,k:(e&&e.k)||t.k,d:e&&e.k&&e.k!==t.k?"":t.d,l:t.l,o:t.o,note:(e&&e.note)||"",del:!!(e&&e.del),edited:!!e,isNew:false,by:e&&e.by,at:e&&e.at});
+    VIEW.push({key,orig:nm,t:(e&&e.t)||t.t,k:(e&&e.k)||t.k,d:e&&e.k&&e.k!==t.k?"":t.d,l:t.l,o:t.o,p:t.p||"",n:t.n||"",cm:!!t.cm,note:(e&&e.note)||"",del:!!(e&&e.del),edited:!!e,isNew:false,by:e&&e.by,at:e&&e.at});
   });
   Object.entries(EDITS).forEach(([key,e])=>{
     if(!key.startsWith("n:"))return;
@@ -470,7 +470,7 @@ function rebuild(){
     VIEW.push({key,orig:"",t:e.t,k:e.k||"equipment",d:"Thêm thủ công",o,note:e.note||"",del:!!e.del,edited:true,isNew:true,by:e.by,at:e.at});
   });
   UMAP=null;UKC.clear();
-  VIEW.forEach(v=>{v._n=normq(v.t);v._no=normq(v.orig);v._u=new Set(v.o.flatMap(o=>sheetUnits(DB.sheets[o[0]])));});
+  VIEW.forEach(v=>{v._n=normq(v.t);v._no=normq(v.orig);v._p=normq(v.p);v._u=new Set(v.o.flatMap(o=>sheetUnits(DB.sheets[o[0]])));});
   showMode();
 }
 
@@ -685,8 +685,9 @@ function hl(tag,q){
 }
 function filtered(){
   const q=normq(state.q);
-  let r=visible().filter(t=>(!state.unit||t._u.has(state.unit))&&(!state.kinds.size||state.kinds.has(t.k))&&(!q||t._n.includes(q)||t._no.includes(q)));
-  r.sort(q?(a,b)=>(a._n.startsWith(q)?0:1)-(b._n.startsWith(q)?0:1)||a.t.localeCompare(b.t):state.edited?(a,b)=>(b.at||"").localeCompare(a.at||""):(a,b)=>a.t.localeCompare(b.t));
+  let r=visible().filter(t=>(!state.unit||t._u.has(state.unit))&&(!state.kinds.size||state.kinds.has(t.k))&&(!q||t._n.includes(q)||t._no.includes(q)||(t._p&&t._p.includes(q))));
+  const rk=t=>t._n.startsWith(q)?0:t._n.includes(q)||t._no.includes(q)?1:2;
+  r.sort(q?(a,b)=>rk(a)-rk(b)||a.t.localeCompare(b.t,"vi",{numeric:true}):state.edited?(a,b)=>(b.at||"").localeCompare(a.at||""):(a,b)=>a.t.localeCompare(b.t));
   return r;
 }
 function sheetLabel(s){return s.dwg||s.id;}
@@ -702,7 +703,7 @@ function render(){
       const row=document.createElement("div");row.className="row"+(t.del?" hidden":"");
       const sh=[...new Set(t.o.map(o=>o[0]))];
       const badge=t.isNew?'<span class="badge new">Thêm mới</span>':t.del?'<span class="badge del">Đã xóa</span>':t.edited?'<span class="badge">Đã sửa</span>':"";
-      const sub=[KIND[t.k],t.d,t.edited&&!t.isNew&&t.orig!==t.t?`tên OCR: ${t.orig}`:"",t.l&&!t.edited?`ghi trên bản vẽ: ${t.l.join(", ")}`:"",t.note?`ghi chú: ${t.note}`:"",t.edited&&t.by?`${t.by}, ${fmtTime(t.at)}`:""].filter(Boolean).map(esc).join(" · ");
+      const sub=[KIND[t.k],t.d,t.p?`thiết bị: ${t.p}`:"",t.n?`ghi chú X.PT: ${t.n}`:"",t.o.every(o=>o[5]===2)?"chưa có vị trí trên bản vẽ":t.o.every(o=>o[5]===3)?"vị trí gần đúng":"",t.edited&&!t.isNew&&t.orig!==t.t?`tên OCR: ${t.orig}`:"",t.l&&!t.edited?`ghi trên bản vẽ: ${t.l.join(", ")}`:"",t.note?`ghi chú: ${t.note}`:"",t.edited&&t.by?`${t.by}, ${fmtTime(t.at)}`:""].filter(Boolean).map(esc).join(" · ");
       row.innerHTML=`<button class="rowmain"><div class="tag"><i class="dot d-${t.k}"></i><span class="nm">${hl(t.t,q)}</span>${badge}</div><div class="sub">${sub}</div><div class="refs">${sh.slice(0,3).map(i=>esc(sheetLabel(DB.sheets[i]))).join(" · ")}${sh.length>3?` +${sh.length-3}`:""}</div></button><div class="rowside"><button class="rowedit" aria-label="Sửa ${esc(t.t)}">Sửa</button><button class="rowdel" aria-label="${t.del?"Khôi phục":"Xóa"} ${esc(t.t)}">${t.del?"Khôi phục":"Xóa"}</button></div>${(c=>c?`<div class="rowacts">${c}</div>`:"")(`${(()=>{const r=docsFor(t),n=r.direct.length||r.pkg.length;return n?`<button class="rowdoc" title="${r.direct.length} tài liệu riêng · ${r.pkg.length} tài liệu chung của cụm" aria-label="Tài liệu vendor của ${esc(t.t)}">${r.direct.length?"Tài liệu":"Tài liệu cụm"}<b>${n}</b></button>`:"";})()}${techFor(t)?`<button class="rowtech" aria-label="Công nghệ của ${esc(t.t)}">Công nghệ</button>`:""}`)}`;
       if(state.sel&&state.sel.key===t.key)row.setAttribute("aria-current","true");
       row.querySelector(".rowmain").onclick=()=>{state.sel=t;openTag(t);render();};
@@ -872,18 +873,18 @@ $("btnExport").onclick=()=>{const p=$("exportPop");p.hidden=!p.hidden;$("btnExpo
 document.addEventListener("click",e=>{if(!e.target.closest(".wrap"))$("exportPop").hidden=true;});
 function buildWorkbook(tags){
   const unitName=Object.fromEntries(DB.units.map(u=>[u.code,u.name]));
-  const H=["STT","Unit","Tên Unit","Loại","Tag","Mô tả","Tên OCR gốc","Trạng thái","Ghi chú","Số bản vẽ","Tên bản vẽ","Loại bản vẽ","Người sửa","Thời gian sửa"];
+  const H=["STT","Unit","Tên Unit","Loại","Tag","Mô tả","Thiết bị (Parent Asset)","Tên OCR gốc","Trạng thái","Ghi chú","Số bản vẽ","Tên bản vẽ","Loại bản vẽ","Người sửa","Thời gian sửa"];
   const rows=[];
   tags.forEach(t=>{[...new Set(t.o.map(o=>o[0]))].forEach(si=>{const s=DB.sheets[si];
-    rows.push([0,s.unit,unitName[s.unit]||"",KIND[t.k],t.t,t.d||"",t.isNew?"":t.orig,t.isNew?"Thêm mới":t.del?"Đã xóa":t.edited?"Đã sửa":"Gốc (OCR)",
+    rows.push([0,s.unit,unitName[s.unit]||"",KIND[t.k],t.t,t.d||"",t.p||"",t.isNew?"":t.orig,t.isNew?"Thêm mới":t.del?"Đã xóa":t.edited?"Đã sửa":t.cm?"Gốc (danh mục CMMS)":"Gốc (OCR)",
       t.note||"",sheetLabel(s),s.title||"",s.kind,t.edited?(t.by||""):"",t.edited?fmtTime(t.at):""]);});});
-  rows.sort((a,b)=>a[1].localeCompare(b[1])||a[9].localeCompare(b[9])||a[3].localeCompare(b[3])||a[4].localeCompare(b[4]));
+  rows.sort((a,b)=>a[1].localeCompare(b[1])||a[10].localeCompare(b[10])||a[3].localeCompare(b[3])||a[4].localeCompare(b[4]));
   rows.forEach((r,i)=>r[0]=i+1);
   const nameOf=key=>{const v=VIEW.find(z=>z.key===key);return v?(v.orig||v.t):key.slice(2);};
   const HH=["Thời gian","Người sửa","Thao tác","Tag (tên OCR)","Tên trước","Tên sau","Loại sau","Ghi chú"];
   const hist=LOG.map(l=>[fmtTime(l.at),l.by||"",l.action||"",nameOf(l.key),(l.from&&l.from.t)||"",(l.to&&l.to.t)||"",l.to&&l.to.k?KIND[l.to.k]:"",(l.to&&l.to.note)||""]);
   return {count:rows.length,blob:XL([
-    {name:"Danh sach tag",rows:[H,...rows],widths:[6,6,30,11,30,22,30,12,30,24,52,8,20,18]},
+    {name:"Danh sach tag",rows:[H,...rows],widths:[6,6,30,11,30,40,22,22,12,30,24,52,8,20,18]},
     {name:"Lich su chinh sua",rows:[HH,...hist],widths:[18,22,16,30,30,30,12,34]}])};
 }
 function exportXlsx(tags,label){
@@ -921,10 +922,11 @@ function openSheet(i,hits,focus){
   if(!focus){$("pos").textContent="";$("prev").disabled=$("next").disabled=true;}
   layer.querySelectorAll(".hit").forEach(h=>h.remove());
   const draw=()=>{
-    hits.forEach(o=>{const d=document.createElement("div");d.className="hit"+(o===focus?" on":"")+(focus?"":" soft")+(o[5]===1?" hdr":"");d.title=o[5]||"";
+    hits.filter(o=>o[5]!==2).forEach(o=>{const d=document.createElement("div");d.className="hit"+(o===focus?" on":"")+(focus?"":" soft")+(o[5]===1||o[5]===3?" hdr":"");d.title=o[5]===3?"Vị trí gần đúng (theo thiết bị/van điều khiển liên quan)":o[5]===1?"Chỉ thấy ở khung tiêu đề":"";
       const pad=0.004;
       Object.assign(d.style,{left:((o[1]-pad)*s.w)+"px",top:((o[2]-pad)*s.h)+"px",width:((o[3]+2*pad)*s.w)+"px",height:((o[4]+2*pad)*s.h)+"px"});layer.appendChild(d);});
-    if(focus)zoomTo(focus,s);else fit();
+    if(focus&&focus[5]!==2)zoomTo(focus,s);else fit();
+    if(focus&&focus[5]>=2)toast(focus[5]===2?"Van này chưa xác định được vị trí trên bản vẽ — đang mở cả tờ P&ID.":"Vị trí gần đúng: khung nét đứt là thiết bị/van điều khiển liên quan.");
   };
   if(cur!==s.img){cur=s.img;img.width=s.w;img.height=s.h;img.onload=null;img.src=s.img;}
   draw();

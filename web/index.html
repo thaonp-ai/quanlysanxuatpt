@@ -461,7 +461,9 @@ function rebuild(){
   DB.tags.forEach(t=>{
     // tags renamed when the data is rebuilt keep their former OCR names in t.a, so earlier web edits still match
     const nm=[t.t,...(t.a||[])].find(n=>EDITS["o:"+n])||t.t,key="o:"+nm,e=EDITS[key];
-    VIEW.push({key,orig:nm,t:(e&&e.t)||t.t,k:(e&&e.k)||t.k,d:e&&e.k&&e.k!==t.k?"":t.d,l:t.l,o:t.o,p:t.p||"",n:t.n||"",cm:!!t.cm,note:(e&&e.note)||"",del:!!(e&&e.del),edited:!!e,isNew:false,by:e&&e.by,at:e&&e.at});
+    // an edit made under an old OCR name may still carry that (wrong) name: the corrected data name wins
+    const en=e&&e.t&&!(t.a||[]).includes(e.t)?e.t:"";
+    VIEW.push({key,orig:nm,t:en||t.t,k:(e&&e.k)||t.k,d:e&&e.k&&e.k!==t.k?"":t.d,l:t.l,o:t.o,p:t.p||"",n:t.n||"",cm:!!t.cm,note:(e&&e.note)||"",del:!!(e&&e.del),edited:!!e,isNew:false,by:e&&e.by,at:e&&e.at});
   });
   Object.entries(EDITS).forEach(([key,e])=>{
     if(!key.startsWith("n:"))return;

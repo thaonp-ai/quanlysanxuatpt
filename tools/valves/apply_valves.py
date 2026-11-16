@@ -96,7 +96,10 @@ def bubble_fix(sheets, tags, sidx):
         if nt is None:
             fn = m.group(1) if m else "V"
             if t["k"] != "valve":
-                nt = {"t": fx["to"], "k": t["k"], "s": t["s"], "d": t["d"], "o": []}
+                # thiết bị con: lấy loại/mô tả của thiết bị con cùng loại (vd /BA6A ← /BA6B, /E2 ← A/E2)
+                ref = next((u for u in byt.values() if u["k"] == t["k"] and "/" in fx["to"] and "/" in u["t"]
+                            and re.sub(r"\d+[A-Z]?$", "", u["t"].split("/")[1]) == re.sub(r"\d+[A-Z]?$", "", fx["to"].split("/")[1])), t)
+                nt = {"t": fx["to"], "k": t["k"], "s": ref["s"], "d": ref["d"], "o": []}
             else:
                 nt = {"t": fx["to"], "k": "valve", "s": fn if not re.match(r"^\d\d-[UDB]\d-", fx["to"]) else "BLOCK",
                       "d": t["d"] if not re.match(r"^\d\d-[UDB]\d-", fx["to"]) else "Van tay", "o": []}

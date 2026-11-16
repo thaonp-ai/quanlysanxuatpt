@@ -1,5 +1,5 @@
 """OCR lại nhãn van (B1-xx, C1-xx, BR-xx…) trên một trang của "02. P&ID Xuong Phu Tro_2025.pdf": đặt lại độ dày nét vẽ trong PDF (nhãn gốc nét rất đậm, OCR đọc sai 3/5/6/8), render 900 dpi, dò khung chữ nhật nhỏ, OCR.
-    python3 relabel.py <trang PDF> <sheet id> [thư mục ra=hl]"""
+    python3 relabel.py <trang PDF> <sheet id> [thư mục ra=hl] [độ dày nét=1.5; bản vẽ 2539 nét mảnh dùng 3]"""
 import cv2,numpy as np,pytesseract,re,sys,json,subprocess,os,tempfile
 PDF="/mnt/user-data/uploads/PIDvaQLSX/02. P&ID Xuong Phu Tro_2025.pdf"
 DPI=900
@@ -9,7 +9,7 @@ def render(page,d):
     subprocess.run(["qpdf","--empty","--pages",PDF,str(page),"--",a],check=True)
     subprocess.run(["qpdf","--qdf","--object-streams=disable",a,q],check=True)
     b=open(q,'rb').read()
-    b=re.sub(rb'(?<=[\s\n])(\d+(?:\.\d+)?) w\b',b'1.5 w',b)
+    b=re.sub(rb'(?<=[\s\n])(\d+(?:\.\d+)?) w\b',(sys.argv[4] if len(sys.argv)>4 else '1.5').encode()+b' w',b)
     open(t,'wb').write(b)
     subprocess.run(["pdftoppm","-r",str(DPI),"-png","-singlefile",t,f"{d}/r"],check=True,stderr=subprocess.DEVNULL)
     return cv2.imread(f"{d}/r.png",cv2.IMREAD_GRAYSCALE)

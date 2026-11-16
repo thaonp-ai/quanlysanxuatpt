@@ -9,15 +9,27 @@
   * Tag "UUNN-x/y-XX-nn": P&ID số NN của Unit UU, trang x/y. Chọn tờ có nhiều nhãn trùng nhất với danh mục,
     rồi lấy vị trí nhãn OCR "XX-nn" trên tờ đó (ocr_labels.json, chụp từ data.json trước khi thay).
   * Tag "AA-U1-FV8003" (U=trước, D=sau, B=bypass van điều khiển): vị trí van AA-FV-8003, cờ 3 (gần đúng).
-  * Tag trùng tên tag đã có (HV/SV/XV…): giữ vị trí tag đó, cập nhật d/p/n.
-  * Không tìm được: vị trí thiết bị cha (Parent Asset) trên P&ID (ưu tiên đúng tờ), cờ 3;
-    vẫn không có thì chỉ mở bản vẽ, cờ 2 ([sheet, 0, 0, 1, 1, 2]).
+  * Tag trùng tên tag đã có (HV/SV/XV…, kể cả bong bóng U1/D1/B1 đã sửa tên ở bubblefix.json): giữ vị trí tag đó.
+  * Tag "AA-U1-FV8003" chưa có: tìm bong bóng "U1FV 8003" (bubbles.json: chữ OCR Tesseract + bộ đọc phông CAD)
+    trên tờ có van điều khiển, so khớp có tính ký tự dễ nhầm (fuzzy.py).
+  * Không tìm được: chỉ mở bản vẽ (tờ của thiết bị cha/van điều khiển), cờ 2 ([sheet, 0, 0, 1, 1, 2]) —
+    không khoanh thiết bị cha để khỏi nhầm.
+- Trước đó áp bubblefix.json (soát bằng mắt 11/2026): sửa tên van OCR đọc sai ở từng vị trí bong bóng
+  ({sid, box, from, to}; to "" = bỏ vị trí đó, "L" = bỏ nếu tag còn vị trí khác — chú giải/ghi chú),
+  thêm van điều khiển bị thiếu tìm thấy trong bong bóng.
 """
 import collections, itertools, json, os, re, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from fuzzy import clean, dist
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 STD = re.compile(r"^(\d\d)(\d\d)-(\d+)/(\d+)-([A-Z]+\d*)-(\d+)$")
 CV = re.compile(r"^(\d\d)-([UDB])\d-([A-Z]+)(\d+[A-Z]?)$")
+
+
+VNAME = {"PV": "Van điều khiển áp suất", "FV": "Van điều khiển lưu lượng", "LV": "Van điều khiển mức",
+         "TV": "Van điều khiển nhiệt độ", "HV": "Van điều khiển tay (HV)", "XV": "Van on/off (XV)", "PCV": "Van tự điều áp",
+         "MOV": "Van điện", "AV": "Van khí điều khiển", "FCV": "Van điều khiển lưu lượng", "LCV": "Van điều khiển mức"}
 
 
 def nk(s):
@@ -27,6 +39,75 @@ def nk(s):
 def lab_key(s):
     m = re.match(r"^([A-Z]+\d*)-(\d+)$", s)
     return (m.group(1), int(m.group(2))) if m else None
+
+
+def load_bubbles(sidx):
+    f = os.path.join(HERE, "bubbles.json")
+    out = collections.defaultdict(list)
+    if os.path.exists(f):
+        for sid, items in json.load(open(f)).items():
+            if sid in sidx:
+                out[sidx[sid]] = items
+    return out
+
+
+def match_bubble(bubbles, cand, target, used, maxd=1.25):
+    """bong bóng khớp nhất với chuỗi target (vd 'U1FV8003') trên các tờ cand; trả [sheet,x,y,w,h] hoặc None."""
+    target = clean(target)
+    best = []
+    for si in cand:
+        for x, y, w, h, t1, t2 in bubbles.get(si, []):
+            if any(abs(x - ux) < 0.004 and abs(y - uy) < 0.004 for ux, uy in used.get(si, ())):
+                continue
+            d = min(dist(clean(t1), target), dist(clean(t2), target))
+            best.append((d, si, x, y, w, h))
+    best.sort()
+    if best and best[0][0] <= maxd and (len(best) < 2 or best[1][0] - best[0][0] >= 0.5):
+        d, si, x, y, w, h = best[0]
+        return [si, x, y, w, h]
+    return None
+
+
+def bubble_fix(sheets, tags, sidx):
+    """bubblefix.json: sửa tên/bỏ từng vị trí tag (van, cả thiết bị) đã soát bằng mắt."""
+    f = os.path.join(HERE, "bubblefix.json")
+    if not os.path.exists(f):
+        return tags
+    byt = {t["t"]: t for t in tags}
+    near = lambda p, si, b: p[0] == si and abs(p[1] - b[0]) < 0.002 and abs(p[2] - b[1]) < 0.002
+    n = collections.Counter()
+    for fx in json.load(open(f)):
+        si = sidx.get(fx["sid"]);t = byt.get(fx["from"])
+        if si is None or t is None:
+            n["không thấy"] += 1
+            continue
+        occ = [p for p in t["o"] if near(p, si, fx["box"])]
+        if not occ:
+            n["không thấy"] += 1
+            continue
+        if fx["to"] == "L" and len(t["o"]) == len(occ):
+            continue
+        t["o"] = [p for p in t["o"] if p not in occ]
+        if fx["to"] in ("", "L"):
+            n["bỏ"] += 1
+            continue
+        m = re.match(r"^\d\d-(?:[UDB]\d-)?([A-Z]+)", fx["to"])
+        nt = byt.get(fx["to"])
+        if nt is None:
+            fn = m.group(1) if m else "V"
+            if t["k"] != "valve":
+                nt = {"t": fx["to"], "k": t["k"], "s": t["s"], "d": t["d"], "o": []}
+            else:
+                nt = {"t": fx["to"], "k": "valve", "s": fn if not re.match(r"^\d\d-[UDB]\d-", fx["to"]) else "BLOCK",
+                      "d": t["d"] if not re.match(r"^\d\d-[UDB]\d-", fx["to"]) else "Van tay", "o": []}
+            if not t["o"]:
+                nt["a"] = sorted(set([t["t"]] + t.get("a", [])))
+            byt[fx["to"]] = nt
+            tags.append(nt)
+        nt["o"] += occ
+        n["đổi tên"] += 1
+    print("Sửa bong bóng:", dict(n), file=sys.stderr)
+    return [t for t in tags if t["o"]]
 
 
 def apply(sheets, tags, valves=None, labels=None):
@@ -44,6 +125,7 @@ def apply(sheets, tags, valves=None, labels=None):
                     lab[sidx[sid]][k].append([x, y, w, h])
     # drop OCR block-valve labels
     tags = [t for t in tags if not (t["k"] == "valve" and t["s"] == "BLOCK")]
+    tags = bubble_fix(sheets, tags, sidx)
     byname = {}
     for t in tags:
         for n in [t["t"]] + t.get("a", []):
@@ -90,6 +172,27 @@ def apply(sheets, tags, valves=None, labels=None):
                 pick[g] = max(cands, key=lambda i: (score(g, i), -cands.index(i)))
     stat = collections.Counter()
     out_new = []
+    bubbles = load_bubbles(sidx)
+    used = collections.defaultdict(list)
+    for t in tags:
+        if t["k"] == "valve":
+            for q in t["o"]:
+                used[q[0]].append((q[1], q[2]))
+    # van điều khiển được nhắc tới trong danh mục (AA-U1-FV8003 → AA-FV-8003) nhưng OCR bỏ sót: tìm bong bóng
+    for v in valves:
+        c = CV.match(v["t"])
+        if not c:
+            continue
+        cvt = f"{c.group(1)}-{c.group(3)}-{c.group(4)}"
+        if byname.get(nk(cvt)):
+            continue
+        pp = pos_of(v.get("p", ""))
+        cand = sorted({q[0] for q in pp}) if pp else []
+        hit = match_bubble(bubbles, cand, c.group(3) + c.group(4), used, maxd=0.75)
+        if hit:
+            nt = {"t": cvt, "k": "valve", "s": c.group(3), "d": VNAME.get(c.group(3), "Van"), "o": [hit]}
+            tags.append(nt);byname[nk(cvt)] = nt;used[hit[0]].append((hit[1], hit[2]))
+            stat["thêm van điều khiển từ bong bóng"] += 1
     for v in valves:
         e = {"t": v["t"], "k": "valve", "s": v["s"], "d": v["d"]}
         for f in ("p", "n"):
@@ -97,7 +200,7 @@ def apply(sheets, tags, valves=None, labels=None):
                 e[f] = v[f]
         old = byname.get(nk(v["t"]))
         if old is not None and old["k"] == "valve":
-            old.update({kk: vv for kk, vv in e.items() if kk in ("d", "p", "n")})
+            old.update({kk: vv for kk, vv in e.items() if kk in ("s", "d", "p", "n")})
             old["cm"] = 1
             stat["trùng tag có sẵn"] += 1
             continue
@@ -110,26 +213,31 @@ def apply(sheets, tags, valves=None, labels=None):
                 if b:
                     o = [[sh] + bb for bb in b]
                     stat["nhãn trên bản vẽ"] += 1
-        if o is None:
-            c = CV.match(v["t"])
-            if c:
-                p = pos_of(f"{c.group(1)}-{c.group(3)}-{c.group(4)}")
-                if p:
-                    o = [p_ + [3] for p_ in p]
-                    stat["theo van điều khiển"] += 1
-        if o is None and v.get("p"):
-            p = pos_of(v["p"], sh)
-            if p and (sh is None or any(q[0] == sh for q in p)):
-                o = [p_ + [3] for p_ in p]
-                stat["theo thiết bị cha"] += 1
+        c = CV.match(v["t"])
+        if o is None and c:
+            cvt = f"{c.group(1)}-{c.group(3)}-{c.group(4)}"
+            p = pos_of(cvt)
+            cand = sorted({q[0] for q in p}) if p else []
+            if sh is not None and sh not in cand:
+                cand.append(sh)
+            pp = pos_of(v.get("p", ""))
+            if not cand and pp:
+                cand = sorted({q[0] for q in pp})
+            hit = match_bubble(bubbles, cand, v["t"].split("-", 1)[1].replace("-", ""), used)
+            if hit:
+                o = [hit];used[hit[0]].append((hit[1], hit[2]))
+                stat["bong bóng trên bản vẽ"] += 1
+            elif p:
+                o = [[q[0], 0, 0, 1, 1, 2] for q in p[:1]]
+                stat["chỉ biết bản vẽ (van điều khiển)"] += 1
         if o is None and sh is not None:
             o = [[sh, 0, 0, 1, 1, 2]]
             stat["chỉ biết bản vẽ"] += 1
         if o is None and v.get("p"):
             p = pos_of(v["p"])
             if p:
-                o = [p_ + [3] for p_ in p]
-                stat["theo thiết bị cha (tờ khác)"] += 1
+                o = [[p[0][0], 0, 0, 1, 1, 2]]
+                stat["chỉ biết bản vẽ (thiết bị cha)"] += 1
         if o is None:
             stat["không định vị được"] += 1
             continue

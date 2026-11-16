@@ -13,7 +13,7 @@
   * Không tìm được: vị trí thiết bị cha (Parent Asset) trên P&ID (ưu tiên đúng tờ), cờ 3;
     vẫn không có thì chỉ mở bản vẽ, cờ 2 ([sheet, 0, 0, 1, 1, 2]).
 """
-import collections, json, os, re, sys
+import collections, itertools, json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 STD = re.compile(r"^(\d\d)(\d\d)-(\d+)/(\d+)-([A-Z]+\d*)-(\d+)$")
@@ -70,15 +70,24 @@ def apply(sheets, tags, valves=None, labels=None):
         m = STD.match(v["t"])
         if m:
             groups[m.group(1, 2, 3, 4)].add((m.group(5), int(m.group(6))))
+    # các trang x/y của cùng một bản vẽ phải rơi vào các tờ khác nhau: thử mọi cách gán, lấy tổng số nhãn trùng lớn nhất
     pick = {}
-    for g, ks in groups.items():
-        u, n, x, y = g
+    bydw = collections.defaultdict(list)
+    for g in groups:
+        bydw[g[:2]].append(g)
+    for (u, n), gs in bydw.items():
         cands = [i for i, s in enumerate(sheets) if re.search(rf"-{u}-PID-0031-{n}\b", s["dwg"])]
         if not cands:
             continue
-        xi = int(x) - 1
-        best = max(cands, key=lambda i: (len(ks & set(lab[i])), (cands.index(i) == xi) if len(cands) == int(y) else 0, -cands.index(i)))
-        pick[g] = best
+        gs.sort(key=lambda g: int(g[2]))
+        score = lambda g, i: len(groups[g] & set(lab[i]))
+        if len(gs) <= len(cands):
+            best = max(itertools.permutations(cands, len(gs)),
+                       key=lambda pm: (sum(score(g, i) for g, i in zip(gs, pm)), -sum(abs(cands.index(i) - (int(g[2]) - 1)) for g, i in zip(gs, pm))))
+            pick.update(zip(gs, best))
+        else:
+            for g in gs:
+                pick[g] = max(cands, key=lambda i: (score(g, i), -cands.index(i)))
     stat = collections.Counter()
     out_new = []
     for v in valves:

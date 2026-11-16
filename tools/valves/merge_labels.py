@@ -2,8 +2,7 @@
 
     python3 tools/valves/merge_labels.py <thư mục hl>
 
-Nhãn OCR lại (nét vẽ đã làm mảnh, đọc rõ) được ưu tiên; nhãn cũ chỉ giữ khi không chồng lên khung nào của lần đọc lại
-và tên chưa có trên tờ đó.
+Mỗi tờ lấy nguồn đọc được nhiều nhãn hơn làm chính, thêm nhãn của nguồn kia nếu không chồng khung và tên chưa có.
 """
 import glob, json, os, re, sys
 
@@ -37,14 +36,17 @@ def main(hl):
             if t:
                 new.append([t, x, y, w, h])
         out[sid] = new
+    # mỗi tờ: lấy nguồn đọc được nhiều nhãn khác nhau hơn làm chính (bản 2098 nét đậm → đọc lại tốt hơn;
+    # bản 2539 chữ mảnh sẵn → OCR cũ tốt hơn), rồi thêm nhãn của nguồn kia không chồng khung và chưa có tên
     for sid, items in old.items():
-        if sid not in out:
-            out[sid] = items
-            continue
-        have = {t for t, *_ in out[sid]}
-        for t, *b in items:
-            if t not in have and not any(overlap(b, n[1:]) for n in out[sid]):
-                out[sid].append([t] + b)
+        new = out.get(sid, [])
+        main, other = (new, items) if len({t for t, *_ in new}) > len({t for t, *_ in items}) else (items, new)
+        res = [list(x) for x in main]
+        have = {t for t, *_ in res}
+        for t, *bx in other:
+            if t not in have and not any(overlap(bx, n[1:]) for n in res):
+                res.append([t] + bx)
+        out[sid] = res
     json.dump(out, open(os.path.join(HERE, "ocr_labels.json"), "w"), ensure_ascii=False, separators=(",", ":"))
     print(sum(map(len, out.values())), "nhãn")
 

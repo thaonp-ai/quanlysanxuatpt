@@ -110,6 +110,66 @@ def bubble_fix(sheets, tags, sidx):
     return [t for t in tags if t["o"]]
 
 
+def sheet_codes(sheets, pick):
+    """chỉ số tờ -> "UUNN-x/y" theo cách đánh số của danh mục CMMS (pick: (UU,NN,x,y) -> tờ)."""
+    code = {si: f"{u}{n}-{x}/{y}" for (u, n, x, y), si in pick.items()}
+    grp = collections.defaultdict(list)
+    for i, s in enumerate(sheets):
+        m = re.search(r"-(\d\d)-PID-0031-(\d\d)\b", s["dwg"])
+        if m:
+            grp[m.groups()].append(i)
+    for (u, n), sis in grp.items():
+        used = {int(code[i].split("-")[1].split("/")[0]) for i in sis if i in code}
+        ys = {int(code[i].split("/")[1]) for i in sis if i in code}
+        y = max(ys | {len(sis)})
+        free = [k for k in range(1, y + 1) if k not in used]
+        for i in sis:
+            if i not in code:
+                x = free.pop(0) if free else sis.index(i) + 1
+                code[i] = f"{u}{n}-{x}/{max(y, x)}"
+    return code
+
+
+def rename_checks(sheets, tags, pick, labels, sidx):
+    """Van một chiều: nhãn "C1-01" trên P&ID → tag "1801-1/4-C1-01" (cùng kiểu tag van block CMMS).
+    Gộp vị trí OCR cũ (tag s=CHECK) với nhãn đọc lại (ocr_labels.json), sửa/bỏ theo checkfix.json."""
+    code = sheet_codes(sheets, pick)
+    ov = lambda a, b: not (a[0] + a[2] < b[0] or b[0] + b[2] < a[0] or a[1] + a[3] < b[1] or b[1] + b[3] < a[1])
+    occ = collections.defaultdict(list)
+    for t in tags:
+        if t["k"] == "valve" and t["s"] == "CHECK":
+            for o in t["o"]:
+                occ[o[0]].append([t["t"]] + o[1:5])
+    for sid, items in labels.items():
+        si = sidx.get(sid)
+        if si is None:
+            continue
+        for lb, *b in items:
+            if lb.startswith("C") and not any(ov(b, c[1:]) for c in occ[si]):
+                occ[si].append([lb] + b)
+    fx = os.path.join(HERE, "checkfix.json")
+    fixes = json.load(open(fx)) if os.path.exists(fx) else []
+    tags = [t for t in tags if not (t["k"] == "valve" and t["s"] == "CHECK")]
+    new = {}
+    for si, items in occ.items():
+        for lb, x, y, w, h in items:
+            f = next((f for f in fixes if sidx.get(f["sid"]) == si and abs(f["x"] - x) < 0.002 and abs(f["y"] - y) < 0.002), None)
+            if f is not None:
+                if not f["to"]:
+                    continue
+                lb = f["to"]
+            m = re.match(r"^C(\d?)-(\d{1,2})$", lb)
+            if not m or si not in code:
+                continue
+            name = f"{code[si]}-C{m.group(1) or '1'}-{int(m.group(2)):02d}"
+            e = new.setdefault(name, {"t": name, "k": "valve", "s": "CHECK", "d": "Van một chiều", "o": [], "a": []})
+            e["o"].append([si, x, y, w, h])
+    print("Van một chiều:", len(new), "tag", file=sys.stderr)
+    for e in new.values():
+        e.pop("a")
+    return tags + list(new.values())
+
+
 def apply(sheets, tags, valves=None, labels=None):
     """sheets: list; tags: list of tag dicts (data.json format). Returns new tag list."""
     valves = valves or json.load(open(os.path.join(HERE, "valves.json")))
@@ -245,7 +305,8 @@ def apply(sheets, tags, valves=None, labels=None):
         e["cm"] = 1
         out_new.append(e)
     print("Van CMMS:", dict(stat), file=sys.stderr)
-    return tags + out_new
+    tags = rename_checks(sheets, tags + out_new, pick, labels, sidx)
+    return tags
 
 
 if __name__ == "__main__":

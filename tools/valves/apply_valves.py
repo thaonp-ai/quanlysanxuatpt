@@ -306,6 +306,7 @@ def apply(sheets, tags, valves=None, labels=None):
         out_new.append(e)
     print("Van CMMS:", dict(stat), file=sys.stderr)
     tags = rename_checks(sheets, tags + out_new, pick, labels, sidx)
+    tags = bubble_fix(sheets, tags, sidx)  # lần 2: sửa cả van điều khiển vừa thêm từ bong bóng
     return tags
 
 

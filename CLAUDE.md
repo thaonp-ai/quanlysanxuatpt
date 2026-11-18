@@ -1,6 +1,6 @@
 # Ghi chú cho Claude khi cập nhật repo này
 
-Repo chứa web tĩnh tra cứu P&ID/PFD Xưởng Phụ Trợ (Đạm Phú Mỹ). Cloudflare Workers Builds tự triển khai từ nhánh `main` (worker.js + thư mục `web/`).
+Repo chứa web tĩnh tra cứu P&ID/PFD Xưởng Phụ Trợ (Đạm Phú Mỹ). Cloudflare Workers Builds tự triển khai từ nhánh `main` (worker.js + thư mục `web/`). Địa chỉ web: `https://quanlysanxuatpt.khoivanhanh.workers.dev` (subdomain workers.dev của tài khoản đổi thành `khoivanhanh` 18/11/2026; code không ghi cứng tên miền nào — cookie và kiểm tra origin theo host của request).
 
 ## Sửa nhanh (không cần OCR lại)
 - Thêm/sửa/xóa tag: sửa trực tiếp `web/data/data.json`.

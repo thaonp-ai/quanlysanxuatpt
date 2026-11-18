@@ -287,6 +287,41 @@ a.doc:hover{background:var(--line-soft)}
 .dlg .hist div{padding:2px 0}
 .toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--sheet);padding:9px 16px;border-radius:999px;font-size:13px;z-index:50}
 
+/* ---- Hỏi đáp (chatbox) ---- */
+.chatfab{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:max(18px,env(safe-area-inset-bottom,0px));z-index:60;border:0;border-radius:999px;background:var(--line);color:#fff;font-weight:600;font-size:14.5px;padding:12px 18px 12px 14px;display:flex;align-items:center;gap:8px;box-shadow:0 6px 20px rgba(0,0,0,.22);cursor:pointer}
+.chatfab svg{width:20px;height:20px}
+.chat{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:max(18px,env(safe-area-inset-bottom,0px));z-index:61;width:min(440px,calc(100vw - 32px));height:min(640px,calc(100vh - 110px));background:var(--sheet);color:var(--ink);border:1px solid var(--rule);border-radius:14px;box-shadow:0 16px 48px rgba(0,0,0,.28);display:flex;flex-direction:column;overflow:hidden}
+.chat .ch{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid var(--rule);background:var(--paper)}
+.chat .ch b{font-size:15px;flex:1}.chat .ch small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.chat .ch button{border:0;background:none;color:var(--muted);font-size:16px;padding:4px 8px;border-radius:6px;cursor:pointer}
+.chat .ch button:hover{background:var(--line-soft);color:var(--ink)}
+.chat .cm{flex:1;overflow:auto;padding:14px;display:flex;flex-direction:column;gap:12px;font-size:14.5px;line-height:1.55}
+.chat .msg{max-width:92%;padding:9px 12px;border-radius:12px;white-space:normal;overflow-wrap:anywhere}
+.chat .msg.u{align-self:flex-end;background:var(--line);color:#fff;border-bottom-right-radius:4px}
+.chat .msg.a{align-self:flex-start;background:var(--paper);border:1px solid var(--rule);border-bottom-left-radius:4px}
+.chat .msg.a p{margin:0 0 6px}.chat .msg.a p:last-child{margin:0}
+.chat .msg.a ul{margin:2px 0 6px;padding-left:20px}.chat .msg.a li{margin:2px 0}
+.chat .cite{display:inline-block;min-width:18px;padding:0 5px;margin:0 1px;border-radius:5px;background:var(--line-soft);color:var(--line);font-family:var(--f-mono);font-size:11.5px;font-weight:600;text-align:center;cursor:pointer;border:0;line-height:18px;vertical-align:1px}
+.chat .cite:hover{background:var(--line);color:#fff}
+.chat .srcs{margin-top:8px;padding-top:6px;border-top:1px dashed var(--rule);display:flex;flex-direction:column;gap:2px}
+.chat .srcs button{text-align:left;border:0;background:none;color:var(--ink);font-size:12.5px;padding:3px 4px;border-radius:5px;cursor:pointer;line-height:1.35}
+.chat .srcs button:hover{background:var(--line-soft)}
+.chat .srcs button i{font-style:normal;font-family:var(--f-mono);color:var(--line);font-weight:600;margin-right:5px}
+.chat .srcs button em{font-style:normal;color:var(--muted);margin-left:4px}
+.chat .srcs summary{cursor:pointer;color:var(--muted);font-size:12px}
+.chat .hint{color:var(--muted);font-size:13.5px}
+.chat .sugg{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.chat .sugg button{border:1px solid var(--rule);background:var(--sheet);color:var(--ink);border-radius:999px;padding:5px 11px;font-size:13px;cursor:pointer}
+.chat .sugg button:hover{border-color:var(--line);color:var(--line)}
+.chat form{display:flex;gap:8px;padding:10px;border-top:1px solid var(--rule);background:var(--sheet)}
+.chat textarea{flex:1;resize:none;font:inherit;font-size:14.5px;color:var(--ink);background:var(--paper);border:1.5px solid var(--rule);border-radius:10px;padding:9px 11px;max-height:120px;min-height:42px;box-sizing:border-box}
+.chat textarea:focus{outline:none;border-color:var(--line)}
+.chat form button{border:0;border-radius:10px;background:var(--line);color:#fff;font-weight:600;padding:0 16px;cursor:pointer}
+.chat form button:disabled{opacity:.5;cursor:default}
+.chat .dots span{display:inline-block;width:6px;height:6px;margin:0 2px;border-radius:50%;background:var(--muted);animation:cd 1s infinite ease-in-out}
+.chat .dots span:nth-child(2){animation-delay:.15s}.chat .dots span:nth-child(3){animation-delay:.3s}
+@keyframes cd{0%,80%,100%{opacity:.25}40%{opacity:1}}
+@media (max-width:600px){.chat{right:0;bottom:0;width:100vw;height:100dvh;border-radius:0;border:0}.chatfab span{display:none}.chatfab{padding:13px}}
 @media (max-width:900px){
   main{grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr)}
   .wsdraw{grid-template-columns:minmax(0,1fr)}
@@ -408,6 +443,12 @@ a.doc:hover{background:var(--line-soft)}
   <div class="dq" id="docsQWrap"><input type="search" id="docsQ" placeholder="Lọc tài liệu: số bản vẽ, tên, ví dụ “fan”, “778-M-150”…" autocomplete="off"><div class="note" id="docsNote" hidden></div></div>
   <div class="dl" id="docsList"></div>
 </aside>
+<button class="chatfab" id="chatFab" aria-label="Hỏi đáp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg><span>Hỏi đáp</span></button>
+<section class="chat" id="chat" hidden aria-label="Hỏi đáp">
+  <div class="ch"><b>Hỏi đáp Xưởng Phụ Trợ<small>Tìm trong tag, bản vẽ, công nghệ, giáo trình, tài liệu vendor</small></b><button id="chatNew" title="Cuộc hỏi mới">↺</button><button id="chatClose" aria-label="Đóng">✕</button></div>
+  <div class="cm" id="chatMsgs"></div>
+  <form id="chatForm"><textarea id="chatQ" rows="1" placeholder="Hỏi về thiết bị, van, quy trình…"></textarea><button id="chatSend">Gửi</button></form>
+</section>
 <div class="toast" id="toast" role="status" hidden></div>
 
 <script>
@@ -971,4 +1012,46 @@ $("prev").onclick=()=>{state.oi=(state.oi-1+state.occ.length)%state.occ.length;s
 $("next").onclick=()=>{state.oi=(state.oi+1)%state.occ.length;showOcc();};
 $("back").onclick=()=>{$("viewer").dataset.open="false";};
 window.addEventListener("resize",()=>{if(state.sheet!=null&&!state.sel)fit();});
+
+/* ---- Hỏi đáp: POST /api/chat (worker tìm dữ liệu + mô hình trả lời), nguồn [n] bấm để mở ---- */
+const CHAT={hist:[],busy:false};
+const CHAT_SUGG=["Bơm 30-P-2001A bơm nước đi đâu?","Các nguyên nhân MFT lò hơi 10-B-8001?","Thông số tái sinh mixed bed?","30-PSV-37503 nằm ở bản vẽ nào?"];
+function chatIntro(){const m=$("chatMsgs");m.innerHTML=`<div class="msg a"><p>Xin chào! Bạn có thể hỏi về tag thiết bị, van, đường ống, bản vẽ P&ID, mô tả công nghệ, giáo trình cương vị hay tài liệu vendor. Câu trả lời kèm số nguồn — bấm để mở đúng tag, bản vẽ hoặc tài liệu.</p><p class="hint">Thông tin chỉ để tham khảo; thao tác vận hành làm theo quy trình hiện hành.</p><div class="sugg">${CHAT_SUGG.map(q=>`<button type="button">${esc(q)}</button>`).join("")}</div></div>`;
+  m.querySelectorAll(".sugg button").forEach(b=>b.onclick=()=>chatAsk(b.textContent));}
+function chatMd(txt,srcs){
+  const inl=s=>esc(s).replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/\[(\d{1,2})\]/g,(m,n)=>srcs[n-1]?`<button type="button" class="cite" data-n="${n}">${n}</button>`:m);
+  const out=[];let ul=null;
+  txt.split(/\n/).forEach(l=>{const t=l.trim();const li=t.match(/^(?:[-*•]|\d+[.)])\s+(.*)/);
+    if(li){if(!ul){ul=[];out.push(ul);}ul.push(li[1]);}
+    else{ul=null;if(t)out.push(t.replace(/^#+\s*/,""));}});
+  return out.map(x=>Array.isArray(x)?`<ul>${x.map(i=>`<li>${inl(i)}</li>`).join("")}</ul>`:`<p>${inl(x)}</p>`).join("");}
+const KLAB={tag:"tag",sheet:"bản vẽ",unit:"Unit",tech:"công nghệ",gt:"giáo trình",doc:"tài liệu"};
+function chatOpenRef(r){if(!r)return;
+  if(r.type==="tag"){const v=findTag(r.t);if(!v){toast("Tag này đang bị ẩn hoặc đã đổi tên.");return;}showDraw();state.sel=v;openTag(v);render();chatSmall();return;}
+  if(r.type==="sheet"){const i=DB.sheets.findIndex(s=>s.dwg===r.dwg);if(i<0)return;showDraw();state.sel=null;openSheetAll(i);render();chatSmall();return;}
+  if(r.type==="unit"){selectUnit(r.u,r.tab||"tech");chatSmall();return;}
+  if(r.type==="tech"){const v=findTag(r.t);const u=[...unitsOfKey(r.t)][0];if(u){selectUnit(u,"tech");USUB=TECH&&TECH.tags[r.t]?r.t:null;renderURead();}else if(v)openDocs(v,"tech");chatSmall();return;}
+  if(r.type==="gt"){if(r.u){selectUnit(r.u,"gt");chatSmall();}return;}
+  if(r.type==="doc"){const l=docLinks({p:r.p});if(l)window.open(l.view,"_blank","noopener");else toast("Chưa có đường dẫn OneDrive.");}}
+function chatSmall(){if(matchMedia("(max-width:600px)").matches)$("chat").hidden=true,$("chatFab").hidden=false;}
+function chatAdd(role,html){const d=document.createElement("div");d.className="msg "+role;d.innerHTML=html;$("chatMsgs").appendChild(d);$("chatMsgs").scrollTop=$("chatMsgs").scrollHeight;return d;}
+async function chatAsk(q){q=(q||"").trim();if(!q||CHAT.busy)return;CHAT.busy=true;$("chatSend").disabled=true;$("chatQ").value="";
+  chatAdd("u",esc(q).replace(/\n/g,"<br>"));const wait=chatAdd("a",'<span class="dots"><span></span><span></span><span></span></span>');
+  try{const r=await fetch("/api/chat",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({q,history:CHAT.hist.slice(-6)})});
+    const j=await r.json().catch(()=>({error:"Máy chủ trả lời không hợp lệ."}));
+    if(!r.ok||j.error){wait.innerHTML=`<p>${esc(j.error||("Lỗi "+r.status))}</p>`;}
+    else{const srcs=j.sources||[];const used=new Set([...j.answer.matchAll(/\[(\d{1,2})\]/g)].map(m=>+m[1]));
+      const list=srcs.filter(s=>used.has(s.n)),rest=srcs.filter(s=>!used.has(s.n));
+      const btn=s=>`<button type="button" data-n="${s.n}"><i>${s.n}</i>${esc(s.label)}<em>· ${KLAB[s.kind]||s.kind}</em></button>`;
+      wait.innerHTML=chatMd(j.answer,srcs)+(srcs.length?`<div class="srcs">${list.map(btn).join("")}${rest.length?`<details><summary>${list.length?"Kết quả liên quan khác":"Kết quả tìm được"} (${rest.length})</summary>${rest.map(btn).join("")}</details>`:""}</div>`:"");
+      wait.querySelectorAll("[data-n]").forEach(b=>b.onclick=()=>chatOpenRef((srcs[b.dataset.n-1]||{}).ref));
+      CHAT.hist.push({role:"user",content:q},{role:"assistant",content:j.answer});}
+  }catch(e){wait.innerHTML="<p>Không kết nối được máy chủ. Kiểm tra mạng rồi thử lại.</p>";}
+  CHAT.busy=false;$("chatSend").disabled=false;$("chatMsgs").scrollTop=$("chatMsgs").scrollHeight;$("chatQ").focus();}
+$("chatFab").onclick=()=>{$("chat").hidden=false;$("chatFab").hidden=true;if(!$("chatMsgs").children.length)chatIntro();$("chatQ").focus();};
+$("chatClose").onclick=()=>{$("chat").hidden=true;$("chatFab").hidden=false;};
+$("chatNew").onclick=()=>{CHAT.hist=[];chatIntro();$("chatQ").focus();};
+$("chatForm").addEventListener("submit",e=>{e.preventDefault();chatAsk($("chatQ").value);});
+$("chatQ").addEventListener("keydown",e=>{if(e.key==="Enter"&&!e.shiftKey&&!e.isComposing){e.preventDefault();chatAsk($("chatQ").value);}});
+$("chatQ").addEventListener("input",e=>{e.target.style.height="auto";e.target.style.height=Math.min(120,e.target.scrollHeight)+"px";});
 </script>

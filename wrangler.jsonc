@@ -10,6 +10,8 @@
   },
   // KV lưu chỉnh sửa: Wrangler (>= 4.45) tự tạo namespace ở lần deploy đầu nếu chưa có id
   "kv_namespaces": [{ "binding": "EDITS" }],
+  // Chatbox hỏi đáp (chat.js): dùng Workers AI (gói miễn phí ~10.000 neuron/ngày). Đặt secret ANTHROPIC_API_KEY để dùng Claude thay thế.
+  "ai": { "binding": "AI" },
   // Tài khoản "admin" dựng sẵn: đang TẮT (chuỗi rỗng). Bật lại khi quên mật khẩu quản trị: đặt mã băm PBKDF2 "salt:hash"
   // (16 byte salt, 100000 vòng, SHA-256, 32 byte) của mật khẩu mới. Để rỗng chứ không xóa dòng, vì keep_vars giữ biến cũ.
   "vars": { "ADMIN_HASH": "" },

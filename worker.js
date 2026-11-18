@@ -18,6 +18,8 @@
 //   GET  /api/users              -> [ { u, name, role, disabled, created, updated } ]   (admin)
 //   POST /api/users              -> { action:"save", u, name, role, password?, disabled? } | { action:"delete", u }  (admin)
 
+import { handleChat } from "./chat.js";
+
 const KINDS = new Set(["line", "equipment", "valve"]);
 const ROLES = { admin: "Quản trị", editor: "Được sửa tag", viewer: "Chỉ xem" };
 const MAX_LOG = 5000;
@@ -551,6 +553,7 @@ export default {
     if (path === "/api/edits") return handleEdits(req, env, me);
     if (path === "/api/users") return handleUsers(req, env, me);
     if (path === "/api/password") return handlePassword(req, env, me);
+    if (path === "/api/chat") return handleChat(req, env, me, url);
     if (path.startsWith("/api/")) return json({ error: "Không có API này" }, 404);
     if (path === "/account") return html(accountPage());
 
